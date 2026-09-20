@@ -1,0 +1,2695 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2026-09-18T10:33:32.216Z",
+    "coverageStart": "2016-01-01",
+    "coverageEnd": "2026-09-18",
+    "inclusionBasis": "recordDate",
+    "currency": "CNY",
+    "currencyUnit": "fen",
+    "bondQuoteUnit": "0.001 CNY per bond",
+    "ratioRepresentation": "allocationPerShareRaw decimal string; ROI also has roiRaw and roiBps",
+    "grossOnly": true,
+    "dailyApproximation": true,
+    "completeSnapshot": true,
+    "cacheMode": "current-year-update",
+    "sources": [
+      {
+        "id": "cninfo-p_sysapi1123",
+        "name": "巨潮资讯可转债发行专题统计",
+        "url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+        "role": "官方发行字段：债券/正股代码、优先配售日、股权登记日、发行价格"
+      },
+      {
+        "id": "eastmoney-RPT_BOND_CB_LIST",
+        "name": "东方财富可转债全历史清单",
+        "url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "role": "候选全集交叉表：上市日、退市日、正股、每股配售额"
+      },
+      {
+        "id": "eastmoney-push2his-kline",
+        "name": "东方财富历史日K",
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+        "role": "正股未复权OHLC与仍可查询转债日线"
+      },
+      {
+        "id": "eastmoney-RPT_SHAREBONUS_DET",
+        "name": "东方财富分红送配实施明细",
+        "url": "https://datacenter-web.eastmoney.com/api/data/v1/get",
+        "role": "核验T-1/T是否为除权除息日；重叠样本不计算收益"
+      },
+      {
+        "id": "tencent-fqkline",
+        "name": "腾讯证券历史日K",
+        "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+        "role": "已退市转债D1-D5日线备选"
+      }
+    ],
+    "importantFieldAudit": {
+      "cninfoShareholderRecordDate": "F053D",
+      "note": "Live p_sysapi1123 records show F053D=T-1; F028D is years later and is not used."
+    },
+    "announcementVerification": {
+      "level": "official_topic_table_plus_crosscheck",
+      "perBondPdfParsed": false,
+      "description": "静态字段以巨潮官方专题统计为主、东方财富全历史表交叉；每券sourceAudit提供巨潮公告检索直达链接。未声称逐份PDF解析。日期冲突仅在公告文本或双源可消解时纳入，否则剔除。"
+    },
+    "formulas": {
+      "shareQuantity": "All SH boards: direct ceil(600/allocation) under the user's margin-transfer assumption, without exchange buy-lot rounding; SZ: ceil(1000/allocation) rounded up to 100-share lots",
+      "stockLeg": "requiredShares × (stock exit open − T-1 close); stock exit is T open, or next exchange-session open when T opens at lower limit",
+      "bondLeg": "10 × (exit price − issue price)",
+      "gross": "stock leg + bond leg; no fees, tax or slippage",
+      "peakCapital": "normal T sale: max(B, B-S+subscription cash, 0); deferred stock sale: B+subscription cash",
+      "strategyB": "close confirms a drawdown of more than 5%; modeled exit price is 95% of the running high, rounded to CNY 0.001"
+    }
+  },
+  "funnel": {
+    "sourceUnionAllYears": 1053,
+    "cninfoRowsAllYears": 977,
+    "eastmoneyRowsAllYears": 1053,
+    "migratedAliasesRemoved": 5,
+    "inScopeCandidates": 969,
+    "staticFieldsReady": 967,
+    "staticFieldExclusions": 2,
+    "attemptedCandidates": 967,
+    "stockSeriesAvailable": 967,
+    "bondFiveBarsAvailable": 956,
+    "validBacktests": 940,
+    "marketDataAuditExclusions": 3,
+    "coreExclusions": 24,
+    "totalPublishedExclusions": 29
+  },
+  "reasonCounts": {
+    "historical_st_limit_ambiguous": 2,
+    "incomplete_exit_window": 2,
+    "missing_bond_bar": 17,
+    "missing_listing_date": 2,
+    "missing_price_limit_reference": 1,
+    "stock_buy_limit_up": 5
+  },
+  "exclusions": [
+    {
+      "included": false,
+      "bondCode": "110043",
+      "bondName": "无锡转债",
+      "stockCode": "600908",
+      "stockName": "无锡银行",
+      "exchange": "SH",
+      "recordDate": "2018-01-29",
+      "subscriptionDate": "2018-01-30",
+      "listingDate": "2018-03-14",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-03-14",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=110043",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/110043.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-01-29",
+          "cninfoRecordDate": "2018-01-29",
+          "eastmoneyRecordDate": "2018-01-29",
+          "cninfoSubscriptionDate": "2018-01-30",
+          "eastmoneySubscriptionDate": "2018-01-30",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-01-29",
+              "2018-01-30"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "eastmoney-push2his-kline",
+          "barCount": 13,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "MATCH",
+            "comparedDates": 2,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 14,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-01-31"
+        },
+        "fetchErrors": []
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113018",
+      "bondName": "常熟转债",
+      "stockCode": "601128",
+      "stockName": "常熟银行",
+      "exchange": "SH",
+      "recordDate": "2018-01-18",
+      "subscriptionDate": "2018-01-19",
+      "listingDate": "2018-02-06",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-02-06",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113018",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113018.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-01-18",
+          "cninfoRecordDate": "2018-01-18",
+          "eastmoneyRecordDate": "2018-01-18",
+          "cninfoSubscriptionDate": "2018-01-19",
+          "eastmoneySubscriptionDate": "2018-01-19",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-01-18",
+              "2018-01-19"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2018-01-08",
+            "2018-01-09",
+            "2018-01-10",
+            "2018-01-11",
+            "2018-01-12",
+            "2018-01-15",
+            "2018-01-16",
+            "2018-01-17",
+            "2018-01-18",
+            "2018-01-19",
+            "2018-01-22",
+            "2018-01-23",
+            "2018-01-24",
+            "2018-01-25",
+            "2018-01-26"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2019-05-23"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-601128-2018-01-08-2018-01-26"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113019",
+      "bondName": "玲珑转债",
+      "stockCode": "601966",
+      "stockName": "玲珑轮胎",
+      "exchange": "SH",
+      "recordDate": "2018-02-28",
+      "subscriptionDate": "2018-03-01",
+      "listingDate": "2018-03-22",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-03-22",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113019",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113019.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-02-28",
+          "cninfoRecordDate": "2018-02-28",
+          "eastmoneyRecordDate": "2018-02-28",
+          "cninfoSubscriptionDate": "2018-03-01",
+          "eastmoneySubscriptionDate": "2018-03-01",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-02-28",
+              "2018-03-01"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 11,
+          "filledDates": [
+            "2018-02-22",
+            "2018-02-23",
+            "2018-02-26",
+            "2018-02-27",
+            "2018-02-28",
+            "2018-03-01",
+            "2018-03-02",
+            "2018-03-05",
+            "2018-03-06",
+            "2018-03-07",
+            "2018-03-08"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 20,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2020-09-04"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-601966-2018-02-18-2018-03-08"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113504",
+      "bondName": "艾华转债",
+      "stockCode": "603989",
+      "stockName": "艾华集团",
+      "exchange": "SH",
+      "recordDate": "2018-03-01",
+      "subscriptionDate": "2018-03-02",
+      "listingDate": "2018-03-23",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-03-23",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113504",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113504.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-03-01",
+          "cninfoRecordDate": "2018-03-01",
+          "eastmoneyRecordDate": "2018-03-01",
+          "cninfoSubscriptionDate": "2018-03-02",
+          "eastmoneySubscriptionDate": "2018-03-02",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-03-01",
+              "2018-03-02"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 12,
+          "filledDates": [
+            "2018-02-22",
+            "2018-02-23",
+            "2018-02-26",
+            "2018-02-27",
+            "2018-02-28",
+            "2018-03-01",
+            "2018-03-02",
+            "2018-03-05",
+            "2018-03-06",
+            "2018-03-07",
+            "2018-03-08",
+            "2018-03-09"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 21,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-03-04"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603989-2018-02-19-2018-03-09"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113505",
+      "bondName": "杭电转债",
+      "stockCode": "603618",
+      "stockName": "杭电股份",
+      "exchange": "SH",
+      "recordDate": "2018-03-05",
+      "subscriptionDate": "2018-03-06",
+      "listingDate": "2018-03-27",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-03-27",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113505",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113505.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-03-05",
+          "cninfoRecordDate": "2018-03-05",
+          "eastmoneyRecordDate": "2018-03-05",
+          "cninfoSubscriptionDate": "2018-03-06",
+          "eastmoneySubscriptionDate": "2018-03-06",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-03-05",
+              "2018-03-06"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2018-02-23",
+            "2018-02-26",
+            "2018-02-27",
+            "2018-02-28",
+            "2018-03-01",
+            "2018-03-02",
+            "2018-03-05",
+            "2018-03-06",
+            "2018-03-07",
+            "2018-03-08",
+            "2018-03-09",
+            "2018-03-12",
+            "2018-03-13"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 21,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-03-06"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603618-2018-02-23-2018-03-13"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113627",
+      "bondName": "太平转债",
+      "stockCode": "603877",
+      "stockName": "太平鸟",
+      "exchange": "SH",
+      "recordDate": "2021-07-14",
+      "subscriptionDate": "2021-07-15",
+      "listingDate": "2021-08-06",
+      "entryYear": 2021,
+      "reason": "stock_buy_limit_up",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113627",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113627.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2021-07-14",
+          "cninfoRecordDate": "2021-07-14",
+          "eastmoneyRecordDate": "2021-07-14",
+          "cninfoSubscriptionDate": "2021-07-15",
+          "eastmoneySubscriptionDate": "2021-07-15",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2021-07-14",
+              "2021-07-15"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 14,
+          "filledDates": [
+            "2021-07-05",
+            "2021-07-06",
+            "2021-07-07",
+            "2021-07-08",
+            "2021-07-09",
+            "2021-07-12",
+            "2021-07-13",
+            "2021-07-14",
+            "2021-07-15",
+            "2021-07-16",
+            "2021-07-19",
+            "2021-07-20",
+            "2021-07-21",
+            "2021-07-22"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 26,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603877-2021-07-04-2021-07-22",
+          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113627-2021-08-06-2021-09-10"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113646",
+      "bondName": "永吉转债",
+      "stockCode": "603058",
+      "stockName": "永吉股份",
+      "exchange": "SH",
+      "recordDate": "2022-04-13",
+      "subscriptionDate": "2022-04-14",
+      "listingDate": "2022-05-17",
+      "entryYear": 2022,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2022-05-19",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113646",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113646.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2022-04-13",
+          "cninfoRecordDate": "2022-04-13",
+          "eastmoneyRecordDate": "2022-04-13",
+          "cninfoSubscriptionDate": "2022-04-14",
+          "eastmoneySubscriptionDate": "2022-04-14",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2022-04-13",
+              "2022-04-14"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 12,
+          "filledDates": [
+            "2022-04-06",
+            "2022-04-07",
+            "2022-04-08",
+            "2022-04-11",
+            "2022-04-12",
+            "2022-04-13",
+            "2022-04-14",
+            "2022-04-15",
+            "2022-04-18",
+            "2022-04-19",
+            "2022-04-20",
+            "2022-04-21"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 20,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603058-2022-04-03-2022-04-21",
+          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113646-2022-05-17-2022-06-21"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113651",
+      "bondName": "松霖转债",
+      "stockCode": "603992",
+      "stockName": "松霖科技",
+      "exchange": "SH",
+      "entryYear": 2022,
+      "recordDate": "2022-07-19",
+      "subscriptionDate": "2022-07-20",
+      "listingDate": "2022-08-17",
+      "reason": "historical_st_limit_ambiguous",
+      "detail": "{\"type\":\"HISTORICAL_ST_LIMIT_AMBIGUOUS\",\"date\":\"2022-07-20\",\"side\":\"SELL_OPEN\",\"executionPrice\":\"16.350\",\"possibleStLimit\":\"16.35\"}",
+      "stage": "MARKET_DATA_AUDIT",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113651",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113651.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2022-07-19",
+          "cninfoRecordDate": "2022-07-19",
+          "eastmoneyRecordDate": "2022-07-19",
+          "cninfoSubscriptionDate": "2022-07-20",
+          "eastmoneySubscriptionDate": "2022-07-20",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2022-07-19",
+              "2022-07-20"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2022-07-11",
+            "2022-07-12",
+            "2022-07-13",
+            "2022-07-14",
+            "2022-07-15",
+            "2022-07-18",
+            "2022-07-19",
+            "2022-07-20",
+            "2022-07-21",
+            "2022-07-22",
+            "2022-07-25",
+            "2022-07-26",
+            "2022-07-27"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": [
+              {
+                "type": "HISTORICAL_ST_LIMIT_AMBIGUOUS",
+                "date": "2022-07-20",
+                "side": "SELL_OPEN",
+                "executionPrice": "16.350",
+                "possibleStLimit": "16.35"
+              }
+            ]
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 25,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-03-23"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603992-2022-07-09-2022-07-27"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113691",
+      "bondName": "和邦转债",
+      "stockCode": "603077",
+      "stockName": "和邦生物",
+      "exchange": "SH",
+      "entryYear": 2024,
+      "recordDate": "2024-10-25",
+      "subscriptionDate": "2024-10-28",
+      "listingDate": "2024-11-19",
+      "reason": "historical_st_limit_ambiguous",
+      "detail": "{\"type\":\"HISTORICAL_ST_LIMIT_AMBIGUOUS\",\"date\":\"2024-10-25\",\"side\":\"BUY_CLOSE\",\"executionPrice\":\"2.090\",\"possibleStLimit\":\"2.09\"}",
+      "stage": "MARKET_DATA_AUDIT",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113691",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113691.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2024-10-25",
+          "cninfoRecordDate": "2024-10-25",
+          "eastmoneyRecordDate": "2024-10-25",
+          "cninfoSubscriptionDate": "2024-10-28",
+          "eastmoneySubscriptionDate": "2024-10-28",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2024-10-25",
+              "2024-10-28"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2024-10-15",
+            "2024-10-16",
+            "2024-10-17",
+            "2024-10-18",
+            "2024-10-21",
+            "2024-10-22",
+            "2024-10-23",
+            "2024-10-24",
+            "2024-10-25",
+            "2024-10-28",
+            "2024-10-29",
+            "2024-10-30",
+            "2024-10-31",
+            "2024-11-01",
+            "2024-11-04"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": [
+              {
+                "type": "HISTORICAL_ST_LIMIT_AMBIGUOUS",
+                "date": "2024-10-25",
+                "side": "BUY_CLOSE",
+                "executionPrice": "2.090",
+                "possibleStLimit": "2.09"
+              }
+            ]
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 26,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603077-2024-10-15-2024-11-04",
+          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113691-2024-11-19-2024-12-24"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "113710",
+      "bondName": "四方转债",
+      "stockCode": "603339",
+      "stockName": "四方科技",
+      "exchange": "SH",
+      "recordDate": "2026-09-02",
+      "subscriptionDate": "2026-09-03",
+      "listingDate": "2026-09-23",
+      "entryYear": 2026,
+      "reason": "incomplete_exit_window",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113710",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113710.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2026-09-02",
+          "cninfoRecordDate": "2026-09-02",
+          "eastmoneyRecordDate": "2026-09-02",
+          "cninfoSubscriptionDate": "2026-09-03",
+          "eastmoneySubscriptionDate": "2026-09-03",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2026-09-02",
+              "2026-09-03"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 14,
+          "filledDates": [
+            "2026-08-24",
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27",
+            "2026-08-28",
+            "2026-08-31",
+            "2026-09-01",
+            "2026-09-02",
+            "2026-09-03",
+            "2026-09-04",
+            "2026-09-07",
+            "2026-09-08",
+            "2026-09-09",
+            "2026-09-10"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: eastmoney-stock-SH-603339-2026-08-23-2026-09-10: fetch failed",
+          "bond/eastmoney: eastmoney-bond-SH-113710-2026-09-23-2026-10-28: fetch failed"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123004",
+      "bondName": "铁汉转债",
+      "stockCode": "300197",
+      "stockName": "节能铁汉",
+      "exchange": "SZ",
+      "recordDate": "2017-12-15",
+      "subscriptionDate": "2017-12-18",
+      "listingDate": "2018-01-26",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123004",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123004.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-15",
+          "cninfoRecordDate": "2017-12-15",
+          "eastmoneyRecordDate": "2017-12-15",
+          "cninfoSubscriptionDate": "2017-12-18",
+          "eastmoneySubscriptionDate": "2017-12-18",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-15",
+              "2017-12-18"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2017-12-05",
+            "2017-12-06",
+            "2017-12-07",
+            "2017-12-08",
+            "2017-12-11",
+            "2017-12-12",
+            "2017-12-13",
+            "2017-12-14",
+            "2017-12-15",
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 3,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-12-19"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300197-2017-12-05-2017-12-25"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123005",
+      "bondName": "万信转债",
+      "stockCode": "300168",
+      "stockName": "万达信息",
+      "exchange": "SZ",
+      "recordDate": "2017-12-18",
+      "subscriptionDate": "2017-12-19",
+      "listingDate": "2018-01-30",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123005",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123005.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-18",
+          "cninfoRecordDate": "2017-12-18",
+          "eastmoneyRecordDate": "2017-12-18",
+          "cninfoSubscriptionDate": "2017-12-19",
+          "eastmoneySubscriptionDate": "2017-12-19",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-18",
+              "2017-12-19"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2017-12-08",
+            "2017-12-11",
+            "2017-12-12",
+            "2017-12-13",
+            "2017-12-14",
+            "2017-12-15",
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25",
+            "2017-12-26"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 1,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2018-08-29"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300168-2017-12-08-2017-12-26"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123006",
+      "bondName": "东财转债",
+      "stockCode": "300059",
+      "stockName": "东方财富",
+      "exchange": "SZ",
+      "recordDate": "2017-12-19",
+      "subscriptionDate": "2017-12-20",
+      "listingDate": "2018-01-29",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123006",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123006.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-19",
+          "cninfoRecordDate": "2017-12-19",
+          "eastmoneyRecordDate": "2017-12-19",
+          "cninfoSubscriptionDate": "2017-12-20",
+          "eastmoneySubscriptionDate": "2017-12-20",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-19",
+              "2017-12-20"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2017-12-11",
+            "2017-12-12",
+            "2017-12-13",
+            "2017-12-14",
+            "2017-12-15",
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25",
+            "2017-12-26",
+            "2017-12-27"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 2,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2019-05-21"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300059-2017-12-09-2017-12-27"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123007",
+      "bondName": "道氏转债",
+      "stockCode": "300409",
+      "stockName": "道氏技术",
+      "exchange": "SZ",
+      "recordDate": "2017-12-27",
+      "subscriptionDate": "2017-12-28",
+      "listingDate": "2018-01-26",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123007",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123007.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-27",
+          "cninfoRecordDate": "2017-12-27",
+          "eastmoneyRecordDate": "2017-12-27",
+          "cninfoSubscriptionDate": "2017-12-28",
+          "eastmoneySubscriptionDate": "2017-12-28",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-27",
+              "2017-12-28"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25",
+            "2017-12-26",
+            "2017-12-27",
+            "2017-12-28",
+            "2017-12-29",
+            "2018-01-02",
+            "2018-01-03",
+            "2018-01-04"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 3,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2021-08-23"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300409-2017-12-17-2018-01-04"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123008",
+      "bondName": "康泰转债",
+      "stockCode": "300601",
+      "stockName": "康泰生物",
+      "exchange": "SZ",
+      "recordDate": "2018-01-31",
+      "subscriptionDate": "2018-02-01",
+      "listingDate": "2018-03-19",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-03-19",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123008",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123008.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-01-31",
+          "cninfoRecordDate": "2018-01-31",
+          "eastmoneyRecordDate": "2018-01-31",
+          "cninfoSubscriptionDate": "2018-02-01",
+          "eastmoneySubscriptionDate": "2018-02-01",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-01-31",
+              "2018-02-01"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 14,
+          "filledDates": [
+            "2018-01-22",
+            "2018-01-23",
+            "2018-01-24",
+            "2018-01-25",
+            "2018-01-26",
+            "2018-01-29",
+            "2018-01-30",
+            "2018-01-31",
+            "2018-02-01",
+            "2018-02-02",
+            "2018-02-05",
+            "2018-02-06",
+            "2018-02-07",
+            "2018-02-08"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 17,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2019-05-15"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300601-2018-01-21-2018-02-08"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123066",
+      "bondName": "赛意转债",
+      "stockCode": "300687",
+      "stockName": "赛意信息",
+      "exchange": "SZ",
+      "recordDate": "2020-09-15",
+      "subscriptionDate": "2020-09-16",
+      "listingDate": "2020-10-15",
+      "entryYear": 2020,
+      "reason": "stock_buy_limit_up",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123066",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123066.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2020-09-15",
+          "cninfoRecordDate": "2020-09-15",
+          "eastmoneyRecordDate": "2020-09-15",
+          "cninfoSubscriptionDate": "2020-09-16",
+          "eastmoneySubscriptionDate": "2020-09-16",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2020-09-15",
+              "2020-09-16"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2020-09-07",
+            "2020-09-08",
+            "2020-09-09",
+            "2020-09-10",
+            "2020-09-11",
+            "2020-09-14",
+            "2020-09-15",
+            "2020-09-16",
+            "2020-09-17",
+            "2020-09-18",
+            "2020-09-21",
+            "2020-09-22",
+            "2020-09-23"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 26,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2021-08-24"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300687-2020-09-05-2020-09-23"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123225",
+      "bondName": "翔丰转债",
+      "stockCode": "300890",
+      "stockName": "翔丰华",
+      "exchange": "SZ",
+      "entryYear": 2023,
+      "recordDate": "2023-10-09",
+      "subscriptionDate": "2023-10-10",
+      "listingDate": "2023-10-26",
+      "reason": "missing_price_limit_reference",
+      "detail": "{\"type\":\"MISSING_PRICE_LIMIT_REFERENCE\",\"date\":\"2023-10-09\"}",
+      "stage": "MARKET_DATA_AUDIT",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123225",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123225.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2023-10-09",
+          "cninfoRecordDate": "2023-10-09",
+          "eastmoneyRecordDate": "2023-10-09",
+          "cninfoSubscriptionDate": "2023-10-10",
+          "eastmoneySubscriptionDate": "2023-10-10",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2023-10-09",
+              "2023-10-10"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 7,
+          "filledDates": [
+            "2023-10-09",
+            "2023-10-10",
+            "2023-10-11",
+            "2023-10-12",
+            "2023-10-13",
+            "2023-10-16",
+            "2023-10-17"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": [
+              {
+                "type": "MISSING_PRICE_LIMIT_REFERENCE",
+                "date": "2023-10-09"
+              }
+            ]
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 26,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300890-2023-09-29-2023-10-17",
+          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-123225-2023-10-26-2023-11-30"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123285",
+      "bondName": "润禾转02",
+      "stockCode": "300727",
+      "stockName": "润禾材料",
+      "exchange": "SZ",
+      "recordDate": "2026-09-09",
+      "subscriptionDate": "2026-09-10",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123285",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123285.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-09-09",
+        "cninfoRecordDate": "2026-09-09",
+        "eastmoneyRecordDate": "2026-09-09",
+        "cninfoSubscriptionDate": "2026-09-10",
+        "eastmoneySubscriptionDate": "2026-09-10"
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "127004",
+      "bondName": "模塑转债",
+      "stockCode": "000700",
+      "stockName": "模塑科技",
+      "exchange": "SZ",
+      "recordDate": "2017-06-01",
+      "subscriptionDate": "2017-06-02",
+      "listingDate": "2017-06-26",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2017-06-28",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127004",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127004.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-06-01",
+          "cninfoRecordDate": "2017-06-01",
+          "eastmoneyRecordDate": "2017-06-01",
+          "cninfoSubscriptionDate": "2017-06-02",
+          "eastmoneySubscriptionDate": "2017-06-02",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-06-01",
+              "2017-06-02"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2017-05-22",
+            "2017-05-23",
+            "2017-05-24",
+            "2017-05-25",
+            "2017-05-26",
+            "2017-05-31",
+            "2017-06-01",
+            "2017-06-02",
+            "2017-06-05",
+            "2017-06-06",
+            "2017-06-07",
+            "2017-06-08",
+            "2017-06-09"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 2,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-06-02"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-000700-2017-05-22-2017-06-09"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "127030",
+      "bondName": "盛虹转债",
+      "stockCode": "000301",
+      "stockName": "东方盛虹",
+      "exchange": "SZ",
+      "recordDate": "2021-03-19",
+      "subscriptionDate": "2021-03-22",
+      "listingDate": "2021-04-21",
+      "entryYear": 2021,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2021-04-26",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127030",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127030.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2021-03-19",
+          "cninfoRecordDate": "2021-03-19",
+          "eastmoneyRecordDate": "2021-03-19",
+          "cninfoSubscriptionDate": "2021-03-22",
+          "eastmoneySubscriptionDate": "2021-03-22",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2021-03-19",
+              "2021-03-22"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2021-03-09",
+            "2021-03-10",
+            "2021-03-11",
+            "2021-03-12",
+            "2021-03-15",
+            "2021-03-16",
+            "2021-03-17",
+            "2021-03-18",
+            "2021-03-19",
+            "2021-03-22",
+            "2021-03-23",
+            "2021-03-24",
+            "2021-03-25",
+            "2021-03-26",
+            "2021-03-29"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-000301-2021-03-09-2021-03-29",
+          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-127030-2021-04-21-2021-05-26"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "127052",
+      "bondName": "西子转债",
+      "stockCode": "002534",
+      "stockName": "西子洁能",
+      "exchange": "SZ",
+      "recordDate": "2021-12-23",
+      "subscriptionDate": "2021-12-24",
+      "listingDate": "2022-01-24",
+      "entryYear": 2021,
+      "reason": "stock_buy_limit_up",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127052",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127052.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2021-12-23",
+          "cninfoRecordDate": "2021-12-23",
+          "eastmoneyRecordDate": "2021-12-23",
+          "cninfoSubscriptionDate": "2021-12-24",
+          "eastmoneySubscriptionDate": "2021-12-24",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2021-12-23",
+              "2021-12-24"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2021-12-13",
+            "2021-12-14",
+            "2021-12-15",
+            "2021-12-16",
+            "2021-12-17",
+            "2021-12-20",
+            "2021-12-21",
+            "2021-12-22",
+            "2021-12-23",
+            "2021-12-24",
+            "2021-12-27",
+            "2021-12-28",
+            "2021-12-29",
+            "2021-12-30",
+            "2021-12-31"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 21,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2025-09-30"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002534-2021-12-13-2021-12-31"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "127116",
+      "bondName": "瑞鹄转02",
+      "stockCode": "002997",
+      "stockName": "瑞鹄模具",
+      "exchange": "SZ",
+      "recordDate": "2026-09-16",
+      "subscriptionDate": "2026-09-17",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127116",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127116.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-09-16",
+        "cninfoRecordDate": "2026-09-16",
+        "eastmoneyRecordDate": "2026-09-16",
+        "cninfoSubscriptionDate": "2026-09-17",
+        "eastmoneySubscriptionDate": "2026-09-17"
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128030",
+      "bondName": "天康转债",
+      "stockCode": "002100",
+      "stockName": "天康生物",
+      "exchange": "SZ",
+      "recordDate": "2017-12-21",
+      "subscriptionDate": "2017-12-22",
+      "listingDate": "2018-01-29",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128030",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128030.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-21",
+          "cninfoRecordDate": "2017-12-21",
+          "eastmoneyRecordDate": "2017-12-21",
+          "cninfoSubscriptionDate": "2017-12-22",
+          "eastmoneySubscriptionDate": "2017-12-22",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-21",
+              "2017-12-22"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2017-12-11",
+            "2017-12-12",
+            "2017-12-13",
+            "2017-12-14",
+            "2017-12-15",
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25",
+            "2017-12-26",
+            "2017-12-27",
+            "2017-12-28",
+            "2017-12-29"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 2,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-12-25"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002100-2017-12-11-2017-12-29"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128032",
+      "bondName": "双环转债",
+      "stockCode": "002472",
+      "stockName": "双环传动",
+      "exchange": "SZ",
+      "recordDate": "2017-12-22",
+      "subscriptionDate": "2017-12-25",
+      "listingDate": "2018-01-25",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128032",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128032.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-22",
+          "cninfoRecordDate": "2017-12-22",
+          "eastmoneyRecordDate": "2017-12-22",
+          "cninfoSubscriptionDate": "2017-12-25",
+          "eastmoneySubscriptionDate": "2017-12-25",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-22",
+              "2017-12-25"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 14,
+          "filledDates": [
+            "2017-12-12",
+            "2017-12-13",
+            "2017-12-14",
+            "2017-12-15",
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25",
+            "2017-12-26",
+            "2017-12-27",
+            "2017-12-28",
+            "2017-12-29"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 4,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2021-08-05"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002472-2017-12-12-2018-01-01"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128033",
+      "bondName": "迪龙转债",
+      "stockCode": "002658",
+      "stockName": "雪迪龙",
+      "exchange": "SZ",
+      "recordDate": "2017-12-26",
+      "subscriptionDate": "2017-12-27",
+      "listingDate": "2018-01-29",
+      "entryYear": 2017,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-01-31",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128033",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128033.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2017-12-26",
+          "cninfoRecordDate": "2017-12-26",
+          "eastmoneyRecordDate": "2017-12-26",
+          "cninfoSubscriptionDate": "2017-12-27",
+          "eastmoneySubscriptionDate": "2017-12-27",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2017-12-26",
+              "2017-12-27"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 12,
+          "filledDates": [
+            "2017-12-18",
+            "2017-12-19",
+            "2017-12-20",
+            "2017-12-21",
+            "2017-12-22",
+            "2017-12-25",
+            "2017-12-26",
+            "2017-12-27",
+            "2017-12-28",
+            "2017-12-29",
+            "2018-01-02",
+            "2018-01-03"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 2,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-12-28"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002658-2017-12-16-2018-01-03"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128034",
+      "bondName": "江银转债",
+      "stockCode": "002807",
+      "stockName": "江阴银行",
+      "exchange": "SZ",
+      "recordDate": "2018-01-25",
+      "subscriptionDate": "2018-01-26",
+      "listingDate": "2018-02-14",
+      "entryYear": 2018,
+      "reason": "incomplete_exit_window",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128034",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128034.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-01-25",
+          "cninfoRecordDate": "2018-01-25",
+          "eastmoneyRecordDate": "2018-01-25",
+          "cninfoSubscriptionDate": "2018-01-26",
+          "eastmoneySubscriptionDate": "2018-01-26",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-01-25",
+              "2018-01-26"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 15,
+          "filledDates": [
+            "2018-01-15",
+            "2018-01-16",
+            "2018-01-17",
+            "2018-01-18",
+            "2018-01-19",
+            "2018-01-22",
+            "2018-01-23",
+            "2018-01-24",
+            "2018-01-25",
+            "2018-01-26",
+            "2018-01-29",
+            "2018-01-30",
+            "2018-01-31",
+            "2018-02-01",
+            "2018-02-02"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-01-29"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002807-2018-01-15-2018-02-02"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128035",
+      "bondName": "大族转债",
+      "stockCode": "002008",
+      "stockName": "大族激光",
+      "exchange": "SZ",
+      "recordDate": "2018-02-05",
+      "subscriptionDate": "2018-02-06",
+      "listingDate": "2018-03-05",
+      "entryYear": 2018,
+      "reason": "missing_bond_bar",
+      "detail": "missing bond bar on 2018-03-05",
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128035",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128035.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2018-02-05",
+          "cninfoRecordDate": "2018-02-05",
+          "eastmoneyRecordDate": "2018-02-05",
+          "cninfoSubscriptionDate": "2018-02-06",
+          "eastmoneySubscriptionDate": "2018-02-06",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2018-02-05",
+              "2018-02-06"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2018-01-26",
+            "2018-01-29",
+            "2018-01-30",
+            "2018-01-31",
+            "2018-02-01",
+            "2018-02-02",
+            "2018-02-05",
+            "2018-02-06",
+            "2018-02-07",
+            "2018-02-08",
+            "2018-02-09",
+            "2018-02-12",
+            "2018-02-13"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 7,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-02-07"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002008-2018-01-26-2018-02-13"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128062",
+      "bondName": "亚药转债",
+      "stockCode": "002370",
+      "stockName": "亚太药业",
+      "exchange": "SZ",
+      "recordDate": "2019-04-01",
+      "subscriptionDate": "2019-04-02",
+      "listingDate": "2019-04-24",
+      "entryYear": 2019,
+      "reason": "stock_buy_limit_up",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128062",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128062.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2019-04-01",
+          "cninfoRecordDate": "2019-04-01",
+          "eastmoneyRecordDate": "2019-04-01",
+          "cninfoSubscriptionDate": "2019-04-02",
+          "eastmoneySubscriptionDate": "2019-04-02",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2019-04-01",
+              "2019-04-02"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 12,
+          "filledDates": [
+            "2019-03-22",
+            "2019-03-25",
+            "2019-03-26",
+            "2019-03-27",
+            "2019-03-28",
+            "2019-03-29",
+            "2019-04-01",
+            "2019-04-02",
+            "2019-04-03",
+            "2019-04-04",
+            "2019-04-08",
+            "2019-04-09"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 23,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2025-04-03"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002370-2019-03-22-2019-04-09"
+        ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "128108",
+      "bondName": "蓝帆转债",
+      "stockCode": "002382",
+      "stockName": "蓝帆医疗",
+      "exchange": "SZ",
+      "recordDate": "2020-05-27",
+      "subscriptionDate": "2020-05-28",
+      "listingDate": "2020-06-19",
+      "entryYear": 2020,
+      "reason": "stock_buy_limit_up",
+      "detail": null,
+      "stage": "BACKTEST_CORE",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=128108",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/128108.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2020-05-27",
+          "cninfoRecordDate": "2020-05-27",
+          "eastmoneyRecordDate": "2020-05-27",
+          "cninfoSubscriptionDate": "2020-05-28",
+          "eastmoneySubscriptionDate": "2020-05-28",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2020-05-27",
+              "2020-05-28"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 14,
+          "filledDates": [
+            "2020-05-18",
+            "2020-05-19",
+            "2020-05-20",
+            "2020-05-21",
+            "2020-05-22",
+            "2020-05-25",
+            "2020-05-26",
+            "2020-05-27",
+            "2020-05-28",
+            "2020-05-29",
+            "2020-06-01",
+            "2020-06-02",
+            "2020-06-03",
+            "2020-06-04"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 24,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-05-28"
+        },
+        "fetchErrors": [
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002382-2020-05-17-2020-06-04"
+        ]
+      }
+    }
+  ]
+}
