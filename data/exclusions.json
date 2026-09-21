@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-18T10:33:32.216Z",
+    "generatedAt": "2026-09-20T14:05:35.738Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-18",
+    "coverageEnd": "2026-09-20",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -64,9 +64,9 @@
     }
   },
   "funnel": {
-    "sourceUnionAllYears": 1053,
+    "sourceUnionAllYears": 1055,
     "cninfoRowsAllYears": 977,
-    "eastmoneyRowsAllYears": 1053,
+    "eastmoneyRowsAllYears": 1055,
     "migratedAliasesRemoved": 5,
     "inScopeCandidates": 969,
     "staticFieldsReady": 967,
