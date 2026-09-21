@@ -1,70 +1,70 @@
 {
   "schemaVersion": 1,
-  "version": "ab57cfd38c7cf05587f5ebae",
-  "generatedAt": "2026-09-20T14:07:12.869Z",
-  "dataThrough": "2026-09-20",
+  "version": "c01377e628cf04b2b3a63e33",
+  "generatedAt": "2026-09-21T10:44:24.975Z",
+  "dataThrough": "2026-09-21",
   "files": [
     {
       "path": "data/backtest.json",
       "url": "backtest.json",
       "bytes": 4607201,
-      "sha256": "0d618030128c9b2fd256a57fc3fe4af7883eb39bab581153de3a217431879788",
+      "sha256": "ce56fdb9566ca0bfb353c0a4d4086b07ed3ae7877ea11828f365bf9e42ed03c4",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/exclusions.json",
       "url": "exclusions.json",
       "bytes": 96837,
-      "sha256": "f82e78d1b6d6dc26847b4170b6ce385d314ae1b6125316e8414aa98d587f3b83",
+      "sha256": "5f0889028d7675c069fec714656a52edc5f1a90e0288145b3fc2b78b32b818f1",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/opportunities.json",
       "url": "opportunities.json",
-      "bytes": 19065,
-      "sha256": "76983e0ebf83b447e575a2c9c9a03a11139fc42f7d1a43da870db82ee0ebe45e",
+      "bytes": 19111,
+      "sha256": "6e96545377e060a224ddb0e1c832ee16434b11f04978485a8c5fe52f84dc31dd",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/registered-opportunities.json",
       "url": "registered-opportunities.json",
       "bytes": 71741,
-      "sha256": "26e7c9eead1c844a9869415644ad06b519b108a7a3594dcdd25ddbb210203201",
+      "sha256": "02306597e1f5fa44e9fb806599b8501873aef46a01a2dd547d39cecdcc958012",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/sz-factor-analysis.json",
       "url": "sz-factor-analysis.json",
-      "bytes": 513059,
-      "sha256": "378737bf4e1d5e04578bf8d53db55aa990c15db4658ccc1d93503e68d6cb85e4",
+      "bytes": 513188,
+      "sha256": "5b94391e0c82291bb647563b7524a97b55630b1d5c468d20a73b1bd5339a96c9",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/ambush.json",
       "url": "ambush.json",
-      "bytes": 17639286,
-      "sha256": "de3d39a8a6fcd14ed7ca406617c5a8e3b35c130aa91a0594e65a5861f8729aae",
+      "bytes": 17652544,
+      "sha256": "db5f312527f1b8ce01ea4655528b6c27317d4532364899f755fc7ed8c100a553",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/ambush-final-strategy.json",
       "url": "ambush-final-strategy.json",
       "bytes": 599054,
-      "sha256": "366a329aa565537ca7ed918c0604bf0a98100fc3da66a1453eeaf76f5bd54b8c",
+      "sha256": "df58f21fab3ccf22dae99beaa265a0e533e1078f07c194cb90c400ab5ec2865b",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/rotation.json",
       "url": "rotation.json",
-      "bytes": 1508277,
-      "sha256": "0e0ed5e1cb836e7d9ccca3c4bb18e37cd34cf3b493958b7d6f01742e49cbb6be",
+      "bytes": 1509117,
+      "sha256": "daa5014d6727e460b04384b4136a58e16588293343ef97ce74b28635b730d84b",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/backtest.csv",
       "url": "backtest.csv",
       "bytes": 1420453,
-      "sha256": "a52df192227a782e0695c205918c9f9a1712ad081c5c67610d472036d733556f",
+      "sha256": "79c8c4a6b26bdbd02402cf2ee698b30a62f2d54fd821b25c08ae76b965e65c0d",
       "contentType": "text/csv; charset=utf-8"
     }
   ]
