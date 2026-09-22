@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-21T10:39:22.395Z",
-    "coverageEnd": "2026-09-21",
+    "generatedAt": "2026-09-22T10:39:14.121Z",
+    "coverageEnd": "2026-09-22",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
     "note": "机会层不进入历史收益汇总。登记日前/当日记录可用于评估抢权；登记日已过的记录仅供已登记或已获配账户跟踪。"
@@ -12,7 +12,7 @@
     "actionable": 2,
     "tracking": 3,
     "byPhase": {
-      "upcoming_record_date": 2,
+      "record_date_today": 2,
       "listing_scheduled": 1,
       "awaiting_listing_date": 2
     }
@@ -26,13 +26,13 @@
       "exchange": "SZ",
       "stockBoard": "CHINEXT",
       "entryYear": 2026,
-      "phase": "upcoming_record_date",
+      "phase": "record_date_today",
       "actionability": "can_evaluate",
       "recordDate": "2026-09-22",
       "subscriptionDate": "2026-09-23",
       "listingDate": null,
       "decisionDeadline": "2026-09-22",
-      "daysToRecordDate": 1,
+      "daysToRecordDate": 0,
       "allocationPerShareRaw": "4.7306",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -42,12 +42,12 @@
       "issueScaleYi": 8.488,
       "initialTransferPriceRaw": "74.5",
       "rating": "AA-",
-      "referencePriceDate": "2026-09-21",
-      "referenceStockPriceFen": 7694,
-      "estimatedStockCashFen": 2308200,
+      "referencePriceDate": "2026-09-22",
+      "referenceStockPriceFen": 7500,
+      "estimatedStockCashFen": 2250000,
       "priceIsFinal": false,
-      "factorAsOfDate": "2026-09-21",
-      "backtestDisposition": "outside_current_coverage",
+      "factorAsOfDate": "2026-09-22",
+      "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
       "latestBondCloseMilliYuan": null,
@@ -89,7 +89,6 @@
           "adoptedSource": "tencent-fqkline",
           "barCount": 17,
           "filledDates": [
-            "2026-08-28",
             "2026-08-31",
             "2026-09-01",
             "2026-09-02",
@@ -105,18 +104,19 @@
             "2026-09-16",
             "2026-09-17",
             "2026-09-18",
-            "2026-09-21"
+            "2026-09-21",
+            "2026-09-22"
           ],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-21"
+          "referenceCutoff": "2026-09-22"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-301571-2026-08-28-2026-09-21: fetch failed"
+          "stock/eastmoney: eastmoney-stock-SZ-301571-2026-08-29-2026-09-22: fetch failed"
         ]
       }
     },
@@ -128,13 +128,13 @@
       "exchange": "SZ",
       "stockBoard": "MAIN",
       "entryYear": 2026,
-      "phase": "upcoming_record_date",
+      "phase": "record_date_today",
       "actionability": "can_evaluate",
       "recordDate": "2026-09-22",
       "subscriptionDate": "2026-09-23",
       "listingDate": null,
       "decisionDeadline": "2026-09-22",
-      "daysToRecordDate": 1,
+      "daysToRecordDate": 0,
       "allocationPerShareRaw": "3.2104",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -144,12 +144,12 @@
       "issueScaleYi": 10,
       "initialTransferPriceRaw": "83.96",
       "rating": "AA",
-      "referencePriceDate": "2026-09-21",
-      "referenceStockPriceFen": 8450,
-      "estimatedStockCashFen": 3380000,
+      "referencePriceDate": "2026-09-22",
+      "referenceStockPriceFen": 8812,
+      "estimatedStockCashFen": 3524800,
       "priceIsFinal": false,
-      "factorAsOfDate": "2026-09-21",
-      "backtestDisposition": "outside_current_coverage",
+      "factorAsOfDate": "2026-09-22",
+      "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
       "latestBondCloseMilliYuan": null,
@@ -191,7 +191,6 @@
           "adoptedSource": "tencent-fqkline",
           "barCount": 17,
           "filledDates": [
-            "2026-08-28",
             "2026-08-31",
             "2026-09-01",
             "2026-09-02",
@@ -207,18 +206,19 @@
             "2026-09-16",
             "2026-09-17",
             "2026-09-18",
-            "2026-09-21"
+            "2026-09-21",
+            "2026-09-22"
           ],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-21"
+          "referenceCutoff": "2026-09-22"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-002913-2026-08-28-2026-09-21: fetch failed"
+          "stock/eastmoney: eastmoney-stock-SZ-002913-2026-08-29-2026-09-22: fetch failed"
         ]
       }
     },
@@ -236,7 +236,7 @@
       "subscriptionDate": "2026-09-03",
       "listingDate": "2026-09-23",
       "decisionDeadline": "2026-09-02",
-      "daysToRecordDate": -19,
+      "daysToRecordDate": -20,
       "allocationPerShareRaw": "3.307",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -338,9 +338,7 @@
           }
         },
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SH-603339-2026-08-09-2026-09-02: fetch failed",
-          "stock/eastmoney: eastmoney-stock-SH-603339-2026-08-23-2026-09-10: fetch failed",
-          "bond/eastmoney: eastmoney-bond-SH-113710-2026-09-23-2026-10-28: fetch failed"
+          "stock/eastmoney: eastmoney-stock-SH-603339-2026-08-09-2026-09-02: fetch failed"
         ]
       }
     },
@@ -358,7 +356,7 @@
       "subscriptionDate": "2026-09-17",
       "listingDate": null,
       "decisionDeadline": "2026-09-16",
-      "daysToRecordDate": -5,
+      "daysToRecordDate": -6,
       "allocationPerShareRaw": "3.2772",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -461,7 +459,7 @@
       "subscriptionDate": "2026-09-10",
       "listingDate": null,
       "decisionDeadline": "2026-09-09",
-      "daysToRecordDate": -12,
+      "daysToRecordDate": -13,
       "allocationPerShareRaw": "2.0539",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,

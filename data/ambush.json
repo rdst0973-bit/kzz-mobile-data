@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-09-21T10:44:24.975Z",
+    "generatedAt": "2026-09-22T11:02:56.836Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-09-21",
+    "coverageEnd": "2026-09-22",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -15,238 +15,250 @@
     "dailyApproximation": true,
     "staleCacheFallbacks": [
       {
-        "key": "index-tencent-csi300-2026-20260921",
+        "key": "index-tencent-csi300-2026-20260922",
         "fallbackKey": "index-tencent-csi300-2026-20260920",
         "fetchedAt": "2026-09-20T14:06:59.151Z",
-        "error": "index-tencent-csi300-2026-20260921: HTTP 501; index-eastmoney-csi300-2026-20260921: fetch failed"
+        "error": "index-tencent-csi300-2026-20260922: HTTP 501; index-eastmoney-csi300-2026-20260922: fetch failed"
       },
       {
-        "key": "live-stock-605016-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-605016-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.187Z",
-        "error": "stock-tencent-SH-605016-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-605016-2026-07-28-2026-09-21-qfq: fetch failed"
+        "key": "index-tencent-csi500-2026-20260922",
+        "fallbackKey": "index-tencent-csi500-2026-20260916",
+        "fetchedAt": "2026-09-16T10:36:25.069Z",
+        "error": "index-tencent-csi500-2026-20260922: HTTP 501; index-eastmoney-csi500-2026-20260922: fetch failed"
       },
       {
-        "key": "live-stock-301018-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301018-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.167Z",
-        "error": "stock-tencent-SZ-301018-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-301018-2026-07-28-2026-09-21-raw: fetch failed"
+        "key": "index-tencent-csi1000-2026-20260922",
+        "fallbackKey": "index-tencent-csi1000-2026-20260916",
+        "fetchedAt": "2026-09-16T10:36:25.076Z",
+        "error": "index-tencent-csi1000-2026-20260922: HTTP 501; index-eastmoney-csi1000-2026-20260922: fetch failed"
       },
       {
-        "key": "live-stock-301631-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301631-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.205Z",
-        "error": "stock-tencent-SZ-301631-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-301631-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-300181-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-300181-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.214Z",
-        "error": "stock-tencent-SZ-300181-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-300181-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-300634-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-300634-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.267Z",
-        "error": "stock-tencent-SZ-300634-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-300634-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-601717-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-601717-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.300Z",
-        "error": "stock-tencent-SH-601717-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-601717-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-688600-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-688600-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.268Z",
-        "error": "stock-tencent-SH-688600-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-688600-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-301279-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301279-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.265Z",
-        "error": "stock-tencent-SZ-301279-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-301279-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-603061-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-603061-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.383Z",
-        "error": "stock-tencent-SH-603061-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-603061-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-301379-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301379-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.378Z",
-        "error": "stock-tencent-SZ-301379-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-301379-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-600577-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-600577-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.385Z",
-        "error": "stock-tencent-SH-600577-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-600577-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-600089-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-600089-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.367Z",
-        "error": "stock-tencent-SH-600089-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-600089-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-300739-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-300739-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.461Z",
-        "error": "stock-tencent-SZ-300739-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-300739-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-688372-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-688372-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.436Z",
-        "error": "stock-tencent-SH-688372-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-688372-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-603499-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-603499-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.435Z",
-        "error": "stock-tencent-SH-603499-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-603499-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-301305-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301305-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.463Z",
-        "error": "stock-tencent-SZ-301305-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-301305-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-688720-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-688720-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.501Z",
-        "error": "stock-tencent-SH-688720-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-688720-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-603565-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-603565-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.516Z",
-        "error": "stock-tencent-SH-603565-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-603565-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-603043-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-603043-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.518Z",
-        "error": "stock-tencent-SH-603043-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-603043-2026-07-28-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-605020-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-605020-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.499Z",
-        "error": "stock-tencent-SH-605020-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-605020-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-001282-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-001282-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.580Z",
-        "error": "stock-tencent-SZ-001282-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-001282-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-001221-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-001221-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.563Z",
-        "error": "stock-tencent-SZ-001221-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-001221-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-300893-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-300893-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.552Z",
-        "error": "stock-tencent-SZ-300893-2026-07-28-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-300893-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-301092-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301092-2026-07-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.583Z",
-        "error": "stock-tencent-SZ-301092-2026-07-28-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-301092-2026-07-28-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-301149-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301149-2026-04-30-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.613Z",
-        "error": "stock-tencent-SZ-301149-2026-04-30-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-301149-2026-04-30-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-301571-2026-09-21",
+        "key": "live-stock-301571-2026-09-22",
         "fallbackKey": "stock-tencent-SZ-301571-2026-04-30-2026-09-20-raw.json",
         "fetchedAt": "2026-09-20T14:07:12.641Z",
-        "error": "stock-tencent-SZ-301571-2026-04-30-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-301571-2026-04-30-2026-09-21-raw: fetch failed"
+        "error": "stock-tencent-SZ-301571-2026-07-14-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-301571-2026-07-14-2026-09-22-qfq: fetch failed"
       },
       {
-        "key": "live-stock-301175-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301175-2026-04-27-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.647Z",
-        "error": "stock-tencent-SZ-301175-2026-04-27-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-301175-2026-04-27-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-688510-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-688510-2026-05-03-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.625Z",
-        "error": "stock-tencent-SH-688510-2026-05-03-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-688510-2026-05-03-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-001380-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-001380-2026-04-26-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.707Z",
-        "error": "stock-tencent-SZ-001380-2026-04-26-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-001380-2026-04-26-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-600368-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-600368-2026-04-12-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.714Z",
-        "error": "stock-tencent-SH-600368-2026-04-12-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-600368-2026-04-12-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-688150-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-688150-2026-04-26-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.687Z",
-        "error": "stock-tencent-SH-688150-2026-04-26-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-688150-2026-04-26-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-603125-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-603125-2026-04-26-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.681Z",
-        "error": "stock-tencent-SH-603125-2026-04-26-2026-09-21-raw: HTTP 501；stock-eastmoney-SH-603125-2026-04-26-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-301132-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-301132-2026-03-19-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.783Z",
-        "error": "stock-tencent-SZ-301132-2026-03-19-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-301132-2026-03-19-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-000887-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-000887-2026-03-19-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.765Z",
-        "error": "stock-tencent-SZ-000887-2026-03-19-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-000887-2026-03-19-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-603163-2026-09-21",
-        "fallbackKey": "stock-tencent-SH-603163-2026-04-03-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.777Z",
-        "error": "stock-tencent-SH-603163-2026-04-03-2026-09-21-qfq: HTTP 501；stock-eastmoney-SH-603163-2026-04-03-2026-09-21-raw: fetch failed"
-      },
-      {
-        "key": "live-stock-300909-2026-09-21",
-        "fallbackKey": "stock-tencent-SZ-300909-2026-03-30-2026-09-20-raw.json",
-        "fetchedAt": "2026-09-20T14:07:12.770Z",
-        "error": "stock-tencent-SZ-300909-2026-03-30-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-300909-2026-03-30-2026-09-21-qfq: fetch failed"
-      },
-      {
-        "key": "live-stock-002913-2026-09-21",
+        "key": "live-stock-002913-2026-09-22",
         "fallbackKey": "stock-tencent-SZ-002913-2025-11-22-2026-09-20-raw.json",
         "fetchedAt": "2026-09-20T14:07:12.835Z",
-        "error": "stock-tencent-SZ-002913-2025-11-22-2026-09-21-raw: HTTP 501；stock-eastmoney-SZ-002913-2025-11-22-2026-09-21-qfq: fetch failed"
+        "error": "stock-tencent-SZ-002913-2025-07-22-2026-09-22-raw: HTTP 501；stock-eastmoney-SZ-002913-2025-07-22-2026-09-22-qfq: fetch failed"
       },
       {
-        "key": "live-stock-002550-2026-09-21",
+        "key": "live-stock-300181-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-300181-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.214Z",
+        "error": "stock-tencent-SZ-300181-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-300181-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-605016-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-605016-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.187Z",
+        "error": "stock-tencent-SH-605016-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-605016-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301018-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301018-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.167Z",
+        "error": "stock-tencent-SZ-301018-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-301018-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301631-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301631-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.205Z",
+        "error": "stock-tencent-SZ-301631-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-301631-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301279-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301279-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.265Z",
+        "error": "stock-tencent-SZ-301279-2026-07-29-2026-09-22-raw: HTTP 501；stock-eastmoney-SZ-301279-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-601717-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-601717-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.300Z",
+        "error": "stock-tencent-SH-601717-2026-07-29-2026-09-22-raw: HTTP 501；stock-eastmoney-SH-601717-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300634-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-300634-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.267Z",
+        "error": "stock-tencent-SZ-300634-2026-07-29-2026-09-22-raw: HTTP 501；stock-eastmoney-SZ-300634-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688600-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-688600-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.268Z",
+        "error": "stock-tencent-SH-688600-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-688600-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301379-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301379-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.378Z",
+        "error": "stock-tencent-SZ-301379-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-301379-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600089-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-600089-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.367Z",
+        "error": "stock-tencent-SH-600089-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-600089-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-600577-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-600577-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.385Z",
+        "error": "stock-tencent-SH-600577-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-600577-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603061-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-603061-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.383Z",
+        "error": "stock-tencent-SH-603061-2026-07-29-2026-09-22-raw: HTTP 501；stock-eastmoney-SH-603061-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603499-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-603499-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.435Z",
+        "error": "stock-tencent-SH-603499-2026-07-29-2026-09-22-qfq: fetch failed；stock-eastmoney-SH-603499-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688372-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-688372-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.436Z",
+        "error": "stock-tencent-SH-688372-2026-07-29-2026-09-22-qfq: fetch failed；stock-eastmoney-SH-688372-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301305-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301305-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.463Z",
+        "error": "stock-tencent-SZ-301305-2026-07-29-2026-09-22-qfq: fetch failed；stock-eastmoney-SZ-301305-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-300739-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-300739-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.461Z",
+        "error": "stock-tencent-SZ-300739-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-300739-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688720-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-688720-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.501Z",
+        "error": "stock-tencent-SH-688720-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-688720-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603043-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-603043-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.518Z",
+        "error": "stock-tencent-SH-603043-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-603043-2026-07-29-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603565-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-603565-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.516Z",
+        "error": "stock-tencent-SH-603565-2026-07-29-2026-09-22-raw: HTTP 501；stock-eastmoney-SH-603565-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300893-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-300893-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.552Z",
+        "error": "stock-tencent-SZ-300893-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-300893-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-605020-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-605020-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.499Z",
+        "error": "stock-tencent-SH-605020-2026-07-29-2026-09-22-raw: fetch failed；stock-eastmoney-SH-605020-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001221-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-001221-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.563Z",
+        "error": "stock-tencent-SZ-001221-2026-07-29-2026-09-22-qfq: fetch failed；stock-eastmoney-SZ-001221-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301092-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301092-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.583Z",
+        "error": "stock-tencent-SZ-301092-2026-07-29-2026-09-22-qfq: fetch failed；stock-eastmoney-SZ-301092-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001282-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-001282-2026-07-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.580Z",
+        "error": "stock-tencent-SZ-001282-2026-07-29-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-001282-2026-07-29-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688510-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-688510-2026-05-03-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.625Z",
+        "error": "stock-tencent-SH-688510-2026-05-03-2026-09-22-raw: HTTP 501；stock-eastmoney-SH-688510-2026-05-03-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301149-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301149-2026-04-30-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.613Z",
+        "error": "stock-tencent-SZ-301149-2026-04-30-2026-09-22-raw: HTTP 501；stock-eastmoney-SZ-301149-2026-04-30-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301175-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301175-2026-04-27-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.647Z",
+        "error": "stock-tencent-SZ-301175-2026-04-27-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-301175-2026-04-27-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603125-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-603125-2026-04-26-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.681Z",
+        "error": "stock-tencent-SH-603125-2026-04-26-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-603125-2026-04-26-2026-09-22-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688150-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-688150-2026-04-26-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.687Z",
+        "error": "stock-tencent-SH-688150-2026-04-26-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-688150-2026-04-26-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001380-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-001380-2026-04-26-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.707Z",
+        "error": "stock-tencent-SZ-001380-2026-04-26-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-001380-2026-04-26-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600368-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-600368-2026-04-12-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.714Z",
+        "error": "stock-tencent-SH-600368-2026-04-12-2026-09-22-raw: HTTP 501；stock-eastmoney-SH-600368-2026-04-12-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300909-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-300909-2026-03-30-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.770Z",
+        "error": "stock-tencent-SZ-300909-2026-03-30-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-300909-2026-03-30-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-000887-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-000887-2026-03-19-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.765Z",
+        "error": "stock-tencent-SZ-000887-2026-03-19-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-000887-2026-03-19-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603163-2026-09-22",
+        "fallbackKey": "stock-tencent-SH-603163-2026-04-03-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.777Z",
+        "error": "stock-tencent-SH-603163-2026-04-03-2026-09-22-qfq: HTTP 501；stock-eastmoney-SH-603163-2026-04-03-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301132-2026-09-22",
+        "fallbackKey": "stock-tencent-SZ-301132-2026-03-19-2026-09-20-raw.json",
+        "fetchedAt": "2026-09-20T14:07:12.783Z",
+        "error": "stock-tencent-SZ-301132-2026-03-19-2026-09-22-qfq: HTTP 501；stock-eastmoney-SZ-301132-2026-03-19-2026-09-22-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-002550-2026-09-22",
         "fallbackKey": "stock-tencent-SZ-002550-2026-03-08-2026-09-20-raw.json",
         "fetchedAt": "2026-09-20T14:07:12.813Z",
-        "error": "stock-tencent-SZ-002550-2026-03-08-2026-09-21-qfq: HTTP 501；stock-eastmoney-SZ-002550-2026-03-08-2026-09-21-raw: fetch failed"
+        "error": "stock-tencent-SZ-002550-2026-03-08-2026-09-22-raw: HTTP 501；stock-eastmoney-SZ-002550-2026-03-08-2026-09-22-qfq: fetch failed"
       }
     ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
@@ -312,11 +324,11 @@
     ]
   },
   "funnel": {
-    "candidateBonds": 1032,
+    "candidateBonds": 1034,
     "strategyPairs": 10,
-    "candidateStrategySlots": 10320,
-    "validTrades": 7904,
-    "excludedTrades": 2416
+    "candidateStrategySlots": 10340,
+    "validTrades": 7910,
+    "excludedTrades": 2430
   },
   "eventOrder": [
     {
@@ -451,26 +463,34 @@
     {
       "strategyId": "accepted_to_registered",
       "stabilityWinRate": 0.43712472,
-      "fullWinRate": 0.49711816,
-      "meanReturn": 0.07236162,
-      "medianReturn": -0.00177591,
+      "fullWinRate": 0.49784173,
+      "meanReturn": 0.07288509,
+      "medianReturn": -0.00174303,
       "positiveYearRate": 0.81818182
     },
     {
       "strategyId": "accepted_to_review_passed",
       "stabilityWinRate": 0.43437667,
-      "fullWinRate": 0.49915683,
-      "meanReturn": 0.0541119,
-      "medianReturn": 0,
+      "fullWinRate": 0.5,
+      "meanReturn": 0.05452638,
+      "medianReturn": 0.00142572,
       "positiveYearRate": 0.90909091
     },
     {
       "strategyId": "proposal_to_registered",
       "stabilityWinRate": 0.43035665,
-      "fullWinRate": 0.48741419,
-      "meanReturn": 0.09454681,
-      "medianReturn": -0.0100947,
+      "fullWinRate": 0.488,
+      "meanReturn": 0.09493724,
+      "medianReturn": -0.0095511,
       "positiveYearRate": 0.76923077
+    },
+    {
+      "strategyId": "review_passed_to_registered",
+      "stabilityWinRate": 0.41628971,
+      "fullWinRate": 0.49488055,
+      "meanReturn": 0.02841603,
+      "medianReturn": -0.0008726,
+      "positiveYearRate": 0.65
     },
     {
       "strategyId": "proposal_to_accepted",
@@ -491,23 +511,15 @@
     {
       "strategyId": "proposal_to_review_passed",
       "stabilityWinRate": 0.40817833,
-      "fullWinRate": 0.47493404,
-      "meanReturn": 0.07161989,
-      "medianReturn": -0.01448376,
+      "fullWinRate": 0.47562582,
+      "meanReturn": 0.0719212,
+      "medianReturn": -0.01424632,
       "positiveYearRate": 0.76923077
-    },
-    {
-      "strategyId": "review_passed_to_registered",
-      "stabilityWinRate": 0.40649332,
-      "fullWinRate": 0.49372862,
-      "meanReturn": 0.02819859,
-      "medianReturn": -0.00125897,
-      "positiveYearRate": 0.65
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-09-21",
-    "sourceAsOfDate": "2026-09-21",
+    "asOfDate": "2026-09-22",
+    "sourceAsOfDate": "2026-09-22",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
@@ -519,10 +531,10 @@
     "counts": {
       "sourceProjects": 527,
       "beforeRegistration": 24,
-      "beforeIssueAnnouncement": 14,
+      "beforeIssueAnnouncement": 12,
       "buyAlerts": 0,
-      "holding": 7,
-      "sellAlerts": 0
+      "holding": 8,
+      "sellAlerts": 2
     },
     "beforeRegistration": [
       {
@@ -3514,123 +3526,6 @@
         }
       },
       {
-        "stockCode": "301571",
-        "stockName": "国科天成",
-        "exchange": "SZ",
-        "board": "创业板",
-        "auditId": "1004038",
-        "statusCode": "70",
-        "stageLabel": "注册生效",
-        "stageDate": "2026-09-07",
-        "acceptedDate": "2025-07-24",
-        "proposedScaleYi": 8.488,
-        "registered": true,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "深交所再融资审核项目动态",
-        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004038",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-18",
-          "latestPriceFen": 7472,
-          "return5": 0.04474273,
-          "return20": 0.14041514,
-          "aboveMa5": true,
-          "points": [
-            {
-              "date": "2026-09-07",
-              "closeFen": 6959
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 7231
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 7388
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 7339
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 7152
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 7097
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 6945
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 6971
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 7291
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 7472
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "registration_to_latest",
-          "startDate": "2026-09-07",
-          "startPriceFen": 6959,
-          "periodReturn": 0.07371749,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-09-08",
-            "entryPriceFen": 6984,
-            "factorDate": "2026-09-07",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": 0.02338235294117652,
-            "volatility20": 0.5506375609770036,
-            "marketReturn10": 0.00260567,
-            "status": "participate",
-            "selected": true,
-            "budgetFen": 500000,
-            "targetBudgetFen": 500000,
-            "targetShares": 71,
-            "initialShares": 100,
-            "excessShares": 29,
-            "initialCashFen": 698400,
-            "temporaryCashRatio": 1.3968,
-            "reasons": []
-          }
-        },
-        "recentTrendError": null,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-09-08",
-          "entryPriceFen": 6984,
-          "factorDate": "2026-09-07",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": 0.02338235294117652,
-          "volatility20": 0.5506375609770036,
-          "marketReturn10": 0.00260567,
-          "status": "participate",
-          "selected": true,
-          "budgetFen": 500000,
-          "targetBudgetFen": 500000,
-          "targetShares": 71,
-          "initialShares": 100,
-          "excessShares": 29,
-          "initialCashFen": 698400,
-          "temporaryCashRatio": 1.3968,
-          "reasons": []
-        }
-      },
-      {
         "stockCode": "301175",
         "stockName": "中科环保",
         "exchange": "SZ",
@@ -4898,19 +4793,17 @@
             "priceBasis": "actual_open",
             "momentum20": -0.014209591474245276,
             "volatility20": 0.8159564473008272,
-            "marketReturn10": null,
-            "status": "missing",
-            "selected": false,
-            "budgetFen": 0,
-            "targetBudgetFen": 250000,
-            "targetShares": 151,
-            "initialShares": 200,
-            "excessShares": 49,
-            "initialCashFen": 329000,
+            "marketReturn10": 0.00150148,
+            "status": "participate",
+            "selected": true,
+            "budgetFen": 500000,
+            "targetBudgetFen": 500000,
+            "targetShares": 303,
+            "initialShares": 400,
+            "excessShares": 97,
+            "initialCashFen": 658000,
             "temporaryCashRatio": 1.316,
-            "reasons": [
-              "关键因子缺失，待核验"
-            ]
+            "reasons": []
           }
         },
         "recentTrendError": null,
@@ -4924,19 +4817,17 @@
           "priceBasis": "actual_open",
           "momentum20": -0.014209591474245276,
           "volatility20": 0.8159564473008272,
-          "marketReturn10": null,
-          "status": "missing",
-          "selected": false,
-          "budgetFen": 0,
-          "targetBudgetFen": 250000,
-          "targetShares": 151,
-          "initialShares": 200,
-          "excessShares": 49,
-          "initialCashFen": 329000,
+          "marketReturn10": 0.00150148,
+          "status": "participate",
+          "selected": true,
+          "budgetFen": 500000,
+          "targetBudgetFen": 500000,
+          "targetShares": 303,
+          "initialShares": 400,
+          "excessShares": 97,
+          "initialCashFen": 658000,
           "temporaryCashRatio": 1.316,
-          "reasons": [
-            "关键因子缺失，待核验"
-          ]
+          "reasons": []
         }
       },
       {
@@ -5139,19 +5030,17 @@
             "priceBasis": "actual_open",
             "momentum20": -0.4225825588293455,
             "volatility20": 0.9601252974396667,
-            "marketReturn10": null,
-            "status": "missing",
-            "selected": false,
-            "budgetFen": 0,
-            "targetBudgetFen": 250000,
-            "targetShares": 86,
-            "initialShares": 100,
-            "excessShares": 14,
-            "initialCashFen": 287900,
+            "marketReturn10": 0.00150148,
+            "status": "participate",
+            "selected": true,
+            "budgetFen": 500000,
+            "targetBudgetFen": 500000,
+            "targetShares": 173,
+            "initialShares": 200,
+            "excessShares": 27,
+            "initialCashFen": 575800,
             "temporaryCashRatio": 1.1516,
-            "reasons": [
-              "关键因子缺失，待核验"
-            ]
+            "reasons": []
           }
         },
         "recentTrendError": null,
@@ -5165,19 +5054,17 @@
           "priceBasis": "actual_open",
           "momentum20": -0.4225825588293455,
           "volatility20": 0.9601252974396667,
-          "marketReturn10": null,
-          "status": "missing",
-          "selected": false,
-          "budgetFen": 0,
-          "targetBudgetFen": 250000,
-          "targetShares": 86,
-          "initialShares": 100,
-          "excessShares": 14,
-          "initialCashFen": 287900,
+          "marketReturn10": 0.00150148,
+          "status": "participate",
+          "selected": true,
+          "budgetFen": 500000,
+          "targetBudgetFen": 500000,
+          "targetShares": 173,
+          "initialShares": 200,
+          "excessShares": 27,
+          "initialCashFen": 575800,
           "temporaryCashRatio": 1.1516,
-          "reasons": [
-            "关键因子缺失，待核验"
-          ]
+          "reasons": []
         }
       },
       {
@@ -5408,8 +5295,8 @@
             "priceBasis": "actual_open",
             "momentum20": 0.22664359861591699,
             "volatility20": 0.6768699683420344,
-            "marketReturn10": null,
-            "status": "missing",
+            "marketReturn10": -0.02366228,
+            "status": "skip",
             "selected": false,
             "budgetFen": 0,
             "targetBudgetFen": 250000,
@@ -5419,7 +5306,8 @@
             "initialCashFen": 282800,
             "temporaryCashRatio": 1.1312,
             "reasons": [
-              "关键因子缺失，待核验"
+              "买入前20日涨幅超过20%",
+              "弱市且20日年化波动率不低于50%"
             ]
           }
         },
@@ -5434,8 +5322,8 @@
           "priceBasis": "actual_open",
           "momentum20": 0.22664359861591699,
           "volatility20": 0.6768699683420344,
-          "marketReturn10": null,
-          "status": "missing",
+          "marketReturn10": -0.02366228,
+          "status": "skip",
           "selected": false,
           "budgetFen": 0,
           "targetBudgetFen": 250000,
@@ -5445,560 +5333,8 @@
           "initialCashFen": 282800,
           "temporaryCashRatio": 1.1312,
           "reasons": [
-            "关键因子缺失，待核验"
-          ]
-        }
-      },
-      {
-        "stockCode": "002913",
-        "stockName": "奥士康",
-        "exchange": "SZ",
-        "board": "深市主板",
-        "auditId": "1004116",
-        "statusCode": "70",
-        "stageLabel": "注册生效",
-        "stageDate": "2026-04-01",
-        "acceptedDate": "2025-10-10",
-        "proposedScaleYi": 10,
-        "registered": true,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "深交所再融资审核项目动态",
-        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004116",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-18",
-          "latestPriceFen": 8406,
-          "return5": 0.15960822,
-          "return20": 0.39241345,
-          "aboveMa5": true,
-          "points": [
-            {
-              "date": "2026-04-01",
-              "closeFen": 4779
-            },
-            {
-              "date": "2026-04-02",
-              "closeFen": 4662
-            },
-            {
-              "date": "2026-04-03",
-              "closeFen": 4496
-            },
-            {
-              "date": "2026-04-07",
-              "closeFen": 4546
-            },
-            {
-              "date": "2026-04-08",
-              "closeFen": 4953
-            },
-            {
-              "date": "2026-04-09",
-              "closeFen": 4961
-            },
-            {
-              "date": "2026-04-10",
-              "closeFen": 5028
-            },
-            {
-              "date": "2026-04-13",
-              "closeFen": 5162
-            },
-            {
-              "date": "2026-04-14",
-              "closeFen": 5215
-            },
-            {
-              "date": "2026-04-15",
-              "closeFen": 5062
-            },
-            {
-              "date": "2026-04-16",
-              "closeFen": 5062
-            },
-            {
-              "date": "2026-04-17",
-              "closeFen": 5145
-            },
-            {
-              "date": "2026-04-20",
-              "closeFen": 5096
-            },
-            {
-              "date": "2026-04-21",
-              "closeFen": 5080
-            },
-            {
-              "date": "2026-04-22",
-              "closeFen": 5084
-            },
-            {
-              "date": "2026-04-23",
-              "closeFen": 5056
-            },
-            {
-              "date": "2026-04-24",
-              "closeFen": 4882
-            },
-            {
-              "date": "2026-04-27",
-              "closeFen": 4913
-            },
-            {
-              "date": "2026-04-28",
-              "closeFen": 5081
-            },
-            {
-              "date": "2026-04-29",
-              "closeFen": 5142
-            },
-            {
-              "date": "2026-04-30",
-              "closeFen": 5195
-            },
-            {
-              "date": "2026-05-06",
-              "closeFen": 5305
-            },
-            {
-              "date": "2026-05-07",
-              "closeFen": 5558
-            },
-            {
-              "date": "2026-05-08",
-              "closeFen": 5815
-            },
-            {
-              "date": "2026-05-11",
-              "closeFen": 5868
-            },
-            {
-              "date": "2026-05-12",
-              "closeFen": 5744
-            },
-            {
-              "date": "2026-05-13",
-              "closeFen": 5727
-            },
-            {
-              "date": "2026-05-14",
-              "closeFen": 5380
-            },
-            {
-              "date": "2026-05-15",
-              "closeFen": 5159
-            },
-            {
-              "date": "2026-05-18",
-              "closeFen": 5088
-            },
-            {
-              "date": "2026-05-19",
-              "closeFen": 5301
-            },
-            {
-              "date": "2026-05-20",
-              "closeFen": 5356
-            },
-            {
-              "date": "2026-05-21",
-              "closeFen": 5223
-            },
-            {
-              "date": "2026-05-22",
-              "closeFen": 5576
-            },
-            {
-              "date": "2026-05-25",
-              "closeFen": 5683
-            },
-            {
-              "date": "2026-05-26",
-              "closeFen": 5721
-            },
-            {
-              "date": "2026-05-27",
-              "closeFen": 5430
-            },
-            {
-              "date": "2026-05-28",
-              "closeFen": 5423
-            },
-            {
-              "date": "2026-05-29",
-              "closeFen": 5200
-            },
-            {
-              "date": "2026-06-01",
-              "closeFen": 5515
-            },
-            {
-              "date": "2026-06-02",
-              "closeFen": 5515
-            },
-            {
-              "date": "2026-06-03",
-              "closeFen": 5376
-            },
-            {
-              "date": "2026-06-04",
-              "closeFen": 5375
-            },
-            {
-              "date": "2026-06-05",
-              "closeFen": 5170
-            },
-            {
-              "date": "2026-06-08",
-              "closeFen": 5027
-            },
-            {
-              "date": "2026-06-09",
-              "closeFen": 5198
-            },
-            {
-              "date": "2026-06-10",
-              "closeFen": 4971
-            },
-            {
-              "date": "2026-06-11",
-              "closeFen": 5471
-            },
-            {
-              "date": "2026-06-12",
-              "closeFen": 5568
-            },
-            {
-              "date": "2026-06-15",
-              "closeFen": 6128
-            },
-            {
-              "date": "2026-06-16",
-              "closeFen": 6549
-            },
-            {
-              "date": "2026-06-17",
-              "closeFen": 6738
-            },
-            {
-              "date": "2026-06-18",
-              "closeFen": 7003
-            },
-            {
-              "date": "2026-06-22",
-              "closeFen": 6705
-            },
-            {
-              "date": "2026-06-23",
-              "closeFen": 6719
-            },
-            {
-              "date": "2026-06-24",
-              "closeFen": 6690
-            },
-            {
-              "date": "2026-06-25",
-              "closeFen": 6665
-            },
-            {
-              "date": "2026-06-26",
-              "closeFen": 6396
-            },
-            {
-              "date": "2026-06-29",
-              "closeFen": 6130
-            },
-            {
-              "date": "2026-06-30",
-              "closeFen": 6394
-            },
-            {
-              "date": "2026-07-01",
-              "closeFen": 6303
-            },
-            {
-              "date": "2026-07-02",
-              "closeFen": 5802
-            },
-            {
-              "date": "2026-07-03",
-              "closeFen": 5715
-            },
-            {
-              "date": "2026-07-06",
-              "closeFen": 5605
-            },
-            {
-              "date": "2026-07-07",
-              "closeFen": 5443
-            },
-            {
-              "date": "2026-07-08",
-              "closeFen": 5370
-            },
-            {
-              "date": "2026-07-09",
-              "closeFen": 5610
-            },
-            {
-              "date": "2026-07-10",
-              "closeFen": 5434
-            },
-            {
-              "date": "2026-07-13",
-              "closeFen": 4996
-            },
-            {
-              "date": "2026-07-14",
-              "closeFen": 5233
-            },
-            {
-              "date": "2026-07-15",
-              "closeFen": 4898
-            },
-            {
-              "date": "2026-07-16",
-              "closeFen": 4780
-            },
-            {
-              "date": "2026-07-17",
-              "closeFen": 4302
-            },
-            {
-              "date": "2026-07-20",
-              "closeFen": 3872
-            },
-            {
-              "date": "2026-07-21",
-              "closeFen": 4259
-            },
-            {
-              "date": "2026-07-22",
-              "closeFen": 4390
-            },
-            {
-              "date": "2026-07-23",
-              "closeFen": 4422
-            },
-            {
-              "date": "2026-07-24",
-              "closeFen": 4508
-            },
-            {
-              "date": "2026-07-27",
-              "closeFen": 4633
-            },
-            {
-              "date": "2026-07-28",
-              "closeFen": 4220
-            },
-            {
-              "date": "2026-07-29",
-              "closeFen": 4078
-            },
-            {
-              "date": "2026-07-30",
-              "closeFen": 3811
-            },
-            {
-              "date": "2026-07-31",
-              "closeFen": 3944
-            },
-            {
-              "date": "2026-08-03",
-              "closeFen": 4073
-            },
-            {
-              "date": "2026-08-04",
-              "closeFen": 4480
-            },
-            {
-              "date": "2026-08-05",
-              "closeFen": 4792
-            },
-            {
-              "date": "2026-08-06",
-              "closeFen": 5038
-            },
-            {
-              "date": "2026-08-07",
-              "closeFen": 5542
-            },
-            {
-              "date": "2026-08-10",
-              "closeFen": 5533
-            },
-            {
-              "date": "2026-08-11",
-              "closeFen": 5546
-            },
-            {
-              "date": "2026-08-12",
-              "closeFen": 5700
-            },
-            {
-              "date": "2026-08-13",
-              "closeFen": 5565
-            },
-            {
-              "date": "2026-08-14",
-              "closeFen": 5675
-            },
-            {
-              "date": "2026-08-17",
-              "closeFen": 5916
-            },
-            {
-              "date": "2026-08-18",
-              "closeFen": 6130
-            },
-            {
-              "date": "2026-08-19",
-              "closeFen": 5747
-            },
-            {
-              "date": "2026-08-20",
-              "closeFen": 5879
-            },
-            {
-              "date": "2026-08-21",
-              "closeFen": 6037
-            },
-            {
-              "date": "2026-08-24",
-              "closeFen": 5750
-            },
-            {
-              "date": "2026-08-25",
-              "closeFen": 5684
-            },
-            {
-              "date": "2026-08-26",
-              "closeFen": 5677
-            },
-            {
-              "date": "2026-08-27",
-              "closeFen": 5901
-            },
-            {
-              "date": "2026-08-28",
-              "closeFen": 5906
-            },
-            {
-              "date": "2026-08-31",
-              "closeFen": 6405
-            },
-            {
-              "date": "2026-09-01",
-              "closeFen": 6198
-            },
-            {
-              "date": "2026-09-02",
-              "closeFen": 6156
-            },
-            {
-              "date": "2026-09-03",
-              "closeFen": 6343
-            },
-            {
-              "date": "2026-09-04",
-              "closeFen": 6100
-            },
-            {
-              "date": "2026-09-07",
-              "closeFen": 6511
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 6477
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 7120
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 7099
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 7249
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 7654
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 7555
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 8311
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 8215
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 8406
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "registration_to_latest",
-          "startDate": "2026-04-01",
-          "startPriceFen": 4809,
-          "periodReturn": 0.75883498,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-04-02",
-            "entryPriceFen": 4795,
-            "factorDate": "2026-04-01",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": 0.09609430543769926,
-            "volatility20": 0.7798094078464785,
-            "marketReturn10": null,
-            "status": "missing",
-            "selected": false,
-            "budgetFen": 0,
-            "targetBudgetFen": 250000,
-            "targetShares": 52,
-            "initialShares": 100,
-            "excessShares": 48,
-            "initialCashFen": 479500,
-            "temporaryCashRatio": 1.918,
-            "reasons": [
-              "关键因子缺失，待核验"
-            ]
-          }
-        },
-        "recentTrendError": null,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-04-02",
-          "entryPriceFen": 4795,
-          "factorDate": "2026-04-01",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": 0.09609430543769926,
-          "volatility20": 0.7798094078464785,
-          "marketReturn10": null,
-          "status": "missing",
-          "selected": false,
-          "budgetFen": 0,
-          "targetBudgetFen": 250000,
-          "targetShares": 52,
-          "initialShares": 100,
-          "excessShares": 48,
-          "initialCashFen": 479500,
-          "temporaryCashRatio": 1.918,
-          "reasons": [
-            "关键因子缺失，待核验"
+            "买入前20日涨幅超过20%",
+            "弱市且20日年化波动率不低于50%"
           ]
         }
       }
@@ -6120,123 +5456,6 @@
             "excessShares": 19,
             "initialCashFen": 516000,
             "temporaryCashRatio": 1.032,
-            "reasons": []
-          }
-        },
-        {
-          "stockCode": "301571",
-          "stockName": "国科天成",
-          "exchange": "SZ",
-          "board": "创业板",
-          "auditId": "1004038",
-          "statusCode": "70",
-          "stageLabel": "注册生效",
-          "stageDate": "2026-09-07",
-          "acceptedDate": "2025-07-24",
-          "proposedScaleYi": 8.488,
-          "registered": true,
-          "paused": false,
-          "terminal": false,
-          "sourceName": "深交所再融资审核项目动态",
-          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004038",
-          "registrationDisclosure": null,
-          "recentTrend": {
-            "asOfDate": "2026-09-18",
-            "latestPriceFen": 7472,
-            "return5": 0.04474273,
-            "return20": 0.14041514,
-            "aboveMa5": true,
-            "points": [
-              {
-                "date": "2026-09-07",
-                "closeFen": 6959
-              },
-              {
-                "date": "2026-09-08",
-                "closeFen": 7231
-              },
-              {
-                "date": "2026-09-09",
-                "closeFen": 7388
-              },
-              {
-                "date": "2026-09-10",
-                "closeFen": 7339
-              },
-              {
-                "date": "2026-09-11",
-                "closeFen": 7152
-              },
-              {
-                "date": "2026-09-14",
-                "closeFen": 7097
-              },
-              {
-                "date": "2026-09-15",
-                "closeFen": 6945
-              },
-              {
-                "date": "2026-09-16",
-                "closeFen": 6971
-              },
-              {
-                "date": "2026-09-17",
-                "closeFen": 7291
-              },
-              {
-                "date": "2026-09-18",
-                "closeFen": 7472
-              }
-            ],
-            "sourceName": "腾讯证券日K",
-            "basis": "registration_to_latest",
-            "startDate": "2026-09-07",
-            "startPriceFen": 6959,
-            "periodReturn": 0.07371749,
-            "entryAssessment": {
-              "windowStatus": "entry_passed",
-              "entryDate": "2026-09-08",
-              "entryPriceFen": 6984,
-              "factorDate": "2026-09-07",
-              "referencePriceFen": null,
-              "referencePriceDate": null,
-              "priceBasis": "actual_open",
-              "momentum20": 0.02338235294117652,
-              "volatility20": 0.5506375609770036,
-              "marketReturn10": 0.00260567,
-              "status": "participate",
-              "selected": true,
-              "budgetFen": 500000,
-              "targetBudgetFen": 500000,
-              "targetShares": 71,
-              "initialShares": 100,
-              "excessShares": 29,
-              "initialCashFen": 698400,
-              "temporaryCashRatio": 1.3968,
-              "reasons": []
-            }
-          },
-          "recentTrendError": null,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-09-08",
-            "entryPriceFen": 6984,
-            "factorDate": "2026-09-07",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": 0.02338235294117652,
-            "volatility20": 0.5506375609770036,
-            "marketReturn10": 0.00260567,
-            "status": "participate",
-            "selected": true,
-            "budgetFen": 500000,
-            "targetBudgetFen": 500000,
-            "targetShares": 71,
-            "initialShares": 100,
-            "excessShares": 29,
-            "initialCashFen": 698400,
-            "temporaryCashRatio": 1.3968,
             "reasons": []
           }
         },
@@ -6979,9 +6198,508 @@
             "temporaryCashRatio": 1.02,
             "reasons": []
           }
+        },
+        {
+          "stockCode": "000887",
+          "stockName": "中鼎股份",
+          "exchange": "SZ",
+          "board": "深市主板",
+          "auditId": "1004320",
+          "statusCode": "70",
+          "stageLabel": "注册生效",
+          "stageDate": "2026-07-27",
+          "acceptedDate": "2026-04-24",
+          "proposedScaleYi": 19.2,
+          "registered": true,
+          "paused": false,
+          "terminal": false,
+          "sourceName": "深交所再融资审核项目动态",
+          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004320",
+          "registrationDisclosure": null,
+          "recentTrend": {
+            "asOfDate": "2026-09-18",
+            "latestPriceFen": 1954,
+            "return5": 0.02842105,
+            "return20": -0.12806783,
+            "aboveMa5": true,
+            "points": [
+              {
+                "date": "2026-07-27",
+                "closeFen": 1665
+              },
+              {
+                "date": "2026-07-28",
+                "closeFen": 1667
+              },
+              {
+                "date": "2026-07-29",
+                "closeFen": 1702
+              },
+              {
+                "date": "2026-07-30",
+                "closeFen": 1680
+              },
+              {
+                "date": "2026-07-31",
+                "closeFen": 1725
+              },
+              {
+                "date": "2026-08-03",
+                "closeFen": 1729
+              },
+              {
+                "date": "2026-08-04",
+                "closeFen": 1833
+              },
+              {
+                "date": "2026-08-05",
+                "closeFen": 1864
+              },
+              {
+                "date": "2026-08-06",
+                "closeFen": 1884
+              },
+              {
+                "date": "2026-08-07",
+                "closeFen": 1933
+              },
+              {
+                "date": "2026-08-10",
+                "closeFen": 1927
+              },
+              {
+                "date": "2026-08-11",
+                "closeFen": 1958
+              },
+              {
+                "date": "2026-08-12",
+                "closeFen": 2154
+              },
+              {
+                "date": "2026-08-13",
+                "closeFen": 2369
+              },
+              {
+                "date": "2026-08-14",
+                "closeFen": 2182
+              },
+              {
+                "date": "2026-08-17",
+                "closeFen": 2095
+              },
+              {
+                "date": "2026-08-18",
+                "closeFen": 2233
+              },
+              {
+                "date": "2026-08-19",
+                "closeFen": 2089
+              },
+              {
+                "date": "2026-08-20",
+                "closeFen": 2215
+              },
+              {
+                "date": "2026-08-21",
+                "closeFen": 2241
+              },
+              {
+                "date": "2026-08-24",
+                "closeFen": 2107
+              },
+              {
+                "date": "2026-08-25",
+                "closeFen": 2087
+              },
+              {
+                "date": "2026-08-26",
+                "closeFen": 2016
+              },
+              {
+                "date": "2026-08-27",
+                "closeFen": 2104
+              },
+              {
+                "date": "2026-08-28",
+                "closeFen": 2095
+              },
+              {
+                "date": "2026-08-31",
+                "closeFen": 2137
+              },
+              {
+                "date": "2026-09-01",
+                "closeFen": 2066
+              },
+              {
+                "date": "2026-09-02",
+                "closeFen": 2132
+              },
+              {
+                "date": "2026-09-03",
+                "closeFen": 2144
+              },
+              {
+                "date": "2026-09-04",
+                "closeFen": 2056
+              },
+              {
+                "date": "2026-09-07",
+                "closeFen": 2132
+              },
+              {
+                "date": "2026-09-08",
+                "closeFen": 2087
+              },
+              {
+                "date": "2026-09-09",
+                "closeFen": 2052
+              },
+              {
+                "date": "2026-09-10",
+                "closeFen": 1990
+              },
+              {
+                "date": "2026-09-11",
+                "closeFen": 1900
+              },
+              {
+                "date": "2026-09-14",
+                "closeFen": 1904
+              },
+              {
+                "date": "2026-09-15",
+                "closeFen": 1883
+              },
+              {
+                "date": "2026-09-16",
+                "closeFen": 1939
+              },
+              {
+                "date": "2026-09-17",
+                "closeFen": 1926
+              },
+              {
+                "date": "2026-09-18",
+                "closeFen": 1954
+              }
+            ],
+            "sourceName": "腾讯证券日K",
+            "basis": "registration_to_latest",
+            "startDate": "2026-07-27",
+            "startPriceFen": 1665,
+            "periodReturn": 0.17357357,
+            "entryAssessment": {
+              "windowStatus": "entry_passed",
+              "entryDate": "2026-07-28",
+              "entryPriceFen": 1645,
+              "factorDate": "2026-07-27",
+              "referencePriceFen": null,
+              "referencePriceDate": null,
+              "priceBasis": "actual_open",
+              "momentum20": -0.014209591474245276,
+              "volatility20": 0.8159564473008272,
+              "marketReturn10": 0.00150148,
+              "status": "participate",
+              "selected": true,
+              "budgetFen": 500000,
+              "targetBudgetFen": 500000,
+              "targetShares": 303,
+              "initialShares": 400,
+              "excessShares": 97,
+              "initialCashFen": 658000,
+              "temporaryCashRatio": 1.316,
+              "reasons": []
+            }
+          },
+          "recentTrendError": null,
+          "entryAssessment": {
+            "windowStatus": "entry_passed",
+            "entryDate": "2026-07-28",
+            "entryPriceFen": 1645,
+            "factorDate": "2026-07-27",
+            "referencePriceFen": null,
+            "referencePriceDate": null,
+            "priceBasis": "actual_open",
+            "momentum20": -0.014209591474245276,
+            "volatility20": 0.8159564473008272,
+            "marketReturn10": 0.00150148,
+            "status": "participate",
+            "selected": true,
+            "budgetFen": 500000,
+            "targetBudgetFen": 500000,
+            "targetShares": 303,
+            "initialShares": 400,
+            "excessShares": 97,
+            "initialCashFen": 658000,
+            "temporaryCashRatio": 1.316,
+            "reasons": []
+          }
+        },
+        {
+          "stockCode": "301132",
+          "stockName": "满坤科技",
+          "exchange": "SZ",
+          "board": "创业板",
+          "auditId": "1004213",
+          "statusCode": "70",
+          "stageLabel": "注册生效",
+          "stageDate": "2026-07-27",
+          "acceptedDate": "2025-12-30",
+          "proposedScaleYi": 7.6,
+          "registered": true,
+          "paused": false,
+          "terminal": false,
+          "sourceName": "深交所再融资审核项目动态",
+          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004213",
+          "registrationDisclosure": null,
+          "recentTrend": {
+            "asOfDate": "2026-09-18",
+            "latestPriceFen": 6029,
+            "return5": 0.2395148,
+            "return20": 0.64546943,
+            "aboveMa5": false,
+            "points": [
+              {
+                "date": "2026-07-27",
+                "closeFen": 2920
+              },
+              {
+                "date": "2026-07-28",
+                "closeFen": 2785
+              },
+              {
+                "date": "2026-07-29",
+                "closeFen": 2772
+              },
+              {
+                "date": "2026-07-30",
+                "closeFen": 2635
+              },
+              {
+                "date": "2026-07-31",
+                "closeFen": 2757
+              },
+              {
+                "date": "2026-08-03",
+                "closeFen": 2798
+              },
+              {
+                "date": "2026-08-04",
+                "closeFen": 3042
+              },
+              {
+                "date": "2026-08-05",
+                "closeFen": 3150
+              },
+              {
+                "date": "2026-08-06",
+                "closeFen": 3254
+              },
+              {
+                "date": "2026-08-07",
+                "closeFen": 3493
+              },
+              {
+                "date": "2026-08-10",
+                "closeFen": 3421
+              },
+              {
+                "date": "2026-08-11",
+                "closeFen": 3370
+              },
+              {
+                "date": "2026-08-12",
+                "closeFen": 3485
+              },
+              {
+                "date": "2026-08-13",
+                "closeFen": 3423
+              },
+              {
+                "date": "2026-08-14",
+                "closeFen": 3552
+              },
+              {
+                "date": "2026-08-17",
+                "closeFen": 3837
+              },
+              {
+                "date": "2026-08-18",
+                "closeFen": 3838
+              },
+              {
+                "date": "2026-08-19",
+                "closeFen": 3563
+              },
+              {
+                "date": "2026-08-20",
+                "closeFen": 3650
+              },
+              {
+                "date": "2026-08-21",
+                "closeFen": 3664
+              },
+              {
+                "date": "2026-08-24",
+                "closeFen": 3541
+              },
+              {
+                "date": "2026-08-25",
+                "closeFen": 3592
+              },
+              {
+                "date": "2026-08-26",
+                "closeFen": 3623
+              },
+              {
+                "date": "2026-08-27",
+                "closeFen": 3757
+              },
+              {
+                "date": "2026-08-28",
+                "closeFen": 3752
+              },
+              {
+                "date": "2026-08-31",
+                "closeFen": 3924
+              },
+              {
+                "date": "2026-09-01",
+                "closeFen": 3909
+              },
+              {
+                "date": "2026-09-02",
+                "closeFen": 3857
+              },
+              {
+                "date": "2026-09-03",
+                "closeFen": 3946
+              },
+              {
+                "date": "2026-09-04",
+                "closeFen": 3858
+              },
+              {
+                "date": "2026-09-07",
+                "closeFen": 4133
+              },
+              {
+                "date": "2026-09-08",
+                "closeFen": 4259
+              },
+              {
+                "date": "2026-09-09",
+                "closeFen": 4685
+              },
+              {
+                "date": "2026-09-10",
+                "closeFen": 4794
+              },
+              {
+                "date": "2026-09-11",
+                "closeFen": 4864
+              },
+              {
+                "date": "2026-09-14",
+                "closeFen": 5837
+              },
+              {
+                "date": "2026-09-15",
+                "closeFen": 6190
+              },
+              {
+                "date": "2026-09-16",
+                "closeFen": 6199
+              },
+              {
+                "date": "2026-09-17",
+                "closeFen": 5994
+              },
+              {
+                "date": "2026-09-18",
+                "closeFen": 6029
+              }
+            ],
+            "sourceName": "腾讯证券日K",
+            "basis": "registration_to_latest",
+            "startDate": "2026-07-27",
+            "startPriceFen": 2920,
+            "periodReturn": 1.06472603,
+            "entryAssessment": {
+              "windowStatus": "entry_passed",
+              "entryDate": "2026-07-28",
+              "entryPriceFen": 2879,
+              "factorDate": "2026-07-27",
+              "referencePriceFen": null,
+              "referencePriceDate": null,
+              "priceBasis": "actual_open",
+              "momentum20": -0.4225825588293455,
+              "volatility20": 0.9601252974396667,
+              "marketReturn10": 0.00150148,
+              "status": "participate",
+              "selected": true,
+              "budgetFen": 500000,
+              "targetBudgetFen": 500000,
+              "targetShares": 173,
+              "initialShares": 200,
+              "excessShares": 27,
+              "initialCashFen": 575800,
+              "temporaryCashRatio": 1.1516,
+              "reasons": []
+            }
+          },
+          "recentTrendError": null,
+          "entryAssessment": {
+            "windowStatus": "entry_passed",
+            "entryDate": "2026-07-28",
+            "entryPriceFen": 2879,
+            "factorDate": "2026-07-27",
+            "referencePriceFen": null,
+            "referencePriceDate": null,
+            "priceBasis": "actual_open",
+            "momentum20": -0.4225825588293455,
+            "volatility20": 0.9601252974396667,
+            "marketReturn10": 0.00150148,
+            "status": "participate",
+            "selected": true,
+            "budgetFen": 500000,
+            "targetBudgetFen": 500000,
+            "targetShares": 173,
+            "initialShares": 200,
+            "excessShares": 27,
+            "initialCashFen": 575800,
+            "temporaryCashRatio": 1.1516,
+            "reasons": []
+          }
         }
       ],
-      "sell": []
+      "sell": [
+        {
+          "bondCode": "123286",
+          "bondName": "国科转债",
+          "stockCode": "301571",
+          "stockName": "国科天成",
+          "exchange": "SZ",
+          "announcementDate": "2026-09-21",
+          "announcementTitle": "2-4 向不特定对象发行可转换公司债券发行公告",
+          "sourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-21/cd0f11f8-0842-4ad5-b051-fc0daa572628.PDF",
+          "sellDate": null,
+          "status": "next_session"
+        },
+        {
+          "bondCode": "127117",
+          "bondName": "奥士转债",
+          "stockCode": "002913",
+          "stockName": "奥士康",
+          "exchange": "SZ",
+          "announcementDate": "2026-09-21",
+          "announcementTitle": "奥士康科技股份有限公司向不特定对象发行可转换公司债券发行公告",
+          "sourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-21/d5b5ff48-a9eb-4d7f-a673-67084b4175ff.PDF",
+          "sellDate": null,
+          "status": "next_session"
+        }
+      ]
     }
   },
   "riskControlStudy": {
@@ -77689,9 +77407,9 @@
         "totalPnlFen": 1465519,
         "returnOnBaseCapital": 0.1465519,
         "returnOnGrossNotional": 0.05747133,
-        "equalWeightIndexReturn": -0.00817091,
+        "equalWeightIndexReturn": -0.00623167,
         "indexReturns": {
-          "csi300": -0.03890278,
+          "csi300": -0.03308506,
           "csi500": 0.02121113,
           "csi1000": -0.00682109
         }
@@ -77978,9 +77696,9 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "accepted",
       "exitEventLabel": "交易所受理",
-      "candidateCount": 1032,
+      "candidateCount": 1034,
       "validCount": 655,
-      "excludedCount": 377,
+      "excludedCount": 379,
       "totalEquivalentPnlFen": 14702588,
       "meanReturn": 0.0224467,
       "medianReturn": -0.01189986,
@@ -78211,18 +77929,18 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "review_passed",
       "exitEventLabel": "审核通过",
-      "candidateCount": 1032,
-      "validCount": 758,
-      "excludedCount": 274,
-      "totalEquivalentPnlFen": 54287882,
-      "meanReturn": 0.07161989,
-      "medianReturn": -0.01448376,
-      "winRate": 0.47493404,
-      "winRateWilsonLower95": 0.43959951,
-      "meanExcessReturn": 0.04468562,
-      "averageHoldingSessions": 157.47,
+      "candidateCount": 1034,
+      "validCount": 759,
+      "excludedCount": 275,
+      "totalEquivalentPnlFen": 54588192,
+      "meanReturn": 0.0719212,
+      "medianReturn": -0.01424632,
+      "winRate": 0.47562582,
+      "winRateWilsonLower95": 0.44030848,
+      "meanExcessReturn": 0.04495754,
+      "averageHoldingSessions": 157.34,
       "worstReturn": -0.59993012,
-      "averageMaxDrawdown": -0.36048714,
+      "averageMaxDrawdown": -0.36023559,
       "positiveYearRate": 0.76923077,
       "byYear": [
         {
@@ -78323,11 +78041,11 @@
         },
         {
           "year": 2026,
-          "count": 52,
-          "totalEquivalentPnlFen": 13041879,
-          "meanReturn": 0.25080536,
-          "medianReturn": 0.20684632,
-          "winRate": 0.75
+          "count": 53,
+          "totalEquivalentPnlFen": 13342189,
+          "meanReturn": 0.25173942,
+          "medianReturn": 0.21190088,
+          "winRate": 0.75471698
         }
       ],
       "training": {
@@ -78428,18 +78146,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 96,
-        "validCount": 96,
+        "candidateCount": 97,
+        "validCount": 97,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 22230598,
-        "meanReturn": 0.23156871,
-        "medianReturn": 0.14436783,
-        "winRate": 0.67708333,
-        "winRateWilsonLower95": 0.57829644,
-        "meanExcessReturn": 0.14026285,
-        "averageHoldingSessions": 204.28,
+        "totalEquivalentPnlFen": 22530908,
+        "meanReturn": 0.23227739,
+        "medianReturn": 0.15525114,
+        "winRate": 0.68041237,
+        "winRateWilsonLower95": 0.58226446,
+        "meanExcessReturn": 0.14140521,
+        "averageHoldingSessions": 202.77,
         "worstReturn": -0.3585251,
-        "averageMaxDrawdown": -0.35602789,
+        "averageMaxDrawdown": -0.35410555,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -78460,11 +78178,11 @@
           },
           {
             "year": 2026,
-            "count": 52,
-            "totalEquivalentPnlFen": 13041879,
-            "meanReturn": 0.25080536,
-            "medianReturn": 0.20684632,
-            "winRate": 0.75
+            "count": 53,
+            "totalEquivalentPnlFen": 13342189,
+            "meanReturn": 0.25173942,
+            "medianReturn": 0.21190088,
+            "winRate": 0.75471698
           }
         ]
       }
@@ -78476,18 +78194,18 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "registered",
       "exitEventLabel": "注册生效",
-      "candidateCount": 1032,
-      "validCount": 874,
-      "excludedCount": 158,
-      "totalEquivalentPnlFen": 82633910,
-      "meanReturn": 0.09454681,
-      "medianReturn": -0.0100947,
-      "winRate": 0.48741419,
-      "winRateWilsonLower95": 0.45440332,
-      "meanExcessReturn": 0.07584712,
-      "averageHoldingSessions": 198.09,
+      "candidateCount": 1034,
+      "validCount": 875,
+      "excludedCount": 159,
+      "totalEquivalentPnlFen": 83070083,
+      "meanReturn": 0.09493724,
+      "medianReturn": -0.0095511,
+      "winRate": 0.488,
+      "winRateWilsonLower95": 0.45500438,
+      "meanExcessReturn": 0.07625389,
+      "averageHoldingSessions": 197.97,
       "worstReturn": -0.66417597,
-      "averageMaxDrawdown": -0.39422217,
+      "averageMaxDrawdown": -0.39397194,
       "positiveYearRate": 0.76923077,
       "byYear": [
         {
@@ -78588,11 +78306,11 @@
         },
         {
           "year": 2026,
-          "count": 55,
-          "totalEquivalentPnlFen": 16406943,
-          "meanReturn": 0.29830802,
-          "medianReturn": 0.18386884,
-          "winRate": 0.70909091
+          "count": 56,
+          "totalEquivalentPnlFen": 16843116,
+          "meanReturn": 0.30076988,
+          "medianReturn": 0.19793758,
+          "winRate": 0.71428571
         }
       ],
       "training": {
@@ -78693,18 +78411,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 127,
-        "validCount": 127,
+        "candidateCount": 128,
+        "validCount": 128,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 24988514,
-        "meanReturn": 0.19675993,
-        "medianReturn": 0.09769926,
-        "winRate": 0.61417323,
-        "winRateWilsonLower95": 0.52734241,
-        "meanExcessReturn": 0.13753209,
-        "averageHoldingSessions": 266.47,
+        "totalEquivalentPnlFen": 25424687,
+        "meanReturn": 0.19863034,
+        "medianReturn": 0.09863389,
+        "winRate": 0.6171875,
+        "winRateWilsonLower95": 0.53073068,
+        "meanExcessReturn": 0.13983083,
+        "averageHoldingSessions": 265.07,
         "worstReturn": -0.63587789,
-        "averageMaxDrawdown": -0.41240533,
+        "averageMaxDrawdown": -0.41055268,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -78725,11 +78443,11 @@
           },
           {
             "year": 2026,
-            "count": 55,
-            "totalEquivalentPnlFen": 16406943,
-            "meanReturn": 0.29830802,
-            "medianReturn": 0.18386884,
-            "winRate": 0.70909091
+            "count": 56,
+            "totalEquivalentPnlFen": 16843116,
+            "meanReturn": 0.30076988,
+            "medianReturn": 0.19793758,
+            "winRate": 0.71428571
           }
         ]
       }
@@ -78741,9 +78459,9 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1032,
+      "candidateCount": 1034,
       "validCount": 874,
-      "excludedCount": 158,
+      "excludedCount": 160,
       "totalEquivalentPnlFen": 132456425,
       "meanReturn": 0.15155196,
       "medianReturn": 0.02999188,
@@ -79006,18 +78724,18 @@
       "entryEventLabel": "交易所受理",
       "exitEventId": "review_passed",
       "exitEventLabel": "审核通过",
-      "candidateCount": 1032,
-      "validCount": 593,
-      "excludedCount": 439,
-      "totalEquivalentPnlFen": 32088353,
-      "meanReturn": 0.0541119,
-      "medianReturn": 0,
-      "winRate": 0.49915683,
-      "winRateWilsonLower95": 0.45904826,
-      "meanExcessReturn": 0.02835748,
-      "averageHoldingSessions": 88.65,
+      "candidateCount": 1034,
+      "validCount": 594,
+      "excludedCount": 440,
+      "totalEquivalentPnlFen": 32388663,
+      "meanReturn": 0.05452638,
+      "medianReturn": 0.00142572,
+      "winRate": 0.5,
+      "winRateWilsonLower95": 0.45991951,
+      "meanExcessReturn": 0.02873242,
+      "averageHoldingSessions": 88.59,
       "worstReturn": -0.59296639,
-      "averageMaxDrawdown": -0.27682834,
+      "averageMaxDrawdown": -0.27664776,
       "positiveYearRate": 0.90909091,
       "byYear": [
         {
@@ -79102,11 +78820,11 @@
         },
         {
           "year": 2026,
-          "count": 50,
-          "totalEquivalentPnlFen": 6003274,
-          "meanReturn": 0.12006555,
-          "medianReturn": 0.0276435,
-          "winRate": 0.56
+          "count": 51,
+          "totalEquivalentPnlFen": 6303584,
+          "meanReturn": 0.12359977,
+          "medianReturn": 0.03054741,
+          "winRate": 0.56862745
         }
       ],
       "training": {
@@ -79191,18 +78909,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 95,
-        "validCount": 95,
+        "candidateCount": 96,
+        "validCount": 96,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 13369089,
-        "meanReturn": 0.14072728,
-        "medianReturn": 0.04754174,
-        "winRate": 0.61052632,
-        "winRateWilsonLower95": 0.51000055,
-        "meanExcessReturn": 0.09545122,
-        "averageHoldingSessions": 104.48,
+        "totalEquivalentPnlFen": 13669399,
+        "meanReturn": 0.1423896,
+        "medianReturn": 0.04816611,
+        "winRate": 0.61458333,
+        "winRateWilsonLower95": 0.51460518,
+        "meanExcessReturn": 0.09707227,
+        "averageHoldingSessions": 104,
         "worstReturn": -0.33335131,
-        "averageMaxDrawdown": -0.27248483,
+        "averageMaxDrawdown": -0.27141271,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -79223,11 +78941,11 @@
           },
           {
             "year": 2026,
-            "count": 50,
-            "totalEquivalentPnlFen": 6003274,
-            "meanReturn": 0.12006555,
-            "medianReturn": 0.0276435,
-            "winRate": 0.56
+            "count": 51,
+            "totalEquivalentPnlFen": 6303584,
+            "meanReturn": 0.12359977,
+            "medianReturn": 0.03054741,
+            "winRate": 0.56862745
           }
         ]
       }
@@ -79239,18 +78957,18 @@
       "entryEventLabel": "交易所受理",
       "exitEventId": "registered",
       "exitEventLabel": "注册生效",
-      "candidateCount": 1032,
-      "validCount": 694,
-      "excludedCount": 338,
-      "totalEquivalentPnlFen": 50218980,
-      "meanReturn": 0.07236162,
-      "medianReturn": -0.00177591,
-      "winRate": 0.49711816,
-      "winRateWilsonLower95": 0.46003688,
-      "meanExcessReturn": 0.05588611,
-      "averageHoldingSessions": 130.33,
+      "candidateCount": 1034,
+      "validCount": 695,
+      "excludedCount": 339,
+      "totalEquivalentPnlFen": 50655153,
+      "meanReturn": 0.07288509,
+      "medianReturn": -0.00174303,
+      "winRate": 0.49784173,
+      "winRateWilsonLower95": 0.46078273,
+      "meanExcessReturn": 0.05642695,
+      "averageHoldingSessions": 130.27,
       "worstReturn": -0.65216939,
-      "averageMaxDrawdown": -0.32932122,
+      "averageMaxDrawdown": -0.32909956,
       "positiveYearRate": 0.81818182,
       "byYear": [
         {
@@ -79335,11 +79053,11 @@
         },
         {
           "year": 2026,
-          "count": 53,
-          "totalEquivalentPnlFen": 9400085,
-          "meanReturn": 0.17736009,
-          "medianReturn": 0.09204592,
-          "winRate": 0.60377358
+          "count": 54,
+          "totalEquivalentPnlFen": 9836258,
+          "meanReturn": 0.18215291,
+          "medianReturn": 0.09489038,
+          "winRate": 0.61111111
         }
       ],
       "training": {
@@ -79424,18 +79142,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 127,
-        "validCount": 127,
+        "candidateCount": 128,
+        "validCount": 128,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 15761911,
-        "meanReturn": 0.12410952,
-        "medianReturn": 0.09204592,
-        "winRate": 0.58267717,
-        "winRateWilsonLower95": 0.49571941,
-        "meanExcessReturn": 0.09774995,
-        "averageHoldingSessions": 174.99,
+        "totalEquivalentPnlFen": 16198084,
+        "meanReturn": 0.12654751,
+        "medianReturn": 0.09389204,
+        "winRate": 0.5859375,
+        "winRateWilsonLower95": 0.499317,
+        "meanExcessReturn": 0.10035949,
+        "averageHoldingSessions": 174.3,
         "worstReturn": -0.57114317,
-        "averageMaxDrawdown": -0.3531611,
+        "averageMaxDrawdown": -0.35177131,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -79456,11 +79174,11 @@
           },
           {
             "year": 2026,
-            "count": 53,
-            "totalEquivalentPnlFen": 9400085,
-            "meanReturn": 0.17736009,
-            "medianReturn": 0.09204592,
-            "winRate": 0.60377358
+            "count": 54,
+            "totalEquivalentPnlFen": 9836258,
+            "meanReturn": 0.18215291,
+            "medianReturn": 0.09489038,
+            "winRate": 0.61111111
           }
         ]
       }
@@ -79472,9 +79190,9 @@
       "entryEventLabel": "交易所受理",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1032,
+      "candidateCount": 1034,
       "validCount": 694,
-      "excludedCount": 338,
+      "excludedCount": 340,
       "totalEquivalentPnlFen": 91916590,
       "meanReturn": 0.13244462,
       "medianReturn": 0.04019254,
@@ -79705,18 +79423,18 @@
       "entryEventLabel": "审核通过",
       "exitEventId": "registered",
       "exitEventLabel": "注册生效",
-      "candidateCount": 1032,
-      "validCount": 877,
+      "candidateCount": 1034,
+      "validCount": 879,
       "excludedCount": 155,
-      "totalEquivalentPnlFen": 24730168,
-      "meanReturn": 0.02819859,
-      "medianReturn": -0.00125897,
-      "winRate": 0.49372862,
-      "winRateWilsonLower95": 0.46073855,
-      "meanExcessReturn": 0.02453514,
-      "averageHoldingSessions": 38.64,
+      "totalEquivalentPnlFen": 24977696,
+      "meanReturn": 0.02841603,
+      "medianReturn": -0.0008726,
+      "winRate": 0.49488055,
+      "winRateWilsonLower95": 0.46192196,
+      "meanExcessReturn": 0.02482908,
+      "averageHoldingSessions": 38.62,
       "worstReturn": -0.54011624,
-      "averageMaxDrawdown": -0.19283048,
+      "averageMaxDrawdown": -0.19279596,
       "positiveYearRate": 0.65,
       "byYear": [
         {
@@ -79873,11 +79591,11 @@
         },
         {
           "year": 2026,
-          "count": 53,
-          "totalEquivalentPnlFen": 2624916,
-          "meanReturn": 0.04952665,
-          "medianReturn": 0.02966102,
-          "winRate": 0.52830189
+          "count": 55,
+          "totalEquivalentPnlFen": 2872444,
+          "meanReturn": 0.0522262,
+          "medianReturn": 0.03883759,
+          "winRate": 0.54545455
         }
       ],
       "training": {
@@ -80034,18 +79752,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 106,
-        "validCount": 106,
+        "candidateCount": 108,
+        "validCount": 108,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 2713019,
-        "meanReturn": 0.02559445,
-        "medianReturn": 0.00057453,
-        "winRate": 0.5,
-        "winRateWilsonLower95": 0.40649332,
-        "meanExcessReturn": 0.02745748,
-        "averageHoldingSessions": 59.58,
+        "totalEquivalentPnlFen": 2960547,
+        "meanReturn": 0.02741241,
+        "medianReturn": 0.00594706,
+        "winRate": 0.50925926,
+        "winRateWilsonLower95": 0.41628971,
+        "meanExcessReturn": 0.02979578,
+        "averageHoldingSessions": 59.05,
         "worstReturn": -0.41441008,
-        "averageMaxDrawdown": -0.21303047,
+        "averageMaxDrawdown": -0.21237545,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -80066,11 +79784,11 @@
           },
           {
             "year": 2026,
-            "count": 53,
-            "totalEquivalentPnlFen": 2624916,
-            "meanReturn": 0.04952665,
-            "medianReturn": 0.02966102,
-            "winRate": 0.52830189
+            "count": 55,
+            "totalEquivalentPnlFen": 2872444,
+            "meanReturn": 0.0522262,
+            "medianReturn": 0.03883759,
+            "winRate": 0.54545455
           }
         ]
       }
@@ -80082,9 +79800,9 @@
       "entryEventLabel": "审核通过",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1032,
+      "candidateCount": 1034,
       "validCount": 880,
-      "excludedCount": 152,
+      "excludedCount": 154,
       "totalEquivalentPnlFen": 73306094,
       "meanReturn": 0.08330237,
       "medianReturn": 0.03643615,
@@ -80459,9 +80177,9 @@
       "entryEventLabel": "注册生效",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1032,
+      "candidateCount": 1034,
       "validCount": 1005,
-      "excludedCount": 27,
+      "excludedCount": 29,
       "totalEquivalentPnlFen": 58118660,
       "meanReturn": 0.05782949,
       "medianReturn": 0.0290093,
@@ -133576,6 +133294,44 @@
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
     {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_registered",
+      "strategyLabel": "交易所受理买入 → 注册生效卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2025-10-11",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所受理的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-11/2d9ef2a0-0f33-41ac-a7cb-b1d196fedbb7.PDF",
+      "exitAnnouncementDate": "2026-04-02",
+      "exitAnnouncementTitle": "关于公司向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-02/f157b7d0-fe2d-440b-ae2f-9174c91ed6d1.PDF",
+      "valid": true,
+      "entryDate": "2025-11-24",
+      "exitDate": "2026-04-03",
+      "exitExecution": "open",
+      "entryPriceFen": 3283,
+      "exitPriceFen": 4702,
+      "holdingSessions": 87,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.4361725,
+      "equivalentPnlFen": 436173,
+      "benchmarkReturn": 0.00440181,
+      "excessReturn": 0.43177069,
+      "maxDrawdown": -0.17526705,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
       "bondCode": "110034",
       "bondName": "九州转债",
       "stockCode": "600998",
@@ -156106,6 +155862,44 @@
       "benchmarkReturn": 0.206853,
       "excessReturn": 0.0549271,
       "maxDrawdown": -0.35972108,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_review_passed",
+      "strategyLabel": "交易所受理买入 → 审核通过卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "entryAnnouncementDate": "2025-10-11",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所受理的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-11/2d9ef2a0-0f33-41ac-a7cb-b1d196fedbb7.PDF",
+      "exitAnnouncementDate": "2026-02-12",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-02-12/180ca006-c4d2-4b2b-be63-408a7e42fec4.PDF",
+      "valid": true,
+      "entryDate": "2025-11-24",
+      "exitDate": "2026-02-13",
+      "exitExecution": "open",
+      "entryPriceFen": 3283,
+      "exitPriceFen": 4260,
+      "holdingSessions": 58,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.30031045,
+      "equivalentPnlFen": 300310,
+      "benchmarkReturn": 0.04923812,
+      "excessReturn": 0.25107233,
+      "maxDrawdown": -0.16956171,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -247424,6 +247218,44 @@
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
     {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_registered",
+      "strategyLabel": "发行预案买入 → 注册生效卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2025-08-01",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券预案披露的提示性公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-07-31/69c5b1f4-4e47-44e9-9539-299055419d6d.PDF",
+      "exitAnnouncementDate": "2026-04-02",
+      "exitAnnouncementTitle": "关于公司向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-02/f157b7d0-fe2d-440b-ae2f-9174c91ed6d1.PDF",
+      "valid": true,
+      "entryDate": "2025-11-24",
+      "exitDate": "2026-04-03",
+      "exitExecution": "open",
+      "entryPriceFen": 3283,
+      "exitPriceFen": 4702,
+      "holdingSessions": 87,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.4361725,
+      "equivalentPnlFen": 436173,
+      "benchmarkReturn": 0.00440181,
+      "excessReturn": 0.43177069,
+      "maxDrawdown": -0.17526705,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
       "bondCode": "110027",
       "bondName": "东方转债",
       "stockCode": "600875",
@@ -276224,6 +276056,44 @@
       "benchmarkReturn": 0.52147608,
       "excessReturn": -0.34911836,
       "maxDrawdown": -0.47849134,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_review_passed",
+      "strategyLabel": "发行预案买入 → 审核通过卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "entryAnnouncementDate": "2025-08-01",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券预案披露的提示性公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-07-31/69c5b1f4-4e47-44e9-9539-299055419d6d.PDF",
+      "exitAnnouncementDate": "2026-02-12",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-02-12/180ca006-c4d2-4b2b-be63-408a7e42fec4.PDF",
+      "valid": true,
+      "entryDate": "2025-11-24",
+      "exitDate": "2026-02-13",
+      "exitExecution": "open",
+      "entryPriceFen": 3283,
+      "exitPriceFen": 4260,
+      "holdingSessions": 58,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.30031045,
+      "equivalentPnlFen": 300310,
+      "benchmarkReturn": 0.04923812,
+      "excessReturn": 0.25107233,
+      "maxDrawdown": -0.16956171,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -380994,6 +380864,44 @@
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_registered",
+      "strategyLabel": "审核通过买入 → 注册生效卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2026-07-24",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-24/5a5a6e15-b900-476b-9eeb-7ea99a3cd9b1.PDF",
+      "exitAnnouncementDate": "2026-09-07",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-07/aaa1860e-df93-468d-90c8-dcb049007377.PDF",
+      "valid": true,
+      "entryDate": "2026-07-27",
+      "exitDate": "2026-09-08",
+      "exitExecution": "open",
+      "entryPriceFen": 6110,
+      "exitPriceFen": 6984,
+      "holdingSessions": 32,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.14304419,
+      "equivalentPnlFen": 143044,
+      "benchmarkReturn": -0.01719061,
+      "excessReturn": 0.1602348,
+      "maxDrawdown": -0.18005162,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
       "bondCode": "127112",
       "bondName": "尚太转债",
       "stockCode": "001301",
@@ -381180,6 +381088,44 @@
       "benchmarkReturn": -0.07243924,
       "excessReturn": 0.04886088,
       "maxDrawdown": -0.21329011,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_registered",
+      "strategyLabel": "审核通过买入 → 注册生效卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2026-02-12",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-02-12/180ca006-c4d2-4b2b-be63-408a7e42fec4.PDF",
+      "exitAnnouncementDate": "2026-04-02",
+      "exitAnnouncementTitle": "关于公司向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-02/f157b7d0-fe2d-440b-ae2f-9174c91ed6d1.PDF",
+      "valid": true,
+      "entryDate": "2026-02-13",
+      "exitDate": "2026-04-03",
+      "exitExecution": "open",
+      "entryPriceFen": 4260,
+      "exitPriceFen": 4702,
+      "holdingSessions": 30,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.10448432,
+      "equivalentPnlFen": 104484,
+      "benchmarkReturn": -0.04273226,
+      "excessReturn": 0.14721658,
+      "maxDrawdown": -0.17526705,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     }
@@ -385163,6 +385109,25 @@
       "detail": "缺少买入节点公告"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_issue_announcement",
+      "strategyLabel": "交易所受理买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买入节点公告"
+    },
+    {
       "bondCode": "125089",
       "bondName": "深机转债",
       "stockCode": "000089",
@@ -386092,6 +386057,27 @@
       "exitEventLabel": "最终发行公告",
       "reason": "missing_milestone_announcement",
       "detail": "缺少买入节点公告"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_issue_announcement",
+      "strategyLabel": "交易所受理买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2025-10-11",
+      "exitAnnouncementDate": "2026-09-21",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
       "bondCode": "128001",
@@ -391558,6 +391544,25 @@
       "exchange": "SZ",
       "entryYear": 2026,
       "recordDate": "2026-09-09",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_registered",
+      "strategyLabel": "交易所受理买入 → 注册生效卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买入节点公告"
+    },
+    {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
       "universeSource": "rights_backtest",
       "cohortYear": 2026,
       "strategyId": "accepted_to_registered",
@@ -399904,6 +399909,25 @@
       "detail": "缺少买入节点公告"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_review_passed",
+      "strategyLabel": "交易所受理买入 → 审核通过卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买入节点公告"
+    },
+    {
       "bondCode": "125089",
       "bondName": "深机转债",
       "stockCode": "000089",
@@ -406916,6 +406940,25 @@
       "detail": "缺少卖出节点公告"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_accepted",
+      "strategyLabel": "发行预案买入 → 交易所受理卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "accepted",
+      "exitEventLabel": "交易所受理",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买卖节点公告"
+    },
+    {
       "bondCode": "125089",
       "bondName": "深机转债",
       "stockCode": "000089",
@@ -407999,6 +408042,27 @@
       "exitEventLabel": "交易所受理",
       "reason": "missing_milestone_announcement",
       "detail": "缺少卖出节点公告"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_accepted",
+      "strategyLabel": "发行预案买入 → 交易所受理卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "accepted",
+      "exitEventLabel": "交易所受理",
+      "entryAnnouncementDate": "2025-08-01",
+      "exitAnnouncementDate": "2025-10-11",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
       "bondCode": "128001",
@@ -411522,6 +411586,25 @@
       "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_issue_announcement",
+      "strategyLabel": "发行预案买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买入节点公告"
+    },
+    {
       "bondCode": "125089",
       "bondName": "深机转债",
       "stockCode": "000089",
@@ -412071,6 +412154,27 @@
       "exitEventLabel": "最终发行公告",
       "reason": "missing_milestone_announcement",
       "detail": "缺少买入节点公告"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_issue_announcement",
+      "strategyLabel": "发行预案买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2025-08-01",
+      "exitAnnouncementDate": "2026-09-21",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
       "bondCode": "128001",
@@ -414526,6 +414630,25 @@
       "exitAnnouncementDate": "2026-07-16",
       "reason": "no_executable_window",
       "detail": "两个公告节点之间没有完整的可交易窗口"
+    },
+    {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_registered",
+      "strategyLabel": "发行预案买入 → 注册生效卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买入节点公告"
     },
     {
       "bondCode": "125089",
@@ -419670,6 +419793,25 @@
       "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_review_passed",
+      "strategyLabel": "发行预案买入 → 审核通过卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "reason": "missing_milestone_announcement",
+      "detail": "缺少买入节点公告"
+    },
+    {
       "bondCode": "125089",
       "bondName": "深机转债",
       "stockCode": "000089",
@@ -421227,6 +421369,27 @@
       "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "registered_to_issue_announcement",
+      "strategyLabel": "注册生效买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "registered",
+      "entryEventLabel": "注册生效",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-09-07",
+      "exitAnnouncementDate": "2026-09-21",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
+    },
+    {
       "bondCode": "125709",
       "bondName": "唐钢转债",
       "stockCode": "000709",
@@ -421303,6 +421466,27 @@
       "exitEventLabel": "最终发行公告",
       "reason": "missing_milestone_announcement",
       "detail": "交易所及发行人公告中未找到可验证的独立注册/核准公告"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "registered_to_issue_announcement",
+      "strategyLabel": "注册生效买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "registered",
+      "entryEventLabel": "注册生效",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-04-02",
+      "exitAnnouncementDate": "2026-09-21",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
       "bondCode": "128020",
@@ -424057,6 +424241,27 @@
       "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_issue_announcement",
+      "strategyLabel": "审核通过买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-07-24",
+      "exitAnnouncementDate": "2026-09-21",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
+    },
+    {
       "bondCode": "127038",
       "bondName": "国微转债",
       "stockCode": "002049",
@@ -424150,6 +424355,27 @@
       "exitEventLabel": "最终发行公告",
       "reason": "missing_milestone_announcement",
       "detail": "缺少买入节点公告"
+    },
+    {
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-22",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_issue_announcement",
+      "strategyLabel": "审核通过买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-02-12",
+      "exitAnnouncementDate": "2026-09-21",
+      "reason": "no_executable_window",
+      "detail": "两个公告节点之间没有完整的可交易窗口"
     },
     {
       "bondCode": "128010",

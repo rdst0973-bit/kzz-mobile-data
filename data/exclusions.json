@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-21T10:39:22.395Z",
+    "generatedAt": "2026-09-22T10:39:14.121Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-21",
+    "coverageEnd": "2026-09-22",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -68,22 +68,22 @@
     "cninfoRowsAllYears": 979,
     "eastmoneyRowsAllYears": 1055,
     "migratedAliasesRemoved": 5,
-    "inScopeCandidates": 969,
+    "inScopeCandidates": 971,
     "staticFieldsReady": 967,
-    "staticFieldExclusions": 2,
+    "staticFieldExclusions": 4,
     "attemptedCandidates": 967,
     "stockSeriesAvailable": 967,
     "bondFiveBarsAvailable": 956,
     "validBacktests": 940,
     "marketDataAuditExclusions": 3,
     "coreExclusions": 24,
-    "totalPublishedExclusions": 29
+    "totalPublishedExclusions": 31
   },
   "reasonCounts": {
     "historical_st_limit_ambiguous": 2,
     "incomplete_exit_window": 2,
     "missing_bond_bar": 17,
-    "missing_listing_date": 2,
+    "missing_listing_date": 4,
     "missing_price_limit_reference": 1,
     "stock_buy_limit_up": 5
   },
@@ -979,27 +979,12 @@
           }
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 14,
-          "filledDates": [
-            "2026-08-24",
-            "2026-08-25",
-            "2026-08-26",
-            "2026-08-27",
-            "2026-08-28",
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 2,
             "differences": []
           },
           "priceLimitAudit": {
@@ -1018,10 +1003,7 @@
           },
           "secondarySkippedReason": null
         },
-        "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SH-603339-2026-08-23-2026-09-10: fetch failed",
-          "bond/eastmoney: eastmoney-bond-SH-113710-2026-09-23-2026-10-28: fetch failed"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -1717,6 +1699,43 @@
     },
     {
       "included": false,
+      "bondCode": "123286",
+      "bondName": "国科转债",
+      "stockCode": "301571",
+      "stockName": "国科天成",
+      "exchange": "SZ",
+      "recordDate": "2026-09-22",
+      "subscriptionDate": "2026-09-23",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123286",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123286.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-09-22",
+        "cninfoRecordDate": "2026-09-22",
+        "eastmoneyRecordDate": "2026-09-22",
+        "cninfoSubscriptionDate": "2026-09-23",
+        "eastmoneySubscriptionDate": "2026-09-23"
+      }
+    },
+    {
+      "included": false,
       "bondCode": "127004",
       "bondName": "模塑转债",
       "stockCode": "000700",
@@ -2034,6 +2053,43 @@
         "eastmoneyRecordDate": "2026-09-16",
         "cninfoSubscriptionDate": "2026-09-17",
         "eastmoneySubscriptionDate": "2026-09-17"
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "127117",
+      "bondName": "奥士转债",
+      "stockCode": "002913",
+      "stockName": "奥士康",
+      "exchange": "SZ",
+      "recordDate": "2026-09-22",
+      "subscriptionDate": "2026-09-23",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127117",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127117.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-09-22",
+        "cninfoRecordDate": "2026-09-22",
+        "eastmoneyRecordDate": "2026-09-22",
+        "cninfoSubscriptionDate": "2026-09-23",
+        "eastmoneySubscriptionDate": "2026-09-23"
       }
     },
     {

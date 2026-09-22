@@ -1,13 +1,13 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-21T10:44:24.975Z",
-    "coverageEnd": "2026-09-21",
-    "sourceAsOfDate": "2026-09-21",
+    "generatedAt": "2026-09-22T11:02:56.836Z",
+    "coverageEnd": "2026-09-22",
+    "sourceAsOfDate": "2026-09-22",
     "source": "ambush.json/livePipeline.beforeIssueAnnouncement",
     "note": "注册已生效、尚待最终发行公告的可转债项目。发行参数补齐后由 opportunities.json 接管展示。"
   },
-  "count": 14,
+  "count": 12,
   "opportunities": [
     {
       "stockCode": "688510",
@@ -232,123 +232,6 @@
         "excessShares": 19,
         "initialCashFen": 516000,
         "temporaryCashRatio": 1.032,
-        "reasons": []
-      }
-    },
-    {
-      "stockCode": "301571",
-      "stockName": "国科天成",
-      "exchange": "SZ",
-      "board": "创业板",
-      "auditId": "1004038",
-      "statusCode": "70",
-      "stageLabel": "注册生效",
-      "stageDate": "2026-09-07",
-      "acceptedDate": "2025-07-24",
-      "proposedScaleYi": 8.488,
-      "registered": true,
-      "paused": false,
-      "terminal": false,
-      "sourceName": "深交所再融资审核项目动态",
-      "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004038",
-      "registrationDisclosure": null,
-      "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 7472,
-        "return5": 0.04474273,
-        "return20": 0.14041514,
-        "aboveMa5": true,
-        "points": [
-          {
-            "date": "2026-09-07",
-            "closeFen": 6959
-          },
-          {
-            "date": "2026-09-08",
-            "closeFen": 7231
-          },
-          {
-            "date": "2026-09-09",
-            "closeFen": 7388
-          },
-          {
-            "date": "2026-09-10",
-            "closeFen": 7339
-          },
-          {
-            "date": "2026-09-11",
-            "closeFen": 7152
-          },
-          {
-            "date": "2026-09-14",
-            "closeFen": 7097
-          },
-          {
-            "date": "2026-09-15",
-            "closeFen": 6945
-          },
-          {
-            "date": "2026-09-16",
-            "closeFen": 6971
-          },
-          {
-            "date": "2026-09-17",
-            "closeFen": 7291
-          },
-          {
-            "date": "2026-09-18",
-            "closeFen": 7472
-          }
-        ],
-        "sourceName": "腾讯证券日K",
-        "basis": "registration_to_latest",
-        "startDate": "2026-09-07",
-        "startPriceFen": 6959,
-        "periodReturn": 0.07371749,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-09-08",
-          "entryPriceFen": 6984,
-          "factorDate": "2026-09-07",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": 0.02338235294117652,
-          "volatility20": 0.5506375609770036,
-          "marketReturn10": 0.00260567,
-          "status": "participate",
-          "selected": true,
-          "budgetFen": 500000,
-          "targetBudgetFen": 500000,
-          "targetShares": 71,
-          "initialShares": 100,
-          "excessShares": 29,
-          "initialCashFen": 698400,
-          "temporaryCashRatio": 1.3968,
-          "reasons": []
-        }
-      },
-      "recentTrendError": null,
-      "entryAssessment": {
-        "windowStatus": "entry_passed",
-        "entryDate": "2026-09-08",
-        "entryPriceFen": 6984,
-        "factorDate": "2026-09-07",
-        "referencePriceFen": null,
-        "referencePriceDate": null,
-        "priceBasis": "actual_open",
-        "momentum20": 0.02338235294117652,
-        "volatility20": 0.5506375609770036,
-        "marketReturn10": 0.00260567,
-        "status": "participate",
-        "selected": true,
-        "budgetFen": 500000,
-        "targetBudgetFen": 500000,
-        "targetShares": 71,
-        "initialShares": 100,
-        "excessShares": 29,
-        "initialCashFen": 698400,
-        "temporaryCashRatio": 1.3968,
         "reasons": []
       }
     },
@@ -1620,19 +1503,17 @@
           "priceBasis": "actual_open",
           "momentum20": -0.014209591474245276,
           "volatility20": 0.8159564473008272,
-          "marketReturn10": null,
-          "status": "missing",
-          "selected": false,
-          "budgetFen": 0,
-          "targetBudgetFen": 250000,
-          "targetShares": 151,
-          "initialShares": 200,
-          "excessShares": 49,
-          "initialCashFen": 329000,
+          "marketReturn10": 0.00150148,
+          "status": "participate",
+          "selected": true,
+          "budgetFen": 500000,
+          "targetBudgetFen": 500000,
+          "targetShares": 303,
+          "initialShares": 400,
+          "excessShares": 97,
+          "initialCashFen": 658000,
           "temporaryCashRatio": 1.316,
-          "reasons": [
-            "关键因子缺失，待核验"
-          ]
+          "reasons": []
         }
       },
       "recentTrendError": null,
@@ -1646,19 +1527,17 @@
         "priceBasis": "actual_open",
         "momentum20": -0.014209591474245276,
         "volatility20": 0.8159564473008272,
-        "marketReturn10": null,
-        "status": "missing",
-        "selected": false,
-        "budgetFen": 0,
-        "targetBudgetFen": 250000,
-        "targetShares": 151,
-        "initialShares": 200,
-        "excessShares": 49,
-        "initialCashFen": 329000,
+        "marketReturn10": 0.00150148,
+        "status": "participate",
+        "selected": true,
+        "budgetFen": 500000,
+        "targetBudgetFen": 500000,
+        "targetShares": 303,
+        "initialShares": 400,
+        "excessShares": 97,
+        "initialCashFen": 658000,
         "temporaryCashRatio": 1.316,
-        "reasons": [
-          "关键因子缺失，待核验"
-        ]
+        "reasons": []
       }
     },
     {
@@ -1861,19 +1740,17 @@
           "priceBasis": "actual_open",
           "momentum20": -0.4225825588293455,
           "volatility20": 0.9601252974396667,
-          "marketReturn10": null,
-          "status": "missing",
-          "selected": false,
-          "budgetFen": 0,
-          "targetBudgetFen": 250000,
-          "targetShares": 86,
-          "initialShares": 100,
-          "excessShares": 14,
-          "initialCashFen": 287900,
+          "marketReturn10": 0.00150148,
+          "status": "participate",
+          "selected": true,
+          "budgetFen": 500000,
+          "targetBudgetFen": 500000,
+          "targetShares": 173,
+          "initialShares": 200,
+          "excessShares": 27,
+          "initialCashFen": 575800,
           "temporaryCashRatio": 1.1516,
-          "reasons": [
-            "关键因子缺失，待核验"
-          ]
+          "reasons": []
         }
       },
       "recentTrendError": null,
@@ -1887,19 +1764,17 @@
         "priceBasis": "actual_open",
         "momentum20": -0.4225825588293455,
         "volatility20": 0.9601252974396667,
-        "marketReturn10": null,
-        "status": "missing",
-        "selected": false,
-        "budgetFen": 0,
-        "targetBudgetFen": 250000,
-        "targetShares": 86,
-        "initialShares": 100,
-        "excessShares": 14,
-        "initialCashFen": 287900,
+        "marketReturn10": 0.00150148,
+        "status": "participate",
+        "selected": true,
+        "budgetFen": 500000,
+        "targetBudgetFen": 500000,
+        "targetShares": 173,
+        "initialShares": 200,
+        "excessShares": 27,
+        "initialCashFen": 575800,
         "temporaryCashRatio": 1.1516,
-        "reasons": [
-          "关键因子缺失，待核验"
-        ]
+        "reasons": []
       }
     },
     {
@@ -2130,8 +2005,8 @@
           "priceBasis": "actual_open",
           "momentum20": 0.22664359861591699,
           "volatility20": 0.6768699683420344,
-          "marketReturn10": null,
-          "status": "missing",
+          "marketReturn10": -0.02366228,
+          "status": "skip",
           "selected": false,
           "budgetFen": 0,
           "targetBudgetFen": 250000,
@@ -2141,7 +2016,8 @@
           "initialCashFen": 282800,
           "temporaryCashRatio": 1.1312,
           "reasons": [
-            "关键因子缺失，待核验"
+            "买入前20日涨幅超过20%",
+            "弱市且20日年化波动率不低于50%"
           ]
         }
       },
@@ -2156,8 +2032,8 @@
         "priceBasis": "actual_open",
         "momentum20": 0.22664359861591699,
         "volatility20": 0.6768699683420344,
-        "marketReturn10": null,
-        "status": "missing",
+        "marketReturn10": -0.02366228,
+        "status": "skip",
         "selected": false,
         "budgetFen": 0,
         "targetBudgetFen": 250000,
@@ -2167,560 +2043,8 @@
         "initialCashFen": 282800,
         "temporaryCashRatio": 1.1312,
         "reasons": [
-          "关键因子缺失，待核验"
-        ]
-      }
-    },
-    {
-      "stockCode": "002913",
-      "stockName": "奥士康",
-      "exchange": "SZ",
-      "board": "深市主板",
-      "auditId": "1004116",
-      "statusCode": "70",
-      "stageLabel": "注册生效",
-      "stageDate": "2026-04-01",
-      "acceptedDate": "2025-10-10",
-      "proposedScaleYi": 10,
-      "registered": true,
-      "paused": false,
-      "terminal": false,
-      "sourceName": "深交所再融资审核项目动态",
-      "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004116",
-      "registrationDisclosure": null,
-      "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 8406,
-        "return5": 0.15960822,
-        "return20": 0.39241345,
-        "aboveMa5": true,
-        "points": [
-          {
-            "date": "2026-04-01",
-            "closeFen": 4779
-          },
-          {
-            "date": "2026-04-02",
-            "closeFen": 4662
-          },
-          {
-            "date": "2026-04-03",
-            "closeFen": 4496
-          },
-          {
-            "date": "2026-04-07",
-            "closeFen": 4546
-          },
-          {
-            "date": "2026-04-08",
-            "closeFen": 4953
-          },
-          {
-            "date": "2026-04-09",
-            "closeFen": 4961
-          },
-          {
-            "date": "2026-04-10",
-            "closeFen": 5028
-          },
-          {
-            "date": "2026-04-13",
-            "closeFen": 5162
-          },
-          {
-            "date": "2026-04-14",
-            "closeFen": 5215
-          },
-          {
-            "date": "2026-04-15",
-            "closeFen": 5062
-          },
-          {
-            "date": "2026-04-16",
-            "closeFen": 5062
-          },
-          {
-            "date": "2026-04-17",
-            "closeFen": 5145
-          },
-          {
-            "date": "2026-04-20",
-            "closeFen": 5096
-          },
-          {
-            "date": "2026-04-21",
-            "closeFen": 5080
-          },
-          {
-            "date": "2026-04-22",
-            "closeFen": 5084
-          },
-          {
-            "date": "2026-04-23",
-            "closeFen": 5056
-          },
-          {
-            "date": "2026-04-24",
-            "closeFen": 4882
-          },
-          {
-            "date": "2026-04-27",
-            "closeFen": 4913
-          },
-          {
-            "date": "2026-04-28",
-            "closeFen": 5081
-          },
-          {
-            "date": "2026-04-29",
-            "closeFen": 5142
-          },
-          {
-            "date": "2026-04-30",
-            "closeFen": 5195
-          },
-          {
-            "date": "2026-05-06",
-            "closeFen": 5305
-          },
-          {
-            "date": "2026-05-07",
-            "closeFen": 5558
-          },
-          {
-            "date": "2026-05-08",
-            "closeFen": 5815
-          },
-          {
-            "date": "2026-05-11",
-            "closeFen": 5868
-          },
-          {
-            "date": "2026-05-12",
-            "closeFen": 5744
-          },
-          {
-            "date": "2026-05-13",
-            "closeFen": 5727
-          },
-          {
-            "date": "2026-05-14",
-            "closeFen": 5380
-          },
-          {
-            "date": "2026-05-15",
-            "closeFen": 5159
-          },
-          {
-            "date": "2026-05-18",
-            "closeFen": 5088
-          },
-          {
-            "date": "2026-05-19",
-            "closeFen": 5301
-          },
-          {
-            "date": "2026-05-20",
-            "closeFen": 5356
-          },
-          {
-            "date": "2026-05-21",
-            "closeFen": 5223
-          },
-          {
-            "date": "2026-05-22",
-            "closeFen": 5576
-          },
-          {
-            "date": "2026-05-25",
-            "closeFen": 5683
-          },
-          {
-            "date": "2026-05-26",
-            "closeFen": 5721
-          },
-          {
-            "date": "2026-05-27",
-            "closeFen": 5430
-          },
-          {
-            "date": "2026-05-28",
-            "closeFen": 5423
-          },
-          {
-            "date": "2026-05-29",
-            "closeFen": 5200
-          },
-          {
-            "date": "2026-06-01",
-            "closeFen": 5515
-          },
-          {
-            "date": "2026-06-02",
-            "closeFen": 5515
-          },
-          {
-            "date": "2026-06-03",
-            "closeFen": 5376
-          },
-          {
-            "date": "2026-06-04",
-            "closeFen": 5375
-          },
-          {
-            "date": "2026-06-05",
-            "closeFen": 5170
-          },
-          {
-            "date": "2026-06-08",
-            "closeFen": 5027
-          },
-          {
-            "date": "2026-06-09",
-            "closeFen": 5198
-          },
-          {
-            "date": "2026-06-10",
-            "closeFen": 4971
-          },
-          {
-            "date": "2026-06-11",
-            "closeFen": 5471
-          },
-          {
-            "date": "2026-06-12",
-            "closeFen": 5568
-          },
-          {
-            "date": "2026-06-15",
-            "closeFen": 6128
-          },
-          {
-            "date": "2026-06-16",
-            "closeFen": 6549
-          },
-          {
-            "date": "2026-06-17",
-            "closeFen": 6738
-          },
-          {
-            "date": "2026-06-18",
-            "closeFen": 7003
-          },
-          {
-            "date": "2026-06-22",
-            "closeFen": 6705
-          },
-          {
-            "date": "2026-06-23",
-            "closeFen": 6719
-          },
-          {
-            "date": "2026-06-24",
-            "closeFen": 6690
-          },
-          {
-            "date": "2026-06-25",
-            "closeFen": 6665
-          },
-          {
-            "date": "2026-06-26",
-            "closeFen": 6396
-          },
-          {
-            "date": "2026-06-29",
-            "closeFen": 6130
-          },
-          {
-            "date": "2026-06-30",
-            "closeFen": 6394
-          },
-          {
-            "date": "2026-07-01",
-            "closeFen": 6303
-          },
-          {
-            "date": "2026-07-02",
-            "closeFen": 5802
-          },
-          {
-            "date": "2026-07-03",
-            "closeFen": 5715
-          },
-          {
-            "date": "2026-07-06",
-            "closeFen": 5605
-          },
-          {
-            "date": "2026-07-07",
-            "closeFen": 5443
-          },
-          {
-            "date": "2026-07-08",
-            "closeFen": 5370
-          },
-          {
-            "date": "2026-07-09",
-            "closeFen": 5610
-          },
-          {
-            "date": "2026-07-10",
-            "closeFen": 5434
-          },
-          {
-            "date": "2026-07-13",
-            "closeFen": 4996
-          },
-          {
-            "date": "2026-07-14",
-            "closeFen": 5233
-          },
-          {
-            "date": "2026-07-15",
-            "closeFen": 4898
-          },
-          {
-            "date": "2026-07-16",
-            "closeFen": 4780
-          },
-          {
-            "date": "2026-07-17",
-            "closeFen": 4302
-          },
-          {
-            "date": "2026-07-20",
-            "closeFen": 3872
-          },
-          {
-            "date": "2026-07-21",
-            "closeFen": 4259
-          },
-          {
-            "date": "2026-07-22",
-            "closeFen": 4390
-          },
-          {
-            "date": "2026-07-23",
-            "closeFen": 4422
-          },
-          {
-            "date": "2026-07-24",
-            "closeFen": 4508
-          },
-          {
-            "date": "2026-07-27",
-            "closeFen": 4633
-          },
-          {
-            "date": "2026-07-28",
-            "closeFen": 4220
-          },
-          {
-            "date": "2026-07-29",
-            "closeFen": 4078
-          },
-          {
-            "date": "2026-07-30",
-            "closeFen": 3811
-          },
-          {
-            "date": "2026-07-31",
-            "closeFen": 3944
-          },
-          {
-            "date": "2026-08-03",
-            "closeFen": 4073
-          },
-          {
-            "date": "2026-08-04",
-            "closeFen": 4480
-          },
-          {
-            "date": "2026-08-05",
-            "closeFen": 4792
-          },
-          {
-            "date": "2026-08-06",
-            "closeFen": 5038
-          },
-          {
-            "date": "2026-08-07",
-            "closeFen": 5542
-          },
-          {
-            "date": "2026-08-10",
-            "closeFen": 5533
-          },
-          {
-            "date": "2026-08-11",
-            "closeFen": 5546
-          },
-          {
-            "date": "2026-08-12",
-            "closeFen": 5700
-          },
-          {
-            "date": "2026-08-13",
-            "closeFen": 5565
-          },
-          {
-            "date": "2026-08-14",
-            "closeFen": 5675
-          },
-          {
-            "date": "2026-08-17",
-            "closeFen": 5916
-          },
-          {
-            "date": "2026-08-18",
-            "closeFen": 6130
-          },
-          {
-            "date": "2026-08-19",
-            "closeFen": 5747
-          },
-          {
-            "date": "2026-08-20",
-            "closeFen": 5879
-          },
-          {
-            "date": "2026-08-21",
-            "closeFen": 6037
-          },
-          {
-            "date": "2026-08-24",
-            "closeFen": 5750
-          },
-          {
-            "date": "2026-08-25",
-            "closeFen": 5684
-          },
-          {
-            "date": "2026-08-26",
-            "closeFen": 5677
-          },
-          {
-            "date": "2026-08-27",
-            "closeFen": 5901
-          },
-          {
-            "date": "2026-08-28",
-            "closeFen": 5906
-          },
-          {
-            "date": "2026-08-31",
-            "closeFen": 6405
-          },
-          {
-            "date": "2026-09-01",
-            "closeFen": 6198
-          },
-          {
-            "date": "2026-09-02",
-            "closeFen": 6156
-          },
-          {
-            "date": "2026-09-03",
-            "closeFen": 6343
-          },
-          {
-            "date": "2026-09-04",
-            "closeFen": 6100
-          },
-          {
-            "date": "2026-09-07",
-            "closeFen": 6511
-          },
-          {
-            "date": "2026-09-08",
-            "closeFen": 6477
-          },
-          {
-            "date": "2026-09-09",
-            "closeFen": 7120
-          },
-          {
-            "date": "2026-09-10",
-            "closeFen": 7099
-          },
-          {
-            "date": "2026-09-11",
-            "closeFen": 7249
-          },
-          {
-            "date": "2026-09-14",
-            "closeFen": 7654
-          },
-          {
-            "date": "2026-09-15",
-            "closeFen": 7555
-          },
-          {
-            "date": "2026-09-16",
-            "closeFen": 8311
-          },
-          {
-            "date": "2026-09-17",
-            "closeFen": 8215
-          },
-          {
-            "date": "2026-09-18",
-            "closeFen": 8406
-          }
-        ],
-        "sourceName": "腾讯证券日K",
-        "basis": "registration_to_latest",
-        "startDate": "2026-04-01",
-        "startPriceFen": 4809,
-        "periodReturn": 0.75883498,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-04-02",
-          "entryPriceFen": 4795,
-          "factorDate": "2026-04-01",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": 0.09609430543769926,
-          "volatility20": 0.7798094078464785,
-          "marketReturn10": null,
-          "status": "missing",
-          "selected": false,
-          "budgetFen": 0,
-          "targetBudgetFen": 250000,
-          "targetShares": 52,
-          "initialShares": 100,
-          "excessShares": 48,
-          "initialCashFen": 479500,
-          "temporaryCashRatio": 1.918,
-          "reasons": [
-            "关键因子缺失，待核验"
-          ]
-        }
-      },
-      "recentTrendError": null,
-      "entryAssessment": {
-        "windowStatus": "entry_passed",
-        "entryDate": "2026-04-02",
-        "entryPriceFen": 4795,
-        "factorDate": "2026-04-01",
-        "referencePriceFen": null,
-        "referencePriceDate": null,
-        "priceBasis": "actual_open",
-        "momentum20": 0.09609430543769926,
-        "volatility20": 0.7798094078464785,
-        "marketReturn10": null,
-        "status": "missing",
-        "selected": false,
-        "budgetFen": 0,
-        "targetBudgetFen": 250000,
-        "targetShares": 52,
-        "initialShares": 100,
-        "excessShares": 48,
-        "initialCashFen": 479500,
-        "temporaryCashRatio": 1.918,
-        "reasons": [
-          "关键因子缺失，待核验"
+          "买入前20日涨幅超过20%",
+          "弱市且20日年化波动率不低于50%"
         ]
       }
     }
