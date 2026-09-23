@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-22T11:02:56.836Z",
-    "coverageEnd": "2026-09-22",
-    "sourceAsOfDate": "2026-09-22",
+    "generatedAt": "2026-09-23T10:40:36.973Z",
+    "coverageEnd": "2026-09-23",
+    "sourceAsOfDate": "2026-09-23",
     "source": "ambush.json/livePipeline.beforeIssueAnnouncement",
     "note": "注册已生效、尚待最终发行公告的可转债项目。发行参数补齐后由 opportunities.json 接管展示。"
   },
@@ -27,10 +27,10 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001236&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 2451,
-        "return5": -0.05658199,
-        "return20": 0.02939941,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 2497,
+        "return5": 0.03395445,
+        "return20": 0.02926628,
         "aboveMa5": false,
         "points": [
           {
@@ -60,13 +60,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 2451
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 2545
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 2535
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 2497
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-09-10",
         "startPriceFen": 2668,
-        "periodReturn": -0.08133433,
+        "periodReturn": -0.06409295,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-09-11",
@@ -136,11 +148,11 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004132",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 870,
-        "return5": 0.00694444,
-        "return20": 0.11538462,
-        "aboveMa5": false,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 925,
+        "return5": 0.04401806,
+        "return20": 0.10250298,
+        "aboveMa5": true,
         "points": [
           {
             "date": "2026-09-07",
@@ -181,13 +193,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 870
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 911
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 901
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 925
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-09-07",
         "startPriceFen": 851,
-        "periodReturn": 0.02232667,
+        "periodReturn": 0.08695652,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-09-08",
@@ -260,11 +284,11 @@
         "note": "9月6日晚间已公开，公告文件落款及交易所归属日期为9月7日"
       },
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 565,
-        "return5": -0.00176678,
-        "return20": 0.05214153,
-        "aboveMa5": true,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 559,
+        "return5": 0,
+        "return20": 0,
+        "aboveMa5": false,
         "points": [
           {
             "date": "2026-09-07",
@@ -305,13 +329,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 565
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 564
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 562
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 559
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-09-07",
         "startPriceFen": 567,
-        "periodReturn": 0.00892857,
+        "periodReturn": -0.00178571,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-09-07",
@@ -377,10 +413,10 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001091&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 2390,
-        "return5": 0.05986696,
-        "return20": 0.03822763,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 2452,
+        "return5": 0.0302521,
+        "return20": 0.08208297,
         "aboveMa5": true,
         "points": [
           {
@@ -430,13 +466,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 2390
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 2414
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 2378
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 2452
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-09-03",
         "startPriceFen": 2295,
-        "periodReturn": 0.04139434,
+        "periodReturn": 0.06840959,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-09-04",
@@ -502,10 +550,10 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001200&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 4320,
-        "return5": 0.12178655,
-        "return20": 0.12705453,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 4469,
+        "return5": 0.03257856,
+        "return20": 0.18133756,
         "aboveMa5": true,
         "points": [
           {
@@ -555,13 +603,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 4320
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 4252
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 4459
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 4469
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-09-03",
         "startPriceFen": 3831,
-        "periodReturn": 0.12764291,
+        "periodReturn": 0.16653615,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-09-04",
@@ -633,10 +693,10 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004178",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 1850,
-        "return5": 0.01704233,
-        "return20": 0.09727165,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 1882,
+        "return5": 0.03805847,
+        "return20": 0.08472622,
         "aboveMa5": true,
         "points": [
           {
@@ -686,13 +746,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 1850
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 1893
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 1861
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 1882
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-09-03",
         "startPriceFen": 1795,
-        "periodReturn": 0.03064067,
+        "periodReturn": 0.04846797,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-09-04",
@@ -758,11 +830,11 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1000985&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 410,
-        "return5": -0.04651163,
-        "return20": 0.0199005,
-        "aboveMa5": false,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 412,
+        "return5": -0.00483092,
+        "return20": -0.03738318,
+        "aboveMa5": true,
         "points": [
           {
             "date": "2026-08-20",
@@ -851,13 +923,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 410
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 409
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 406
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 412
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-08-20",
         "startPriceFen": 396,
-        "periodReturn": 0.03535354,
+        "periodReturn": 0.04040404,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-08-21",
@@ -923,10 +1007,10 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001195&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 8437,
-        "return5": 0.06045752,
-        "return20": 0.02777439,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 8350,
+        "return5": 0.03060973,
+        "return20": 0.05722968,
         "aboveMa5": true,
         "points": [
           {
@@ -1044,13 +1128,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 8437
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 8360
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 8323
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 8350
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-08-11",
         "startPriceFen": 8398,
-        "periodReturn": 0.00704225,
+        "periodReturn": -0.00334209,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-08-12",
@@ -1120,11 +1216,11 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004139",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 5948,
-        "return5": 0.02287188,
-        "return20": 0.08559956,
-        "aboveMa5": false,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 6347,
+        "return5": 0.06421865,
+        "return20": 0.14525442,
+        "aboveMa5": true,
         "points": [
           {
             "date": "2026-08-07",
@@ -1249,13 +1345,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 5948
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 6526
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 6528
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 6347
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-08-07",
         "startPriceFen": 5015,
-        "periodReturn": 0.18604187,
+        "periodReturn": 0.26560319,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-08-10",
@@ -1321,10 +1429,10 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004320",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 1954,
-        "return5": 0.02842105,
-        "return20": -0.12806783,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 1980,
+        "return5": 0.02114492,
+        "return20": -0.01785714,
         "aboveMa5": true,
         "points": [
           {
@@ -1486,13 +1594,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 1954
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 1954
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 1987
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 1980
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-07-27",
         "startPriceFen": 1665,
-        "periodReturn": 0.17357357,
+        "periodReturn": 0.18918919,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-07-28",
@@ -1558,11 +1678,11 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004213",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 6029,
-        "return5": 0.2395148,
-        "return20": 0.64546943,
-        "aboveMa5": false,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 7456,
+        "return5": 0.20277464,
+        "return20": 1.05796301,
+        "aboveMa5": true,
         "points": [
           {
             "date": "2026-07-27",
@@ -1723,13 +1843,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 6029
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 6326
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 6833
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 7456
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-07-27",
         "startPriceFen": 2920,
-        "periodReturn": 1.06472603,
+        "periodReturn": 1.55342466,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-07-28",
@@ -1795,10 +1927,10 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004252",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-09-18",
-        "latestPriceFen": 643,
-        "return5": 0.01901743,
-        "return20": -0.04457652,
+        "asOfDate": "2026-09-23",
+        "latestPriceFen": 653,
+        "return5": 0.03322785,
+        "return20": -0.02827381,
         "aboveMa5": true,
         "points": [
           {
@@ -1988,13 +2120,25 @@
           {
             "date": "2026-09-18",
             "closeFen": 643
+          },
+          {
+            "date": "2026-09-21",
+            "closeFen": 660
+          },
+          {
+            "date": "2026-09-22",
+            "closeFen": 655
+          },
+          {
+            "date": "2026-09-23",
+            "closeFen": 653
           }
         ],
         "sourceName": "腾讯证券日K",
         "basis": "registration_to_latest",
         "startDate": "2026-07-16",
         "startPriceFen": 709,
-        "periodReturn": -0.09308886,
+        "periodReturn": -0.07898449,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-07-17",

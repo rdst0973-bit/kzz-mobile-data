@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-22T10:39:14.121Z",
+    "generatedAt": "2026-09-23T10:35:00.607Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-22",
+    "coverageEnd": "2026-09-23",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-22T10:39:14.121Z",
+    "generatedAt": "2026-09-23T10:35:00.607Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-22",
+    "coverageEnd": "2026-09-23",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -729,28 +729,28 @@
     }
   ],
   "funnel": {
-    "sourceUnionAllYears": 1055,
-    "cninfoRowsAllYears": 979,
-    "eastmoneyRowsAllYears": 1055,
+    "sourceUnionAllYears": 1057,
+    "cninfoRowsAllYears": 981,
+    "eastmoneyRowsAllYears": 1057,
     "migratedAliasesRemoved": 5,
     "inScopeCandidates": 971,
-    "staticFieldsReady": 967,
-    "staticFieldExclusions": 4,
-    "attemptedCandidates": 967,
-    "stockSeriesAvailable": 967,
+    "staticFieldsReady": 968,
+    "staticFieldExclusions": 3,
+    "attemptedCandidates": 968,
+    "stockSeriesAvailable": 968,
     "bondFiveBarsAvailable": 956,
     "validBacktests": 940,
     "marketDataAuditExclusions": 3,
-    "coreExclusions": 24,
+    "coreExclusions": 25,
     "totalPublishedExclusions": 31
   },
   "sourceUsage": {
     "stock": {
-      "tencent-fqkline": 870,
+      "tencent-fqkline": 871,
       "eastmoney-push2his-kline": 97
     },
     "bond": {
-      "tencent-fqkline": 964,
+      "tencent-fqkline": 965,
       "missing": 3
     }
   },
@@ -54468,11 +54468,10 @@
             "comparedDates": 0,
             "differences": []
           },
-          "secondarySkippedReason": null
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-11-02"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-600521-2020-10-20-2020-11-09",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-110076-2020-11-25-2020-12-30"
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-600521-2020-10-20-2020-11-09"
         ]
       }
     },
@@ -133094,7 +133093,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 25,
+          "barCount": 26,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -133729,7 +133728,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 25,
+          "barCount": 26,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -133856,7 +133855,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 21,
+          "barCount": 22,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -133983,7 +133982,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 20,
+          "barCount": 21,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134110,7 +134109,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 22,
+          "barCount": 23,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134237,7 +134236,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 15,
+          "barCount": 16,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -134364,7 +134363,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 10,
+          "barCount": 11,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -134491,7 +134490,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 14,
+          "barCount": 15,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
