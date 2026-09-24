@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-09-23T10:40:36.973Z",
+    "generatedAt": "2026-09-24T10:38:42.478Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-09-23",
+    "coverageEnd": "2026-09-24",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -13,7 +13,212 @@
     "participationRule": "所有具有完整买卖节点和可验证成交窗口的候选等额参与，不做因子筛选",
     "grossOnly": true,
     "dailyApproximation": true,
-    "staleCacheFallbacks": [],
+    "staleCacheFallbacks": [
+      {
+        "key": "live-stock-300181-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-300181-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.107Z",
+        "error": "stock-tencent-SZ-300181-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-300181-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-605016-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-605016-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.085Z",
+        "error": "stock-tencent-SH-605016-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SH-605016-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301631-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301631-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.145Z",
+        "error": "stock-tencent-SZ-301631-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-301631-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603061-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-603061-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.102Z",
+        "error": "stock-tencent-SH-603061-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SH-603061-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301279-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301279-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.163Z",
+        "error": "stock-tencent-SZ-301279-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-301279-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603043-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-603043-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.355Z",
+        "error": "stock-tencent-SH-603043-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-603043-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688372-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-688372-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.288Z",
+        "error": "stock-tencent-SH-688372-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-688372-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-300634-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-300634-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.149Z",
+        "error": "stock-tencent-SZ-300634-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-300634-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688600-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-688600-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.160Z",
+        "error": "stock-tencent-SH-688600-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-688600-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-601717-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-601717-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.204Z",
+        "error": "stock-tencent-SH-601717-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-601717-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301379-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301379-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.219Z",
+        "error": "stock-tencent-SZ-301379-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-301379-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600089-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-600089-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.221Z",
+        "error": "stock-tencent-SH-600089-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-600089-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301092-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301092-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.268Z",
+        "error": "stock-tencent-SZ-301092-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-301092-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603499-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-603499-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.281Z",
+        "error": "stock-tencent-SH-603499-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-603499-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600577-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-600577-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.229Z",
+        "error": "stock-tencent-SH-600577-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-600577-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301305-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301305-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.293Z",
+        "error": "stock-tencent-SZ-301305-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-301305-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688720-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-688720-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.344Z",
+        "error": "stock-tencent-SH-688720-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-688720-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300739-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-300739-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.322Z",
+        "error": "stock-tencent-SZ-300739-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-300739-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603565-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-603565-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.396Z",
+        "error": "stock-tencent-SH-603565-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-603565-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-605020-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-605020-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.350Z",
+        "error": "stock-tencent-SH-605020-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SH-605020-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001221-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-001221-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.406Z",
+        "error": "stock-tencent-SZ-001221-2026-07-31-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-001221-2026-07-31-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301018-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301018-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.097Z",
+        "error": "stock-tencent-SZ-301018-2026-05-17-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-301018-2026-05-17-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-001282-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-001282-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.417Z",
+        "error": "stock-tencent-SZ-001282-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-001282-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300893-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-300893-2026-07-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.403Z",
+        "error": "stock-tencent-SZ-300893-2026-07-31-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-300893-2026-07-31-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301149-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301149-2026-04-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.472Z",
+        "error": "stock-tencent-SZ-301149-2026-04-30-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-301149-2026-04-30-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301175-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-301175-2026-04-27-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.466Z",
+        "error": "stock-tencent-SZ-301175-2026-04-27-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-301175-2026-04-27-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688510-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-688510-2026-05-03-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.450Z",
+        "error": "stock-tencent-SH-688510-2026-05-03-2026-09-24-raw: HTTP 501；stock-eastmoney-SH-688510-2026-05-03-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688150-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-688150-2026-04-26-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.525Z",
+        "error": "stock-tencent-SH-688150-2026-04-26-2026-09-24-raw: HTTP 501；stock-eastmoney-SH-688150-2026-04-26-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603163-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-603163-2026-04-03-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.564Z",
+        "error": "stock-tencent-SH-603163-2026-04-03-2026-09-24-raw: HTTP 501；stock-eastmoney-SH-603163-2026-04-03-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300909-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-300909-2026-03-30-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.578Z",
+        "error": "stock-tencent-SZ-300909-2026-03-30-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-300909-2026-03-30-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600368-2026-09-24",
+        "fallbackKey": "stock-tencent-SH-600368-2026-04-12-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.542Z",
+        "error": "stock-tencent-SH-600368-2026-04-12-2026-09-24-qfq: HTTP 501；stock-eastmoney-SH-600368-2026-04-12-2026-09-24-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001380-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-001380-2026-04-26-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.533Z",
+        "error": "stock-tencent-SZ-001380-2026-04-26-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-001380-2026-04-26-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-002550-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-002550-2026-03-08-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.624Z",
+        "error": "stock-tencent-SZ-002550-2026-03-08-2026-09-24-qfq: HTTP 501；stock-eastmoney-SZ-002550-2026-03-08-2026-09-24-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-000887-2026-09-24",
+        "fallbackKey": "stock-tencent-SZ-000887-2026-03-19-2026-09-23-raw.json",
+        "fetchedAt": "2026-09-23T10:36:36.595Z",
+        "error": "stock-tencent-SZ-000887-2026-03-19-2026-09-24-raw: HTTP 501；stock-eastmoney-SZ-000887-2026-03-19-2026-09-24-raw: fetch failed"
+      }
+    ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
     "benchmark": "沪深300",
     "validationStartYear": 2024,
@@ -77,10 +282,10 @@
     ]
   },
   "funnel": {
-    "candidateBonds": 1034,
+    "candidateBonds": 1036,
     "strategyPairs": 10,
-    "candidateStrategySlots": 10340,
-    "validTrades": 7917,
+    "candidateStrategySlots": 10360,
+    "validTrades": 7937,
     "excludedTrades": 2423
   },
   "eventOrder": [
@@ -191,88 +396,88 @@
   "rankedStrategies": [
     {
       "strategyId": "registered_to_issue_announcement",
-      "stabilityWinRate": 0.51079922,
-      "fullWinRate": 0.5938431,
-      "meanReturn": 0.05866785,
-      "medianReturn": 0.02907302,
+      "stabilityWinRate": 0.51722404,
+      "fullWinRate": 0.59464817,
+      "meanReturn": 0.06002683,
+      "medianReturn": 0.02927134,
       "positiveYearRate": 0.75
     },
     {
       "strategyId": "accepted_to_issue_announcement",
       "stabilityWinRate": 0.50641871,
-      "fullWinRate": 0.56402878,
-      "meanReturn": 0.13394485,
-      "medianReturn": 0.04060325,
+      "fullWinRate": 0.56527977,
+      "meanReturn": 0.13586083,
+      "medianReturn": 0.04063221,
       "positiveYearRate": 0.72727273
     },
     {
       "strategyId": "proposal_to_issue_announcement",
       "stabilityWinRate": 0.49892709,
-      "fullWinRate": 0.54857143,
-      "meanReturn": 0.15282661,
-      "medianReturn": 0.03024027,
+      "fullWinRate": 0.54960091,
+      "meanReturn": 0.15421981,
+      "medianReturn": 0.03136201,
       "positiveYearRate": 0.84615385
     },
     {
       "strategyId": "accepted_to_registered",
       "stabilityWinRate": 0.43712472,
-      "fullWinRate": 0.49784173,
-      "meanReturn": 0.07247806,
+      "fullWinRate": 0.49784792,
+      "meanReturn": 0.07267316,
       "medianReturn": -0.00174303,
       "positiveYearRate": 0.81818182
     },
     {
       "strategyId": "accepted_to_review_passed",
       "stabilityWinRate": 0.43437667,
-      "fullWinRate": 0.5,
-      "meanReturn": 0.05409519,
-      "medianReturn": 0.00142572,
+      "fullWinRate": 0.50167785,
+      "meanReturn": 0.05446607,
+      "medianReturn": 0.00402821,
       "positiveYearRate": 0.90909091
     },
     {
       "strategyId": "proposal_to_registered",
       "stabilityWinRate": 0.43035665,
-      "fullWinRate": 0.488,
-      "meanReturn": 0.09466954,
+      "fullWinRate": 0.48802737,
+      "meanReturn": 0.09471811,
       "medianReturn": -0.0095511,
       "positiveYearRate": 0.76923077
     },
     {
       "strategyId": "review_passed_to_issue_announcement",
-      "stabilityWinRate": 0.42048423,
-      "fullWinRate": 0.57936508,
-      "meanReturn": 0.08459938,
-      "medianReturn": 0.03708615,
+      "stabilityWinRate": 0.42999343,
+      "fullWinRate": 0.58031674,
+      "meanReturn": 0.08571257,
+      "medianReturn": 0.03725668,
       "positiveYearRate": 0.85
     },
     {
       "strategyId": "review_passed_to_registered",
-      "stabilityWinRate": 0.41628971,
-      "fullWinRate": 0.49488055,
-      "meanReturn": 0.02841603,
+      "stabilityWinRate": 0.41694956,
+      "fullWinRate": 0.49489217,
+      "meanReturn": 0.02827783,
       "medianReturn": -0.0008726,
       "positiveYearRate": 0.65
     },
     {
       "strategyId": "proposal_to_accepted",
       "stabilityWinRate": 0.4135321,
-      "fullWinRate": 0.47103659,
-      "meanReturn": 0.02247679,
-      "medianReturn": -0.01151673,
+      "fullWinRate": 0.46960486,
+      "meanReturn": 0.02234392,
+      "medianReturn": -0.01214522,
       "positiveYearRate": 0.63636364
     },
     {
       "strategyId": "proposal_to_review_passed",
       "stabilityWinRate": 0.40817833,
-      "fullWinRate": 0.47562582,
-      "meanReturn": 0.07164178,
-      "medianReturn": -0.01424632,
+      "fullWinRate": 0.47700394,
+      "meanReturn": 0.07182089,
+      "medianReturn": -0.01356183,
       "positiveYearRate": 0.76923077
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-09-23",
-    "sourceAsOfDate": "2026-09-23",
+    "asOfDate": "2026-09-24",
+    "sourceAsOfDate": "2026-09-24",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
@@ -283,11 +488,11 @@
     },
     "counts": {
       "sourceProjects": 527,
-      "beforeRegistration": 24,
-      "beforeIssueAnnouncement": 12,
-      "buyAlerts": 0,
-      "holding": 8,
-      "sellAlerts": 0
+      "beforeRegistration": 23,
+      "beforeIssueAnnouncement": 11,
+      "buyAlerts": 1,
+      "holding": 6,
+      "sellAlerts": 1
     },
     "beforeRegistration": [
       {
@@ -521,121 +726,6 @@
         "entryAssessment": null
       },
       {
-        "stockCode": "301018",
-        "stockName": "申菱环境",
-        "exchange": "SZ",
-        "board": "创业板",
-        "auditId": "1004259",
-        "statusCode": "60",
-        "stageLabel": "提交注册",
-        "stageDate": "2026-08-27",
-        "acceptedDate": "2026-04-09",
-        "proposedScaleYi": 10,
-        "registered": false,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "深交所再融资审核项目动态",
-        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004259",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-23",
-          "latestPriceFen": 10180,
-          "return5": 0.00473747,
-          "return20": -0.00779727,
-          "aboveMa5": false,
-          "points": [
-            {
-              "date": "2026-08-27",
-              "closeFen": 10788
-            },
-            {
-              "date": "2026-08-28",
-              "closeFen": 10317
-            },
-            {
-              "date": "2026-08-31",
-              "closeFen": 10880
-            },
-            {
-              "date": "2026-09-01",
-              "closeFen": 10547
-            },
-            {
-              "date": "2026-09-02",
-              "closeFen": 10682
-            },
-            {
-              "date": "2026-09-03",
-              "closeFen": 11274
-            },
-            {
-              "date": "2026-09-04",
-              "closeFen": 10292
-            },
-            {
-              "date": "2026-09-07",
-              "closeFen": 10652
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 10141
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 10070
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 9727
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 9600
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 9721
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 9706
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 10132
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 10414
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 10502
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 10409
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 10222
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 10180
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "recent_20_sessions",
-          "startDate": "2026-08-27",
-          "startPriceFen": 10788,
-          "periodReturn": -0.05635892,
-          "entryAssessment": null
-        },
-        "recentTrendError": null,
-        "entryAssessment": null
-      },
-      {
         "stockCode": "603061",
         "stockName": "金海通",
         "exchange": "SH",
@@ -860,6 +950,236 @@
           "startDate": "2026-08-27",
           "startPriceFen": 6409,
           "periodReturn": -0.00046809,
+          "entryAssessment": null
+        },
+        "recentTrendError": null,
+        "entryAssessment": null
+      },
+      {
+        "stockCode": "688372",
+        "stockName": "伟测科技",
+        "exchange": "SH",
+        "board": "科创板",
+        "auditId": "1001331",
+        "statusCode": "3",
+        "stageLabel": "已回复",
+        "stageDate": "2026-09-24",
+        "acceptedDate": "2026-08-25",
+        "proposedScaleYi": 20,
+        "registered": false,
+        "paused": false,
+        "terminal": false,
+        "sourceName": "上交所再融资审核项目动态",
+        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001331&bussinesType=6",
+        "registrationDisclosure": null,
+        "recentTrend": {
+          "asOfDate": "2026-09-23",
+          "latestPriceFen": 11680,
+          "return5": -0.00273224,
+          "return20": -0.03303254,
+          "aboveMa5": false,
+          "points": [
+            {
+              "date": "2026-08-27",
+              "closeFen": 12783
+            },
+            {
+              "date": "2026-08-28",
+              "closeFen": 12303
+            },
+            {
+              "date": "2026-08-31",
+              "closeFen": 13072
+            },
+            {
+              "date": "2026-09-01",
+              "closeFen": 12822
+            },
+            {
+              "date": "2026-09-02",
+              "closeFen": 12314
+            },
+            {
+              "date": "2026-09-03",
+              "closeFen": 12316
+            },
+            {
+              "date": "2026-09-04",
+              "closeFen": 11450
+            },
+            {
+              "date": "2026-09-07",
+              "closeFen": 11677
+            },
+            {
+              "date": "2026-09-08",
+              "closeFen": 11366
+            },
+            {
+              "date": "2026-09-09",
+              "closeFen": 11306
+            },
+            {
+              "date": "2026-09-10",
+              "closeFen": 11216
+            },
+            {
+              "date": "2026-09-11",
+              "closeFen": 10783
+            },
+            {
+              "date": "2026-09-14",
+              "closeFen": 10800
+            },
+            {
+              "date": "2026-09-15",
+              "closeFen": 10937
+            },
+            {
+              "date": "2026-09-16",
+              "closeFen": 11712
+            },
+            {
+              "date": "2026-09-17",
+              "closeFen": 11519
+            },
+            {
+              "date": "2026-09-18",
+              "closeFen": 12050
+            },
+            {
+              "date": "2026-09-21",
+              "closeFen": 11719
+            },
+            {
+              "date": "2026-09-22",
+              "closeFen": 11558
+            },
+            {
+              "date": "2026-09-23",
+              "closeFen": 11680
+            }
+          ],
+          "sourceName": "腾讯证券日K",
+          "basis": "recent_20_sessions",
+          "startDate": "2026-08-27",
+          "startPriceFen": 12783,
+          "periodReturn": -0.08628647,
+          "entryAssessment": null
+        },
+        "recentTrendError": null,
+        "entryAssessment": null
+      },
+      {
+        "stockCode": "603043",
+        "stockName": "广州酒家",
+        "exchange": "SH",
+        "board": "沪市主板",
+        "auditId": "1001284",
+        "statusCode": "3",
+        "stageLabel": "已回复",
+        "stageDate": "2026-09-23",
+        "acceptedDate": "2026-07-30",
+        "proposedScaleYi": 10,
+        "registered": false,
+        "paused": false,
+        "terminal": false,
+        "sourceName": "上交所再融资审核项目动态",
+        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001284&bussinesType=6",
+        "registrationDisclosure": null,
+        "recentTrend": {
+          "asOfDate": "2026-09-23",
+          "latestPriceFen": 1309,
+          "return5": 0.00306513,
+          "return20": -0.04452555,
+          "aboveMa5": false,
+          "points": [
+            {
+              "date": "2026-08-27",
+              "closeFen": 1381
+            },
+            {
+              "date": "2026-08-28",
+              "closeFen": 1395
+            },
+            {
+              "date": "2026-08-31",
+              "closeFen": 1385
+            },
+            {
+              "date": "2026-09-01",
+              "closeFen": 1396
+            },
+            {
+              "date": "2026-09-02",
+              "closeFen": 1375
+            },
+            {
+              "date": "2026-09-03",
+              "closeFen": 1362
+            },
+            {
+              "date": "2026-09-04",
+              "closeFen": 1392
+            },
+            {
+              "date": "2026-09-07",
+              "closeFen": 1410
+            },
+            {
+              "date": "2026-09-08",
+              "closeFen": 1407
+            },
+            {
+              "date": "2026-09-09",
+              "closeFen": 1399
+            },
+            {
+              "date": "2026-09-10",
+              "closeFen": 1366
+            },
+            {
+              "date": "2026-09-11",
+              "closeFen": 1334
+            },
+            {
+              "date": "2026-09-14",
+              "closeFen": 1342
+            },
+            {
+              "date": "2026-09-15",
+              "closeFen": 1309
+            },
+            {
+              "date": "2026-09-16",
+              "closeFen": 1305
+            },
+            {
+              "date": "2026-09-17",
+              "closeFen": 1308
+            },
+            {
+              "date": "2026-09-18",
+              "closeFen": 1320
+            },
+            {
+              "date": "2026-09-21",
+              "closeFen": 1325
+            },
+            {
+              "date": "2026-09-22",
+              "closeFen": 1308
+            },
+            {
+              "date": "2026-09-23",
+              "closeFen": 1309
+            }
+          ],
+          "sourceName": "腾讯证券日K",
+          "basis": "recent_20_sessions",
+          "startDate": "2026-08-27",
+          "startPriceFen": 1381,
+          "periodReturn": -0.05213613,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1901,121 +2221,6 @@
         "entryAssessment": null
       },
       {
-        "stockCode": "688372",
-        "stockName": "伟测科技",
-        "exchange": "SH",
-        "board": "科创板",
-        "auditId": "1001331",
-        "statusCode": "2",
-        "stageLabel": "已问询",
-        "stageDate": "2026-09-01",
-        "acceptedDate": "2026-08-25",
-        "proposedScaleYi": 20,
-        "registered": false,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "上交所再融资审核项目动态",
-        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001331&bussinesType=6",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-23",
-          "latestPriceFen": 11680,
-          "return5": -0.00273224,
-          "return20": -0.03303254,
-          "aboveMa5": false,
-          "points": [
-            {
-              "date": "2026-08-27",
-              "closeFen": 12783
-            },
-            {
-              "date": "2026-08-28",
-              "closeFen": 12303
-            },
-            {
-              "date": "2026-08-31",
-              "closeFen": 13072
-            },
-            {
-              "date": "2026-09-01",
-              "closeFen": 12822
-            },
-            {
-              "date": "2026-09-02",
-              "closeFen": 12314
-            },
-            {
-              "date": "2026-09-03",
-              "closeFen": 12316
-            },
-            {
-              "date": "2026-09-04",
-              "closeFen": 11450
-            },
-            {
-              "date": "2026-09-07",
-              "closeFen": 11677
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 11366
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 11306
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 11216
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 10783
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 10800
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 10937
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 11712
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 11519
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 12050
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 11719
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 11558
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 11680
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "recent_20_sessions",
-          "startDate": "2026-08-27",
-          "startPriceFen": 12783,
-          "periodReturn": -0.08628647,
-          "entryAssessment": null
-        },
-        "recentTrendError": null,
-        "entryAssessment": null
-      },
-      {
         "stockCode": "301305",
         "stockName": "朗坤科技",
         "exchange": "SZ",
@@ -2470,121 +2675,6 @@
           "startDate": "2026-08-27",
           "startPriceFen": 3356,
           "periodReturn": -0.04623236,
-          "entryAssessment": null
-        },
-        "recentTrendError": null,
-        "entryAssessment": null
-      },
-      {
-        "stockCode": "603043",
-        "stockName": "广州酒家",
-        "exchange": "SH",
-        "board": "沪市主板",
-        "auditId": "1001284",
-        "statusCode": "2",
-        "stageLabel": "已问询",
-        "stageDate": "2026-08-06",
-        "acceptedDate": "2026-07-30",
-        "proposedScaleYi": 10,
-        "registered": false,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "上交所再融资审核项目动态",
-        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001284&bussinesType=6",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-23",
-          "latestPriceFen": 1309,
-          "return5": 0.00306513,
-          "return20": -0.04452555,
-          "aboveMa5": false,
-          "points": [
-            {
-              "date": "2026-08-27",
-              "closeFen": 1381
-            },
-            {
-              "date": "2026-08-28",
-              "closeFen": 1395
-            },
-            {
-              "date": "2026-08-31",
-              "closeFen": 1385
-            },
-            {
-              "date": "2026-09-01",
-              "closeFen": 1396
-            },
-            {
-              "date": "2026-09-02",
-              "closeFen": 1375
-            },
-            {
-              "date": "2026-09-03",
-              "closeFen": 1362
-            },
-            {
-              "date": "2026-09-04",
-              "closeFen": 1392
-            },
-            {
-              "date": "2026-09-07",
-              "closeFen": 1410
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 1407
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 1399
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 1366
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 1334
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 1342
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 1309
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 1305
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 1308
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 1320
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 1325
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 1308
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 1309
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "recent_20_sessions",
-          "startDate": "2026-08-27",
-          "startPriceFen": 1381,
-          "periodReturn": -0.05213613,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -3053,6 +3143,52 @@
     ],
     "beforeIssueAnnouncement": [
       {
+        "stockCode": "301018",
+        "stockName": "申菱环境",
+        "exchange": "SZ",
+        "board": "创业板",
+        "auditId": "1004259",
+        "statusCode": "70",
+        "stageLabel": "注册生效",
+        "stageDate": "2026-09-24",
+        "acceptedDate": "2026-04-09",
+        "proposedScaleYi": 10,
+        "registered": true,
+        "paused": false,
+        "terminal": false,
+        "sourceName": "深交所再融资审核项目动态",
+        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004259",
+        "registrationDisclosure": null,
+        "recentTrend": null,
+        "recentTrendError": "注册生效后有效交易日不足",
+        "entryAssessment": {
+          "windowStatus": "next_session",
+          "entryDate": "2026-09-25",
+          "entryPriceFen": null,
+          "referencePriceFen": 10180,
+          "referencePriceDate": "2026-09-23",
+          "priceBasis": "previous_close_estimate",
+          "factorDate": "2026-09-23",
+          "momentum20": -0.007797270955165692,
+          "volatility20": 0.6044366110266048,
+          "marketReturn10": -0.02401949,
+          "status": "skip",
+          "selected": false,
+          "budgetFen": 0,
+          "targetBudgetFen": 250000,
+          "targetShares": 24,
+          "initialShares": 100,
+          "excessShares": 76,
+          "initialCashFen": 1018000,
+          "temporaryCashRatio": 4.072,
+          "reasons": [
+            "买入价高于80元",
+            "弱市且20日年化波动率不低于50%",
+            "弱市且临时占款超过2倍"
+          ]
+        }
+      },
+      {
         "stockCode": "688510",
         "stockName": "航亚科技",
         "exchange": "SH",
@@ -3435,143 +3571,6 @@
           "excessShares": 61,
           "initialCashFen": 284500,
           "temporaryCashRatio": 1.138,
-          "reasons": []
-        }
-      },
-      {
-        "stockCode": "603125",
-        "stockName": "常青科技",
-        "exchange": "SH",
-        "board": "沪市主板",
-        "auditId": "1001091",
-        "statusCode": "50",
-        "stageLabel": "注册生效",
-        "stageDate": "2026-09-03",
-        "acceptedDate": "2025-10-29",
-        "proposedScaleYi": 8,
-        "registered": true,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "上交所再融资审核项目动态",
-        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001091&bussinesType=6",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-23",
-          "latestPriceFen": 2452,
-          "return5": 0.0302521,
-          "return20": 0.08208297,
-          "aboveMa5": true,
-          "points": [
-            {
-              "date": "2026-09-03",
-              "closeFen": 2295
-            },
-            {
-              "date": "2026-09-04",
-              "closeFen": 2280
-            },
-            {
-              "date": "2026-09-07",
-              "closeFen": 2278
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 2281
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 2343
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 2307
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 2255
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 2283
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 2341
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 2380
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 2352
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 2390
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 2414
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 2378
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 2452
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "registration_to_latest",
-          "startDate": "2026-09-03",
-          "startPriceFen": 2295,
-          "periodReturn": 0.06840959,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-09-04",
-            "entryPriceFen": 2348,
-            "factorDate": "2026-09-03",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": -0.0021739130434782483,
-            "volatility20": 0.353894515619905,
-            "marketReturn10": -0.00874639,
-            "status": "participate",
-            "selected": true,
-            "budgetFen": 250000,
-            "targetBudgetFen": 250000,
-            "targetShares": 106,
-            "initialShares": 200,
-            "excessShares": 94,
-            "initialCashFen": 469600,
-            "temporaryCashRatio": 1.8784,
-            "reasons": []
-          }
-        },
-        "recentTrendError": null,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-09-04",
-          "entryPriceFen": 2348,
-          "factorDate": "2026-09-03",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": -0.0021739130434782483,
-          "volatility20": 0.353894515619905,
-          "marketReturn10": -0.00874639,
-          "status": "participate",
-          "selected": true,
-          "budgetFen": 250000,
-          "targetBudgetFen": 250000,
-          "targetShares": 106,
-          "initialShares": 200,
-          "excessShares": 94,
-          "initialCashFen": 469600,
-          "temporaryCashRatio": 1.8784,
           "reasons": []
         }
       },
@@ -4704,255 +4703,6 @@
         }
       },
       {
-        "stockCode": "301132",
-        "stockName": "满坤科技",
-        "exchange": "SZ",
-        "board": "创业板",
-        "auditId": "1004213",
-        "statusCode": "70",
-        "stageLabel": "注册生效",
-        "stageDate": "2026-07-27",
-        "acceptedDate": "2025-12-30",
-        "proposedScaleYi": 7.6,
-        "registered": true,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "深交所再融资审核项目动态",
-        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004213",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-09-23",
-          "latestPriceFen": 7456,
-          "return5": 0.20277464,
-          "return20": 1.05796301,
-          "aboveMa5": true,
-          "points": [
-            {
-              "date": "2026-07-27",
-              "closeFen": 2920
-            },
-            {
-              "date": "2026-07-28",
-              "closeFen": 2785
-            },
-            {
-              "date": "2026-07-29",
-              "closeFen": 2772
-            },
-            {
-              "date": "2026-07-30",
-              "closeFen": 2635
-            },
-            {
-              "date": "2026-07-31",
-              "closeFen": 2757
-            },
-            {
-              "date": "2026-08-03",
-              "closeFen": 2798
-            },
-            {
-              "date": "2026-08-04",
-              "closeFen": 3042
-            },
-            {
-              "date": "2026-08-05",
-              "closeFen": 3150
-            },
-            {
-              "date": "2026-08-06",
-              "closeFen": 3254
-            },
-            {
-              "date": "2026-08-07",
-              "closeFen": 3493
-            },
-            {
-              "date": "2026-08-10",
-              "closeFen": 3421
-            },
-            {
-              "date": "2026-08-11",
-              "closeFen": 3370
-            },
-            {
-              "date": "2026-08-12",
-              "closeFen": 3485
-            },
-            {
-              "date": "2026-08-13",
-              "closeFen": 3423
-            },
-            {
-              "date": "2026-08-14",
-              "closeFen": 3552
-            },
-            {
-              "date": "2026-08-17",
-              "closeFen": 3837
-            },
-            {
-              "date": "2026-08-18",
-              "closeFen": 3838
-            },
-            {
-              "date": "2026-08-19",
-              "closeFen": 3563
-            },
-            {
-              "date": "2026-08-20",
-              "closeFen": 3650
-            },
-            {
-              "date": "2026-08-21",
-              "closeFen": 3664
-            },
-            {
-              "date": "2026-08-24",
-              "closeFen": 3541
-            },
-            {
-              "date": "2026-08-25",
-              "closeFen": 3592
-            },
-            {
-              "date": "2026-08-26",
-              "closeFen": 3623
-            },
-            {
-              "date": "2026-08-27",
-              "closeFen": 3757
-            },
-            {
-              "date": "2026-08-28",
-              "closeFen": 3752
-            },
-            {
-              "date": "2026-08-31",
-              "closeFen": 3924
-            },
-            {
-              "date": "2026-09-01",
-              "closeFen": 3909
-            },
-            {
-              "date": "2026-09-02",
-              "closeFen": 3857
-            },
-            {
-              "date": "2026-09-03",
-              "closeFen": 3946
-            },
-            {
-              "date": "2026-09-04",
-              "closeFen": 3858
-            },
-            {
-              "date": "2026-09-07",
-              "closeFen": 4133
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 4259
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 4685
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 4794
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 4864
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 5837
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 6190
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 6199
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 5994
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 6029
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 6326
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 6833
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 7456
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "registration_to_latest",
-          "startDate": "2026-07-27",
-          "startPriceFen": 2920,
-          "periodReturn": 1.55342466,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-07-28",
-            "entryPriceFen": 2879,
-            "factorDate": "2026-07-27",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": -0.4225825588293455,
-            "volatility20": 0.9601252974396667,
-            "marketReturn10": 0.00150148,
-            "status": "participate",
-            "selected": true,
-            "budgetFen": 500000,
-            "targetBudgetFen": 500000,
-            "targetShares": 173,
-            "initialShares": 200,
-            "excessShares": 27,
-            "initialCashFen": 575800,
-            "temporaryCashRatio": 1.1516,
-            "reasons": []
-          }
-        },
-        "recentTrendError": null,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-07-28",
-          "entryPriceFen": 2879,
-          "factorDate": "2026-07-27",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": -0.4225825588293455,
-          "volatility20": 0.9601252974396667,
-          "marketReturn10": 0.00150148,
-          "status": "participate",
-          "selected": true,
-          "budgetFen": 500000,
-          "targetBudgetFen": 500000,
-          "targetShares": 173,
-          "initialShares": 200,
-          "excessShares": 27,
-          "initialCashFen": 575800,
-          "temporaryCashRatio": 1.1516,
-          "reasons": []
-        }
-      },
-      {
         "stockCode": "002550",
         "stockName": "千红制药",
         "exchange": "SZ",
@@ -5237,7 +4987,54 @@
       }
     ],
     "reminders": {
-      "buy": [],
+      "buy": [
+        {
+          "stockCode": "301018",
+          "stockName": "申菱环境",
+          "exchange": "SZ",
+          "board": "创业板",
+          "auditId": "1004259",
+          "statusCode": "70",
+          "stageLabel": "注册生效",
+          "stageDate": "2026-09-24",
+          "acceptedDate": "2026-04-09",
+          "proposedScaleYi": 10,
+          "registered": true,
+          "paused": false,
+          "terminal": false,
+          "sourceName": "深交所再融资审核项目动态",
+          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004259",
+          "registrationDisclosure": null,
+          "recentTrend": null,
+          "recentTrendError": "注册生效后有效交易日不足",
+          "entryAssessment": {
+            "windowStatus": "next_session",
+            "entryDate": "2026-09-25",
+            "entryPriceFen": null,
+            "referencePriceFen": 10180,
+            "referencePriceDate": "2026-09-23",
+            "priceBasis": "previous_close_estimate",
+            "factorDate": "2026-09-23",
+            "momentum20": -0.007797270955165692,
+            "volatility20": 0.6044366110266048,
+            "marketReturn10": -0.02401949,
+            "status": "skip",
+            "selected": false,
+            "budgetFen": 0,
+            "targetBudgetFen": 250000,
+            "targetShares": 24,
+            "initialShares": 100,
+            "excessShares": 76,
+            "initialCashFen": 1018000,
+            "temporaryCashRatio": 4.072,
+            "reasons": [
+              "买入价高于80元",
+              "弱市且20日年化波动率不低于50%",
+              "弱市且临时占款超过2倍"
+            ]
+          }
+        }
+      ],
       "holding": [
         {
           "stockCode": "301149",
@@ -5501,143 +5298,6 @@
             "excessShares": 61,
             "initialCashFen": 284500,
             "temporaryCashRatio": 1.138,
-            "reasons": []
-          }
-        },
-        {
-          "stockCode": "603125",
-          "stockName": "常青科技",
-          "exchange": "SH",
-          "board": "沪市主板",
-          "auditId": "1001091",
-          "statusCode": "50",
-          "stageLabel": "注册生效",
-          "stageDate": "2026-09-03",
-          "acceptedDate": "2025-10-29",
-          "proposedScaleYi": 8,
-          "registered": true,
-          "paused": false,
-          "terminal": false,
-          "sourceName": "上交所再融资审核项目动态",
-          "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001091&bussinesType=6",
-          "registrationDisclosure": null,
-          "recentTrend": {
-            "asOfDate": "2026-09-23",
-            "latestPriceFen": 2452,
-            "return5": 0.0302521,
-            "return20": 0.08208297,
-            "aboveMa5": true,
-            "points": [
-              {
-                "date": "2026-09-03",
-                "closeFen": 2295
-              },
-              {
-                "date": "2026-09-04",
-                "closeFen": 2280
-              },
-              {
-                "date": "2026-09-07",
-                "closeFen": 2278
-              },
-              {
-                "date": "2026-09-08",
-                "closeFen": 2281
-              },
-              {
-                "date": "2026-09-09",
-                "closeFen": 2343
-              },
-              {
-                "date": "2026-09-10",
-                "closeFen": 2307
-              },
-              {
-                "date": "2026-09-11",
-                "closeFen": 2255
-              },
-              {
-                "date": "2026-09-14",
-                "closeFen": 2283
-              },
-              {
-                "date": "2026-09-15",
-                "closeFen": 2341
-              },
-              {
-                "date": "2026-09-16",
-                "closeFen": 2380
-              },
-              {
-                "date": "2026-09-17",
-                "closeFen": 2352
-              },
-              {
-                "date": "2026-09-18",
-                "closeFen": 2390
-              },
-              {
-                "date": "2026-09-21",
-                "closeFen": 2414
-              },
-              {
-                "date": "2026-09-22",
-                "closeFen": 2378
-              },
-              {
-                "date": "2026-09-23",
-                "closeFen": 2452
-              }
-            ],
-            "sourceName": "腾讯证券日K",
-            "basis": "registration_to_latest",
-            "startDate": "2026-09-03",
-            "startPriceFen": 2295,
-            "periodReturn": 0.06840959,
-            "entryAssessment": {
-              "windowStatus": "entry_passed",
-              "entryDate": "2026-09-04",
-              "entryPriceFen": 2348,
-              "factorDate": "2026-09-03",
-              "referencePriceFen": null,
-              "referencePriceDate": null,
-              "priceBasis": "actual_open",
-              "momentum20": -0.0021739130434782483,
-              "volatility20": 0.353894515619905,
-              "marketReturn10": -0.00874639,
-              "status": "participate",
-              "selected": true,
-              "budgetFen": 250000,
-              "targetBudgetFen": 250000,
-              "targetShares": 106,
-              "initialShares": 200,
-              "excessShares": 94,
-              "initialCashFen": 469600,
-              "temporaryCashRatio": 1.8784,
-              "reasons": []
-            }
-          },
-          "recentTrendError": null,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-09-04",
-            "entryPriceFen": 2348,
-            "factorDate": "2026-09-03",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": -0.0021739130434782483,
-            "volatility20": 0.353894515619905,
-            "marketReturn10": -0.00874639,
-            "status": "participate",
-            "selected": true,
-            "budgetFen": 250000,
-            "targetBudgetFen": 250000,
-            "targetShares": 106,
-            "initialShares": 200,
-            "excessShares": 94,
-            "initialCashFen": 469600,
-            "temporaryCashRatio": 1.8784,
             "reasons": []
           }
         },
@@ -6416,258 +6076,22 @@
             "temporaryCashRatio": 1.316,
             "reasons": []
           }
-        },
+        }
+      ],
+      "sell": [
         {
+          "bondCode": "123287",
+          "bondName": "满坤转债",
           "stockCode": "301132",
           "stockName": "满坤科技",
           "exchange": "SZ",
-          "board": "创业板",
-          "auditId": "1004213",
-          "statusCode": "70",
-          "stageLabel": "注册生效",
-          "stageDate": "2026-07-27",
-          "acceptedDate": "2025-12-30",
-          "proposedScaleYi": 7.6,
-          "registered": true,
-          "paused": false,
-          "terminal": false,
-          "sourceName": "深交所再融资审核项目动态",
-          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004213",
-          "registrationDisclosure": null,
-          "recentTrend": {
-            "asOfDate": "2026-09-23",
-            "latestPriceFen": 7456,
-            "return5": 0.20277464,
-            "return20": 1.05796301,
-            "aboveMa5": true,
-            "points": [
-              {
-                "date": "2026-07-27",
-                "closeFen": 2920
-              },
-              {
-                "date": "2026-07-28",
-                "closeFen": 2785
-              },
-              {
-                "date": "2026-07-29",
-                "closeFen": 2772
-              },
-              {
-                "date": "2026-07-30",
-                "closeFen": 2635
-              },
-              {
-                "date": "2026-07-31",
-                "closeFen": 2757
-              },
-              {
-                "date": "2026-08-03",
-                "closeFen": 2798
-              },
-              {
-                "date": "2026-08-04",
-                "closeFen": 3042
-              },
-              {
-                "date": "2026-08-05",
-                "closeFen": 3150
-              },
-              {
-                "date": "2026-08-06",
-                "closeFen": 3254
-              },
-              {
-                "date": "2026-08-07",
-                "closeFen": 3493
-              },
-              {
-                "date": "2026-08-10",
-                "closeFen": 3421
-              },
-              {
-                "date": "2026-08-11",
-                "closeFen": 3370
-              },
-              {
-                "date": "2026-08-12",
-                "closeFen": 3485
-              },
-              {
-                "date": "2026-08-13",
-                "closeFen": 3423
-              },
-              {
-                "date": "2026-08-14",
-                "closeFen": 3552
-              },
-              {
-                "date": "2026-08-17",
-                "closeFen": 3837
-              },
-              {
-                "date": "2026-08-18",
-                "closeFen": 3838
-              },
-              {
-                "date": "2026-08-19",
-                "closeFen": 3563
-              },
-              {
-                "date": "2026-08-20",
-                "closeFen": 3650
-              },
-              {
-                "date": "2026-08-21",
-                "closeFen": 3664
-              },
-              {
-                "date": "2026-08-24",
-                "closeFen": 3541
-              },
-              {
-                "date": "2026-08-25",
-                "closeFen": 3592
-              },
-              {
-                "date": "2026-08-26",
-                "closeFen": 3623
-              },
-              {
-                "date": "2026-08-27",
-                "closeFen": 3757
-              },
-              {
-                "date": "2026-08-28",
-                "closeFen": 3752
-              },
-              {
-                "date": "2026-08-31",
-                "closeFen": 3924
-              },
-              {
-                "date": "2026-09-01",
-                "closeFen": 3909
-              },
-              {
-                "date": "2026-09-02",
-                "closeFen": 3857
-              },
-              {
-                "date": "2026-09-03",
-                "closeFen": 3946
-              },
-              {
-                "date": "2026-09-04",
-                "closeFen": 3858
-              },
-              {
-                "date": "2026-09-07",
-                "closeFen": 4133
-              },
-              {
-                "date": "2026-09-08",
-                "closeFen": 4259
-              },
-              {
-                "date": "2026-09-09",
-                "closeFen": 4685
-              },
-              {
-                "date": "2026-09-10",
-                "closeFen": 4794
-              },
-              {
-                "date": "2026-09-11",
-                "closeFen": 4864
-              },
-              {
-                "date": "2026-09-14",
-                "closeFen": 5837
-              },
-              {
-                "date": "2026-09-15",
-                "closeFen": 6190
-              },
-              {
-                "date": "2026-09-16",
-                "closeFen": 6199
-              },
-              {
-                "date": "2026-09-17",
-                "closeFen": 5994
-              },
-              {
-                "date": "2026-09-18",
-                "closeFen": 6029
-              },
-              {
-                "date": "2026-09-21",
-                "closeFen": 6326
-              },
-              {
-                "date": "2026-09-22",
-                "closeFen": 6833
-              },
-              {
-                "date": "2026-09-23",
-                "closeFen": 7456
-              }
-            ],
-            "sourceName": "腾讯证券日K",
-            "basis": "registration_to_latest",
-            "startDate": "2026-07-27",
-            "startPriceFen": 2920,
-            "periodReturn": 1.55342466,
-            "entryAssessment": {
-              "windowStatus": "entry_passed",
-              "entryDate": "2026-07-28",
-              "entryPriceFen": 2879,
-              "factorDate": "2026-07-27",
-              "referencePriceFen": null,
-              "referencePriceDate": null,
-              "priceBasis": "actual_open",
-              "momentum20": -0.4225825588293455,
-              "volatility20": 0.9601252974396667,
-              "marketReturn10": 0.00150148,
-              "status": "participate",
-              "selected": true,
-              "budgetFen": 500000,
-              "targetBudgetFen": 500000,
-              "targetShares": 173,
-              "initialShares": 200,
-              "excessShares": 27,
-              "initialCashFen": 575800,
-              "temporaryCashRatio": 1.1516,
-              "reasons": []
-            }
-          },
-          "recentTrendError": null,
-          "entryAssessment": {
-            "windowStatus": "entry_passed",
-            "entryDate": "2026-07-28",
-            "entryPriceFen": 2879,
-            "factorDate": "2026-07-27",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": -0.4225825588293455,
-            "volatility20": 0.9601252974396667,
-            "marketReturn10": 0.00150148,
-            "status": "participate",
-            "selected": true,
-            "budgetFen": 500000,
-            "targetBudgetFen": 500000,
-            "targetShares": 173,
-            "initialShares": 200,
-            "excessShares": 27,
-            "initialCashFen": 575800,
-            "temporaryCashRatio": 1.1516,
-            "reasons": []
-          }
+          "announcementDate": "2026-09-23",
+          "announcementTitle": "向不特定对象发行可转换公司债券发行公告",
+          "sourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-23/52aea794-1327-449b-98e5-7d394d39c5f3.PDF",
+          "sellDate": "2026-09-24",
+          "status": "sell_today"
         }
-      ],
-      "sell": []
+      ]
     }
   },
   "riskControlStudy": {
@@ -6686,58 +6110,58 @@
       "dailyApproximation": true
     },
     "overall": {
-      "count": 1007,
-      "fullAllocationCount": 506,
-      "halfAllocationCount": 501,
+      "count": 1009,
+      "fullAllocationCount": 507,
+      "halfAllocationCount": 502,
       "stopTriggeredCount": 404,
       "reentryTriggeredCount": 356,
       "reentrySecondStopCount": 128,
       "reentryRecoveredProfitCount": 74,
       "reentrySkippedLockedLimitCount": 0,
       "baseline": {
-        "count": 1007,
-        "capitalFen": 1007000000,
-        "pnlFen": 59078552,
-        "capitalReturn": 0.05866788,
-        "meanOpportunityContribution": 0.05866788,
-        "medianReturn": 0.02907302,
-        "winRate": 0.5938431,
+        "count": 1009,
+        "capitalFen": 1009000000,
+        "pnlFen": 60567096,
+        "capitalReturn": 0.06002685,
+        "meanOpportunityContribution": 0.06002685,
+        "medianReturn": 0.02927134,
+        "winRate": 0.59464817,
         "loss15Count": 86,
         "loss20Count": 53,
         "worstReturn": -0.64526783
       },
       "fullStop": {
-        "count": 1007,
-        "capitalFen": 1007000000,
-        "pnlFen": 35808847,
-        "capitalReturn": 0.03555993,
-        "meanOpportunityContribution": 0.03555993,
-        "medianReturn": -0.00625,
-        "winRate": 0.4816286,
+        "count": 1009,
+        "capitalFen": 1009000000,
+        "pnlFen": 37297391,
+        "capitalReturn": 0.03696471,
+        "meanOpportunityContribution": 0.03696471,
+        "medianReturn": -0.00587027,
+        "winRate": 0.4826561,
         "loss15Count": 4,
         "loss20Count": 2,
         "worstReturn": -0.23490427
       },
       "stopReentry": {
-        "count": 1007,
-        "capitalFen": 1007000000,
-        "pnlFen": 45834804,
-        "capitalReturn": 0.04551619,
-        "meanOpportunityContribution": 0.04551619,
-        "medianReturn": 0.02015191,
-        "winRate": 0.5551142,
+        "count": 1009,
+        "capitalFen": 1009000000,
+        "pnlFen": 47323348,
+        "capitalReturn": 0.04690124,
+        "meanOpportunityContribution": 0.04690124,
+        "medianReturn": 0.0204366,
+        "winRate": 0.55599604,
         "loss15Count": 137,
         "loss20Count": 8,
         "worstReturn": -0.24353375
       },
       "enhanced": {
-        "count": 1007,
-        "capitalFen": 756500000,
-        "pnlFen": 29464484,
-        "capitalReturn": 0.03894843,
-        "meanOpportunityContribution": 0.02925967,
-        "medianReturn": -0.004684,
-        "winRate": 0.4816286,
+        "count": 1009,
+        "capitalFen": 758000000,
+        "pnlFen": 30930882,
+        "capitalReturn": 0.04080591,
+        "meanOpportunityContribution": 0.03065499,
+        "medianReturn": -0.004649,
+        "winRate": 0.4826561,
         "loss15Count": 3,
         "loss20Count": 1,
         "worstReturn": -0.234904
@@ -6802,58 +6226,58 @@
       }
     },
     "validation": {
-      "count": 138,
-      "fullAllocationCount": 74,
-      "halfAllocationCount": 64,
+      "count": 140,
+      "fullAllocationCount": 75,
+      "halfAllocationCount": 65,
       "stopTriggeredCount": 58,
       "reentryTriggeredCount": 51,
       "reentrySecondStopCount": 23,
       "reentryRecoveredProfitCount": 9,
       "reentrySkippedLockedLimitCount": 0,
       "baseline": {
-        "count": 138,
-        "capitalFen": 138000000,
-        "pnlFen": 9744957,
-        "capitalReturn": 0.07061563,
-        "meanOpportunityContribution": 0.07061563,
-        "medianReturn": 0.03602885,
-        "winRate": 0.5942029,
+        "count": 140,
+        "capitalFen": 140000000,
+        "pnlFen": 11233501,
+        "capitalReturn": 0.08023929,
+        "meanOpportunityContribution": 0.08023929,
+        "medianReturn": 0.03731987,
+        "winRate": 0.6,
         "loss15Count": 17,
         "loss20Count": 11,
         "worstReturn": -0.42397018
       },
       "fullStop": {
-        "count": 138,
-        "capitalFen": 138000000,
-        "pnlFen": 7668758,
-        "capitalReturn": 0.05557071,
-        "meanOpportunityContribution": 0.05557071,
-        "medianReturn": -0.00193855,
-        "winRate": 0.5,
+        "count": 140,
+        "capitalFen": 140000000,
+        "pnlFen": 9157302,
+        "capitalReturn": 0.0654093,
+        "meanOpportunityContribution": 0.0654093,
+        "medianReturn": 0.00301516,
+        "winRate": 0.50714286,
         "loss15Count": 0,
         "loss20Count": 0,
         "worstReturn": -0.12802768
       },
       "stopReentry": {
-        "count": 138,
-        "capitalFen": 138000000,
-        "pnlFen": 7976473,
-        "capitalReturn": 0.05780053,
-        "meanOpportunityContribution": 0.05780053,
-        "medianReturn": 0.02758276,
-        "winRate": 0.56521739,
+        "count": 140,
+        "capitalFen": 140000000,
+        "pnlFen": 9465017,
+        "capitalReturn": 0.06760726,
+        "meanOpportunityContribution": 0.06760726,
+        "medianReturn": 0.03024938,
+        "winRate": 0.57142857,
         "loss15Count": 25,
         "loss20Count": 1,
         "worstReturn": -0.20146524
       },
       "enhanced": {
-        "count": 138,
-        "capitalFen": 106000000,
-        "pnlFen": 6791292,
-        "capitalReturn": 0.06406879,
-        "meanOpportunityContribution": 0.04921226,
-        "medianReturn": -0.001868,
-        "winRate": 0.5,
+        "count": 140,
+        "capitalFen": 107500000,
+        "pnlFen": 8257690,
+        "capitalReturn": 0.07681572,
+        "meanOpportunityContribution": 0.0589835,
+        "medianReturn": 0.00198,
+        "winRate": 0.50714286,
         "loss15Count": 0,
         "loss20Count": 0,
         "worstReturn": -0.107126
@@ -7983,58 +7407,58 @@
       },
       {
         "year": 2026,
-        "count": 56,
-        "fullAllocationCount": 34,
-        "halfAllocationCount": 22,
+        "count": 58,
+        "fullAllocationCount": 35,
+        "halfAllocationCount": 23,
         "stopTriggeredCount": 24,
         "reentryTriggeredCount": 21,
         "reentrySecondStopCount": 10,
         "reentryRecoveredProfitCount": 2,
         "reentrySkippedLockedLimitCount": 0,
         "baseline": {
-          "count": 56,
-          "capitalFen": 56000000,
-          "pnlFen": 4409283,
-          "capitalReturn": 0.0787372,
-          "meanOpportunityContribution": 0.0787372,
+          "count": 58,
+          "capitalFen": 58000000,
+          "pnlFen": 5897827,
+          "capitalReturn": 0.10168667,
+          "meanOpportunityContribution": 0.10168667,
           "medianReturn": 0.05643505,
-          "winRate": 0.60714286,
+          "winRate": 0.62068966,
           "loss15Count": 6,
           "loss20Count": 5,
           "worstReturn": -0.37640942
         },
         "fullStop": {
-          "count": 56,
-          "capitalFen": 56000000,
-          "pnlFen": 3645360,
-          "capitalReturn": 0.06509571,
-          "meanOpportunityContribution": 0.06509571,
-          "medianReturn": 0.02556415,
-          "winRate": 0.53571429,
+          "count": 58,
+          "capitalFen": 58000000,
+          "pnlFen": 5133904,
+          "capitalReturn": 0.08851559,
+          "meanOpportunityContribution": 0.08851559,
+          "medianReturn": 0.03047868,
+          "winRate": 0.55172414,
           "loss15Count": 0,
           "loss20Count": 0,
           "worstReturn": -0.1
         },
         "stopReentry": {
-          "count": 56,
-          "capitalFen": 56000000,
-          "pnlFen": 3488794,
-          "capitalReturn": 0.06229989,
-          "meanOpportunityContribution": 0.06229989,
-          "medianReturn": 0.04550361,
-          "winRate": 0.57142857,
+          "count": 58,
+          "capitalFen": 58000000,
+          "pnlFen": 4977338,
+          "capitalReturn": 0.08581617,
+          "meanOpportunityContribution": 0.08581617,
+          "medianReturn": 0.05024956,
+          "winRate": 0.5862069,
           "loss15Count": 10,
           "loss20Count": 1,
           "worstReturn": -0.20146524
         },
         "enhanced": {
-          "count": 56,
-          "capitalFen": 45000000,
-          "pnlFen": 3672521,
-          "capitalReturn": 0.08161158,
-          "meanOpportunityContribution": 0.06558073,
-          "medianReturn": 0.0152395,
-          "winRate": 0.53571429,
+          "count": 58,
+          "capitalFen": 46500000,
+          "pnlFen": 5138919,
+          "capitalReturn": 0.11051439,
+          "meanOpportunityContribution": 0.08860205,
+          "medianReturn": 0.019774,
+          "winRate": 0.55172414,
           "loss15Count": 0,
           "loss20Count": 0,
           "worstReturn": -0.1
@@ -8052,46 +7476,46 @@
         "reducedMarketHalfRule": "强市/持平投入五千元，弱市投入两千五百元"
       },
       "overall": {
-        "count": 1007,
-        "strongMarketCount": 506,
-        "weakMarketCount": 501,
+        "count": 1009,
+        "strongMarketCount": 507,
+        "weakMarketCount": 502,
         "fullParticipation": {
-          "count": 1007,
-          "capitalFen": 1007000000,
-          "pnlFen": 59078552,
-          "capitalReturn": 0.05866788,
-          "meanOpportunityContribution": 0.05866788,
-          "winRate": 0.5938431,
+          "count": 1009,
+          "capitalFen": 1009000000,
+          "pnlFen": 60567096,
+          "capitalReturn": 0.06002685,
+          "meanOpportunityContribution": 0.06002685,
+          "winRate": 0.59464817,
           "worstSinglePnlFen": -645268,
           "bestSinglePnlFen": 2164469
         },
         "halfEveryBond": {
-          "count": 1007,
-          "capitalFen": 503500000,
-          "pnlFen": 29539261,
-          "capitalReturn": 0.05866785,
-          "meanOpportunityContribution": 0.02933392,
-          "winRate": 0.5938431,
+          "count": 1009,
+          "capitalFen": 504500000,
+          "pnlFen": 30283534,
+          "capitalReturn": 0.06002683,
+          "meanOpportunityContribution": 0.03001341,
+          "winRate": 0.59464817,
           "worstSinglePnlFen": -322634,
           "bestSinglePnlFen": 1082234
         },
         "marketHalf": {
-          "count": 1007,
-          "capitalFen": 756500000,
-          "pnlFen": 46423386,
-          "capitalReturn": 0.06136601,
-          "meanOpportunityContribution": 0.04610068,
-          "winRate": 0.5938431,
+          "count": 1009,
+          "capitalFen": 758000000,
+          "pnlFen": 47889784,
+          "capitalReturn": 0.06317913,
+          "meanOpportunityContribution": 0.04746262,
+          "winRate": 0.59464817,
           "worstSinglePnlFen": -645268,
           "bestSinglePnlFen": 2164469
         },
         "reducedMarketHalf": {
-          "count": 1007,
-          "capitalFen": 378250000,
-          "pnlFen": 23211692,
-          "capitalReturn": 0.06136601,
-          "meanOpportunityContribution": 0.02305034,
-          "winRate": 0.5938431,
+          "count": 1009,
+          "capitalFen": 379000000,
+          "pnlFen": 23944891,
+          "capitalReturn": 0.06317913,
+          "meanOpportunityContribution": 0.02373131,
+          "winRate": 0.59464817,
           "worstSinglePnlFen": -322634,
           "bestSinglePnlFen": 1082234
         }
@@ -8142,46 +7566,46 @@
         }
       },
       "validation": {
-        "count": 138,
-        "strongMarketCount": 74,
-        "weakMarketCount": 64,
+        "count": 140,
+        "strongMarketCount": 75,
+        "weakMarketCount": 65,
         "fullParticipation": {
-          "count": 138,
-          "capitalFen": 138000000,
-          "pnlFen": 9744957,
-          "capitalReturn": 0.07061563,
-          "meanOpportunityContribution": 0.07061563,
-          "winRate": 0.5942029,
+          "count": 140,
+          "capitalFen": 140000000,
+          "pnlFen": 11233501,
+          "capitalReturn": 0.08023929,
+          "meanOpportunityContribution": 0.08023929,
+          "winRate": 0.6,
           "worstSinglePnlFen": -423970,
           "bestSinglePnlFen": 2164469
         },
         "halfEveryBond": {
-          "count": 138,
-          "capitalFen": 69000000,
-          "pnlFen": 4872477,
-          "capitalReturn": 0.07061561,
-          "meanOpportunityContribution": 0.0353078,
-          "winRate": 0.5942029,
+          "count": 140,
+          "capitalFen": 70000000,
+          "pnlFen": 5616750,
+          "capitalReturn": 0.08023929,
+          "meanOpportunityContribution": 0.04011964,
+          "winRate": 0.6,
           "worstSinglePnlFen": -211985,
           "bestSinglePnlFen": 1082234
         },
         "marketHalf": {
-          "count": 138,
-          "capitalFen": 106000000,
-          "pnlFen": 8089223,
-          "capitalReturn": 0.07631342,
-          "meanOpportunityContribution": 0.05861756,
-          "winRate": 0.5942029,
+          "count": 140,
+          "capitalFen": 107500000,
+          "pnlFen": 9555621,
+          "capitalReturn": 0.0888895,
+          "meanOpportunityContribution": 0.06825444,
+          "winRate": 0.6,
           "worstSinglePnlFen": -376409,
           "bestSinglePnlFen": 2164469
         },
         "reducedMarketHalf": {
-          "count": 138,
-          "capitalFen": 53000000,
-          "pnlFen": 4044609,
-          "capitalReturn": 0.07631338,
-          "meanOpportunityContribution": 0.02930876,
-          "winRate": 0.5942029,
+          "count": 140,
+          "capitalFen": 53750000,
+          "pnlFen": 4777808,
+          "capitalReturn": 0.08888945,
+          "meanOpportunityContribution": 0.0341272,
+          "winRate": 0.6,
           "worstSinglePnlFen": -188205,
           "bestSinglePnlFen": 1082234
         }
@@ -9063,46 +8487,46 @@
         },
         {
           "year": 2026,
-          "count": 56,
-          "strongMarketCount": 34,
-          "weakMarketCount": 22,
+          "count": 58,
+          "strongMarketCount": 35,
+          "weakMarketCount": 23,
           "fullParticipation": {
-            "count": 56,
-            "capitalFen": 56000000,
-            "pnlFen": 4409283,
-            "capitalReturn": 0.0787372,
-            "meanOpportunityContribution": 0.0787372,
-            "winRate": 0.60714286,
+            "count": 58,
+            "capitalFen": 58000000,
+            "pnlFen": 5897827,
+            "capitalReturn": 0.10168667,
+            "meanOpportunityContribution": 0.10168667,
+            "winRate": 0.62068966,
             "worstSinglePnlFen": -376409,
             "bestSinglePnlFen": 2164469
           },
           "halfEveryBond": {
-            "count": 56,
-            "capitalFen": 28000000,
-            "pnlFen": 2204638,
-            "capitalReturn": 0.07873707,
-            "meanOpportunityContribution": 0.03936854,
-            "winRate": 0.60714286,
+            "count": 58,
+            "capitalFen": 29000000,
+            "pnlFen": 2948911,
+            "capitalReturn": 0.10168659,
+            "meanOpportunityContribution": 0.05084329,
+            "winRate": 0.62068966,
             "worstSinglePnlFen": -188205,
             "bestSinglePnlFen": 1082234
           },
           "marketHalf": {
-            "count": 56,
-            "capitalFen": 45000000,
-            "pnlFen": 3765016,
-            "capitalReturn": 0.08366702,
-            "meanOpportunityContribution": 0.06723243,
-            "winRate": 0.60714286,
+            "count": 58,
+            "capitalFen": 46500000,
+            "pnlFen": 5231414,
+            "capitalReturn": 0.11250353,
+            "meanOpportunityContribution": 0.09019679,
+            "winRate": 0.62068966,
             "worstSinglePnlFen": -376409,
             "bestSinglePnlFen": 2164469
           },
           "reducedMarketHalf": {
-            "count": 56,
-            "capitalFen": 22500000,
-            "pnlFen": 1882506,
-            "capitalReturn": 0.08366693,
-            "meanOpportunityContribution": 0.03361618,
-            "winRate": 0.60714286,
+            "count": 58,
+            "capitalFen": 23250000,
+            "pnlFen": 2615705,
+            "capitalReturn": 0.11250344,
+            "meanOpportunityContribution": 0.04509836,
+            "winRate": 0.62068966,
             "worstSinglePnlFen": -188205,
             "bestSinglePnlFen": 1082234
           }
@@ -51196,7 +50620,7 @@
       },
       {
         "bondCode": "113710",
-        "bondName": "N四方转",
+        "bondName": "四方转债",
         "stockCode": "603339",
         "stockName": "四方科技",
         "cohortYear": 2026,
@@ -51403,6 +50827,90 @@
         "stopExitDate": "2026-07-20",
         "stopFillType": "threshold",
         "stopDeferredSessions": 0
+      },
+      {
+        "bondCode": "113711",
+        "bondName": "常青转债",
+        "stockCode": "603125",
+        "stockName": "常青科技",
+        "cohortYear": 2026,
+        "entryDate": "2026-09-04",
+        "plannedExitDate": "2026-09-23",
+        "marketReturn10": -0.00874639,
+        "marketRegime": "weak",
+        "allocationWeight": 0.5,
+        "baselineReturn": 0.04429302,
+        "baselineCapitalFen": 1000000,
+        "baselinePnlFen": 44293,
+        "halfEveryBondCapitalFen": 500000,
+        "halfEveryBondPnlFen": 22147,
+        "marketHalfNoStopCapitalFen": 500000,
+        "marketHalfNoStopPnlFen": 22147,
+        "reducedMarketHalfNoStopCapitalFen": 250000,
+        "reducedMarketHalfNoStopPnlFen": 11073,
+        "fullStopReturn": 0.04429302,
+        "fullStopCapitalFen": 1000000,
+        "fullStopPnlFen": 44293,
+        "stopReentryReturn": 0.04429302,
+        "stopReentryCapitalFen": 1000000,
+        "stopReentryPnlFen": 44293,
+        "reentryTriggered": false,
+        "reentrySignalDate": null,
+        "reentryDate": null,
+        "reentryExitDate": "2026-09-23",
+        "reentryFillType": "planned_exit",
+        "reentryStopTriggered": false,
+        "reentrySkippedLockedLimit": false,
+        "enhancedContributionReturn": 0.022147,
+        "enhancedCapitalFen": 500000,
+        "enhancedPnlFen": 22147,
+        "stopTriggered": false,
+        "stopTriggerDate": null,
+        "stopExitDate": "2026-09-23",
+        "stopFillType": "planned_exit",
+        "stopDeferredSessions": 0
+      },
+      {
+        "bondCode": "123287",
+        "bondName": "满坤转债",
+        "stockCode": "301132",
+        "stockName": "满坤科技",
+        "cohortYear": 2026,
+        "entryDate": "2026-07-28",
+        "plannedExitDate": "2026-09-24",
+        "marketReturn10": 0.00150148,
+        "marketRegime": "strong_or_flat",
+        "allocationWeight": 1,
+        "baselineReturn": 1.44425148,
+        "baselineCapitalFen": 1000000,
+        "baselinePnlFen": 1444251,
+        "halfEveryBondCapitalFen": 500000,
+        "halfEveryBondPnlFen": 722126,
+        "marketHalfNoStopCapitalFen": 1000000,
+        "marketHalfNoStopPnlFen": 1444251,
+        "reducedMarketHalfNoStopCapitalFen": 500000,
+        "reducedMarketHalfNoStopPnlFen": 722126,
+        "fullStopReturn": 1.44425148,
+        "fullStopCapitalFen": 1000000,
+        "fullStopPnlFen": 1444251,
+        "stopReentryReturn": 1.44425148,
+        "stopReentryCapitalFen": 1000000,
+        "stopReentryPnlFen": 1444251,
+        "reentryTriggered": false,
+        "reentrySignalDate": null,
+        "reentryDate": null,
+        "reentryExitDate": "2026-09-24",
+        "reentryFillType": "planned_exit",
+        "reentryStopTriggered": false,
+        "reentrySkippedLockedLimit": false,
+        "enhancedContributionReturn": 1.444251,
+        "enhancedCapitalFen": 1000000,
+        "enhancedPnlFen": 1444251,
+        "stopTriggered": false,
+        "stopTriggerDate": null,
+        "stopExitDate": "2026-09-24",
+        "stopFillType": "planned_exit",
+        "stopDeferredSessions": 0
       }
     ]
   },
@@ -51423,13 +50931,13 @@
         "capYuan": 30,
         "label": "股价不高于30元",
         "overall": {
-          "count": 736,
-          "initialCapitalFen": 326023575,
-          "retainedCapitalFen": 274494079,
-          "pnlFen": 17450322,
-          "initialCapitalReturn": 0.05352472,
-          "retainedCapitalReturn": 0.06357267,
-          "winRate": 0.62907609,
+          "count": 738,
+          "initialCapitalFen": 327068975,
+          "retainedCapitalFen": 275241034,
+          "pnlFen": 18172274,
+          "initialCapitalReturn": 0.05556098,
+          "retainedCapitalReturn": 0.06602313,
+          "winRate": 0.6300813,
           "positiveYearCount": 16,
           "yearCount": 20,
           "maxInitialCashFen": 740400,
@@ -51451,13 +50959,13 @@
           "maxInitialCashStockName": "珠免集团"
         },
         "validation": {
-          "count": 76,
-          "initialCapitalFen": 33540772,
-          "retainedCapitalFen": 28193665,
-          "pnlFen": 1733084,
-          "initialCapitalReturn": 0.05167096,
-          "retainedCapitalReturn": 0.06147069,
-          "winRate": 0.63157895,
+          "count": 78,
+          "initialCapitalFen": 34586172,
+          "retainedCapitalFen": 28940620,
+          "pnlFen": 2455036,
+          "initialCapitalReturn": 0.07098317,
+          "retainedCapitalReturn": 0.08483011,
+          "winRate": 0.64102564,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 738000,
@@ -51752,13 +51260,13 @@
           },
           {
             "year": 2026,
-            "count": 22,
-            "initialCapitalFen": 10668100,
-            "retainedCapitalFen": 8733696,
-            "pnlFen": 516258,
-            "initialCapitalReturn": 0.04839268,
-            "retainedCapitalReturn": 0.05911106,
-            "winRate": 0.63636364,
+            "count": 24,
+            "initialCapitalFen": 11713500,
+            "retainedCapitalFen": 9480651,
+            "pnlFen": 1238210,
+            "initialCapitalReturn": 0.10570794,
+            "retainedCapitalReturn": 0.1306039,
+            "winRate": 0.66666667,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 738000,
@@ -51771,13 +51279,13 @@
         "capYuan": 35,
         "label": "股价不高于35元",
         "overall": {
-          "count": 783,
-          "initialCapitalFen": 350968875,
-          "retainedCapitalFen": 292913192,
-          "pnlFen": 19490549,
-          "initialCapitalReturn": 0.05553355,
-          "retainedCapitalReturn": 0.06654036,
-          "winRate": 0.62835249,
+          "count": 785,
+          "initialCapitalFen": 352014275,
+          "retainedCapitalFen": 293660147,
+          "pnlFen": 20212501,
+          "initialCapitalReturn": 0.05741955,
+          "retainedCapitalReturn": 0.06882957,
+          "winRate": 0.62929936,
           "positiveYearCount": 16,
           "yearCount": 20,
           "maxInitialCashFen": 740400,
@@ -51799,13 +51307,13 @@
           "maxInitialCashStockName": "珠免集团"
         },
         "validation": {
-          "count": 86,
-          "initialCapitalFen": 38992772,
-          "retainedCapitalFen": 32432303,
-          "pnlFen": 2250006,
-          "initialCapitalReturn": 0.05770316,
-          "retainedCapitalReturn": 0.06937546,
-          "winRate": 0.62790698,
+          "count": 88,
+          "initialCapitalFen": 40038172,
+          "retainedCapitalFen": 33179258,
+          "pnlFen": 2971958,
+          "initialCapitalReturn": 0.07422811,
+          "retainedCapitalReturn": 0.08957277,
+          "winRate": 0.63636364,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 738000,
@@ -52100,13 +51608,13 @@
           },
           {
             "year": 2026,
-            "count": 26,
-            "initialCapitalFen": 12626700,
-            "retainedCapitalFen": 10229185,
-            "pnlFen": 443793,
-            "initialCapitalReturn": 0.03514719,
-            "retainedCapitalReturn": 0.04338498,
-            "winRate": 0.57692308,
+            "count": 28,
+            "initialCapitalFen": 13672100,
+            "retainedCapitalFen": 10976140,
+            "pnlFen": 1165745,
+            "initialCapitalReturn": 0.08526452,
+            "retainedCapitalReturn": 0.10620719,
+            "winRate": 0.60714286,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 738000,
@@ -52119,13 +51627,13 @@
         "capYuan": 50,
         "label": "股价不高于50元",
         "overall": {
-          "count": 888,
-          "initialCapitalFen": 420136975,
-          "retainedCapitalFen": 333206716,
-          "pnlFen": 21821613,
-          "initialCapitalReturn": 0.05193928,
-          "retainedCapitalReturn": 0.06548972,
-          "winRate": 0.61936937,
+          "count": 890,
+          "initialCapitalFen": 421182375,
+          "retainedCapitalFen": 333953671,
+          "pnlFen": 22543565,
+          "initialCapitalReturn": 0.05352447,
+          "retainedCapitalReturn": 0.06750507,
+          "winRate": 0.62022472,
           "positiveYearCount": 16,
           "yearCount": 20,
           "maxInitialCashFen": 985200,
@@ -52147,13 +51655,13 @@
           "maxInitialCashStockName": "立讯精密"
         },
         "validation": {
-          "count": 107,
-          "initialCapitalFen": 53360772,
-          "retainedCapitalFen": 40385620,
-          "pnlFen": 3075433,
-          "initialCapitalReturn": 0.05763472,
-          "retainedCapitalReturn": 0.07615168,
-          "winRate": 0.61682243,
+          "count": 109,
+          "initialCapitalFen": 54406172,
+          "retainedCapitalFen": 41132575,
+          "pnlFen": 3797385,
+          "initialCapitalReturn": 0.06979695,
+          "retainedCapitalReturn": 0.09232062,
+          "winRate": 0.62385321,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 985200,
@@ -52448,13 +51956,13 @@
           },
           {
             "year": 2026,
-            "count": 36,
-            "initialCapitalFen": 19824300,
-            "retainedCapitalFen": 14453915,
-            "pnlFen": 870149,
-            "initialCapitalReturn": 0.04389305,
-            "retainedCapitalReturn": 0.06020161,
-            "winRate": 0.61111111,
+            "count": 38,
+            "initialCapitalFen": 20869700,
+            "retainedCapitalFen": 15200870,
+            "pnlFen": 1592101,
+            "initialCapitalReturn": 0.07628768,
+            "retainedCapitalReturn": 0.10473749,
+            "winRate": 0.63157895,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 980600,
@@ -52467,13 +51975,13 @@
         "capYuan": 100,
         "label": "股价不高于100元",
         "overall": {
-          "count": 967,
-          "initialCapitalFen": 490374275,
-          "retainedCapitalFen": 362424279,
-          "pnlFen": 22770254,
-          "initialCapitalReturn": 0.04643444,
-          "retainedCapitalReturn": 0.06282762,
-          "winRate": 0.61220269,
+          "count": 969,
+          "initialCapitalFen": 491419675,
+          "retainedCapitalFen": 363171234,
+          "pnlFen": 23492206,
+          "initialCapitalReturn": 0.04780477,
+          "retainedCapitalReturn": 0.06468631,
+          "winRate": 0.6130031,
           "positiveYearCount": 15,
           "yearCount": 20,
           "maxInitialCashFen": 1773600,
@@ -52495,13 +52003,13 @@
           "maxInitialCashStockName": "*ST航图"
         },
         "validation": {
-          "count": 125,
-          "initialCapitalFen": 71889872,
-          "retainedCapitalFen": 47568958,
-          "pnlFen": 3464745,
-          "initialCapitalReturn": 0.04819518,
-          "retainedCapitalReturn": 0.07283626,
-          "winRate": 0.624,
+          "count": 127,
+          "initialCapitalFen": 72935272,
+          "retainedCapitalFen": 48315913,
+          "pnlFen": 4186697,
+          "initialCapitalReturn": 0.05740291,
+          "retainedCapitalReturn": 0.08665255,
+          "winRate": 0.62992126,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 1746000,
@@ -52796,13 +52304,13 @@
           },
           {
             "year": 2026,
-            "count": 47,
-            "initialCapitalFen": 30554300,
-            "retainedCapitalFen": 18658846,
-            "pnlFen": 1256978,
-            "initialCapitalReturn": 0.04113915,
-            "retainedCapitalReturn": 0.06736633,
-            "winRate": 0.65957447,
+            "count": 49,
+            "initialCapitalFen": 31599700,
+            "retainedCapitalFen": 19405801,
+            "pnlFen": 1978930,
+            "initialCapitalReturn": 0.06262496,
+            "retainedCapitalReturn": 0.10197621,
+            "winRate": 0.67346939,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 1746000,
@@ -52815,13 +52323,13 @@
         "capYuan": 200,
         "label": "股价不高于200元",
         "overall": {
-          "count": 996,
-          "initialCapitalFen": 542096975,
-          "retainedCapitalFen": 373493206,
-          "pnlFen": 22940589,
-          "initialCapitalReturn": 0.04231824,
-          "retainedCapitalReturn": 0.0614217,
-          "winRate": 0.60240964,
+          "count": 998,
+          "initialCapitalFen": 543142375,
+          "retainedCapitalFen": 374240161,
+          "pnlFen": 23662541,
+          "initialCapitalReturn": 0.043566,
+          "retainedCapitalReturn": 0.06322822,
+          "winRate": 0.60320641,
           "positiveYearCount": 15,
           "yearCount": 20,
           "maxInitialCashFen": 3838200,
@@ -52843,13 +52351,13 @@
           "maxInitialCashStockName": "奥特维"
         },
         "validation": {
-          "count": 134,
-          "initialCapitalFen": 88501572,
-          "retainedCapitalFen": 51273983,
-          "pnlFen": 4111067,
-          "initialCapitalReturn": 0.04645191,
-          "retainedCapitalReturn": 0.08017842,
-          "winRate": 0.59701493,
+          "count": 136,
+          "initialCapitalFen": 89546972,
+          "retainedCapitalFen": 52020938,
+          "pnlFen": 4833019,
+          "initialCapitalReturn": 0.05397189,
+          "retainedCapitalReturn": 0.09290526,
+          "winRate": 0.60294118,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 3838200,
@@ -53144,13 +52652,13 @@
           },
           {
             "year": 2026,
-            "count": 53,
-            "initialCapitalFen": 42019200,
-            "retainedCapitalFen": 21136107,
-            "pnlFen": 1973829,
-            "initialCapitalReturn": 0.04697445,
-            "retainedCapitalReturn": 0.09338659,
-            "winRate": 0.60377358,
+            "count": 55,
+            "initialCapitalFen": 43064600,
+            "retainedCapitalFen": 21883062,
+            "pnlFen": 2695781,
+            "initialCapitalReturn": 0.06259854,
+            "retainedCapitalReturn": 0.1231903,
+            "winRate": 0.61818182,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 3838200,
@@ -53163,13 +52671,13 @@
         "capYuan": null,
         "label": "不设股价上限",
         "overall": {
-          "count": 1007,
-          "initialCapitalFen": 593423675,
-          "retainedCapitalFen": 376828406,
-          "pnlFen": 22786109,
-          "initialCapitalReturn": 0.03839771,
-          "retainedCapitalReturn": 0.06046813,
-          "winRate": 0.59781529,
+          "count": 1009,
+          "initialCapitalFen": 594469075,
+          "retainedCapitalFen": 377575361,
+          "pnlFen": 23508061,
+          "initialCapitalReturn": 0.03954463,
+          "retainedCapitalReturn": 0.06226058,
+          "winRate": 0.59861249,
           "positiveYearCount": 15,
           "yearCount": 20,
           "maxInitialCashFen": 10601600,
@@ -53191,13 +52699,13 @@
           "maxInitialCashStockName": "奕瑞科技"
         },
         "validation": {
-          "count": 138,
-          "initialCapitalFen": 109700272,
-          "retainedCapitalFen": 52685818,
-          "pnlFen": 4160423,
-          "initialCapitalReturn": 0.03792537,
-          "retainedCapitalReturn": 0.07896666,
-          "winRate": 0.58695652,
+          "count": 140,
+          "initialCapitalFen": 110745672,
+          "retainedCapitalFen": 53432773,
+          "pnlFen": 4882375,
+          "initialCapitalReturn": 0.04408637,
+          "retainedCapitalReturn": 0.09137416,
+          "winRate": 0.59285714,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 7704600,
@@ -53492,13 +53000,13 @@
           },
           {
             "year": 2026,
-            "count": 56,
-            "initialCapitalFen": 56017900,
-            "retainedCapitalFen": 22331942,
-            "pnlFen": 2204403,
-            "initialCapitalReturn": 0.03935176,
-            "retainedCapitalReturn": 0.09871076,
-            "winRate": 0.58928571,
+            "count": 58,
+            "initialCapitalFen": 57063300,
+            "retainedCapitalFen": 23078897,
+            "pnlFen": 2926355,
+            "initialCapitalReturn": 0.05128261,
+            "retainedCapitalReturn": 0.12679787,
+            "winRate": 0.60344828,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 7704600,
@@ -53526,13 +53034,13 @@
           "weakBudgetFen": 250000,
           "verdict": "主下注档",
           "observed": {
-            "count": 888,
-            "initialCapitalFen": 420136975,
-            "retainedCapitalFen": 333206716,
-            "pnlFen": 21821613,
-            "initialCapitalReturn": 0.05193928,
-            "retainedCapitalReturn": 0.06548972,
-            "winRate": 0.61936937,
+            "count": 890,
+            "initialCapitalFen": 421182375,
+            "retainedCapitalFen": 333953671,
+            "pnlFen": 22543565,
+            "initialCapitalReturn": 0.05352447,
+            "retainedCapitalReturn": 0.06750507,
+            "winRate": 0.62022472,
             "positiveYearCount": 16,
             "yearCount": 20,
             "maxInitialCashFen": 985200,
@@ -53554,13 +53062,13 @@
             "maxInitialCashStockName": "立讯精密"
           },
           "validation": {
-            "count": 107,
-            "initialCapitalFen": 53360772,
-            "retainedCapitalFen": 40385620,
-            "pnlFen": 3075433,
-            "initialCapitalReturn": 0.05763472,
-            "retainedCapitalReturn": 0.07615168,
-            "winRate": 0.61682243,
+            "count": 109,
+            "initialCapitalFen": 54406172,
+            "retainedCapitalFen": 41132575,
+            "pnlFen": 3797385,
+            "initialCapitalReturn": 0.06979695,
+            "retainedCapitalReturn": 0.09232062,
+            "winRate": 0.62385321,
             "positiveYearCount": 3,
             "yearCount": 3,
             "maxInitialCashFen": 985200,
@@ -53775,13 +53283,13 @@
       ],
       "current": {
         "overall": {
-          "count": 1007,
-          "initialCapitalFen": 593423675,
-          "retainedCapitalFen": 376828406,
-          "pnlFen": 22786109,
-          "initialCapitalReturn": 0.03839771,
-          "retainedCapitalReturn": 0.06046813,
-          "winRate": 0.59781529,
+          "count": 1009,
+          "initialCapitalFen": 594469075,
+          "retainedCapitalFen": 377575361,
+          "pnlFen": 23508061,
+          "initialCapitalReturn": 0.03954463,
+          "retainedCapitalReturn": 0.06226058,
+          "winRate": 0.59861249,
           "positiveYearCount": 15,
           "yearCount": 20,
           "maxInitialCashFen": 10601600,
@@ -53803,13 +53311,13 @@
           "maxInitialCashStockName": "奕瑞科技"
         },
         "validation": {
-          "count": 138,
-          "initialCapitalFen": 109700272,
-          "retainedCapitalFen": 52685818,
-          "pnlFen": 4160423,
-          "initialCapitalReturn": 0.03792537,
-          "retainedCapitalReturn": 0.07896666,
-          "winRate": 0.58695652,
+          "count": 140,
+          "initialCapitalFen": 110745672,
+          "retainedCapitalFen": 53432773,
+          "pnlFen": 4882375,
+          "initialCapitalReturn": 0.04408637,
+          "retainedCapitalReturn": 0.09137416,
+          "winRate": 0.59285714,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 7704600,
@@ -54104,13 +53612,13 @@
           },
           {
             "year": 2026,
-            "count": 56,
-            "initialCapitalFen": 56017900,
-            "retainedCapitalFen": 22331942,
-            "pnlFen": 2204403,
-            "initialCapitalReturn": 0.03935176,
-            "retainedCapitalReturn": 0.09871076,
-            "winRate": 0.58928571,
+            "count": 58,
+            "initialCapitalFen": 57063300,
+            "retainedCapitalFen": 23078897,
+            "pnlFen": 2926355,
+            "initialCapitalReturn": 0.05128261,
+            "retainedCapitalReturn": 0.12679787,
+            "winRate": 0.60344828,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 7704600,
@@ -54121,19 +53629,19 @@
       },
       "candidate": {
         "overall": {
-          "count": 943,
-          "initialCapitalFen": 463091575,
-          "retainedCapitalFen": 353521182,
-          "pnlFen": 23082296,
-          "initialCapitalReturn": 0.04984391,
-          "retainedCapitalReturn": 0.06529254,
-          "winRate": 0.61823966,
+          "count": 945,
+          "initialCapitalFen": 464136975,
+          "retainedCapitalFen": 354268137,
+          "pnlFen": 23804248,
+          "initialCapitalReturn": 0.05128712,
+          "retainedCapitalReturn": 0.06719274,
+          "winRate": 0.61904762,
           "positiveYearCount": 15,
           "yearCount": 20,
           "maxInitialCashFen": 1556200,
           "maxInitialCashBondCode": "118055",
           "maxInitialCashStockName": "伟测科技",
-          "opportunityCount": 1007,
+          "opportunityCount": 1009,
           "skippedCount": 64
         },
         "training": {
@@ -54153,19 +53661,19 @@
           "skippedCount": 48
         },
         "validation": {
-          "count": 122,
-          "initialCapitalFen": 67646072,
-          "retainedCapitalFen": 46582060,
-          "pnlFen": 3636658,
-          "initialCapitalReturn": 0.05376008,
-          "retainedCapitalReturn": 0.07806993,
-          "winRate": 0.63114754,
+          "count": 124,
+          "initialCapitalFen": 68691472,
+          "retainedCapitalFen": 47329015,
+          "pnlFen": 4358610,
+          "initialCapitalReturn": 0.06345198,
+          "retainedCapitalReturn": 0.09209171,
+          "winRate": 0.63709677,
           "positiveYearCount": 3,
           "yearCount": 3,
           "maxInitialCashFen": 1556200,
           "maxInitialCashBondCode": "118055",
           "maxInitialCashStockName": "伟测科技",
-          "opportunityCount": 138,
+          "opportunityCount": 140,
           "skippedCount": 16
         },
         "byYear": [
@@ -54494,19 +54002,19 @@
           },
           {
             "year": 2026,
-            "count": 46,
-            "initialCapitalFen": 28808300,
-            "retainedCapitalFen": 18414406,
-            "pnlFen": 1382282,
-            "initialCapitalReturn": 0.04798207,
-            "retainedCapitalReturn": 0.07506525,
-            "winRate": 0.67391304,
+            "count": 48,
+            "initialCapitalFen": 29853700,
+            "retainedCapitalFen": 19161361,
+            "pnlFen": 2104234,
+            "initialCapitalReturn": 0.07048486,
+            "retainedCapitalReturn": 0.10981652,
+            "winRate": 0.6875,
             "positiveYearCount": 1,
             "yearCount": 1,
             "maxInitialCashFen": 1538600,
             "maxInitialCashBondCode": "118065",
             "maxInitialCashStockName": "艾为电子",
-            "opportunityCount": 56,
+            "opportunityCount": 58,
             "skippedCount": 10
           }
         ]
@@ -75557,7 +75065,7 @@
       },
       {
         "bondCode": "113710",
-        "bondName": "N四方转",
+        "bondName": "四方转债",
         "stockCode": "603339",
         "stockName": "四方科技",
         "cohortYear": 2026,
@@ -75659,6 +75167,48 @@
         "retainedPnlFen": 220799,
         "excessPnlFen": -6811,
         "totalPnlFen": 213988
+      },
+      {
+        "bondCode": "113711",
+        "bondName": "常青转债",
+        "stockCode": "603125",
+        "stockName": "常青科技",
+        "cohortYear": 2026,
+        "entryDate": "2026-09-04",
+        "reductionDate": "2026-09-07",
+        "marketRegime": "weak",
+        "entryPriceFen": 2348,
+        "targetBudgetFen": 250000,
+        "targetShares": 106,
+        "initialShares": 200,
+        "excessShares": 94,
+        "initialCashFen": 469600,
+        "retainedCapitalFen": 248888,
+        "overnightReturn": -0.02683135,
+        "retainedPnlFen": 11024,
+        "excessPnlFen": -5922,
+        "totalPnlFen": 5102
+      },
+      {
+        "bondCode": "123287",
+        "bondName": "满坤转债",
+        "stockCode": "301132",
+        "stockName": "满坤科技",
+        "cohortYear": 2026,
+        "entryDate": "2026-07-28",
+        "reductionDate": "2026-07-29",
+        "marketRegime": "strong_or_flat",
+        "entryPriceFen": 2879,
+        "targetBudgetFen": 500000,
+        "targetShares": 173,
+        "initialShares": 200,
+        "excessShares": 27,
+        "initialCashFen": 575800,
+        "retainedCapitalFen": 498067,
+        "overnightReturn": -0.03195554,
+        "retainedPnlFen": 719334,
+        "excessPnlFen": -2484,
+        "totalPnlFen": 716850
       }
     ]
   },
@@ -75678,9 +75228,9 @@
       "feesIncluded": false,
       "lotConstraintIncluded": false,
       "comparisonStartDate": "2007-04-16",
-      "comparisonEndDate": "2026-09-22",
+      "comparisonEndDate": "2026-09-24",
       "commonWindowReason": "中证1000在2014年发布前使用中证指数公司官方回溯序列；五方案统一从三指数均具备至少60个已完成交易日后比较，避免把缺数误判为股灾",
-      "comparableOpportunityCount": 1007,
+      "comparableOpportunityCount": 1009,
       "recommendationRule": "优先选择组合最大回撤不超过8%的方案，再取累计收益最高者；若均未达标则选择最大回撤最小者"
     },
     "recommendedScenarioId": "single_csi1000",
@@ -75690,9 +75240,9 @@
         "label": "不设指数门控",
         "rule": "每只5000元；只受10万元现金约束，不设置市场仓位上限",
         "initialCapitalFen": 10000000,
-        "finalEquityFen": 37612194,
-        "pnlFen": 27612194,
-        "totalReturn": 2.7612194,
+        "finalEquityFen": 38356466,
+        "pnlFen": 28356466,
+        "totalReturn": 2.8356466,
         "maxDrawdown": -0.17483565,
         "maxDrawdownPeakDate": "2018-05-28",
         "maxDrawdownDate": "2018-10-16",
@@ -75701,15 +75251,15 @@
         "maxGrossExposureFen": 20593872,
         "maxGrossExposureRatio": 1,
         "maxConcurrentPositions": 39,
-        "opportunityCount": 1007,
-        "enteredCount": 1003,
-        "participationRate": 0.99602781,
+        "opportunityCount": 1009,
+        "enteredCount": 1005,
+        "participationRate": 0.99603568,
         "partialAllocationCount": 12,
         "crisisSkippedCount": 0,
         "capacitySkippedCount": 4,
         "forcedReductionEvents": 0,
         "stateDays": {
-          "normal": 4659,
+          "normal": 4661,
           "weak": 0,
           "crisis": 0,
           "unavailable": 0
@@ -75913,8 +75463,8 @@
           {
             "year": 2026,
             "startEquityFen": 35559686,
-            "endEquityFen": 37612194,
-            "return": 0.05772008,
+            "endEquityFen": 38356466,
+            "return": 0.0786503,
             "maxDrawdown": -0.03683423,
             "maxDrawdownDate": "2026-07-20",
             "maxGrossExposureFen": 10591100,
@@ -75927,9 +75477,9 @@
         "label": "沪深300单指数",
         "rule": "低于MA60降至弱市；同时5日跌幅达到5%进入股灾",
         "initialCapitalFen": 10000000,
-        "finalEquityFen": 16813843,
-        "pnlFen": 6813843,
-        "totalReturn": 0.6813843,
+        "finalEquityFen": 17185979,
+        "pnlFen": 7185979,
+        "totalReturn": 0.7185979,
         "maxDrawdown": -0.07313796,
         "maxDrawdownPeakDate": "2014-02-17",
         "maxDrawdownDate": "2015-08-26",
@@ -75938,16 +75488,16 @@
         "maxGrossExposureFen": 4237659,
         "maxGrossExposureRatio": 0.25737936,
         "maxConcurrentPositions": 29,
-        "opportunityCount": 1007,
-        "enteredCount": 838,
-        "participationRate": 0.83217478,
+        "opportunityCount": 1009,
+        "enteredCount": 840,
+        "participationRate": 0.83250743,
         "partialAllocationCount": 535,
         "crisisSkippedCount": 21,
         "capacitySkippedCount": 148,
         "forcedReductionEvents": 293,
         "stateDays": {
           "normal": 2357,
-          "weak": 2048,
+          "weak": 2050,
           "crisis": 254,
           "unavailable": 0
         },
@@ -76150,8 +75700,8 @@
           {
             "year": 2026,
             "startEquityFen": 15828832,
-            "endEquityFen": 16813843,
-            "return": 0.06222891,
+            "endEquityFen": 17185979,
+            "return": 0.08573892,
             "maxDrawdown": -0.02746948,
             "maxDrawdownDate": "2026-07-20",
             "maxGrossExposureFen": 4237659,
@@ -76164,9 +75714,9 @@
         "label": "中证500单指数",
         "rule": "低于MA60降至弱市；同时5日跌幅达到5%进入股灾",
         "initialCapitalFen": 10000000,
-        "finalEquityFen": 16726498,
-        "pnlFen": 6726498,
-        "totalReturn": 0.6726498,
+        "finalEquityFen": 17098634,
+        "pnlFen": 7098634,
+        "totalReturn": 0.7098634,
         "maxDrawdown": -0.07444133,
         "maxDrawdownPeakDate": "2014-12-04",
         "maxDrawdownDate": "2017-06-02",
@@ -76175,16 +75725,16 @@
         "maxGrossExposureFen": 4237307,
         "maxGrossExposureRatio": 0.25771547,
         "maxConcurrentPositions": 26,
-        "opportunityCount": 1007,
-        "enteredCount": 811,
-        "participationRate": 0.80536246,
+        "opportunityCount": 1009,
+        "enteredCount": 813,
+        "participationRate": 0.80574827,
         "partialAllocationCount": 512,
         "crisisSkippedCount": 33,
         "capacitySkippedCount": 163,
         "forcedReductionEvents": 280,
         "stateDays": {
           "normal": 2446,
-          "weak": 1886,
+          "weak": 1888,
           "crisis": 327,
           "unavailable": 0
         },
@@ -76387,10 +75937,10 @@
           {
             "year": 2026,
             "startEquityFen": 15644595,
-            "endEquityFen": 16726498,
-            "return": 0.06915507,
-            "maxDrawdown": -0.02669967,
-            "maxDrawdownDate": "2026-07-20",
+            "endEquityFen": 17098634,
+            "return": 0.09294194,
+            "maxDrawdown": -0.02686216,
+            "maxDrawdownDate": "2026-07-30",
             "maxGrossExposureFen": 4237307,
             "maxConcurrentPositions": 14
           }
@@ -76401,9 +75951,9 @@
         "label": "中证1000单指数",
         "rule": "低于MA60降至弱市；同时5日跌幅达到5%进入股灾",
         "initialCapitalFen": 10000000,
-        "finalEquityFen": 17148289,
-        "pnlFen": 7148289,
-        "totalReturn": 0.7148289,
+        "finalEquityFen": 17520425,
+        "pnlFen": 7520425,
+        "totalReturn": 0.7520425,
         "maxDrawdown": -0.07609157,
         "maxDrawdownPeakDate": "2019-04-10",
         "maxDrawdownDate": "2020-02-04",
@@ -76412,15 +75962,15 @@
         "maxGrossExposureFen": 4315966,
         "maxGrossExposureRatio": 0.25794514,
         "maxConcurrentPositions": 31,
-        "opportunityCount": 1007,
-        "enteredCount": 801,
-        "participationRate": 0.79543198,
+        "opportunityCount": 1009,
+        "enteredCount": 803,
+        "participationRate": 0.79583746,
         "partialAllocationCount": 510,
         "crisisSkippedCount": 51,
         "capacitySkippedCount": 155,
         "forcedReductionEvents": 296,
         "stateDays": {
-          "normal": 2427,
+          "normal": 2429,
           "weak": 1862,
           "crisis": 370,
           "unavailable": 0
@@ -76624,10 +76174,10 @@
           {
             "year": 2026,
             "startEquityFen": 15940446,
-            "endEquityFen": 17148289,
-            "return": 0.07577222,
-            "maxDrawdown": -0.02001981,
-            "maxDrawdownDate": "2026-07-20",
+            "endEquityFen": 17520425,
+            "return": 0.09911762,
+            "maxDrawdown": -0.02036336,
+            "maxDrawdownDate": "2026-07-30",
             "maxGrossExposureFen": 4315966,
             "maxConcurrentPositions": 14
           }
@@ -76638,9 +76188,9 @@
         "label": "300/500/1000投票",
         "rule": "两个指数低于MA60为弱市；三个同时低于且任一5日跌5%为股灾",
         "initialCapitalFen": 10000000,
-        "finalEquityFen": 16482381,
-        "pnlFen": 6482381,
-        "totalReturn": 0.6482381,
+        "finalEquityFen": 16854517,
+        "pnlFen": 6854517,
+        "totalReturn": 0.6854517,
         "maxDrawdown": -0.07444133,
         "maxDrawdownPeakDate": "2014-12-04",
         "maxDrawdownDate": "2017-06-02",
@@ -76649,16 +76199,16 @@
         "maxGrossExposureFen": 4164118,
         "maxGrossExposureRatio": 0.2578553,
         "maxConcurrentPositions": 29,
-        "opportunityCount": 1007,
-        "enteredCount": 815,
-        "participationRate": 0.80933466,
+        "opportunityCount": 1009,
+        "enteredCount": 817,
+        "participationRate": 0.80971259,
         "partialAllocationCount": 519,
         "crisisSkippedCount": 42,
         "capacitySkippedCount": 150,
         "forcedReductionEvents": 286,
         "stateDays": {
           "normal": 2441,
-          "weak": 1841,
+          "weak": 1843,
           "crisis": 377,
           "unavailable": 0
         },
@@ -76861,10 +76411,10 @@
           {
             "year": 2026,
             "startEquityFen": 15351413,
-            "endEquityFen": 16482381,
-            "return": 0.07367192,
-            "maxDrawdown": -0.02398903,
-            "maxDrawdownDate": "2026-07-20",
+            "endEquityFen": 16854517,
+            "return": 0.09791307,
+            "maxDrawdown": -0.02410867,
+            "maxDrawdownDate": "2026-07-30",
             "maxGrossExposureFen": 4164118,
             "maxConcurrentPositions": 14
           }
@@ -76875,9 +76425,9 @@
         "label": "500＋1000否决",
         "rule": "任一低于MA60为弱市；两者同时低于且任一5日跌5%为股灾",
         "initialCapitalFen": 10000000,
-        "finalEquityFen": 16762049,
-        "pnlFen": 6762049,
-        "totalReturn": 0.6762049,
+        "finalEquityFen": 17134185,
+        "pnlFen": 7134185,
+        "totalReturn": 0.7134185,
         "maxDrawdown": -0.07444133,
         "maxDrawdownPeakDate": "2014-12-04",
         "maxDrawdownDate": "2017-06-02",
@@ -76886,16 +76436,16 @@
         "maxGrossExposureFen": 4222377,
         "maxGrossExposureRatio": 0.25781951,
         "maxConcurrentPositions": 29,
-        "opportunityCount": 1007,
-        "enteredCount": 807,
-        "participationRate": 0.80139027,
+        "opportunityCount": 1009,
+        "enteredCount": 809,
+        "participationRate": 0.80178394,
         "partialAllocationCount": 514,
         "crisisSkippedCount": 50,
         "capacitySkippedCount": 150,
         "forcedReductionEvents": 284,
         "stateDays": {
           "normal": 2259,
-          "weak": 2026,
+          "weak": 2028,
           "crisis": 374,
           "unavailable": 0
         },
@@ -77098,10 +76648,10 @@
           {
             "year": 2026,
             "startEquityFen": 15586644,
-            "endEquityFen": 16762049,
-            "return": 0.07541104,
-            "maxDrawdown": -0.02109599,
-            "maxDrawdownDate": "2026-07-20",
+            "endEquityFen": 17134185,
+            "return": 0.09928635,
+            "maxDrawdown": -0.02124488,
+            "maxDrawdownDate": "2026-07-30",
             "maxGrossExposureFen": 4222377,
             "maxConcurrentPositions": 14
           }
@@ -77491,21 +77041,21 @@
       },
       {
         "year": 2026,
-        "stockCount": 53,
+        "stockCount": 55,
         "fillerSlots": 0,
-        "stockCapitalFen": 26500000,
+        "stockCapitalFen": 27500000,
         "indexCapitalFen": 0,
-        "grossNotionalFen": 26500000,
-        "stockPnlFen": 1945466,
+        "grossNotionalFen": 27500000,
+        "stockPnlFen": 2689739,
         "indexPnlFen": 0,
-        "totalPnlFen": 1945466,
-        "returnOnBaseCapital": 0.1945466,
-        "returnOnGrossNotional": 0.07341381,
-        "equalWeightIndexReturn": 0.01036052,
+        "totalPnlFen": 2689739,
+        "returnOnBaseCapital": 0.2689739,
+        "returnOnGrossNotional": 0.09780869,
+        "equalWeightIndexReturn": -0.01449798,
         "indexReturns": {
-          "csi300": -0.02510501,
-          "csi500": 0.04054557,
-          "csi1000": 0.01564099
+          "csi300": -0.0477259,
+          "csi500": 0.01331627,
+          "csi1000": -0.00908432
         }
       }
     ],
@@ -77759,10 +77309,10 @@
       },
       {
         "year": 2026,
-        "stockPnlFen": 2052508,
-        "indexPnlFen": 516652,
-        "totalPnlFen": 2569160,
-        "returnOnBaseCapital": 0.256916,
+        "stockPnlFen": 2796781,
+        "indexPnlFen": 265473,
+        "totalPnlFen": 3062254,
+        "returnOnBaseCapital": 0.3062254,
         "maxDrawdown": -0.15025015,
         "maxDrawdownDate": "2026-07-20",
         "maxActiveStocks": 19,
@@ -77772,9 +77322,9 @@
       }
     ],
     "overall": {
-      "stockPnlFen": 29539263,
-      "indexPnlFen": 18854447,
-      "totalPnlFen": 48393710,
+      "stockPnlFen": 30283536,
+      "indexPnlFen": 18603268,
+      "totalPnlFen": 48886804,
       "positiveYears": 15,
       "yearCount": 20,
       "maxRequiredCapitalFen": 20000000,
@@ -77790,18 +77340,18 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "accepted",
       "exitEventLabel": "交易所受理",
-      "candidateCount": 1034,
-      "validCount": 656,
+      "candidateCount": 1036,
+      "validCount": 658,
       "excludedCount": 378,
-      "totalEquivalentPnlFen": 14744777,
-      "meanReturn": 0.02247679,
-      "medianReturn": -0.01151673,
-      "winRate": 0.47103659,
-      "winRateWilsonLower95": 0.43311787,
-      "meanExcessReturn": 0.02085459,
-      "averageHoldingSessions": 69.45,
+      "totalEquivalentPnlFen": 14702300,
+      "meanReturn": 0.02234392,
+      "medianReturn": -0.01214522,
+      "winRate": 0.46960486,
+      "winRateWilsonLower95": 0.43175799,
+      "meanExcessReturn": 0.02061627,
+      "averageHoldingSessions": 69.37,
       "worstReturn": -0.69274974,
-      "averageMaxDrawdown": -0.26092501,
+      "averageMaxDrawdown": -0.26050696,
       "positiveYearRate": 0.63636364,
       "byYear": [
         {
@@ -77886,11 +77436,11 @@
         },
         {
           "year": 2026,
-          "count": 52,
-          "totalEquivalentPnlFen": 5943621,
-          "meanReturn": 0.1143003,
-          "medianReturn": 0.06235692,
-          "winRate": 0.65384615
+          "count": 54,
+          "totalEquivalentPnlFen": 5901144,
+          "meanReturn": 0.10928034,
+          "medianReturn": 0.05300489,
+          "winRate": 0.62962963
         }
       ],
       "training": {
@@ -77975,18 +77525,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 120,
-        "validCount": 120,
+        "candidateCount": 122,
+        "validCount": 122,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 7401492,
-        "meanReturn": 0.06167906,
-        "medianReturn": 0.01314002,
-        "winRate": 0.54166667,
-        "winRateWilsonLower95": 0.45260808,
-        "meanExcessReturn": 0.03577387,
-        "averageHoldingSessions": 92.03,
+        "totalEquivalentPnlFen": 7359015,
+        "meanReturn": 0.06031975,
+        "medianReturn": 0.01079541,
+        "winRate": 0.53278689,
+        "winRateWilsonLower95": 0.444608,
+        "meanExcessReturn": 0.03424395,
+        "averageHoldingSessions": 91.25,
         "worstReturn": -0.40659678,
-        "averageMaxDrawdown": -0.25838375,
+        "averageMaxDrawdown": -0.25617063,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -78007,11 +77557,11 @@
           },
           {
             "year": 2026,
-            "count": 52,
-            "totalEquivalentPnlFen": 5943621,
-            "meanReturn": 0.1143003,
-            "medianReturn": 0.06235692,
-            "winRate": 0.65384615
+            "count": 54,
+            "totalEquivalentPnlFen": 5901144,
+            "meanReturn": 0.10928034,
+            "medianReturn": 0.05300489,
+            "winRate": 0.62962963
           }
         ]
       }
@@ -78023,18 +77573,18 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "review_passed",
       "exitEventLabel": "审核通过",
-      "candidateCount": 1034,
-      "validCount": 759,
+      "candidateCount": 1036,
+      "validCount": 761,
       "excludedCount": 275,
-      "totalEquivalentPnlFen": 54376118,
-      "meanReturn": 0.07164178,
-      "medianReturn": -0.01424632,
-      "winRate": 0.47562582,
-      "winRateWilsonLower95": 0.44030848,
-      "meanExcessReturn": 0.04452913,
-      "averageHoldingSessions": 157.44,
+      "totalEquivalentPnlFen": 54655702,
+      "meanReturn": 0.07182089,
+      "medianReturn": -0.01356183,
+      "winRate": 0.47700394,
+      "winRateWilsonLower95": 0.44172111,
+      "meanExcessReturn": 0.04465116,
+      "averageHoldingSessions": 157.51,
       "worstReturn": -0.59993012,
-      "averageMaxDrawdown": -0.36037849,
+      "averageMaxDrawdown": -0.36031542,
       "positiveYearRate": 0.76923077,
       "byYear": [
         {
@@ -78135,11 +77685,11 @@
         },
         {
           "year": 2026,
-          "count": 53,
-          "totalEquivalentPnlFen": 13130115,
-          "meanReturn": 0.24773802,
+          "count": 55,
+          "totalEquivalentPnlFen": 13409699,
+          "meanReturn": 0.24381271,
           "medianReturn": 0.20179176,
-          "winRate": 0.75471698
+          "winRate": 0.76363636
         }
       ],
       "training": {
@@ -78240,18 +77790,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 97,
-        "validCount": 97,
+        "candidateCount": 99,
+        "validCount": 99,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 22318834,
-        "meanReturn": 0.23009106,
+        "totalEquivalentPnlFen": 22598418,
+        "meanReturn": 0.22826683,
         "medianReturn": 0.13348452,
-        "winRate": 0.68041237,
-        "winRateWilsonLower95": 0.58226446,
-        "meanExcessReturn": 0.13805301,
-        "averageHoldingSessions": 203.54,
+        "winRate": 0.68686869,
+        "winRateWilsonLower95": 0.58998311,
+        "meanExcessReturn": 0.13710172,
+        "averageHoldingSessions": 203.19,
         "worstReturn": -0.3585251,
-        "averageMaxDrawdown": -0.35522368,
+        "averageMaxDrawdown": -0.35484305,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -78272,11 +77822,11 @@
           },
           {
             "year": 2026,
-            "count": 53,
-            "totalEquivalentPnlFen": 13130115,
-            "meanReturn": 0.24773802,
+            "count": 55,
+            "totalEquivalentPnlFen": 13409699,
+            "meanReturn": 0.24381271,
             "medianReturn": 0.20179176,
-            "winRate": 0.75471698
+            "winRate": 0.76363636
           }
         ]
       }
@@ -78288,18 +77838,18 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "registered",
       "exitEventLabel": "注册生效",
-      "candidateCount": 1034,
-      "validCount": 875,
+      "candidateCount": 1036,
+      "validCount": 877,
       "excludedCount": 159,
-      "totalEquivalentPnlFen": 82835850,
-      "meanReturn": 0.09466954,
+      "totalEquivalentPnlFen": 83067786,
+      "meanReturn": 0.09471811,
       "medianReturn": -0.0095511,
-      "winRate": 0.488,
-      "winRateWilsonLower95": 0.45500438,
-      "meanExcessReturn": 0.07586247,
-      "averageHoldingSessions": 198.05,
+      "winRate": 0.48802737,
+      "winRateWilsonLower95": 0.455069,
+      "meanExcessReturn": 0.07592154,
+      "averageHoldingSessions": 198.09,
       "worstReturn": -0.66417597,
-      "averageMaxDrawdown": -0.39408937,
+      "averageMaxDrawdown": -0.39438068,
       "positiveYearRate": 0.76923077,
       "byYear": [
         {
@@ -78400,11 +77950,11 @@
         },
         {
           "year": 2026,
-          "count": 56,
-          "totalEquivalentPnlFen": 16608883,
-          "meanReturn": 0.29658715,
+          "count": 58,
+          "totalEquivalentPnlFen": 16840819,
+          "meanReturn": 0.29035891,
           "medianReturn": 0.19290425,
-          "winRate": 0.71428571
+          "winRate": 0.70689655
         }
       ],
       "training": {
@@ -78505,18 +78055,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 128,
-        "validCount": 128,
+        "candidateCount": 130,
+        "validCount": 130,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 25190454,
-        "meanReturn": 0.1968004,
+        "totalEquivalentPnlFen": 25422390,
+        "meanReturn": 0.19555682,
         "medianReturn": 0.09863389,
-        "winRate": 0.6171875,
-        "winRateWilsonLower95": 0.53073068,
-        "meanExcessReturn": 0.13715512,
-        "averageHoldingSessions": 265.65,
+        "winRate": 0.61538462,
+        "winRateWilsonLower95": 0.52958351,
+        "meanExcessReturn": 0.13661063,
+        "averageHoldingSessions": 264.89,
         "worstReturn": -0.63587789,
-        "averageMaxDrawdown": -0.41135544,
+        "averageMaxDrawdown": -0.41305505,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -78537,11 +78087,11 @@
           },
           {
             "year": 2026,
-            "count": 56,
-            "totalEquivalentPnlFen": 16608883,
-            "meanReturn": 0.29658715,
+            "count": 58,
+            "totalEquivalentPnlFen": 16840819,
+            "meanReturn": 0.29035891,
             "medianReturn": 0.19290425,
-            "winRate": 0.71428571
+            "winRate": 0.70689655
           }
         ]
       }
@@ -78553,18 +78103,18 @@
       "entryEventLabel": "发行预案",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1034,
-      "validCount": 875,
+      "candidateCount": 1036,
+      "validCount": 877,
       "excludedCount": 159,
-      "totalEquivalentPnlFen": 133723294,
-      "meanReturn": 0.15282661,
-      "medianReturn": 0.03024027,
-      "winRate": 0.54857143,
-      "winRateWilsonLower95": 0.51545722,
-      "meanExcessReturn": 0.12667693,
-      "averageHoldingSessions": 233.21,
+      "totalEquivalentPnlFen": 135250788,
+      "meanReturn": 0.15421981,
+      "medianReturn": 0.03136201,
+      "winRate": 0.54960091,
+      "winRateWilsonLower95": 0.51652675,
+      "meanExcessReturn": 0.12815788,
+      "averageHoldingSessions": 233.23,
       "worstReturn": -0.71375512,
-      "averageMaxDrawdown": -0.41465434,
+      "averageMaxDrawdown": -0.41489875,
       "positiveYearRate": 0.84615385,
       "byYear": [
         {
@@ -78665,11 +78215,11 @@
         },
         {
           "year": 2026,
-          "count": 55,
-          "totalEquivalentPnlFen": 21335399,
-          "meanReturn": 0.38791628,
-          "medianReturn": 0.1752745,
-          "winRate": 0.72727273
+          "count": 57,
+          "totalEquivalentPnlFen": 22862893,
+          "meanReturn": 0.40110332,
+          "medianReturn": 0.18455285,
+          "winRate": 0.73684211
         }
       ],
       "training": {
@@ -78770,18 +78320,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 127,
-        "validCount": 127,
+        "candidateCount": 129,
+        "validCount": 129,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 36116270,
-        "meanReturn": 0.28438005,
-        "medianReturn": 0.15168479,
-        "winRate": 0.62992126,
-        "winRateWilsonLower95": 0.54328682,
-        "meanExcessReturn": 0.21421321,
-        "averageHoldingSessions": 310.94,
+        "totalEquivalentPnlFen": 37643764,
+        "meanReturn": 0.29181209,
+        "medianReturn": 0.15635452,
+        "winRate": 0.63565891,
+        "winRateWilsonLower95": 0.54980384,
+        "meanExcessReturn": 0.2229242,
+        "averageHoldingSessions": 309.9,
         "worstReturn": -0.51889185,
-        "averageMaxDrawdown": -0.43748103,
+        "averageMaxDrawdown": -0.43878877,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -78802,11 +78352,11 @@
           },
           {
             "year": 2026,
-            "count": 55,
-            "totalEquivalentPnlFen": 21335399,
-            "meanReturn": 0.38791628,
-            "medianReturn": 0.1752745,
-            "winRate": 0.72727273
+            "count": 57,
+            "totalEquivalentPnlFen": 22862893,
+            "meanReturn": 0.40110332,
+            "medianReturn": 0.18455285,
+            "winRate": 0.73684211
           }
         ]
       }
@@ -78818,18 +78368,18 @@
       "entryEventLabel": "交易所受理",
       "exitEventId": "review_passed",
       "exitEventLabel": "审核通过",
-      "candidateCount": 1034,
-      "validCount": 594,
+      "candidateCount": 1036,
+      "validCount": 596,
       "excludedCount": 440,
-      "totalEquivalentPnlFen": 32132536,
-      "meanReturn": 0.05409519,
-      "medianReturn": 0.00142572,
-      "winRate": 0.5,
-      "winRateWilsonLower95": 0.45991951,
-      "meanExcessReturn": 0.0283082,
-      "averageHoldingSessions": 88.64,
+      "totalEquivalentPnlFen": 32461771,
+      "meanReturn": 0.05446607,
+      "medianReturn": 0.00402821,
+      "winRate": 0.50167785,
+      "winRateWilsonLower95": 0.46165372,
+      "meanExcessReturn": 0.02872318,
+      "averageHoldingSessions": 88.83,
       "worstReturn": -0.59296639,
-      "averageMaxDrawdown": -0.27673846,
+      "averageMaxDrawdown": -0.2769386,
       "positiveYearRate": 0.90909091,
       "byYear": [
         {
@@ -78914,11 +78464,11 @@
         },
         {
           "year": 2026,
-          "count": 51,
-          "totalEquivalentPnlFen": 6047457,
-          "meanReturn": 0.11857767,
-          "medianReturn": 0.03054741,
-          "winRate": 0.56862745
+          "count": 53,
+          "totalEquivalentPnlFen": 6376692,
+          "meanReturn": 0.12031501,
+          "medianReturn": 0.03325193,
+          "winRate": 0.58490566
         }
       ],
       "training": {
@@ -79003,18 +78553,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 96,
-        "validCount": 96,
+        "candidateCount": 98,
+        "validCount": 98,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 13413272,
-        "meanReturn": 0.13972161,
-        "medianReturn": 0.04586255,
-        "winRate": 0.61458333,
-        "winRateWilsonLower95": 0.51460518,
-        "meanExcessReturn": 0.09444739,
-        "averageHoldingSessions": 104.31,
+        "totalEquivalentPnlFen": 13742507,
+        "meanReturn": 0.14022969,
+        "medianReturn": 0.04816611,
+        "winRate": 0.62244898,
+        "winRateWilsonLower95": 0.52356403,
+        "meanExcessReturn": 0.09562136,
+        "averageHoldingSessions": 105.09,
         "worstReturn": -0.33335131,
-        "averageMaxDrawdown": -0.27197391,
+        "averageMaxDrawdown": -0.27328836,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -79035,11 +78585,11 @@
           },
           {
             "year": 2026,
-            "count": 51,
-            "totalEquivalentPnlFen": 6047457,
-            "meanReturn": 0.11857767,
-            "medianReturn": 0.03054741,
-            "winRate": 0.56862745
+            "count": 53,
+            "totalEquivalentPnlFen": 6376692,
+            "meanReturn": 0.12031501,
+            "medianReturn": 0.03325193,
+            "winRate": 0.58490566
           }
         ]
       }
@@ -79051,18 +78601,18 @@
       "entryEventLabel": "交易所受理",
       "exitEventId": "registered",
       "exitEventLabel": "注册生效",
-      "candidateCount": 1034,
-      "validCount": 695,
+      "candidateCount": 1036,
+      "validCount": 697,
       "excludedCount": 339,
-      "totalEquivalentPnlFen": 50372264,
-      "meanReturn": 0.07247806,
+      "totalEquivalentPnlFen": 50653206,
+      "meanReturn": 0.07267316,
       "medianReturn": -0.00174303,
-      "winRate": 0.49784173,
-      "winRateWilsonLower95": 0.46078273,
-      "meanExcessReturn": 0.05602562,
-      "averageHoldingSessions": 130.31,
+      "winRate": 0.49784792,
+      "winRateWilsonLower95": 0.46084179,
+      "meanExcessReturn": 0.05632824,
+      "averageHoldingSessions": 130.43,
       "worstReturn": -0.65216939,
-      "averageMaxDrawdown": -0.32916887,
+      "averageMaxDrawdown": -0.3297217,
       "positiveYearRate": 0.81818182,
       "byYear": [
         {
@@ -79147,11 +78697,11 @@
         },
         {
           "year": 2026,
-          "count": 54,
-          "totalEquivalentPnlFen": 9553369,
-          "meanReturn": 0.17691424,
+          "count": 56,
+          "totalEquivalentPnlFen": 9834311,
+          "meanReturn": 0.1756127,
           "medianReturn": 0.09489038,
-          "winRate": 0.61111111
+          "winRate": 0.60714286
         }
       ],
       "training": {
@@ -79236,18 +78786,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 128,
-        "validCount": 128,
+        "candidateCount": 130,
+        "validCount": 130,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 15915195,
-        "meanReturn": 0.12433745,
+        "totalEquivalentPnlFen": 16196137,
+        "meanReturn": 0.12458566,
         "medianReturn": 0.09389204,
-        "winRate": 0.5859375,
-        "winRateWilsonLower95": 0.499317,
-        "meanExcessReturn": 0.09818037,
-        "averageHoldingSessions": 174.54,
+        "winRate": 0.58461538,
+        "winRateWilsonLower95": 0.49866401,
+        "meanExcessReturn": 0.09915435,
+        "averageHoldingSessions": 174.51,
         "worstReturn": -0.57114317,
-        "averageMaxDrawdown": -0.35214763,
+        "averageMaxDrawdown": -0.35475813,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -79268,11 +78818,11 @@
           },
           {
             "year": 2026,
-            "count": 54,
-            "totalEquivalentPnlFen": 9553369,
-            "meanReturn": 0.17691424,
+            "count": 56,
+            "totalEquivalentPnlFen": 9834311,
+            "meanReturn": 0.1756127,
             "medianReturn": 0.09489038,
-            "winRate": 0.61111111
+            "winRate": 0.60714286
           }
         ]
       }
@@ -79284,18 +78834,18 @@
       "entryEventLabel": "交易所受理",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1034,
-      "validCount": 695,
+      "candidateCount": 1036,
+      "validCount": 697,
       "excludedCount": 339,
-      "totalEquivalentPnlFen": 93091694,
-      "meanReturn": 0.13394485,
-      "medianReturn": 0.04060325,
-      "winRate": 0.56402878,
-      "winRateWilsonLower95": 0.52690913,
-      "meanExcessReturn": 0.10911141,
-      "averageHoldingSessions": 166.75,
+      "totalEquivalentPnlFen": 94695024,
+      "meanReturn": 0.13586083,
+      "medianReturn": 0.04063221,
+      "winRate": 0.56527977,
+      "winRateWilsonLower95": 0.52821879,
+      "meanExcessReturn": 0.11123337,
+      "averageHoldingSessions": 166.84,
       "worstReturn": -0.57503209,
-      "averageMaxDrawdown": -0.35970776,
+      "averageMaxDrawdown": -0.36017296,
       "positiveYearRate": 0.72727273,
       "byYear": [
         {
@@ -79380,11 +78930,11 @@
         },
         {
           "year": 2026,
-          "count": 53,
-          "totalEquivalentPnlFen": 13679740,
-          "meanReturn": 0.25810827,
-          "medianReturn": 0.07705426,
-          "winRate": 0.69811321
+          "count": 55,
+          "totalEquivalentPnlFen": 15283070,
+          "meanReturn": 0.27787397,
+          "medianReturn": 0.0796779,
+          "winRate": 0.70909091
         }
       ],
       "training": {
@@ -79469,18 +79019,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 127,
-        "validCount": 127,
+        "candidateCount": 129,
+        "validCount": 129,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 25180229,
-        "meanReturn": 0.1982695,
-        "medianReturn": 0.05573508,
-        "winRate": 0.63779528,
-        "winRateWilsonLower95": 0.55129313,
-        "meanExcessReturn": 0.15955555,
-        "averageHoldingSessions": 219.6,
+        "totalEquivalentPnlFen": 26783559,
+        "meanReturn": 0.20762447,
+        "medianReturn": 0.06002554,
+        "winRate": 0.64341085,
+        "winRateWilsonLower95": 0.55770318,
+        "meanExcessReturn": 0.17023867,
+        "averageHoldingSessions": 219.29,
         "worstReturn": -0.50797872,
-        "averageMaxDrawdown": -0.3874274,
+        "averageMaxDrawdown": -0.38951116,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -79501,11 +79051,11 @@
           },
           {
             "year": 2026,
-            "count": 53,
-            "totalEquivalentPnlFen": 13679740,
-            "meanReturn": 0.25810827,
-            "medianReturn": 0.07705426,
-            "winRate": 0.69811321
+            "count": 55,
+            "totalEquivalentPnlFen": 15283070,
+            "meanReturn": 0.27787397,
+            "medianReturn": 0.0796779,
+            "winRate": 0.70909091
           }
         ]
       }
@@ -79517,18 +79067,18 @@
       "entryEventLabel": "审核通过",
       "exitEventId": "registered",
       "exitEventLabel": "注册生效",
-      "candidateCount": 1034,
-      "validCount": 879,
+      "candidateCount": 1036,
+      "validCount": 881,
       "excludedCount": 155,
-      "totalEquivalentPnlFen": 24977696,
-      "meanReturn": 0.02841603,
+      "totalEquivalentPnlFen": 24912770,
+      "meanReturn": 0.02827783,
       "medianReturn": -0.0008726,
-      "winRate": 0.49488055,
-      "winRateWilsonLower95": 0.46192196,
-      "meanExcessReturn": 0.02482908,
-      "averageHoldingSessions": 38.62,
+      "winRate": 0.49489217,
+      "winRateWilsonLower95": 0.46197077,
+      "meanExcessReturn": 0.02477399,
+      "averageHoldingSessions": 38.6,
       "worstReturn": -0.54011624,
-      "averageMaxDrawdown": -0.19279596,
+      "averageMaxDrawdown": -0.19315706,
       "positiveYearRate": 0.65,
       "byYear": [
         {
@@ -79685,11 +79235,11 @@
         },
         {
           "year": 2026,
-          "count": 55,
-          "totalEquivalentPnlFen": 2872444,
-          "meanReturn": 0.0522262,
+          "count": 57,
+          "totalEquivalentPnlFen": 2807518,
+          "meanReturn": 0.04925465,
           "medianReturn": 0.03883759,
-          "winRate": 0.54545455
+          "winRate": 0.54385965
         }
       ],
       "training": {
@@ -79846,18 +79396,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 108,
-        "validCount": 108,
+        "candidateCount": 110,
+        "validCount": 110,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 2960547,
-        "meanReturn": 0.02741241,
+        "totalEquivalentPnlFen": 2895621,
+        "meanReturn": 0.02632377,
         "medianReturn": 0.00594706,
-        "winRate": 0.50925926,
-        "winRateWilsonLower95": 0.41628971,
-        "meanExcessReturn": 0.02979578,
-        "averageHoldingSessions": 59.05,
+        "winRate": 0.50909091,
+        "winRateWilsonLower95": 0.41694956,
+        "meanExcessReturn": 0.02926424,
+        "averageHoldingSessions": 58.54,
         "worstReturn": -0.41441008,
-        "averageMaxDrawdown": -0.21237545,
+        "averageMaxDrawdown": -0.21491148,
         "positiveYearRate": 0.66666667,
         "byYear": [
           {
@@ -79878,11 +79428,11 @@
           },
           {
             "year": 2026,
-            "count": 55,
-            "totalEquivalentPnlFen": 2872444,
-            "meanReturn": 0.0522262,
+            "count": 57,
+            "totalEquivalentPnlFen": 2807518,
+            "meanReturn": 0.04925465,
             "medianReturn": 0.03883759,
-            "winRate": 0.54545455
+            "winRate": 0.54385965
           }
         ]
       }
@@ -79894,18 +79444,18 @@
       "entryEventLabel": "审核通过",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1034,
-      "validCount": 882,
+      "candidateCount": 1036,
+      "validCount": 884,
       "excludedCount": 152,
-      "totalEquivalentPnlFen": 74616657,
-      "meanReturn": 0.08459938,
-      "medianReturn": 0.03708615,
-      "winRate": 0.57936508,
-      "winRateWilsonLower95": 0.54650983,
-      "meanExcessReturn": 0.07289159,
-      "averageHoldingSessions": 71.72,
+      "totalEquivalentPnlFen": 75769917,
+      "meanReturn": 0.08571257,
+      "medianReturn": 0.03725668,
+      "winRate": 0.58031674,
+      "winRateWilsonLower95": 0.54750488,
+      "meanExcessReturn": 0.07416325,
+      "averageHoldingSessions": 71.69,
       "worstReturn": -0.63471145,
-      "averageMaxDrawdown": -0.25321654,
+      "averageMaxDrawdown": -0.2534415,
       "positiveYearRate": 0.85,
       "byYear": [
         {
@@ -80062,11 +79612,11 @@
         },
         {
           "year": 2026,
-          "count": 54,
-          "totalEquivalentPnlFen": 7221856,
-          "meanReturn": 0.13373804,
-          "medianReturn": -0.00901544,
-          "winRate": 0.48148148
+          "count": 56,
+          "totalEquivalentPnlFen": 8375116,
+          "meanReturn": 0.14955561,
+          "medianReturn": 0.00396292,
+          "winRate": 0.5
         }
       ],
       "training": {
@@ -80223,18 +79773,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 107,
-        "validCount": 107,
+        "candidateCount": 109,
+        "validCount": 109,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 11716017,
-        "meanReturn": 0.10949545,
-        "medianReturn": 0.01017185,
-        "winRate": 0.51401869,
-        "winRateWilsonLower95": 0.42048423,
-        "meanExcessReturn": 0.10409285,
-        "averageHoldingSessions": 99.6,
+        "totalEquivalentPnlFen": 12869277,
+        "meanReturn": 0.11806673,
+        "medianReturn": 0.01040222,
+        "winRate": 0.52293578,
+        "winRateWilsonLower95": 0.42999343,
+        "meanExcessReturn": 0.11383364,
+        "averageHoldingSessions": 98.84,
         "worstReturn": -0.51778856,
-        "averageMaxDrawdown": -0.27987059,
+        "averageMaxDrawdown": -0.28120602,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -80255,11 +79805,11 @@
           },
           {
             "year": 2026,
-            "count": 54,
-            "totalEquivalentPnlFen": 7221856,
-            "meanReturn": 0.13373804,
-            "medianReturn": -0.00901544,
-            "winRate": 0.48148148
+            "count": 56,
+            "totalEquivalentPnlFen": 8375116,
+            "meanReturn": 0.14955561,
+            "medianReturn": 0.00396292,
+            "winRate": 0.5
           }
         ]
       }
@@ -80271,18 +79821,18 @@
       "entryEventLabel": "注册生效",
       "exitEventId": "issue_announcement",
       "exitEventLabel": "最终发行公告",
-      "candidateCount": 1034,
-      "validCount": 1007,
+      "candidateCount": 1036,
+      "validCount": 1009,
       "excludedCount": 27,
-      "totalEquivalentPnlFen": 59078552,
-      "meanReturn": 0.05866785,
-      "medianReturn": 0.02907302,
-      "winRate": 0.5938431,
-      "winRateWilsonLower95": 0.56320844,
-      "meanExcessReturn": 0.05111166,
-      "averageHoldingSessions": 34.75,
+      "totalEquivalentPnlFen": 60567096,
+      "meanReturn": 0.06002683,
+      "medianReturn": 0.02927134,
+      "winRate": 0.59464817,
+      "winRateWilsonLower95": 0.56405055,
+      "meanExcessReturn": 0.05253777,
+      "averageHoldingSessions": 34.74,
       "worstReturn": -0.64526783,
-      "averageMaxDrawdown": -0.17374044,
+      "averageMaxDrawdown": -0.17367906,
       "positiveYearRate": 0.75,
       "byYear": [
         {
@@ -80439,11 +79989,11 @@
         },
         {
           "year": 2026,
-          "count": 56,
-          "totalEquivalentPnlFen": 4409283,
-          "meanReturn": 0.07873712,
+          "count": 58,
+          "totalEquivalentPnlFen": 5897827,
+          "meanReturn": 0.10168661,
           "medianReturn": 0.05643505,
-          "winRate": 0.60714286
+          "winRate": 0.62068966
         }
       ],
       "training": {
@@ -80600,18 +80150,18 @@
         ]
       },
       "validation": {
-        "candidateCount": 138,
-        "validCount": 138,
+        "candidateCount": 140,
+        "validCount": 140,
         "excludedCount": 0,
-        "totalEquivalentPnlFen": 9744957,
-        "meanReturn": 0.07061561,
-        "medianReturn": 0.03602885,
-        "winRate": 0.5942029,
-        "winRateWilsonLower95": 0.51079922,
-        "meanExcessReturn": 0.05959008,
-        "averageHoldingSessions": 46.25,
+        "totalEquivalentPnlFen": 11233501,
+        "meanReturn": 0.08023927,
+        "medianReturn": 0.03731987,
+        "winRate": 0.6,
+        "winRateWilsonLower95": 0.51722404,
+        "meanExcessReturn": 0.06974712,
+        "averageHoldingSessions": 45.99,
         "worstReturn": -0.42397018,
-        "averageMaxDrawdown": -0.19488321,
+        "averageMaxDrawdown": -0.19413876,
         "positiveYearRate": 1,
         "byYear": [
           {
@@ -80632,11 +80182,11 @@
           },
           {
             "year": 2026,
-            "count": 56,
-            "totalEquivalentPnlFen": 4409283,
-            "meanReturn": 0.07873712,
+            "count": 58,
+            "totalEquivalentPnlFen": 5897827,
+            "meanReturn": 0.10168661,
             "medianReturn": 0.05643505,
-            "winRate": 0.60714286
+            "winRate": 0.62068966
           }
         ]
       }
@@ -105649,7 +105199,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -105682,6 +105232,44 @@
       "benchmarkReturn": -0.02748142,
       "excessReturn": 0.17074484,
       "maxDrawdown": -0.36515292,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_issue_announcement",
+      "strategyLabel": "交易所受理买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2025-10-29",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所受理的公告",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-10-30/603125_20251030_BFJZ.pdf",
+      "exitAnnouncementDate": "2026-09-22",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-23/603125_20260923_QUZP.pdf",
+      "valid": true,
+      "entryDate": "2025-10-30",
+      "exitDate": "2026-09-23",
+      "exitExecution": "close",
+      "entryPriceFen": 1671,
+      "exitPriceFen": 2452,
+      "holdingSessions": 222,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.47090582,
+      "equivalentPnlFen": 470906,
+      "benchmarkReturn": -0.0461784,
+      "excessReturn": 0.51708422,
+      "maxDrawdown": -0.46147059,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -106860,6 +106448,44 @@
       "benchmarkReturn": 0.0069033,
       "excessReturn": -0.10844378,
       "maxDrawdown": -0.57212614,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_issue_announcement",
+      "strategyLabel": "交易所受理买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2025-12-31",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所受理的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-31/bfee3535-66bb-4fd4-9ff7-0e0b4600efdc.PDF",
+      "exitAnnouncementDate": "2026-09-23",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-23/52aea794-1327-449b-98e5-7d394d39c5f3.PDF",
+      "valid": true,
+      "entryDate": "2026-01-05",
+      "exitDate": "2026-09-24",
+      "exitExecution": "close",
+      "entryPriceFen": 3342,
+      "exitPriceFen": 7037,
+      "holdingSessions": 178,
+      "exitDeferredSessions": 0,
+      "stockReturn": 1.13242424,
+      "equivalentPnlFen": 1132424,
+      "benchmarkReturn": -0.0477259,
+      "excessReturn": 1.18015014,
+      "maxDrawdown": -0.58218943,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -132021,7 +131647,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -132054,6 +131680,44 @@
       "benchmarkReturn": 0.03047187,
       "excessReturn": -0.07597489,
       "maxDrawdown": -0.18904779,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_registered",
+      "strategyLabel": "交易所受理买入 → 注册生效卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2025-10-29",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所受理的公告",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-10-30/603125_20251030_BFJZ.pdf",
+      "exitAnnouncementDate": "2026-09-03",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证监会注册批复的公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-04/603125_20260904_KL9H.pdf",
+      "valid": true,
+      "entryDate": "2025-10-30",
+      "exitDate": "2026-09-04",
+      "exitExecution": "open",
+      "entryPriceFen": 1671,
+      "exitPriceFen": 2348,
+      "holdingSessions": 209,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.4085183,
+      "equivalentPnlFen": 408518,
+      "benchmarkReturn": -0.03392329,
+      "excessReturn": 0.44244159,
+      "maxDrawdown": -0.46147059,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -133270,6 +132934,44 @@
       "benchmarkReturn": -0.01483143,
       "excessReturn": -0.29937109,
       "maxDrawdown": -0.57212614,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_registered",
+      "strategyLabel": "交易所受理买入 → 注册生效卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2025-12-31",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所受理的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-31/bfee3535-66bb-4fd4-9ff7-0e0b4600efdc.PDF",
+      "exitAnnouncementDate": "2026-07-27",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-27/9966171a-e8b1-4bb6-b45f-3a8d80f3303e.PDF",
+      "valid": true,
+      "entryDate": "2026-01-05",
+      "exitDate": "2026-07-28",
+      "exitExecution": "open",
+      "entryPriceFen": 3342,
+      "exitPriceFen": 2879,
+      "holdingSessions": 136,
+      "exitDeferredSessions": 0,
+      "stockReturn": -0.12757576,
+      "equivalentPnlFen": -127576,
+      "benchmarkReturn": -0.00811306,
+      "excessReturn": -0.1194627,
+      "maxDrawdown": -0.58218943,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -154669,7 +154371,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -154702,6 +154404,44 @@
       "benchmarkReturn": -0.047938,
       "excessReturn": -0.04875592,
       "maxDrawdown": -0.18904779,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_review_passed",
+      "strategyLabel": "交易所受理买入 → 审核通过卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "entryAnnouncementDate": "2025-10-29",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所受理的公告",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-10-30/603125_20251030_BFJZ.pdf",
+      "exitAnnouncementDate": "2026-07-23",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-24/603125_20260724_ZYE6.pdf",
+      "valid": true,
+      "entryDate": "2025-10-30",
+      "exitDate": "2026-07-24",
+      "exitExecution": "open",
+      "entryPriceFen": 1671,
+      "exitPriceFen": 2085,
+      "holdingSessions": 179,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.25074985,
+      "equivalentPnlFen": 250750,
+      "benchmarkReturn": -0.01067783,
+      "excessReturn": 0.26142768,
+      "maxDrawdown": -0.46147059,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -155842,6 +155582,44 @@
       "benchmarkReturn": 0.02895123,
       "excessReturn": 0.0043007,
       "maxDrawdown": -0.29766022,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "accepted_to_review_passed",
+      "strategyLabel": "交易所受理买入 → 审核通过卖出",
+      "entryEventId": "accepted",
+      "entryEventLabel": "交易所受理",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "entryAnnouncementDate": "2025-12-31",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所受理的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-31/bfee3535-66bb-4fd4-9ff7-0e0b4600efdc.PDF",
+      "exitAnnouncementDate": "2026-06-12",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-06-12/081e2fff-35b9-4438-9890-6f07fa8bf3f5.PDF",
+      "valid": true,
+      "entryDate": "2026-01-05",
+      "exitDate": "2026-06-15",
+      "exitExecution": "open",
+      "entryPriceFen": 3342,
+      "exitPriceFen": 3601,
+      "holdingSessions": 106,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.07848485,
+      "equivalentPnlFen": 78485,
+      "benchmarkReturn": 0.03596818,
+      "excessReturn": 0.04251667,
+      "maxDrawdown": -0.21129368,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -179521,7 +179299,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -179554,6 +179332,44 @@
       "benchmarkReturn": 0.44393861,
       "excessReturn": -0.03574878,
       "maxDrawdown": -0.38986224,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_accepted",
+      "strategyLabel": "发行预案买入 → 交易所受理卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "accepted",
+      "exitEventLabel": "交易所受理",
+      "entryAnnouncementDate": "2025-09-03",
+      "entryAnnouncementTitle": "常青科技向不特定对象发行可转换公司债券预案",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-09-04/603125_20250904_T261.pdf",
+      "exitAnnouncementDate": "2025-10-29",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所受理的公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-10-30/603125_20251030_BFJZ.pdf",
+      "valid": true,
+      "entryDate": "2025-09-04",
+      "exitDate": "2025-10-30",
+      "exitExecution": "open",
+      "entryPriceFen": 1709,
+      "exitPriceFen": 1671,
+      "holdingSessions": 35,
+      "exitDeferredSessions": 0,
+      "stockReturn": -0.02228739,
+      "equivalentPnlFen": -22287,
+      "benchmarkReturn": 0.0615814,
+      "excessReturn": -0.08386879,
+      "maxDrawdown": -0.08963585,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -180770,6 +180586,44 @@
       "benchmarkReturn": 0.00754357,
       "excessReturn": 0.15557235,
       "maxDrawdown": -0.10744286,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_accepted",
+      "strategyLabel": "发行预案买入 → 交易所受理卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "accepted",
+      "exitEventLabel": "交易所受理",
+      "entryAnnouncementDate": "2025-10-16",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券预案披露的提示性公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-16/fad60b42-03cd-4fb4-9a99-540d8ab14879.PDF",
+      "exitAnnouncementDate": "2025-12-31",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所受理的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-31/bfee3535-66bb-4fd4-9ff7-0e0b4600efdc.PDF",
+      "valid": true,
+      "entryDate": "2025-10-17",
+      "exitDate": "2026-01-05",
+      "exitExecution": "open",
+      "entryPriceFen": 3410,
+      "exitPriceFen": 3342,
+      "holdingSessions": 55,
+      "exitDeferredSessions": 0,
+      "stockReturn": -0.02019002,
+      "equivalentPnlFen": -20190,
+      "benchmarkReturn": 0.01104388,
+      "excessReturn": -0.0312339,
+      "maxDrawdown": -0.15713135,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -212733,7 +212587,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -212766,6 +212620,44 @@
       "benchmarkReturn": 0.40425713,
       "excessReturn": 0.20567479,
       "maxDrawdown": -0.45389317,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_issue_announcement",
+      "strategyLabel": "发行预案买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2025-09-03",
+      "entryAnnouncementTitle": "常青科技向不特定对象发行可转换公司债券预案",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-09-04/603125_20250904_T261.pdf",
+      "exitAnnouncementDate": "2026-09-22",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-23/603125_20260923_QUZP.pdf",
+      "valid": true,
+      "entryDate": "2025-09-04",
+      "exitDate": "2026-09-23",
+      "exitExecution": "close",
+      "entryPriceFen": 1709,
+      "exitPriceFen": 2452,
+      "holdingSessions": 256,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.43812317,
+      "equivalentPnlFen": 438123,
+      "benchmarkReturn": 0.01255926,
+      "excessReturn": 0.42556391,
+      "maxDrawdown": -0.46147059,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -213982,6 +213874,44 @@
       "benchmarkReturn": 0.4225892,
       "excessReturn": 0.21082339,
       "maxDrawdown": -0.49958746,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_issue_announcement",
+      "strategyLabel": "发行预案买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2025-10-16",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券预案披露的提示性公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-16/fad60b42-03cd-4fb4-9a99-540d8ab14879.PDF",
+      "exitAnnouncementDate": "2026-09-23",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-23/52aea794-1327-449b-98e5-7d394d39c5f3.PDF",
+      "valid": true,
+      "entryDate": "2025-10-17",
+      "exitDate": "2026-09-24",
+      "exitExecution": "close",
+      "entryPriceFen": 3410,
+      "exitPriceFen": 7037,
+      "holdingSessions": 232,
+      "exitDeferredSessions": 0,
+      "stockReturn": 1.08937055,
+      "equivalentPnlFen": 1089371,
+      "benchmarkReturn": -0.0372091,
+      "excessReturn": 1.12657965,
+      "maxDrawdown": -0.58218943,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -245945,7 +245875,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -245978,6 +245908,44 @@
       "benchmarkReturn": 0.48793812,
       "excessReturn": -0.14382518,
       "maxDrawdown": -0.38986224,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_registered",
+      "strategyLabel": "发行预案买入 → 注册生效卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2025-09-03",
+      "entryAnnouncementTitle": "常青科技向不特定对象发行可转换公司债券预案",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-09-04/603125_20250904_T261.pdf",
+      "exitAnnouncementDate": "2026-09-03",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证监会注册批复的公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-04/603125_20260904_KL9H.pdf",
+      "valid": true,
+      "entryDate": "2025-09-04",
+      "exitDate": "2026-09-04",
+      "exitExecution": "open",
+      "entryPriceFen": 1709,
+      "exitPriceFen": 2348,
+      "holdingSessions": 243,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.3771261,
+      "equivalentPnlFen": 377126,
+      "benchmarkReturn": 0.02556907,
+      "excessReturn": 0.35155703,
+      "maxDrawdown": -0.46147059,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -247232,6 +247200,44 @@
       "benchmarkReturn": 0.43604166,
       "excessReturn": 0.0774495,
       "maxDrawdown": -0.49958746,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_registered",
+      "strategyLabel": "发行预案买入 → 注册生效卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2025-10-16",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券预案披露的提示性公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-16/fad60b42-03cd-4fb4-9a99-540d8ab14879.PDF",
+      "exitAnnouncementDate": "2026-07-27",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-27/9966171a-e8b1-4bb6-b45f-3a8d80f3303e.PDF",
+      "valid": true,
+      "entryDate": "2025-10-17",
+      "exitDate": "2026-07-28",
+      "exitExecution": "open",
+      "entryPriceFen": 3410,
+      "exitPriceFen": 2879,
+      "holdingSessions": 190,
+      "exitDeferredSessions": 0,
+      "stockReturn": -0.14519002,
+      "equivalentPnlFen": -145190,
+      "benchmarkReturn": 0.00284122,
+      "excessReturn": -0.14803124,
+      "maxDrawdown": -0.58218943,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -274863,7 +274869,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -274896,6 +274902,44 @@
       "benchmarkReturn": 0.37471908,
       "excessReturn": -0.10269265,
       "maxDrawdown": -0.38986224,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_review_passed",
+      "strategyLabel": "发行预案买入 → 审核通过卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "entryAnnouncementDate": "2025-09-03",
+      "entryAnnouncementTitle": "常青科技向不特定对象发行可转换公司债券预案",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-09-04/603125_20250904_T261.pdf",
+      "exitAnnouncementDate": "2026-07-23",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-24/603125_20260724_ZYE6.pdf",
+      "valid": true,
+      "entryDate": "2025-09-04",
+      "exitDate": "2026-07-24",
+      "exitExecution": "open",
+      "entryPriceFen": 1709,
+      "exitPriceFen": 2085,
+      "holdingSessions": 213,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.2228739,
+      "equivalentPnlFen": 222874,
+      "benchmarkReturn": 0.05024601,
+      "excessReturn": 0.17262789,
+      "maxDrawdown": -0.46147059,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -276074,6 +276118,44 @@
       "benchmarkReturn": 0.49629155,
       "excessReturn": 0.44571196,
       "maxDrawdown": -0.46224807,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "proposal_to_review_passed",
+      "strategyLabel": "发行预案买入 → 审核通过卖出",
+      "entryEventId": "proposal",
+      "entryEventLabel": "发行预案",
+      "exitEventId": "review_passed",
+      "exitEventLabel": "审核通过",
+      "entryAnnouncementDate": "2025-10-16",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券预案披露的提示性公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-16/fad60b42-03cd-4fb4-9a99-540d8ab14879.PDF",
+      "exitAnnouncementDate": "2026-06-12",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-06-12/081e2fff-35b9-4438-9890-6f07fa8bf3f5.PDF",
+      "valid": true,
+      "entryDate": "2025-10-17",
+      "exitDate": "2026-06-15",
+      "exitExecution": "open",
+      "entryPriceFen": 3410,
+      "exitPriceFen": 3601,
+      "holdingSessions": 160,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.05671021,
+      "equivalentPnlFen": 56710,
+      "benchmarkReturn": 0.04740929,
+      "excessReturn": 0.00930092,
+      "maxDrawdown": -0.21129368,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -313053,7 +313135,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -313086,6 +313168,44 @@
       "benchmarkReturn": -0.05623956,
       "excessReturn": 0.25400492,
       "maxDrawdown": -0.36515292,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "registered_to_issue_announcement",
+      "strategyLabel": "注册生效买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "registered",
+      "entryEventLabel": "注册生效",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-09-03",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证监会注册批复的公告",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-04/603125_20260904_KL9H.pdf",
+      "exitAnnouncementDate": "2026-09-22",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-23/603125_20260923_QUZP.pdf",
+      "valid": true,
+      "entryDate": "2026-09-04",
+      "exitDate": "2026-09-23",
+      "exitExecution": "close",
+      "entryPriceFen": 2348,
+      "exitPriceFen": 2452,
+      "holdingSessions": 14,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.04429302,
+      "equivalentPnlFen": 44293,
+      "benchmarkReturn": -0.01268545,
+      "excessReturn": 0.05697847,
+      "maxDrawdown": -0.07498953,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -314340,6 +314460,44 @@
       "benchmarkReturn": -0.0068619,
       "excessReturn": 0.08074506,
       "maxDrawdown": -0.08586667,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "registered_to_issue_announcement",
+      "strategyLabel": "注册生效买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "registered",
+      "entryEventLabel": "注册生效",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-07-27",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-27/9966171a-e8b1-4bb6-b45f-3a8d80f3303e.PDF",
+      "exitAnnouncementDate": "2026-09-23",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-23/52aea794-1327-449b-98e5-7d394d39c5f3.PDF",
+      "valid": true,
+      "entryDate": "2026-07-28",
+      "exitDate": "2026-09-24",
+      "exitExecution": "close",
+      "entryPriceFen": 2879,
+      "exitPriceFen": 7037,
+      "holdingSessions": 43,
+      "exitDeferredSessions": 0,
+      "stockReturn": 1.44425148,
+      "equivalentPnlFen": 1444251,
+      "benchmarkReturn": -0.03993685,
+      "excessReturn": 1.48418833,
+      "maxDrawdown": -0.21055337,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -346645,7 +346803,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -346678,6 +346836,44 @@
       "benchmarkReturn": 0.02148661,
       "excessReturn": 0.24415684,
       "maxDrawdown": -0.36515292,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_issue_announcement",
+      "strategyLabel": "审核通过买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-07-23",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-24/603125_20260724_ZYE6.pdf",
+      "exitAnnouncementDate": "2026-09-22",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-23/603125_20260923_QUZP.pdf",
+      "valid": true,
+      "entryDate": "2026-07-24",
+      "exitDate": "2026-09-23",
+      "exitExecution": "close",
+      "entryPriceFen": 2085,
+      "exitPriceFen": 2452,
+      "holdingSessions": 44,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.17601918,
+      "equivalentPnlFen": 176019,
+      "benchmarkReturn": -0.03588373,
+      "excessReturn": 0.21190291,
+      "maxDrawdown": -0.12311358,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -347856,6 +348052,44 @@
       "benchmarkReturn": -0.02393455,
       "excessReturn": 0.25143046,
       "maxDrawdown": -0.18005162,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_issue_announcement",
+      "strategyLabel": "审核通过买入 → 最终发行公告后首日收盘卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "issue_announcement",
+      "exitEventLabel": "最终发行公告",
+      "entryAnnouncementDate": "2026-06-12",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-06-12/081e2fff-35b9-4438-9890-6f07fa8bf3f5.PDF",
+      "exitAnnouncementDate": "2026-09-23",
+      "exitAnnouncementTitle": "向不特定对象发行可转换公司债券发行公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-23/52aea794-1327-449b-98e5-7d394d39c5f3.PDF",
+      "valid": true,
+      "entryDate": "2026-06-15",
+      "exitDate": "2026-09-24",
+      "exitExecution": "close",
+      "entryPriceFen": 3601,
+      "exitPriceFen": 7037,
+      "holdingSessions": 73,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.9772408,
+      "equivalentPnlFen": 977241,
+      "benchmarkReturn": -0.08078827,
+      "excessReturn": 1.05802907,
+      "maxDrawdown": -0.58218943,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -380009,7 +380243,7 @@
     },
     {
       "bondCode": "113710",
-      "bondName": "N四方转",
+      "bondName": "四方转债",
       "stockCode": "603339",
       "stockName": "四方科技",
       "exchange": "SH",
@@ -380042,6 +380276,44 @@
       "benchmarkReturn": 0.08235794,
       "excessReturn": -0.02568734,
       "maxDrawdown": -0.11138015,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "113711",
+      "bondName": "常青转债",
+      "stockCode": "603125",
+      "stockName": "常青科技",
+      "exchange": "SH",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_registered",
+      "strategyLabel": "审核通过买入 → 注册生效卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2026-07-23",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+      "entrySourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-24/603125_20260724_ZYE6.pdf",
+      "exitAnnouncementDate": "2026-09-03",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证监会注册批复的公告",
+      "exitSourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-04/603125_20260904_KL9H.pdf",
+      "valid": true,
+      "entryDate": "2026-07-24",
+      "exitDate": "2026-09-04",
+      "exitExecution": "open",
+      "entryPriceFen": 2085,
+      "exitPriceFen": 2348,
+      "holdingSessions": 31,
+      "exitDeferredSessions": 0,
+      "stockReturn": 0.12613909,
+      "equivalentPnlFen": 126139,
+      "benchmarkReturn": -0.02349634,
+      "excessReturn": 0.14963543,
+      "maxDrawdown": -0.12152502,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
@@ -381258,6 +381530,44 @@
       "benchmarkReturn": -0.01719061,
       "excessReturn": 0.1602348,
       "maxDrawdown": -0.18005162,
+      "priceSource": "tencent",
+      "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
+    },
+    {
+      "bondCode": "123287",
+      "bondName": "满坤转债",
+      "stockCode": "301132",
+      "stockName": "满坤科技",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-24",
+      "universeSource": "rights_backtest",
+      "cohortYear": 2026,
+      "strategyId": "review_passed_to_registered",
+      "strategyLabel": "审核通过买入 → 注册生效卖出",
+      "entryEventId": "review_passed",
+      "entryEventLabel": "审核通过",
+      "exitEventId": "registered",
+      "exitEventLabel": "注册生效",
+      "entryAnnouncementDate": "2026-06-12",
+      "entryAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得深圳证券交易所上市审核委员会审核通过的公告",
+      "entrySourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-06-12/081e2fff-35b9-4438-9890-6f07fa8bf3f5.PDF",
+      "exitAnnouncementDate": "2026-07-27",
+      "exitAnnouncementTitle": "关于向不特定对象发行可转换公司债券申请获得中国证券监督管理委员会同意注册批复的公告",
+      "exitSourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-27/9966171a-e8b1-4bb6-b45f-3a8d80f3303e.PDF",
+      "valid": true,
+      "entryDate": "2026-06-15",
+      "exitDate": "2026-07-28",
+      "exitExecution": "open",
+      "entryPriceFen": 3601,
+      "exitPriceFen": 2879,
+      "holdingSessions": 31,
+      "exitDeferredSessions": 0,
+      "stockReturn": -0.19106491,
+      "equivalentPnlFen": -191065,
+      "benchmarkReturn": -0.04255077,
+      "excessReturn": -0.14851414,
+      "maxDrawdown": -0.58218943,
       "priceSource": "tencent",
       "priceAdjustment": "tencent_forward_adjusted_open_to_open_return_with_raw_trade_quotes"
     },
