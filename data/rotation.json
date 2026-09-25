@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-24T10:35:35.913Z",
-    "asOfDate": "2026-09-24",
+    "generatedAt": "2026-09-25T10:32:35.060Z",
+    "asOfDate": "2026-09-25",
     "coverageStart": "2007-07-12",
     "coverageEnd": "2026-09-24",
     "version": "rotation-frequency-study-v2",
@@ -30,12 +30,7 @@
     "formulaMismatchRows": 0,
     "completedPeriods": 218
   },
-  "marketSnapshot": {
-    "date": "2026-09-24",
-    "sampleCount": 308,
-    "average": 154.917051948052,
-    "median": 129.732
-  },
+  "marketSnapshot": null,
   "summary": {
     "periodCount": 218,
     "cumulativeReturn": 7.52592747455763,
