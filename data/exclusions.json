@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-25T10:32:06.717Z",
+    "generatedAt": "2026-09-28T10:33:06.998Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-25",
+    "coverageEnd": "2026-09-28",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -68,22 +68,22 @@
     "cninfoRowsAllYears": 983,
     "eastmoneyRowsAllYears": 1059,
     "migratedAliasesRemoved": 5,
-    "inScopeCandidates": 973,
+    "inScopeCandidates": 975,
     "staticFieldsReady": 968,
-    "staticFieldExclusions": 5,
+    "staticFieldExclusions": 7,
     "attemptedCandidates": 968,
     "stockSeriesAvailable": 968,
     "bondFiveBarsAvailable": 956,
     "validBacktests": 940,
     "marketDataAuditExclusions": 3,
     "coreExclusions": 25,
-    "totalPublishedExclusions": 33
+    "totalPublishedExclusions": 35
   },
   "reasonCounts": {
     "historical_st_limit_ambiguous": 2,
     "incomplete_exit_window": 3,
     "missing_bond_bar": 17,
-    "missing_listing_date": 5,
+    "missing_listing_date": 7,
     "missing_price_limit_reference": 1,
     "stock_buy_limit_up": 5
   },
@@ -994,7 +994,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 2,
+          "barCount": 3,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -1041,6 +1041,43 @@
         "eastmoneyRecordDate": "2026-09-24",
         "cninfoSubscriptionDate": "2026-09-28",
         "eastmoneySubscriptionDate": "2026-09-28"
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "118077",
+      "bondName": "莱特转债",
+      "stockCode": "688150",
+      "stockName": "莱特光电",
+      "exchange": "SH",
+      "recordDate": "2026-09-28",
+      "subscriptionDate": "2026-09-29",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=118077",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/118077.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-09-28",
+        "cninfoRecordDate": "2026-09-28",
+        "eastmoneyRecordDate": "2026-09-28",
+        "cninfoSubscriptionDate": "2026-09-29",
+        "eastmoneySubscriptionDate": "2026-09-29"
       }
     },
     {
@@ -1864,6 +1901,43 @@
         "eastmoneyRecordDate": "2026-09-24",
         "cninfoSubscriptionDate": "2026-09-28",
         "eastmoneySubscriptionDate": "2026-09-28"
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123288",
+      "bondName": "隆新转债",
+      "stockCode": "301149",
+      "stockName": "隆华新材",
+      "exchange": "SZ",
+      "recordDate": "2026-09-28",
+      "subscriptionDate": "2026-09-29",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123288",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123288.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-09-28",
+        "cninfoRecordDate": "2026-09-28",
+        "eastmoneyRecordDate": "2026-09-28",
+        "cninfoSubscriptionDate": "2026-09-29",
+        "eastmoneySubscriptionDate": "2026-09-29"
       }
     },
     {
