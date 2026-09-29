@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-28T10:33:06.998Z",
+    "generatedAt": "2026-09-29T10:33:21.284Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-28",
+    "coverageEnd": "2026-09-29",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-28T10:33:06.998Z",
+    "generatedAt": "2026-09-29T10:33:21.284Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-28",
+    "coverageEnd": "2026-09-29",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -746,12 +746,12 @@
   },
   "sourceUsage": {
     "stock": {
-      "tencent-fqkline": 871,
-      "eastmoney-push2his-kline": 97
+      "tencent-fqkline": 870,
+      "eastmoney-push2his-kline": 98
     },
     "bond": {
-      "tencent-fqkline": 965,
-      "missing": 3
+      "tencent-fqkline": 966,
+      "missing": 2
     }
   },
   "records": [
@@ -133853,7 +133853,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 24,
+          "barCount": 25,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -133980,7 +133980,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 23,
+          "barCount": 24,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134234,11 +134234,11 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 18,
+          "barCount": 19,
           "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 5,
             "differences": []
           },
           "secondarySkippedReason": null
@@ -134361,11 +134361,11 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 13,
+          "barCount": 14,
           "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 5,
             "differences": []
           },
           "secondarySkippedReason": null
@@ -134488,11 +134488,11 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 17,
+          "barCount": 18,
           "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 5,
             "differences": []
           },
           "secondarySkippedReason": null

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-09-28T10:34:47.073Z",
+    "generatedAt": "2026-09-29T10:37:44.263Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-09-28",
+    "coverageEnd": "2026-09-29",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -13,7 +13,212 @@
     "participationRule": "所有具有完整买卖节点和可验证成交窗口的候选等额参与，不做因子筛选",
     "grossOnly": true,
     "dailyApproximation": true,
-    "staleCacheFallbacks": [],
+    "staleCacheFallbacks": [
+      {
+        "key": "index-tencent-csi300-2026-20260929",
+        "fallbackKey": "index-tencent-csi300-2026-20260928",
+        "fetchedAt": "2026-09-28T10:34:22.039Z",
+        "error": "index-tencent-csi300-2026-20260929: HTTP 501; index-eastmoney-csi300-2026-20260929: fetch failed"
+      },
+      {
+        "key": "pipeline-szse-20260929",
+        "fallbackKey": "pipeline-szse-20260928",
+        "fetchedAt": "2026-09-28T10:34:35.541Z",
+        "error": "fetch failed"
+      },
+      {
+        "key": "live-stock-605016-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-605016-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.534Z",
+        "error": "stock-tencent-SH-605016-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-605016-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300181-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-300181-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.544Z",
+        "error": "stock-tencent-SZ-300181-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-300181-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301631-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301631-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.550Z",
+        "error": "stock-tencent-SZ-301631-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-301631-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603061-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-603061-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.540Z",
+        "error": "stock-tencent-SH-603061-2026-08-05-2026-09-29-qfq: HTTP 501；stock-eastmoney-SH-603061-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688372-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-688372-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.610Z",
+        "error": "stock-tencent-SH-688372-2026-08-05-2026-09-29-qfq: HTTP 501；stock-eastmoney-SH-688372-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603043-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-603043-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.618Z",
+        "error": "stock-tencent-SH-603043-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-603043-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300634-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-300634-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.634Z",
+        "error": "stock-tencent-SZ-300634-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-300634-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301279-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301279-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.639Z",
+        "error": "stock-tencent-SZ-301279-2026-08-05-2026-09-29-qfq: HTTP 501；stock-eastmoney-SZ-301279-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-688600-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-688600-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.678Z",
+        "error": "stock-tencent-SH-688600-2026-08-05-2026-09-29-qfq: HTTP 501；stock-eastmoney-SH-688600-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-601717-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-601717-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.692Z",
+        "error": "stock-tencent-SH-601717-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-601717-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301379-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301379-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.709Z",
+        "error": "stock-tencent-SZ-301379-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-301379-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600089-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-600089-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.711Z",
+        "error": "stock-tencent-SH-600089-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-600089-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603499-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-603499-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.783Z",
+        "error": "stock-tencent-SH-603499-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-603499-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600577-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-600577-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.736Z",
+        "error": "stock-tencent-SH-600577-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-600577-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301092-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301092-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.759Z",
+        "error": "stock-tencent-SZ-301092-2026-08-05-2026-09-29-qfq: HTTP 501；stock-eastmoney-SZ-301092-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301305-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301305-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.778Z",
+        "error": "stock-tencent-SZ-301305-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-301305-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300739-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-300739-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.810Z",
+        "error": "stock-tencent-SZ-300739-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-300739-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688720-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-688720-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.825Z",
+        "error": "stock-tencent-SH-688720-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-688720-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603565-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-603565-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.848Z",
+        "error": "stock-tencent-SH-603565-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-603565-2026-08-05-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-605020-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-605020-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.836Z",
+        "error": "stock-tencent-SH-605020-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-605020-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-300893-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-300893-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.857Z",
+        "error": "stock-tencent-SZ-300893-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-300893-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-001221-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-001221-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.894Z",
+        "error": "stock-tencent-SZ-001221-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-001221-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-001282-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-001282-2026-08-04-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.905Z",
+        "error": "stock-tencent-SZ-001282-2026-08-05-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-001282-2026-08-05-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301018-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301018-2026-05-17-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.929Z",
+        "error": "stock-tencent-SZ-301018-2026-05-17-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-301018-2026-05-17-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600368-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-600368-2026-04-12-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:47.002Z",
+        "error": "stock-tencent-SH-600368-2026-04-12-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-600368-2026-04-12-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-001380-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-001380-2026-04-26-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.980Z",
+        "error": "stock-tencent-SZ-001380-2026-04-26-2026-09-29-qfq: HTTP 501；stock-eastmoney-SZ-001380-2026-04-26-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-688510-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-688510-2026-05-03-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.935Z",
+        "error": "stock-tencent-SH-688510-2026-05-03-2026-09-29-raw: HTTP 501；stock-eastmoney-SH-688510-2026-05-03-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301175-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-301175-2026-04-27-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:46.961Z",
+        "error": "stock-tencent-SZ-301175-2026-04-27-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-301175-2026-04-27-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603163-2026-09-29",
+        "fallbackKey": "stock-tencent-SH-603163-2026-04-03-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:47.008Z",
+        "error": "stock-tencent-SH-603163-2026-04-03-2026-09-29-qfq: HTTP 501；stock-eastmoney-SH-603163-2026-04-03-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300909-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-300909-2026-03-30-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:47.029Z",
+        "error": "stock-tencent-SZ-300909-2026-03-30-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-300909-2026-03-30-2026-09-29-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-000887-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-000887-2026-03-19-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:47.040Z",
+        "error": "stock-tencent-SZ-000887-2026-03-19-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-000887-2026-03-19-2026-09-29-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-002550-2026-09-29",
+        "fallbackKey": "stock-tencent-SZ-002550-2026-03-08-2026-09-28-raw.json",
+        "fetchedAt": "2026-09-28T10:34:47.066Z",
+        "error": "stock-tencent-SZ-002550-2026-03-08-2026-09-29-raw: HTTP 501；stock-eastmoney-SZ-002550-2026-03-08-2026-09-29-raw: fetch failed"
+      }
+    ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
     "benchmark": "沪深300",
     "validationStartYear": 2024,
@@ -271,7 +476,7 @@
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-09-28",
+    "asOfDate": "2026-09-29",
     "sourceAsOfDate": "2026-09-28",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
@@ -285,9 +490,9 @@
       "sourceProjects": 527,
       "beforeRegistration": 23,
       "beforeIssueAnnouncement": 9,
-      "buyAlerts": 1,
+      "buyAlerts": 0,
       "holding": 5,
-      "sellAlerts": 1
+      "sellAlerts": 0
     },
     "beforeRegistration": [
       {
@@ -2976,7 +3181,7 @@
           "startPriceFen": 9760,
           "periodReturn": -0.06004098,
           "entryAssessment": {
-            "windowStatus": "buy_today",
+            "windowStatus": "entry_passed",
             "entryDate": "2026-09-28",
             "entryPriceFen": 9799,
             "factorDate": "2026-09-24",
@@ -3004,7 +3209,7 @@
         },
         "recentTrendError": null,
         "entryAssessment": {
-          "windowStatus": "buy_today",
+          "windowStatus": "entry_passed",
           "entryDate": "2026-09-28",
           "entryPriceFen": 9799,
           "factorDate": "2026-09-24",
@@ -4621,101 +4826,7 @@
       }
     ],
     "reminders": {
-      "buy": [
-        {
-          "stockCode": "301018",
-          "stockName": "申菱环境",
-          "exchange": "SZ",
-          "board": "创业板",
-          "auditId": "1004259",
-          "statusCode": "70",
-          "stageLabel": "注册生效",
-          "stageDate": "2026-09-24",
-          "acceptedDate": "2026-04-09",
-          "proposedScaleYi": 10,
-          "registered": true,
-          "paused": false,
-          "terminal": false,
-          "sourceName": "深交所再融资审核项目动态",
-          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004259",
-          "registrationDisclosure": null,
-          "recentTrend": {
-            "asOfDate": "2026-09-28",
-            "latestPriceFen": 9174,
-            "return5": -0.1264521,
-            "return20": -0.11078802,
-            "aboveMa5": false,
-            "points": [
-              {
-                "date": "2026-09-24",
-                "closeFen": 9760
-              },
-              {
-                "date": "2026-09-28",
-                "closeFen": 9174
-              }
-            ],
-            "sourceName": "腾讯证券日K",
-            "basis": "registration_to_latest",
-            "startDate": "2026-09-24",
-            "startPriceFen": 9760,
-            "periodReturn": -0.06004098,
-            "entryAssessment": {
-              "windowStatus": "buy_today",
-              "entryDate": "2026-09-28",
-              "entryPriceFen": 9799,
-              "factorDate": "2026-09-24",
-              "referencePriceFen": null,
-              "referencePriceDate": null,
-              "priceBasis": "actual_open",
-              "momentum20": -0.09529106414534672,
-              "volatility20": 0.5897799964945569,
-              "marketReturn10": -0.02401949,
-              "status": "skip",
-              "selected": false,
-              "budgetFen": 0,
-              "targetBudgetFen": 250000,
-              "targetShares": 25,
-              "initialShares": 100,
-              "excessShares": 75,
-              "initialCashFen": 979900,
-              "temporaryCashRatio": 3.9196,
-              "reasons": [
-                "买入价高于80元",
-                "弱市且20日年化波动率不低于50%",
-                "弱市且临时占款超过2倍"
-              ]
-            }
-          },
-          "recentTrendError": null,
-          "entryAssessment": {
-            "windowStatus": "buy_today",
-            "entryDate": "2026-09-28",
-            "entryPriceFen": 9799,
-            "factorDate": "2026-09-24",
-            "referencePriceFen": null,
-            "referencePriceDate": null,
-            "priceBasis": "actual_open",
-            "momentum20": -0.09529106414534672,
-            "volatility20": 0.5897799964945569,
-            "marketReturn10": -0.02401949,
-            "status": "skip",
-            "selected": false,
-            "budgetFen": 0,
-            "targetBudgetFen": 250000,
-            "targetShares": 25,
-            "initialShares": 100,
-            "excessShares": 75,
-            "initialCashFen": 979900,
-            "temporaryCashRatio": 3.9196,
-            "reasons": [
-              "买入价高于80元",
-              "弱市且20日年化波动率不低于50%",
-              "弱市且临时占款超过2倍"
-            ]
-          }
-        }
-      ],
+      "buy": [],
       "holding": [
         {
           "stockCode": "301175",
@@ -5670,20 +5781,7 @@
           }
         }
       ],
-      "sell": [
-        {
-          "bondCode": "123288",
-          "bondName": "隆新转债",
-          "stockCode": "301149",
-          "stockName": "隆华新材",
-          "exchange": "SZ",
-          "announcementDate": "2026-09-24",
-          "announcementTitle": "向不特定对象发行可转换公司债券发行公告",
-          "sourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-09-24/9af6396f-0270-4beb-8d39-40edda539559.PDF",
-          "sellDate": "2026-09-28",
-          "status": "sell_today"
-        }
-      ]
+      "sell": []
     }
   },
   "riskControlStudy": {

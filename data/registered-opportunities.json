@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-28T10:34:47.073Z",
-    "coverageEnd": "2026-09-28",
+    "generatedAt": "2026-09-29T10:37:44.263Z",
+    "coverageEnd": "2026-09-29",
     "sourceAsOfDate": "2026-09-28",
     "source": "ambush.json/livePipeline.beforeIssueAnnouncement",
     "note": "注册已生效、尚待最终发行公告的可转债项目。发行参数补齐后由 opportunities.json 接管展示。"
@@ -48,7 +48,7 @@
         "startPriceFen": 9760,
         "periodReturn": -0.06004098,
         "entryAssessment": {
-          "windowStatus": "buy_today",
+          "windowStatus": "entry_passed",
           "entryDate": "2026-09-28",
           "entryPriceFen": 9799,
           "factorDate": "2026-09-24",
@@ -76,7 +76,7 @@
       },
       "recentTrendError": null,
       "entryAssessment": {
-        "windowStatus": "buy_today",
+        "windowStatus": "entry_passed",
         "entryDate": "2026-09-28",
         "entryPriceFen": 9799,
         "factorDate": "2026-09-24",
