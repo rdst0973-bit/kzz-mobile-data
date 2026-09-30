@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-29T10:37:44.263Z",
-    "coverageEnd": "2026-09-29",
-    "sourceAsOfDate": "2026-09-28",
+    "generatedAt": "2026-09-30T10:38:18.738Z",
+    "coverageEnd": "2026-09-30",
+    "sourceAsOfDate": "2026-09-30",
     "source": "ambush.json/livePipeline.beforeIssueAnnouncement",
     "note": "注册已生效、尚待最终发行公告的可转债项目。发行参数补齐后由 opportunities.json 接管展示。"
   },

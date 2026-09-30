@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-09-29T10:33:21.284Z",
+    "generatedAt": "2026-09-30T10:33:38.819Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-09-29",
+    "coverageEnd": "2026-09-30",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -73,15 +73,15 @@
     "staticFieldExclusions": 7,
     "attemptedCandidates": 968,
     "stockSeriesAvailable": 968,
-    "bondFiveBarsAvailable": 956,
-    "validBacktests": 940,
+    "bondFiveBarsAvailable": 957,
+    "validBacktests": 941,
     "marketDataAuditExclusions": 3,
-    "coreExclusions": 25,
-    "totalPublishedExclusions": 35
+    "coreExclusions": 24,
+    "totalPublishedExclusions": 34
   },
   "reasonCounts": {
     "historical_st_limit_ambiguous": 2,
-    "incomplete_exit_window": 3,
+    "incomplete_exit_window": 2,
     "missing_bond_bar": 17,
     "missing_listing_date": 7,
     "missing_price_limit_reference": 1,
@@ -931,83 +931,6 @@
     },
     {
       "included": false,
-      "bondCode": "113710",
-      "bondName": "四方转债",
-      "stockCode": "603339",
-      "stockName": "四方科技",
-      "exchange": "SH",
-      "recordDate": "2026-09-02",
-      "subscriptionDate": "2026-09-03",
-      "listingDate": "2026-09-23",
-      "entryYear": 2026,
-      "reason": "incomplete_exit_window",
-      "detail": null,
-      "stage": "BACKTEST_CORE",
-      "sourceAudit": {
-        "staticFields": {
-          "sourcePresence": {
-            "cninfo": true,
-            "eastmoney": true
-          },
-          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-          "pdfVerified": false,
-          "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=113710",
-            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/113710.html"
-          },
-          "fieldSources": {
-            "bondIdentity": "official_cninfo_topic",
-            "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-            "subscriptionDate": "official_cninfo_topic:F004D",
-            "listingDate": "eastmoney_crosscheck",
-            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-          },
-          "announcementRecordDate": "2026-09-02",
-          "cninfoRecordDate": "2026-09-02",
-          "eastmoneyRecordDate": "2026-09-02",
-          "cninfoSubscriptionDate": "2026-09-03",
-          "eastmoneySubscriptionDate": "2026-09-03",
-          "corporateActionCheck": {
-            "source": "eastmoney-RPT_SHAREBONUS_DET",
-            "checkedDates": [
-              "2026-09-02",
-              "2026-09-03"
-            ],
-            "overlap": []
-          }
-        },
-        "stockDaily": {
-          "adoptedSource": "eastmoney-push2his-kline",
-          "barCount": 14,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 2,
-            "differences": []
-          },
-          "priceLimitAudit": {
-            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
-            "limitations": []
-          }
-        },
-        "bondDaily": {
-          "adoptedSource": "tencent-fqkline",
-          "barCount": 4,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 4,
-            "differences": []
-          },
-          "secondarySkippedReason": null
-        },
-        "fetchErrors": []
-      }
-    },
-    {
-      "included": false,
       "bondCode": "113711",
       "bondName": "常青转债",
       "stockCode": "603125",
@@ -1799,7 +1722,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 1,
+          "barCount": 2,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
