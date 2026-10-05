@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "version": "56e56a462fba9d2ffd968425",
-  "generatedAt": "2026-10-02T10:34:34.089Z",
+  "version": "9d0a6852a098a51beceab0a4",
+  "generatedAt": "2026-10-05T01:44:55.635Z",
   "dataThrough": "2026-10-02",
   "files": [
     {
       "path": "data/backtest.json",
       "url": "backtest.json",
-      "bytes": 4611401,
-      "sha256": "364f76b22368f30da2c47570eb408a07692759af8f1ead588e4c7d4c25a5310b",
+      "bytes": 4578767,
+      "sha256": "8ae67fc6d5a9266195a9b44672e6c8bced0015c44695f89039d99ec3c7f5df3c",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/exclusions.json",
       "url": "exclusions.json",
-      "bytes": 103886,
-      "sha256": "6820f5a82d03250c2f8742705fa54e68c7e3f1053ec6b87acec5c663ab21442e",
+      "bytes": 102974,
+      "sha256": "2fb5eec2b64859b3da0fbc1a68cad205c1418d3501b570524b8e347eb87a7bef",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/opportunities.json",
       "url": "opportunities.json",
-      "bytes": 29643,
-      "sha256": "261a430025a07bc2f4d10a18ed0d219b19ab9909925a577ac72b4cd18e5b9c46",
+      "bytes": 30658,
+      "sha256": "a0fb38ca8b862b393fbbce04c29e3bbde1e8e1a529fe8f272b6d18ebc50eb5ad",
       "contentType": "application/json; charset=utf-8"
     },
     {
@@ -35,8 +35,8 @@
     {
       "path": "data/sz-factor-analysis.json",
       "url": "sz-factor-analysis.json",
-      "bytes": 515286,
-      "sha256": "9cfa1ed09d5d1957d8ff63eca757c88807ec4b59185937b98f4af6372d531add",
+      "bytes": 515272,
+      "sha256": "3462ad116341a3f877825603a03ed134893ac14a1371058bb925c9d7b309facc",
       "contentType": "application/json; charset=utf-8"
     },
     {
@@ -63,8 +63,8 @@
     {
       "path": "data/backtest.csv",
       "url": "backtest.csv",
-      "bytes": 1421476,
-      "sha256": "4e37855c45ac286622c3dde0fe871667fef81c315ece97bb17e536e28cbd249a",
+      "bytes": 1388866,
+      "sha256": "d0963f570aeda283fb8a520595608c646cf0acab6db46bae1634f39999467a0f",
       "contentType": "text/csv; charset=utf-8"
     }
   ]

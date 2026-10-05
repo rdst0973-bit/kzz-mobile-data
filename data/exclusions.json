@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-02T10:33:05.284Z",
+    "generatedAt": "2026-10-05T01:44:30.510Z",
     "coverageStart": "2016-01-01",
     "coverageEnd": "2026-10-02",
     "inclusionBasis": "recordDate",
@@ -12,7 +12,7 @@
     "grossOnly": true,
     "dailyApproximation": true,
     "completeSnapshot": true,
-    "cacheMode": "current-year-update",
+    "cacheMode": "offline",
     "sources": [
       {
         "id": "cninfo-p_sysapi1123",
@@ -256,7 +256,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2019-05-23"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-601128-2018-01-08-2018-01-26"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-601128-2018-01-08-2018-01-26"
         ]
       }
     },
@@ -347,7 +347,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2020-09-04"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-601966-2018-02-18-2018-03-08"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-601966-2018-02-18-2018-03-08"
         ]
       }
     },
@@ -439,7 +439,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-03-04"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603989-2018-02-19-2018-03-09"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603989-2018-02-19-2018-03-09"
         ]
       }
     },
@@ -532,7 +532,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-03-06"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603618-2018-02-23-2018-03-13"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603618-2018-02-23-2018-03-13"
         ]
       }
     },
@@ -626,8 +626,8 @@
           "secondarySkippedReason": null
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603877-2021-07-04-2021-07-22",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113627-2021-08-06-2021-09-10"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603877-2021-07-04-2021-07-22",
+          "bond/eastmoney: offline cache miss: eastmoney-bond-SH-113627-2021-08-06-2021-09-10"
         ]
       }
     },
@@ -719,8 +719,8 @@
           "secondarySkippedReason": null
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603058-2022-04-03-2022-04-21",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113646-2022-05-17-2022-06-21"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603058-2022-04-03-2022-04-21",
+          "bond/eastmoney: offline cache miss: eastmoney-bond-SH-113646-2022-05-17-2022-06-21"
         ]
       }
     },
@@ -821,7 +821,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-03-23"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603992-2022-07-09-2022-07-27"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603992-2022-07-09-2022-07-27"
         ]
       }
     },
@@ -924,8 +924,8 @@
           "secondarySkippedReason": null
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-603077-2024-10-15-2024-11-04",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113691-2024-11-19-2024-12-24"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603077-2024-10-15-2024-11-04",
+          "bond/eastmoney: offline cache miss: eastmoney-bond-SH-113691-2024-11-19-2024-12-24"
         ]
       }
     },
@@ -1094,7 +1094,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-12-19"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300197-2017-12-05-2017-12-25"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300197-2017-12-05-2017-12-25"
         ]
       }
     },
@@ -1187,7 +1187,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2018-08-29"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300168-2017-12-08-2017-12-26"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300168-2017-12-08-2017-12-26"
         ]
       }
     },
@@ -1280,7 +1280,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2019-05-21"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300059-2017-12-09-2017-12-27"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300059-2017-12-09-2017-12-27"
         ]
       }
     },
@@ -1373,7 +1373,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2021-08-23"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300409-2017-12-17-2018-01-04"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300409-2017-12-17-2018-01-04"
         ]
       }
     },
@@ -1467,7 +1467,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2019-05-15"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300601-2018-01-21-2018-02-08"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300601-2018-01-21-2018-02-08"
         ]
       }
     },
@@ -1560,7 +1560,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2021-08-24"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300687-2020-09-05-2020-09-23"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300687-2020-09-05-2020-09-23"
         ]
       }
     },
@@ -1652,8 +1652,8 @@
           "secondarySkippedReason": null
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300890-2023-09-29-2023-10-17",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-123225-2023-10-26-2023-11-30"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300890-2023-09-29-2023-10-17",
+          "bond/eastmoney: offline cache miss: eastmoney-bond-SZ-123225-2023-10-26-2023-11-30"
         ]
       }
     },
@@ -1934,7 +1934,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-06-02"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-000700-2017-05-22-2017-06-09"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-000700-2017-05-22-2017-06-09"
         ]
       }
     },
@@ -2029,8 +2029,8 @@
           "secondarySkippedReason": null
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-000301-2021-03-09-2021-03-29",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-127030-2021-04-21-2021-05-26"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-000301-2021-03-09-2021-03-29",
+          "bond/eastmoney: offline cache miss: eastmoney-bond-SZ-127030-2021-04-21-2021-05-26"
         ]
       }
     },
@@ -2125,7 +2125,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2025-09-30"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002534-2021-12-13-2021-12-31"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002534-2021-12-13-2021-12-31"
         ]
       }
     },
@@ -2294,7 +2294,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-12-25"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002100-2017-12-11-2017-12-29"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002100-2017-12-11-2017-12-29"
         ]
       }
     },
@@ -2388,7 +2388,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2021-08-05"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002472-2017-12-12-2018-01-01"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002472-2017-12-12-2018-01-01"
         ]
       }
     },
@@ -2480,7 +2480,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2023-12-28"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002658-2017-12-16-2018-01-03"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002658-2017-12-16-2018-01-03"
         ]
       }
     },
@@ -2575,7 +2575,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-01-29"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002807-2018-01-15-2018-02-02"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002807-2018-01-15-2018-02-02"
         ]
       }
     },
@@ -2668,7 +2668,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-02-07"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002008-2018-01-26-2018-02-13"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002008-2018-01-26-2018-02-13"
         ]
       }
     },
@@ -2760,7 +2760,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2025-04-03"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002370-2019-03-22-2019-04-09"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002370-2019-03-22-2019-04-09"
         ]
       }
     },
@@ -2854,7 +2854,7 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-05-28"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002382-2020-05-17-2020-06-04"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002382-2020-05-17-2020-06-04"
         ]
       }
     }

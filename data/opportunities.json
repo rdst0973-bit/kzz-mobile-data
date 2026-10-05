@@ -1,11 +1,13 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-02T10:33:05.284Z",
+    "generatedAt": "2026-10-05T01:44:30.510Z",
     "coverageEnd": "2026-10-02",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
-    "note": "机会层不进入历史收益汇总。登记日前/当日记录可用于评估抢权；登记日已过的记录仅供已登记或已获配账户跟踪。"
+    "decisionRule": "T-2开盘前锁定是否参与；只使用T-3收盘及更早的公开数据，锁定后不因T-2或T-1行情回改。",
+    "decisionCalendarSource": "上交所2026年休市安排；其他年份在机会层使用周一至周五工作日回退，年度休市表发布后更新。",
+    "note": "机会层不进入历史收益汇总。T-2开盘前给出并锁定抢权决定；登记日已过的记录仅供已登记或已获配账户跟踪。"
   },
   "counts": {
     "total": 8,
@@ -30,7 +32,9 @@
       "recordDate": "2026-09-28",
       "subscriptionDate": "2026-09-29",
       "listingDate": null,
-      "decisionDeadline": "2026-09-28",
+      "decisionDeadline": "2026-09-24",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-23",
       "daysToRecordDate": -4,
       "allocationPerShareRaw": "1.313",
       "issuePriceFen": 10000,
@@ -41,11 +45,11 @@
       "issueScaleYi": 5.24779,
       "initialTransferPriceRaw": "44.82",
       "rating": "AA",
-      "referencePriceDate": "2026-09-28",
-      "referenceStockPriceFen": 3969,
-      "estimatedStockCashFen": 1813833,
+      "referencePriceDate": "2026-09-23",
+      "referenceStockPriceFen": 4469,
+      "estimatedStockCashFen": 2042333,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-28",
+      "factorAsOfDate": "2026-09-23",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -110,11 +114,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-28"
+          "referenceCutoff": "2026-09-23"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SH-688150-2026-09-04-2026-09-28: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-688150-2026-09-04-2026-09-28"
         ]
       }
     },
@@ -131,7 +135,9 @@
       "recordDate": "2026-09-28",
       "subscriptionDate": "2026-09-29",
       "listingDate": null,
-      "decisionDeadline": "2026-09-28",
+      "decisionDeadline": "2026-09-24",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-23",
       "daysToRecordDate": -4,
       "allocationPerShareRaw": "1.7173",
       "issuePriceFen": 10000,
@@ -142,11 +148,11 @@
       "issueScaleYi": 9.6,
       "initialTransferPriceRaw": "9.16",
       "rating": "AA",
-      "referencePriceDate": "2026-09-28",
-      "referenceStockPriceFen": 856,
-      "estimatedStockCashFen": 513600,
+      "referencePriceDate": "2026-09-23",
+      "referenceStockPriceFen": 925,
+      "estimatedStockCashFen": 555000,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-28",
+      "factorAsOfDate": "2026-09-23",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -211,11 +217,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-28"
+          "referenceCutoff": "2026-09-23"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-301149-2026-09-04-2026-09-28: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-301149-2026-09-04-2026-09-28"
         ]
       }
     },
@@ -232,7 +238,9 @@
       "recordDate": "2026-09-24",
       "subscriptionDate": "2026-09-28",
       "listingDate": null,
-      "decisionDeadline": "2026-09-24",
+      "decisionDeadline": "2026-09-23",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-22",
       "daysToRecordDate": -8,
       "allocationPerShareRaw": "1.976",
       "issuePriceFen": 10000,
@@ -243,11 +251,11 @@
       "issueScaleYi": 8,
       "initialTransferPriceRaw": "24.01",
       "rating": "AA-",
-      "referencePriceDate": "2026-09-24",
-      "referenceStockPriceFen": 2344,
-      "estimatedStockCashFen": 712576,
+      "referencePriceDate": "2026-09-22",
+      "referenceStockPriceFen": 2378,
+      "estimatedStockCashFen": 722912,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-24",
+      "factorAsOfDate": "2026-09-22",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -315,11 +323,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-24"
+          "referenceCutoff": "2026-09-22"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SH-603125-2026-08-31-2026-09-24: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603125-2026-08-31-2026-09-24"
         ]
       }
     },
@@ -336,7 +344,9 @@
       "recordDate": "2026-09-24",
       "subscriptionDate": "2026-09-28",
       "listingDate": null,
-      "decisionDeadline": "2026-09-24",
+      "decisionDeadline": "2026-09-23",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-22",
       "daysToRecordDate": -8,
       "allocationPerShareRaw": "5.1521",
       "issuePriceFen": 10000,
@@ -347,11 +357,11 @@
       "issueScaleYi": 7.6,
       "initialTransferPriceRaw": "66.97",
       "rating": "AA-",
-      "referencePriceDate": "2026-09-24",
-      "referenceStockPriceFen": 7037,
-      "estimatedStockCashFen": 1407400,
+      "referencePriceDate": "2026-09-22",
+      "referenceStockPriceFen": 6833,
+      "estimatedStockCashFen": 1366600,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-24",
+      "factorAsOfDate": "2026-09-22",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -419,11 +429,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-24"
+          "referenceCutoff": "2026-09-22"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-301132-2026-08-31-2026-09-24: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-301132-2026-08-31-2026-09-24"
         ]
       }
     },
@@ -440,7 +450,9 @@
       "recordDate": "2026-09-22",
       "subscriptionDate": "2026-09-23",
       "listingDate": null,
-      "decisionDeadline": "2026-09-22",
+      "decisionDeadline": "2026-09-21",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-18",
       "daysToRecordDate": -10,
       "allocationPerShareRaw": "4.7306",
       "issuePriceFen": 10000,
@@ -451,11 +463,11 @@
       "issueScaleYi": 8.488,
       "initialTransferPriceRaw": "74.5",
       "rating": "AA-",
-      "referencePriceDate": "2026-09-22",
-      "referenceStockPriceFen": 7500,
-      "estimatedStockCashFen": 2250000,
+      "referencePriceDate": "2026-09-18",
+      "referenceStockPriceFen": 7472,
+      "estimatedStockCashFen": 2241600,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-22",
+      "factorAsOfDate": "2026-09-18",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -521,11 +533,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-22"
+          "referenceCutoff": "2026-09-18"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-301571-2026-08-29-2026-09-22: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-301571-2026-08-29-2026-09-22"
         ]
       }
     },
@@ -542,7 +554,9 @@
       "recordDate": "2026-09-22",
       "subscriptionDate": "2026-09-23",
       "listingDate": null,
-      "decisionDeadline": "2026-09-22",
+      "decisionDeadline": "2026-09-21",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-18",
       "daysToRecordDate": -10,
       "allocationPerShareRaw": "3.2104",
       "issuePriceFen": 10000,
@@ -553,11 +567,11 @@
       "issueScaleYi": 10,
       "initialTransferPriceRaw": "83.96",
       "rating": "AA",
-      "referencePriceDate": "2026-09-22",
-      "referenceStockPriceFen": 8812,
-      "estimatedStockCashFen": 3524800,
+      "referencePriceDate": "2026-09-18",
+      "referenceStockPriceFen": 8406,
+      "estimatedStockCashFen": 3362400,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-22",
+      "factorAsOfDate": "2026-09-18",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -623,11 +637,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-22"
+          "referenceCutoff": "2026-09-18"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-002913-2026-08-29-2026-09-22: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002913-2026-08-29-2026-09-22"
         ]
       }
     },
@@ -644,7 +658,9 @@
       "recordDate": "2026-09-16",
       "subscriptionDate": "2026-09-17",
       "listingDate": null,
-      "decisionDeadline": "2026-09-16",
+      "decisionDeadline": "2026-09-15",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-14",
       "daysToRecordDate": -16,
       "allocationPerShareRaw": "3.2772",
       "issuePriceFen": 10000,
@@ -655,11 +671,11 @@
       "issueScaleYi": 6.86,
       "initialTransferPriceRaw": "29.18",
       "rating": "AA",
-      "referencePriceDate": "2026-09-16",
-      "referenceStockPriceFen": 2914,
-      "estimatedStockCashFen": 1165600,
+      "referencePriceDate": "2026-09-14",
+      "referenceStockPriceFen": 2943,
+      "estimatedStockCashFen": 1177200,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-16",
+      "factorAsOfDate": "2026-09-14",
       "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
@@ -726,11 +742,11 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-16"
+          "referenceCutoff": "2026-09-14"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-002997-2026-08-23-2026-09-16: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002997-2026-08-23-2026-09-16"
         ]
       }
     },
@@ -747,7 +763,9 @@
       "recordDate": "2026-09-09",
       "subscriptionDate": "2026-09-10",
       "listingDate": "2026-09-29",
-      "decisionDeadline": "2026-09-09",
+      "decisionDeadline": "2026-09-08",
+      "decisionTiming": "T-2_open",
+      "decisionFactorCutoffDate": "2026-09-07",
       "daysToRecordDate": -23,
       "allocationPerShareRaw": "2.0539",
       "issuePriceFen": 10000,
@@ -758,11 +776,11 @@
       "issueScaleYi": 3.7,
       "initialTransferPriceRaw": "31.1",
       "rating": "A+",
-      "referencePriceDate": "2026-09-09",
-      "referenceStockPriceFen": 3160,
-      "estimatedStockCashFen": 1580000,
+      "referencePriceDate": "2026-09-07",
+      "referenceStockPriceFen": 3095,
+      "estimatedStockCashFen": 1547500,
       "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-09",
+      "factorAsOfDate": "2026-09-07",
       "backtestDisposition": "incomplete_exit_window",
       "observedBondSessions": 2,
       "latestBondDate": "2026-09-30",
@@ -837,7 +855,7 @@
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-09-09"
+          "referenceCutoff": "2026-09-07"
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
@@ -850,7 +868,7 @@
           }
         },
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-300727-2026-08-16-2026-09-09: fetch failed"
+          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300727-2026-08-16-2026-09-09"
         ]
       }
     }
