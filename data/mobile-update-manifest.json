@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "version": "9d0a6852a098a51beceab0a4",
-  "generatedAt": "2026-10-05T01:44:55.635Z",
-  "dataThrough": "2026-10-02",
+  "version": "e52bf9a70deccb8d57344678",
+  "generatedAt": "2026-10-05T06:50:54.645Z",
+  "dataThrough": "2026-10-05",
   "files": [
     {
       "path": "data/backtest.json",
       "url": "backtest.json",
       "bytes": 4578767,
-      "sha256": "8ae67fc6d5a9266195a9b44672e6c8bced0015c44695f89039d99ec3c7f5df3c",
+      "sha256": "560a1cd732efc12502d99afb5eb1082f464e96fcb92798c28ba28b17ca2c4d7d",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/exclusions.json",
       "url": "exclusions.json",
       "bytes": 102974,
-      "sha256": "2fb5eec2b64859b3da0fbc1a68cad205c1418d3501b570524b8e347eb87a7bef",
+      "sha256": "8df6e9e80ccfd4b0e7c036356466ae33c0f3a189192fa25225fa406df531693c",
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "data/opportunities.json",
       "url": "opportunities.json",
-      "bytes": 30658,
-      "sha256": "a0fb38ca8b862b393fbbce04c29e3bbde1e8e1a529fe8f272b6d18ebc50eb5ad",
+      "bytes": 30681,
+      "sha256": "b8f093818018dbb3d2cdb6758d5708258f2023441f1ec96449388cb68db8ffb5",
       "contentType": "application/json; charset=utf-8"
     },
     {
@@ -35,8 +35,8 @@
     {
       "path": "data/sz-factor-analysis.json",
       "url": "sz-factor-analysis.json",
-      "bytes": 515272,
-      "sha256": "3462ad116341a3f877825603a03ed134893ac14a1371058bb925c9d7b309facc",
+      "bytes": 660928,
+      "sha256": "412f6b61991b57bd649934f01a801383de07264272b2b1b2073eca7c8863ee81",
       "contentType": "application/json; charset=utf-8"
     },
     {
