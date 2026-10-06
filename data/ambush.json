@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-10-02T10:34:34.089Z",
+    "generatedAt": "2026-10-06T00:37:02.834Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-10-02",
+    "coverageEnd": "2026-10-06",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -13,7 +13,14 @@
     "participationRule": "所有具有完整买卖节点和可验证成交窗口的候选等额参与，不做因子筛选",
     "grossOnly": true,
     "dailyApproximation": true,
-    "staleCacheFallbacks": [],
+    "staleCacheFallbacks": [
+      {
+        "key": "index-tencent-csi300-2026-20261006",
+        "fallbackKey": "index-eastmoney-csi300-2026-20261006",
+        "fetchedAt": "2026-10-06T00:36:09.905Z",
+        "error": "index-tencent-csi300-2026-20261006: HTTP 501"
+      }
+    ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
     "benchmark": "沪深300",
     "validationStartYear": 2024,
@@ -271,8 +278,8 @@
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-10-02",
-    "sourceAsOfDate": "2026-10-02",
+    "asOfDate": "2026-10-06",
+    "sourceAsOfDate": "2026-10-06",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
@@ -395,7 +402,7 @@
               "closeFen": 5948
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 6091,
@@ -425,8 +432,8 @@
         "recentTrend": {
           "asOfDate": "2026-09-30",
           "latestPriceFen": 2111,
-          "return5": 0.03202151,
-          "return20": 0.03000732,
+          "return5": 0.03176931,
+          "return20": 0.0297561,
           "aboveMa5": false,
           "points": [
             {
@@ -487,7 +494,7 @@
             },
             {
               "date": "2026-09-22",
-              "closeFen": 2045
+              "closeFen": 2046
             },
             {
               "date": "2026-09-23",
@@ -510,11 +517,11 @@
               "closeFen": 2111
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2124,
-          "periodReturn": -0.00259863,
+          "periodReturn": -0.0028342,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -540,8 +547,8 @@
         "recentTrend": {
           "asOfDate": "2026-09-30",
           "latestPriceFen": 1321,
-          "return5": 0.00970725,
-          "return20": -0.01513457,
+          "return5": 0.00993884,
+          "return20": -0.01491424,
           "aboveMa5": true,
           "points": [
             {
@@ -625,11 +632,11 @@
               "closeFen": 1321
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1351,
-          "periodReturn": 0.00357061,
+          "periodReturn": 0.00379939,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -740,7 +747,7 @@
               "closeFen": 31173
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 32500,
@@ -855,7 +862,7 @@
               "closeFen": 2068
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2018,
@@ -970,7 +977,7 @@
               "closeFen": 2330
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2194,
@@ -1085,7 +1092,7 @@
               "closeFen": 3491
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2916,
@@ -1200,7 +1207,7 @@
               "closeFen": 1335
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1425,
@@ -1315,7 +1322,7 @@
               "closeFen": 1909
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2085,
@@ -1430,7 +1437,7 @@
               "closeFen": 1732
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1878,
@@ -1545,7 +1552,7 @@
               "closeFen": 871
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 827,
@@ -1660,7 +1667,7 @@
               "closeFen": 9985
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 12314,
@@ -1775,7 +1782,7 @@
               "closeFen": 1314
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1375,
@@ -1890,7 +1897,7 @@
               "closeFen": 4179
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 4421,
@@ -2005,7 +2012,7 @@
               "closeFen": 1260
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1326,
@@ -2120,7 +2127,7 @@
               "closeFen": 2436
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2488,
@@ -2235,7 +2242,7 @@
               "closeFen": 2785
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2258,
@@ -2350,7 +2357,7 @@
               "closeFen": 6203
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 6010,
@@ -2465,7 +2472,7 @@
               "closeFen": 3030
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 3285,
@@ -2580,7 +2587,7 @@
               "closeFen": 1159
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1251,
@@ -2695,7 +2702,7 @@
               "closeFen": 1513
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1459,
@@ -2810,7 +2817,7 @@
               "closeFen": 3264
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 3998,
@@ -2925,7 +2932,7 @@
               "closeFen": 1675
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 1623,
@@ -3040,7 +3047,7 @@
               "closeFen": 17666
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 15532,
@@ -3155,7 +3162,7 @@
               "closeFen": 2505
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-02",
           "startPriceFen": 2630,
@@ -3208,7 +3215,7 @@
               "closeFen": 8831
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-09-24",
           "startPriceFen": 9760,
@@ -3349,7 +3356,7 @@
               "closeFen": 2350
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-09-10",
           "startPriceFen": 2668,
@@ -3505,7 +3512,7 @@
               "closeFen": 558
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-09-07",
           "startPriceFen": 567,
@@ -3658,7 +3665,7 @@
               "closeFen": 1879
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-09-03",
           "startPriceFen": 1795,
@@ -3851,7 +3858,7 @@
               "closeFen": 411
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-08-20",
           "startPriceFen": 396,
@@ -4072,7 +4079,7 @@
               "closeFen": 7392
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-08-11",
           "startPriceFen": 8398,
@@ -4305,7 +4312,7 @@
               "closeFen": 6097
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-08-07",
           "startPriceFen": 5015,
@@ -4570,7 +4577,7 @@
               "closeFen": 1832
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-07-27",
           "startPriceFen": 1665,
@@ -4863,7 +4870,7 @@
               "closeFen": 659
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "registration_to_latest",
           "startDate": "2026-07-16",
           "startPriceFen": 709,
@@ -5025,7 +5032,7 @@
                 "closeFen": 558
               }
             ],
-            "sourceName": "腾讯证券日K",
+            "sourceName": "东方财富日K（备用）",
             "basis": "registration_to_latest",
             "startDate": "2026-09-07",
             "startPriceFen": 567,
@@ -5178,7 +5185,7 @@
                 "closeFen": 1879
               }
             ],
-            "sourceName": "腾讯证券日K",
+            "sourceName": "东方财富日K（备用）",
             "basis": "registration_to_latest",
             "startDate": "2026-09-03",
             "startPriceFen": 1795,
@@ -5371,7 +5378,7 @@
                 "closeFen": 411
               }
             ],
-            "sourceName": "腾讯证券日K",
+            "sourceName": "东方财富日K（备用）",
             "basis": "registration_to_latest",
             "startDate": "2026-08-20",
             "startPriceFen": 396,
@@ -5600,7 +5607,7 @@
                 "closeFen": 6097
               }
             ],
-            "sourceName": "腾讯证券日K",
+            "sourceName": "东方财富日K（备用）",
             "basis": "registration_to_latest",
             "startDate": "2026-08-07",
             "startPriceFen": 5015,
@@ -5865,7 +5872,7 @@
                 "closeFen": 1832
               }
             ],
-            "sourceName": "腾讯证券日K",
+            "sourceName": "东方财富日K（备用）",
             "basis": "registration_to_latest",
             "startDate": "2026-07-27",
             "startPriceFen": 1665,

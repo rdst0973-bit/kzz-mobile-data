@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-05T06:50:34.745Z",
-    "coverageEnd": "2026-10-05",
+    "generatedAt": "2026-10-06T00:34:41.628Z",
+    "coverageEnd": "2026-10-06",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
     "decisionRule": "T-1开盘前锁定是否参与；只使用T-2收盘及更早的公开数据，锁定后不因T-1盘中行情回改。",
@@ -35,7 +35,7 @@
       "decisionDeadline": "2026-09-28",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-24",
-      "daysToRecordDate": -7,
+      "daysToRecordDate": -8,
       "allocationPerShareRaw": "1.313",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -89,37 +89,18 @@
           "eastmoneySubscriptionDate": "2026-09-29"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 16,
-          "filledDates": [
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16",
-            "2026-09-17",
-            "2026-09-18",
-            "2026-09-21",
-            "2026-09-22",
-            "2026-09-23",
-            "2026-09-24",
-            "2026-09-28"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-24"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-688150-2026-09-04-2026-09-28"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -138,7 +119,7 @@
       "decisionDeadline": "2026-09-28",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-24",
-      "daysToRecordDate": -7,
+      "daysToRecordDate": -8,
       "allocationPerShareRaw": "1.7173",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -192,37 +173,18 @@
           "eastmoneySubscriptionDate": "2026-09-29"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 16,
-          "filledDates": [
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16",
-            "2026-09-17",
-            "2026-09-18",
-            "2026-09-21",
-            "2026-09-22",
-            "2026-09-23",
-            "2026-09-24",
-            "2026-09-28"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-24"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-301149-2026-09-04-2026-09-28"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -241,7 +203,7 @@
       "decisionDeadline": "2026-09-24",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-23",
-      "daysToRecordDate": -11,
+      "daysToRecordDate": -12,
       "allocationPerShareRaw": "1.976",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -295,40 +257,18 @@
           "eastmoneySubscriptionDate": "2026-09-28"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 19,
-          "filledDates": [
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16",
-            "2026-09-17",
-            "2026-09-18",
-            "2026-09-21",
-            "2026-09-22",
-            "2026-09-23",
-            "2026-09-24"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-23"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SH-603125-2026-08-31-2026-09-24"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -347,7 +287,7 @@
       "decisionDeadline": "2026-09-24",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-23",
-      "daysToRecordDate": -11,
+      "daysToRecordDate": -12,
       "allocationPerShareRaw": "5.1521",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -401,40 +341,18 @@
           "eastmoneySubscriptionDate": "2026-09-28"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 19,
-          "filledDates": [
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16",
-            "2026-09-17",
-            "2026-09-18",
-            "2026-09-21",
-            "2026-09-22",
-            "2026-09-23",
-            "2026-09-24"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-23"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-301132-2026-08-31-2026-09-24"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -453,7 +371,7 @@
       "decisionDeadline": "2026-09-22",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-21",
-      "daysToRecordDate": -13,
+      "daysToRecordDate": -14,
       "allocationPerShareRaw": "4.7306",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -507,38 +425,18 @@
           "eastmoneySubscriptionDate": "2026-09-23"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 17,
-          "filledDates": [
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16",
-            "2026-09-17",
-            "2026-09-18",
-            "2026-09-21",
-            "2026-09-22"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-21"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-301571-2026-08-29-2026-09-22"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -557,7 +455,7 @@
       "decisionDeadline": "2026-09-22",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-21",
-      "daysToRecordDate": -13,
+      "daysToRecordDate": -14,
       "allocationPerShareRaw": "3.2104",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -611,38 +509,18 @@
           "eastmoneySubscriptionDate": "2026-09-23"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 17,
-          "filledDates": [
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16",
-            "2026-09-17",
-            "2026-09-18",
-            "2026-09-21",
-            "2026-09-22"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-21"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002913-2026-08-29-2026-09-22"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -661,7 +539,7 @@
       "decisionDeadline": "2026-09-16",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-15",
-      "daysToRecordDate": -19,
+      "daysToRecordDate": -20,
       "allocationPerShareRaw": "3.2772",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -715,39 +593,18 @@
           "eastmoneySubscriptionDate": "2026-09-17"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 18,
-          "filledDates": [
-            "2026-08-24",
-            "2026-08-25",
-            "2026-08-26",
-            "2026-08-27",
-            "2026-08-28",
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09",
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14",
-            "2026-09-15",
-            "2026-09-16"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-15"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-002997-2026-08-23-2026-09-16"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -766,7 +623,7 @@
       "decisionDeadline": "2026-09-09",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-08",
-      "daysToRecordDate": -26,
+      "daysToRecordDate": -27,
       "allocationPerShareRaw": "2.0539",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -828,31 +685,12 @@
           }
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 18,
-          "filledDates": [
-            "2026-08-17",
-            "2026-08-18",
-            "2026-08-19",
-            "2026-08-20",
-            "2026-08-21",
-            "2026-08-24",
-            "2026-08-25",
-            "2026-08-26",
-            "2026-08-27",
-            "2026-08-28",
-            "2026-08-31",
-            "2026-09-01",
-            "2026-09-02",
-            "2026-09-03",
-            "2026-09-04",
-            "2026-09-07",
-            "2026-09-08",
-            "2026-09-09"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-09-08"
@@ -867,9 +705,7 @@
             "differences": []
           }
         },
-        "fetchErrors": [
-          "stock/eastmoney: offline cache miss: eastmoney-stock-SZ-300727-2026-08-16-2026-09-09"
-        ]
+        "fetchErrors": []
       }
     }
   ]
