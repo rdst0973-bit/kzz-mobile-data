@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-08T00:33:42.875Z",
+    "generatedAt": "2026-10-09T00:33:01.717Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-08",
+    "coverageEnd": "2026-10-09",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-08T00:33:42.875Z",
+    "generatedAt": "2026-10-09T00:33:01.717Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-08",
+    "coverageEnd": "2026-10-09",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -63826,11 +63826,10 @@
             "comparedDates": 0,
             "differences": []
           },
-          "secondarySkippedReason": null
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-10-26"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-601609-2021-03-09-2021-03-29",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-113046-2021-04-12-2021-05-17"
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-601609-2021-03-09-2021-03-29"
         ]
       }
     },
@@ -134361,7 +134360,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 15,
+          "barCount": 16,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134488,7 +134487,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 19,
+          "barCount": 20,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134615,7 +134614,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 5,
+          "barCount": 6,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
