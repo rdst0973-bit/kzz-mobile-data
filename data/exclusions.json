@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-12T03:30:32.267Z",
+    "generatedAt": "2026-10-13T00:33:50.232Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-12",
+    "coverageEnd": "2026-10-13",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -64,9 +64,9 @@
     }
   },
   "funnel": {
-    "sourceUnionAllYears": 1059,
+    "sourceUnionAllYears": 1060,
     "cninfoRowsAllYears": 983,
-    "eastmoneyRowsAllYears": 1059,
+    "eastmoneyRowsAllYears": 1060,
     "migratedAliasesRemoved": 5,
     "inScopeCandidates": 975,
     "staticFieldsReady": 968,
@@ -74,12 +74,13 @@
     "attemptedCandidates": 968,
     "stockSeriesAvailable": 968,
     "bondFiveBarsAvailable": 958,
-    "validBacktests": 942,
-    "marketDataAuditExclusions": 3,
+    "validBacktests": 941,
+    "marketDataAuditExclusions": 4,
     "coreExclusions": 23,
-    "totalPublishedExclusions": 33
+    "totalPublishedExclusions": 34
   },
   "reasonCounts": {
+    "cross_source_ohlc_conflict": 1,
     "historical_st_limit_ambiguous": 2,
     "incomplete_exit_window": 1,
     "missing_bond_bar": 17,
@@ -1655,6 +1656,98 @@
           "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300890-2023-09-29-2023-10-17",
           "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-123225-2023-10-26-2023-11-30"
         ]
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "123285",
+      "bondName": "润禾转02",
+      "stockCode": "300727",
+      "stockName": "润禾材料",
+      "exchange": "SZ",
+      "entryYear": 2026,
+      "recordDate": "2026-09-09",
+      "subscriptionDate": "2026-09-10",
+      "listingDate": "2026-09-29",
+      "reason": "cross_source_ohlc_conflict",
+      "detail": "bond: [{\"date\":\"2026-10-12\",\"field\":\"low\",\"primary\":\"156.331\",\"secondary\":\"157.600\",\"delta\":1.2690000000000055},{\"date\":\"2026-10-12\",\"field\":\"close\",\"primary\":\"156.650\",\"secondary\":\"158.382\",\"delta\":1.7319999999999993}]",
+      "stage": "MARKET_DATA_AUDIT",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123285",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123285.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2026-09-09",
+          "cninfoRecordDate": "2026-09-09",
+          "eastmoneyRecordDate": "2026-09-09",
+          "cninfoSubscriptionDate": "2026-09-10",
+          "eastmoneySubscriptionDate": "2026-09-10",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2026-09-09",
+              "2026-09-10"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "eastmoney-push2his-kline",
+          "barCount": 14,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "MATCH",
+            "comparedDates": 2,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
+        },
+        "bondDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 5,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "CONFLICT",
+            "comparedDates": 5,
+            "differences": [
+              {
+                "date": "2026-10-12",
+                "field": "low",
+                "primary": "156.331",
+                "secondary": "157.600",
+                "delta": 1.2690000000000055
+              },
+              {
+                "date": "2026-10-12",
+                "field": "close",
+                "primary": "156.650",
+                "secondary": "158.382",
+                "delta": 1.7319999999999993
+              }
+            ]
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": []
       }
     },
     {

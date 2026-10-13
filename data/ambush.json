@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-10-12T03:32:58.375Z",
+    "generatedAt": "2026-10-13T00:35:25.432Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-10-12",
+    "coverageEnd": "2026-10-13",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -13,14 +13,7 @@
     "participationRule": "所有具有完整买卖节点和可验证成交窗口的候选等额参与，不做因子筛选",
     "grossOnly": true,
     "dailyApproximation": true,
-    "staleCacheFallbacks": [
-      {
-        "key": "index-tencent-csi300-2026-20261012",
-        "fallbackKey": "index-eastmoney-csi300-2026-20261012",
-        "fetchedAt": "2026-10-12T03:32:04.754Z",
-        "error": "index-tencent-csi300-2026-20261012: HTTP 501"
-      }
-    ],
+    "staleCacheFallbacks": [],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
     "benchmark": "沪深300",
     "validationStartYear": 2024,
@@ -278,8 +271,8 @@
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-10-12",
-    "sourceAsOfDate": "2026-10-12",
+    "asOfDate": "2026-10-13",
+    "sourceAsOfDate": "2026-10-13",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
@@ -290,252 +283,22 @@
     },
     "counts": {
       "sourceProjects": 531,
-      "beforeRegistration": 26,
-      "beforeIssueAnnouncement": 10,
+      "beforeRegistration": 25,
+      "beforeIssueAnnouncement": 11,
       "buyAlerts": 1,
-      "holding": 5,
+      "holding": 6,
       "sellAlerts": 0
     },
     "beforeRegistration": [
-      {
-        "stockCode": "301631",
-        "stockName": "壹连科技",
-        "exchange": "SZ",
-        "board": "创业板",
-        "auditId": "1004373",
-        "statusCode": "60",
-        "stageLabel": "提交注册",
-        "stageDate": "2026-09-29",
-        "acceptedDate": "2026-06-09",
-        "proposedScaleYi": 11.8,
-        "registered": false,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "深交所再融资审核项目动态",
-        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-10-12",
-          "latestPriceFen": 5473,
-          "return5": -0.08493563,
-          "return20": -0.13126984,
-          "aboveMa5": false,
-          "points": [
-            {
-              "date": "2026-09-07",
-              "closeFen": 6550
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 6518
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 6522
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 6023
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 5819
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 6027
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 5930
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 6020
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 6063
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 6232
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 6410
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 6310
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 6406
-            },
-            {
-              "date": "2026-09-24",
-              "closeFen": 6207
-            },
-            {
-              "date": "2026-09-28",
-              "closeFen": 5981
-            },
-            {
-              "date": "2026-09-29",
-              "closeFen": 6135
-            },
-            {
-              "date": "2026-09-30",
-              "closeFen": 5948
-            },
-            {
-              "date": "2026-10-08",
-              "closeFen": 5782
-            },
-            {
-              "date": "2026-10-09",
-              "closeFen": 5548
-            },
-            {
-              "date": "2026-10-12",
-              "closeFen": 5473
-            }
-          ],
-          "sourceName": "东方财富日K（备用）",
-          "basis": "recent_20_sessions",
-          "startDate": "2026-09-07",
-          "startPriceFen": 6550,
-          "periodReturn": -0.16442748,
-          "entryAssessment": null
-        },
-        "recentTrendError": null,
-        "entryAssessment": null
-      },
-      {
-        "stockCode": "605016",
-        "stockName": "百龙创园",
-        "exchange": "SH",
-        "board": "沪市主板",
-        "auditId": "1000942",
-        "statusCode": "45",
-        "stageLabel": "提交注册",
-        "stageDate": "2026-09-15",
-        "acceptedDate": "2026-04-30",
-        "proposedScaleYi": 7.4815,
-        "registered": false,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "上交所再融资审核项目动态",
-        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1000942&bussinesType=6",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-10-12",
-          "latestPriceFen": 1986,
-          "return5": -0.05248092,
-          "return20": -0.10459874,
-          "aboveMa5": false,
-          "points": [
-            {
-              "date": "2026-09-07",
-              "closeFen": 2178
-            },
-            {
-              "date": "2026-09-08",
-              "closeFen": 2257
-            },
-            {
-              "date": "2026-09-09",
-              "closeFen": 2242
-            },
-            {
-              "date": "2026-09-10",
-              "closeFen": 2152
-            },
-            {
-              "date": "2026-09-11",
-              "closeFen": 2110
-            },
-            {
-              "date": "2026-09-14",
-              "closeFen": 2131
-            },
-            {
-              "date": "2026-09-15",
-              "closeFen": 2116
-            },
-            {
-              "date": "2026-09-16",
-              "closeFen": 2108
-            },
-            {
-              "date": "2026-09-17",
-              "closeFen": 2074
-            },
-            {
-              "date": "2026-09-18",
-              "closeFen": 2058
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 2086
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 2046
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 2148
-            },
-            {
-              "date": "2026-09-24",
-              "closeFen": 2138
-            },
-            {
-              "date": "2026-09-28",
-              "closeFen": 2096
-            },
-            {
-              "date": "2026-09-29",
-              "closeFen": 2073
-            },
-            {
-              "date": "2026-09-30",
-              "closeFen": 2111
-            },
-            {
-              "date": "2026-10-08",
-              "closeFen": 2022
-            },
-            {
-              "date": "2026-10-09",
-              "closeFen": 2028
-            },
-            {
-              "date": "2026-10-12",
-              "closeFen": 1986
-            }
-          ],
-          "sourceName": "东方财富日K（备用）",
-          "basis": "recent_20_sessions",
-          "startDate": "2026-09-07",
-          "startPriceFen": 2185,
-          "periodReturn": -0.08815427,
-          "entryAssessment": null
-        },
-        "recentTrendError": null,
-        "entryAssessment": null
-      },
       {
         "stockCode": "603061",
         "stockName": "金海通",
         "exchange": "SH",
         "board": "沪市主板",
         "auditId": "1001258",
-        "statusCode": "4",
-        "stageLabel": "审核通过",
-        "stageDate": "2026-09-23",
+        "statusCode": "45",
+        "stageLabel": "提交注册",
+        "stageDate": "2026-10-12",
         "acceptedDate": "2026-07-29",
         "proposedScaleYi": 8.5,
         "registered": false,
@@ -546,9 +309,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 29634,
-          "return5": -0.06280835,
-          "return20": -0.03882456,
+          "latestPriceFen": 29079,
+          "return5": -0.08036053,
+          "return20": -0.05682592,
           "aboveMa5": false,
           "points": [
             {
@@ -629,14 +392,129 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 29634
+              "closeFen": 29079
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 32251,
-          "periodReturn": -0.08114477,
+          "periodReturn": -0.09835354,
+          "entryAssessment": null
+        },
+        "recentTrendError": null,
+        "entryAssessment": null
+      },
+      {
+        "stockCode": "301631",
+        "stockName": "壹连科技",
+        "exchange": "SZ",
+        "board": "创业板",
+        "auditId": "1004373",
+        "statusCode": "60",
+        "stageLabel": "提交注册",
+        "stageDate": "2026-09-29",
+        "acceptedDate": "2026-06-09",
+        "proposedScaleYi": 11.8,
+        "registered": false,
+        "paused": false,
+        "terminal": false,
+        "sourceName": "深交所再融资审核项目动态",
+        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
+        "registrationDisclosure": null,
+        "recentTrend": {
+          "asOfDate": "2026-10-12",
+          "latestPriceFen": 5420,
+          "return5": -0.09379702,
+          "return20": -0.13968254,
+          "aboveMa5": false,
+          "points": [
+            {
+              "date": "2026-09-07",
+              "closeFen": 6550
+            },
+            {
+              "date": "2026-09-08",
+              "closeFen": 6518
+            },
+            {
+              "date": "2026-09-09",
+              "closeFen": 6522
+            },
+            {
+              "date": "2026-09-10",
+              "closeFen": 6023
+            },
+            {
+              "date": "2026-09-11",
+              "closeFen": 5819
+            },
+            {
+              "date": "2026-09-14",
+              "closeFen": 6027
+            },
+            {
+              "date": "2026-09-15",
+              "closeFen": 5930
+            },
+            {
+              "date": "2026-09-16",
+              "closeFen": 6020
+            },
+            {
+              "date": "2026-09-17",
+              "closeFen": 6063
+            },
+            {
+              "date": "2026-09-18",
+              "closeFen": 6232
+            },
+            {
+              "date": "2026-09-21",
+              "closeFen": 6410
+            },
+            {
+              "date": "2026-09-22",
+              "closeFen": 6310
+            },
+            {
+              "date": "2026-09-23",
+              "closeFen": 6406
+            },
+            {
+              "date": "2026-09-24",
+              "closeFen": 6207
+            },
+            {
+              "date": "2026-09-28",
+              "closeFen": 5981
+            },
+            {
+              "date": "2026-09-29",
+              "closeFen": 6135
+            },
+            {
+              "date": "2026-09-30",
+              "closeFen": 5948
+            },
+            {
+              "date": "2026-10-08",
+              "closeFen": 5782
+            },
+            {
+              "date": "2026-10-09",
+              "closeFen": 5548
+            },
+            {
+              "date": "2026-10-12",
+              "closeFen": 5420
+            }
+          ],
+          "sourceName": "腾讯证券日K",
+          "basis": "recent_20_sessions",
+          "startDate": "2026-09-07",
+          "startPriceFen": 6550,
+          "periodReturn": -0.17251908,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -661,9 +539,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2576,
-          "return5": 0.09477263,
-          "return20": 0.11660165,
+          "latestPriceFen": 2514,
+          "return5": 0.06842329,
+          "return20": 0.08972692,
           "aboveMa5": true,
           "points": [
             {
@@ -744,14 +622,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2576
+              "closeFen": 2514
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 2386,
-          "periodReturn": 0.07963118,
+          "periodReturn": 0.05364627,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -776,9 +654,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2071,
-          "return5": 0.00387785,
-          "return20": 0.02019704,
+          "latestPriceFen": 2068,
+          "return5": 0.00242365,
+          "return20": 0.01871921,
           "aboveMa5": true,
           "points": [
             {
@@ -859,14 +737,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2071
+              "closeFen": 2068
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 2014,
-          "periodReturn": 0.02830189,
+          "periodReturn": 0.02681231,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -891,9 +769,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 3120,
-          "return5": -0.10215827,
-          "return20": -0.05740181,
+          "latestPriceFen": 3110,
+          "return5": -0.10503597,
+          "return20": -0.06042296,
           "aboveMa5": false,
           "points": [
             {
@@ -974,14 +852,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 3120
+              "closeFen": 3110
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 3389,
-          "periodReturn": -0.07937445,
+          "periodReturn": -0.08232517,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1006,9 +884,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1378,
-          "return5": 0.05271199,
-          "return20": -0.04768487,
+          "latestPriceFen": 1392,
+          "return5": 0.06340718,
+          "return20": -0.03800968,
           "aboveMa5": true,
           "points": [
             {
@@ -1089,14 +967,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1378
+              "closeFen": 1392
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1433,
-          "periodReturn": -0.03838102,
+          "periodReturn": -0.0286113,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1121,9 +999,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1783,
-          "return5": -0.10805403,
-          "return20": -0.1111665,
+          "latestPriceFen": 1758,
+          "return5": -0.12056028,
+          "return20": -0.12362911,
           "aboveMa5": false,
           "points": [
             {
@@ -1204,14 +1082,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1783
+              "closeFen": 1758
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 2116,
-          "periodReturn": -0.1573724,
+          "periodReturn": -0.16918715,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1236,9 +1114,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1791,
-          "return5": 0.03765933,
-          "return20": -0.05137712,
+          "latestPriceFen": 1790,
+          "return5": 0.03707995,
+          "return20": -0.05190678,
           "aboveMa5": true,
           "points": [
             {
@@ -1319,14 +1197,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1791
+              "closeFen": 1790
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1894,
-          "periodReturn": -0.05438226,
+          "periodReturn": -0.05491024,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1351,9 +1229,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 842,
-          "return5": 0.02060606,
-          "return20": 0.0591195,
+          "latestPriceFen": 841,
+          "return5": 0.01939394,
+          "return20": 0.05786164,
           "aboveMa5": false,
           "points": [
             {
@@ -1434,14 +1312,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 842
+              "closeFen": 841
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 801,
-          "periodReturn": 0.05513784,
+          "periodReturn": 0.05388471,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1466,9 +1344,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 9076,
-          "return5": -0.13561905,
-          "return20": -0.20733624,
+          "latestPriceFen": 8880,
+          "return5": -0.15428571,
+          "return20": -0.22445415,
           "aboveMa5": false,
           "points": [
             {
@@ -1549,14 +1427,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 9076
+              "closeFen": 8880
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 11677,
-          "periodReturn": -0.22274557,
+          "periodReturn": -0.2395307,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1581,9 +1459,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1362,
-          "return5": 0.04447853,
-          "return20": -0.02155172,
+          "latestPriceFen": 1363,
+          "return5": 0.0452454,
+          "return20": -0.02083333,
           "aboveMa5": true,
           "points": [
             {
@@ -1664,14 +1542,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1362
+              "closeFen": 1363
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1410,
-          "periodReturn": -0.03404255,
+          "periodReturn": -0.03333333,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1696,9 +1574,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 4082,
-          "return5": -0.03703704,
-          "return20": -0.05311993,
+          "latestPriceFen": 4042,
+          "return5": -0.04647322,
+          "return20": -0.06239852,
           "aboveMa5": false,
           "points": [
             {
@@ -1779,14 +1657,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 4082
+              "closeFen": 4042
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 4437,
-          "periodReturn": -0.08000902,
+          "periodReturn": -0.08902412,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1811,9 +1689,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1215,
-          "return5": -0.04929577,
-          "return20": -0.11507647,
+          "latestPriceFen": 1202,
+          "return5": -0.05946792,
+          "return20": -0.12454479,
           "aboveMa5": false,
           "points": [
             {
@@ -1894,14 +1772,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1215
+              "closeFen": 1202
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1411,
-          "periodReturn": -0.13890858,
+          "periodReturn": -0.1481219,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -1926,9 +1804,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2495,
-          "return5": 0.01094003,
-          "return20": 0.02296023,
+          "latestPriceFen": 2486,
+          "return5": 0.00729335,
+          "return20": 0.01927019,
           "aboveMa5": true,
           "points": [
             {
@@ -2009,14 +1887,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2495
+              "closeFen": 2486
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 2588,
-          "periodReturn": -0.03593509,
+          "periodReturn": -0.03941267,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2041,9 +1919,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2431,
-          "return5": -0.13763746,
-          "return20": 0.09553853,
+          "latestPriceFen": 2386,
+          "return5": -0.15360057,
+          "return20": 0.07525913,
           "aboveMa5": false,
           "points": [
             {
@@ -2124,14 +2002,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2431
+              "closeFen": 2386
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 2471,
-          "periodReturn": -0.01618778,
+          "periodReturn": -0.03439903,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2156,9 +2034,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 5628,
-          "return5": -0.11439811,
-          "return20": -0.02206777,
+          "latestPriceFen": 5533,
+          "return5": -0.12934697,
+          "return20": -0.03857515,
           "aboveMa5": false,
           "points": [
             {
@@ -2239,14 +2117,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 5628
+              "closeFen": 5533
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 6047,
-          "periodReturn": -0.06929056,
+          "periodReturn": -0.08500083,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2271,9 +2149,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2954,
-          "return5": -0.02023217,
-          "return20": -0.09691226,
+          "latestPriceFen": 2916,
+          "return5": -0.03283582,
+          "return20": -0.1085295,
           "aboveMa5": false,
           "points": [
             {
@@ -2354,14 +2232,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2954
+              "closeFen": 2916
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 3318,
-          "periodReturn": -0.10294564,
+          "periodReturn": -0.11448527,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2386,9 +2264,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1167,
-          "return5": 0.01655052,
-          "return20": -0.05887097,
+          "latestPriceFen": 1172,
+          "return5": 0.02090592,
+          "return20": -0.05483871,
           "aboveMa5": true,
           "points": [
             {
@@ -2469,14 +2347,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1167
+              "closeFen": 1172
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1223,
-          "periodReturn": -0.04578904,
+          "periodReturn": -0.04170074,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2501,9 +2379,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1487,
-          "return5": 0.12822458,
-          "return20": 0.03551532,
+          "latestPriceFen": 1479,
+          "return5": 0.12215478,
+          "return20": 0.02994429,
           "aboveMa5": true,
           "points": [
             {
@@ -2584,14 +2462,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1487
+              "closeFen": 1479
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1432,
-          "periodReturn": 0.03840782,
+          "periodReturn": 0.03282123,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2616,9 +2494,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 3355,
-          "return5": 0.0191373,
-          "return20": -0.15384615,
+          "latestPriceFen": 3316,
+          "return5": 0.0072904,
+          "return20": -0.16368222,
           "aboveMa5": true,
           "points": [
             {
@@ -2699,14 +2577,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 3355
+              "closeFen": 3316
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 3928,
-          "periodReturn": -0.14587576,
+          "periodReturn": -0.15580448,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2731,9 +2609,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1611,
-          "return5": -0.03590664,
-          "return20": 0.01384519,
+          "latestPriceFen": 1600,
+          "return5": -0.04248953,
+          "return20": 0.00692259,
           "aboveMa5": false,
           "points": [
             {
@@ -2814,14 +2692,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1611
+              "closeFen": 1600
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1602,
-          "periodReturn": 0.00561798,
+          "periodReturn": -0.00124844,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2846,9 +2724,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 6626,
-          "return5": -0.10459459,
-          "return20": -0.00315932,
+          "latestPriceFen": 6535,
+          "return5": -0.11689189,
+          "return20": -0.01684971,
           "aboveMa5": false,
           "points": [
             {
@@ -2929,14 +2807,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 6626
+              "closeFen": 6535
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 6793,
-          "periodReturn": -0.02458413,
+          "periodReturn": -0.03798027,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -2961,9 +2839,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1013,
-          "return5": -0.05767442,
-          "return20": -0.0840868,
+          "latestPriceFen": 1011,
+          "return5": -0.05953488,
+          "return20": -0.08589512,
           "aboveMa5": false,
           "points": [
             {
@@ -3044,14 +2922,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1013
+              "closeFen": 1011
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 1128,
-          "periodReturn": -0.10195035,
+          "periodReturn": -0.1037234,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -3076,9 +2954,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 14191,
-          "return5": -0.20091221,
-          "return20": -0.07017429,
+          "latestPriceFen": 13995,
+          "return5": -0.21194887,
+          "return20": -0.08301664,
           "aboveMa5": false,
           "points": [
             {
@@ -3159,14 +3037,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 14191
+              "closeFen": 13995
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 16788,
-          "periodReturn": -0.15469383,
+          "periodReturn": -0.16636883,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -3191,9 +3069,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2542,
-          "return5": 0.04695222,
-          "return20": -0.02530675,
+          "latestPriceFen": 2525,
+          "return5": 0.03995058,
+          "return20": -0.03182515,
           "aboveMa5": true,
           "points": [
             {
@@ -3274,14 +3152,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2542
+              "closeFen": 2525
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-07",
           "startPriceFen": 2596,
-          "periodReturn": -0.02080123,
+          "periodReturn": -0.02734977,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -3289,6 +3167,50 @@
       }
     ],
     "beforeIssueAnnouncement": [
+      {
+        "stockCode": "605016",
+        "stockName": "百龙创园",
+        "exchange": "SH",
+        "board": "沪市主板",
+        "auditId": "1000942",
+        "statusCode": "50",
+        "stageLabel": "注册生效",
+        "stageDate": "2026-10-12",
+        "acceptedDate": "2026-04-30",
+        "proposedScaleYi": 7.4815,
+        "registered": true,
+        "paused": false,
+        "terminal": false,
+        "sourceName": "上交所再融资审核项目动态",
+        "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1000942&bussinesType=6",
+        "registrationDisclosure": null,
+        "recentTrend": null,
+        "recentTrendError": "注册生效后有效交易日不足",
+        "entryAssessment": {
+          "windowStatus": "buy_today",
+          "entryDate": "2026-10-13",
+          "entryPriceFen": null,
+          "referencePriceFen": 1984,
+          "referencePriceDate": "2026-10-12",
+          "priceBasis": "previous_close_estimate",
+          "factorDate": "2026-10-12",
+          "momentum20": -0.1052987598647126,
+          "volatility20": 0.3596916572742765,
+          "marketReturn10": -0.04867784,
+          "status": "participate",
+          "selected": true,
+          "budgetFen": 250000,
+          "targetBudgetFen": 250000,
+          "targetShares": 126,
+          "initialShares": 200,
+          "excessShares": 74,
+          "initialCashFen": 396800,
+          "temporaryCashRatio": 1.5872,
+          "reasons": [
+            "盘前条件通过；开盘价不高于80元时执行"
+          ]
+        }
+      },
       {
         "stockCode": "300181",
         "stockName": "佐力药业",
@@ -3308,9 +3230,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1332,
-          "return5": 0.02698535,
-          "return20": 0.01679389,
+          "latestPriceFen": 1331,
+          "return5": 0.02621434,
+          "return20": 0.01579791,
           "aboveMa5": true,
           "points": [
             {
@@ -3319,24 +3241,24 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1332
+              "closeFen": 1331
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-10-09",
           "startPriceFen": 1325,
-          "periodReturn": 0.00528302,
+          "periodReturn": 0.0045283,
           "entryAssessment": {
-            "windowStatus": "buy_today",
+            "windowStatus": "entry_passed",
             "entryDate": "2026-10-12",
             "entryPriceFen": 1340,
             "factorDate": "2026-10-09",
             "referencePriceFen": null,
             "referencePriceDate": null,
             "priceBasis": "actual_open",
-            "momentum20": 0.019230769230769162,
-            "volatility20": 0.1726997729954465,
+            "momentum20": 0.018995616396216164,
+            "volatility20": 0.17259757906004614,
             "marketReturn10": -0.03204145,
             "status": "participate",
             "selected": true,
@@ -3352,15 +3274,15 @@
         },
         "recentTrendError": null,
         "entryAssessment": {
-          "windowStatus": "buy_today",
+          "windowStatus": "entry_passed",
           "entryDate": "2026-10-12",
           "entryPriceFen": 1340,
           "factorDate": "2026-10-09",
           "referencePriceFen": null,
           "referencePriceDate": null,
           "priceBasis": "actual_open",
-          "momentum20": 0.019230769230769162,
-          "volatility20": 0.1726997729954465,
+          "momentum20": 0.018995616396216164,
+          "volatility20": 0.17259757906004614,
           "marketReturn10": -0.03204145,
           "status": "participate",
           "selected": true,
@@ -3393,9 +3315,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 8050,
-          "return5": -0.12252017,
-          "return20": -0.2178391,
+          "latestPriceFen": 7891,
+          "return5": -0.13985175,
+          "return20": -0.23328799,
           "aboveMa5": false,
           "points": [
             {
@@ -3424,14 +3346,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 8050
+              "closeFen": 7891
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-09-24",
           "startPriceFen": 9760,
-          "periodReturn": -0.17520492,
+          "periodReturn": -0.1914959,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-09-28",
@@ -3506,9 +3428,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 2152,
-          "return5": -0.09389474,
-          "return20": -0.17737003,
+          "latestPriceFen": 2125,
+          "return5": -0.10526316,
+          "return20": -0.18769113,
           "aboveMa5": false,
           "points": [
             {
@@ -3577,14 +3499,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 2152
+              "closeFen": 2125
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-09-10",
           "startPriceFen": 2668,
-          "periodReturn": -0.1934033,
+          "periodReturn": -0.20352324,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-09-11",
@@ -3662,9 +3584,9 @@
         },
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 571,
-          "return5": 0.03442029,
-          "return20": 0.03254973,
+          "latestPriceFen": 569,
+          "return5": 0.0307971,
+          "return20": 0.02893309,
           "aboveMa5": true,
           "points": [
             {
@@ -3745,14 +3667,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 571
+              "closeFen": 569
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-09-07",
           "startPriceFen": 567,
-          "periodReturn": 0.01964286,
+          "periodReturn": 0.01607143,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-09-07",
@@ -3819,9 +3741,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1818,
-          "return5": -0.02728732,
-          "return20": 0.01281337,
+          "latestPriceFen": 1821,
+          "return5": -0.02568218,
+          "return20": 0.01448468,
           "aboveMa5": false,
           "points": [
             {
@@ -3910,14 +3832,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1818
+              "closeFen": 1821
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-09-03",
           "startPriceFen": 1795,
-          "periodReturn": 0.01281337,
+          "periodReturn": 0.01448468,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-09-04",
@@ -3984,9 +3906,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 421,
-          "return5": 0.02682927,
-          "return20": -0.02995392,
+          "latestPriceFen": 419,
+          "return5": 0.02195122,
+          "return20": -0.03456221,
           "aboveMa5": true,
           "points": [
             {
@@ -4115,14 +4037,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 421
+              "closeFen": 419
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-08-20",
           "startPriceFen": 396,
-          "periodReturn": 0.06313131,
+          "periodReturn": 0.05808081,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-08-21",
@@ -4189,9 +4111,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 7158,
-          "return5": -0.05342502,
-          "return20": -0.05815789,
+          "latestPriceFen": 7049,
+          "return5": -0.0678392,
+          "return20": -0.0725,
           "aboveMa5": false,
           "points": [
             {
@@ -4348,14 +4270,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 7158
+              "closeFen": 7049
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-08-11",
           "startPriceFen": 8398,
-          "periodReturn": -0.14561948,
+          "periodReturn": -0.15862974,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-08-12",
@@ -4426,9 +4348,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 5138,
-          "return5": -0.16045752,
-          "return20": -0.07855093,
+          "latestPriceFen": 4975,
+          "return5": -0.1870915,
+          "return20": -0.10778336,
           "aboveMa5": false,
           "points": [
             {
@@ -4593,14 +4515,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 5138
+              "closeFen": 4975
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-08-07",
           "startPriceFen": 5015,
-          "periodReturn": 0.02452642,
+          "periodReturn": -0.00797607,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-08-10",
@@ -4667,9 +4589,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 1732,
-          "return5": -0.06630728,
-          "return20": -0.15758755,
+          "latestPriceFen": 1725,
+          "return5": -0.07008086,
+          "return20": -0.16099222,
           "aboveMa5": false,
           "points": [
             {
@@ -4870,14 +4792,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 1732
+              "closeFen": 1725
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-07-27",
           "startPriceFen": 1665,
-          "periodReturn": 0.04024024,
+          "periodReturn": 0.03603604,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-07-28",
@@ -4944,9 +4866,9 @@
         "registrationDisclosure": null,
         "recentTrend": {
           "asOfDate": "2026-10-12",
-          "latestPriceFen": 642,
-          "return5": 0.01102362,
-          "return20": -0.02134146,
+          "latestPriceFen": 639,
+          "return5": 0.00629921,
+          "return20": -0.02591463,
           "aboveMa5": false,
           "points": [
             {
@@ -5175,14 +5097,14 @@
             },
             {
               "date": "2026-10-12",
-              "closeFen": 642
+              "closeFen": 639
             }
           ],
-          "sourceName": "东方财富日K（备用）",
+          "sourceName": "腾讯证券日K",
           "basis": "registration_to_latest",
           "startDate": "2026-07-16",
           "startPriceFen": 709,
-          "periodReturn": -0.09449929,
+          "periodReturn": -0.09873061,
           "entryAssessment": {
             "windowStatus": "entry_passed",
             "entryDate": "2026-07-17",
@@ -5240,6 +5162,52 @@
     "reminders": {
       "buy": [
         {
+          "stockCode": "605016",
+          "stockName": "百龙创园",
+          "exchange": "SH",
+          "board": "沪市主板",
+          "auditId": "1000942",
+          "statusCode": "50",
+          "stageLabel": "注册生效",
+          "stageDate": "2026-10-12",
+          "acceptedDate": "2026-04-30",
+          "proposedScaleYi": 7.4815,
+          "registered": true,
+          "paused": false,
+          "terminal": false,
+          "sourceName": "上交所再融资审核项目动态",
+          "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1000942&bussinesType=6",
+          "registrationDisclosure": null,
+          "recentTrend": null,
+          "recentTrendError": "注册生效后有效交易日不足",
+          "entryAssessment": {
+            "windowStatus": "buy_today",
+            "entryDate": "2026-10-13",
+            "entryPriceFen": null,
+            "referencePriceFen": 1984,
+            "referencePriceDate": "2026-10-12",
+            "priceBasis": "previous_close_estimate",
+            "factorDate": "2026-10-12",
+            "momentum20": -0.1052987598647126,
+            "volatility20": 0.3596916572742765,
+            "marketReturn10": -0.04867784,
+            "status": "participate",
+            "selected": true,
+            "budgetFen": 250000,
+            "targetBudgetFen": 250000,
+            "targetShares": 126,
+            "initialShares": 200,
+            "excessShares": 74,
+            "initialCashFen": 396800,
+            "temporaryCashRatio": 1.5872,
+            "reasons": [
+              "盘前条件通过；开盘价不高于80元时执行"
+            ]
+          }
+        }
+      ],
+      "holding": [
+        {
           "stockCode": "300181",
           "stockName": "佐力药业",
           "exchange": "SZ",
@@ -5258,9 +5226,9 @@
           "registrationDisclosure": null,
           "recentTrend": {
             "asOfDate": "2026-10-12",
-            "latestPriceFen": 1332,
-            "return5": 0.02698535,
-            "return20": 0.01679389,
+            "latestPriceFen": 1331,
+            "return5": 0.02621434,
+            "return20": 0.01579791,
             "aboveMa5": true,
             "points": [
               {
@@ -5269,24 +5237,24 @@
               },
               {
                 "date": "2026-10-12",
-                "closeFen": 1332
+                "closeFen": 1331
               }
             ],
-            "sourceName": "东方财富日K（备用）",
+            "sourceName": "腾讯证券日K",
             "basis": "registration_to_latest",
             "startDate": "2026-10-09",
             "startPriceFen": 1325,
-            "periodReturn": 0.00528302,
+            "periodReturn": 0.0045283,
             "entryAssessment": {
-              "windowStatus": "buy_today",
+              "windowStatus": "entry_passed",
               "entryDate": "2026-10-12",
               "entryPriceFen": 1340,
               "factorDate": "2026-10-09",
               "referencePriceFen": null,
               "referencePriceDate": null,
               "priceBasis": "actual_open",
-              "momentum20": 0.019230769230769162,
-              "volatility20": 0.1726997729954465,
+              "momentum20": 0.018995616396216164,
+              "volatility20": 0.17259757906004614,
               "marketReturn10": -0.03204145,
               "status": "participate",
               "selected": true,
@@ -5302,15 +5270,15 @@
           },
           "recentTrendError": null,
           "entryAssessment": {
-            "windowStatus": "buy_today",
+            "windowStatus": "entry_passed",
             "entryDate": "2026-10-12",
             "entryPriceFen": 1340,
             "factorDate": "2026-10-09",
             "referencePriceFen": null,
             "referencePriceDate": null,
             "priceBasis": "actual_open",
-            "momentum20": 0.019230769230769162,
-            "volatility20": 0.1726997729954465,
+            "momentum20": 0.018995616396216164,
+            "volatility20": 0.17259757906004614,
             "marketReturn10": -0.03204145,
             "status": "participate",
             "selected": true,
@@ -5323,9 +5291,7 @@
             "temporaryCashRatio": 1.072,
             "reasons": []
           }
-        }
-      ],
-      "holding": [
+        },
         {
           "stockCode": "301175",
           "stockName": "中科环保",
@@ -5352,9 +5318,9 @@
           },
           "recentTrend": {
             "asOfDate": "2026-10-12",
-            "latestPriceFen": 571,
-            "return5": 0.03442029,
-            "return20": 0.03254973,
+            "latestPriceFen": 569,
+            "return5": 0.0307971,
+            "return20": 0.02893309,
             "aboveMa5": true,
             "points": [
               {
@@ -5435,14 +5401,14 @@
               },
               {
                 "date": "2026-10-12",
-                "closeFen": 571
+                "closeFen": 569
               }
             ],
-            "sourceName": "东方财富日K（备用）",
+            "sourceName": "腾讯证券日K",
             "basis": "registration_to_latest",
             "startDate": "2026-09-07",
             "startPriceFen": 567,
-            "periodReturn": 0.01964286,
+            "periodReturn": 0.01607143,
             "entryAssessment": {
               "windowStatus": "entry_passed",
               "entryDate": "2026-09-07",
@@ -5509,9 +5475,9 @@
           "registrationDisclosure": null,
           "recentTrend": {
             "asOfDate": "2026-10-12",
-            "latestPriceFen": 1818,
-            "return5": -0.02728732,
-            "return20": 0.01281337,
+            "latestPriceFen": 1821,
+            "return5": -0.02568218,
+            "return20": 0.01448468,
             "aboveMa5": false,
             "points": [
               {
@@ -5600,14 +5566,14 @@
               },
               {
                 "date": "2026-10-12",
-                "closeFen": 1818
+                "closeFen": 1821
               }
             ],
-            "sourceName": "东方财富日K（备用）",
+            "sourceName": "腾讯证券日K",
             "basis": "registration_to_latest",
             "startDate": "2026-09-03",
             "startPriceFen": 1795,
-            "periodReturn": 0.01281337,
+            "periodReturn": 0.01448468,
             "entryAssessment": {
               "windowStatus": "entry_passed",
               "entryDate": "2026-09-04",
@@ -5674,9 +5640,9 @@
           "registrationDisclosure": null,
           "recentTrend": {
             "asOfDate": "2026-10-12",
-            "latestPriceFen": 421,
-            "return5": 0.02682927,
-            "return20": -0.02995392,
+            "latestPriceFen": 419,
+            "return5": 0.02195122,
+            "return20": -0.03456221,
             "aboveMa5": true,
             "points": [
               {
@@ -5805,14 +5771,14 @@
               },
               {
                 "date": "2026-10-12",
-                "closeFen": 421
+                "closeFen": 419
               }
             ],
-            "sourceName": "东方财富日K（备用）",
+            "sourceName": "腾讯证券日K",
             "basis": "registration_to_latest",
             "startDate": "2026-08-20",
             "startPriceFen": 396,
-            "periodReturn": 0.06313131,
+            "periodReturn": 0.05808081,
             "entryAssessment": {
               "windowStatus": "entry_passed",
               "entryDate": "2026-08-21",
@@ -5879,9 +5845,9 @@
           "registrationDisclosure": null,
           "recentTrend": {
             "asOfDate": "2026-10-12",
-            "latestPriceFen": 5138,
-            "return5": -0.16045752,
-            "return20": -0.07855093,
+            "latestPriceFen": 4975,
+            "return5": -0.1870915,
+            "return20": -0.10778336,
             "aboveMa5": false,
             "points": [
               {
@@ -6046,14 +6012,14 @@
               },
               {
                 "date": "2026-10-12",
-                "closeFen": 5138
+                "closeFen": 4975
               }
             ],
-            "sourceName": "东方财富日K（备用）",
+            "sourceName": "腾讯证券日K",
             "basis": "registration_to_latest",
             "startDate": "2026-08-07",
             "startPriceFen": 5015,
-            "periodReturn": 0.02452642,
+            "periodReturn": -0.00797607,
             "entryAssessment": {
               "windowStatus": "entry_passed",
               "entryDate": "2026-08-10",
@@ -6120,9 +6086,9 @@
           "registrationDisclosure": null,
           "recentTrend": {
             "asOfDate": "2026-10-12",
-            "latestPriceFen": 1732,
-            "return5": -0.06630728,
-            "return20": -0.15758755,
+            "latestPriceFen": 1725,
+            "return5": -0.07008086,
+            "return20": -0.16099222,
             "aboveMa5": false,
             "points": [
               {
@@ -6323,14 +6289,14 @@
               },
               {
                 "date": "2026-10-12",
-                "closeFen": 1732
+                "closeFen": 1725
               }
             ],
-            "sourceName": "东方财富日K（备用）",
+            "sourceName": "腾讯证券日K",
             "basis": "registration_to_latest",
             "startDate": "2026-07-27",
             "startPriceFen": 1665,
-            "periodReturn": 0.04024024,
+            "periodReturn": 0.03603604,
             "entryAssessment": {
               "windowStatus": "entry_passed",
               "entryDate": "2026-07-28",

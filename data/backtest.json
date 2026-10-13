@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-12T03:30:32.267Z",
+    "generatedAt": "2026-10-13T00:33:50.232Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-12",
+    "coverageEnd": "2026-10-13",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-12T03:30:32.267Z",
+    "generatedAt": "2026-10-13T00:33:50.232Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-12",
+    "coverageEnd": "2026-10-13",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -129,26 +129,26 @@
   },
   "summary": {
     "candidateCount": 975,
-    "includedCount": 942,
-    "excludedCount": 33,
+    "includedCount": 941,
+    "excludedCount": 34,
     "strategies": {
       "A": {
-        "count": 942,
-        "totalGrossPnlFen": 3321869,
-        "totalPeakCapitalFen": 1144793462,
-        "capitalWeightedRoi": 0.0029017190526198166,
-        "meanRoi": 0.005415303844005206,
-        "medianRoi": 0.0024597427020354935,
-        "winRate": 0.5488322717622081
+        "count": 941,
+        "totalGrossPnlFen": 3371487,
+        "totalPeakCapitalFen": 1143213462,
+        "capitalWeightedRoi": 0.0029491316469469637,
+        "meanRoi": 0.005454431475580511,
+        "medianRoi": 0.002466718872357087,
+        "winRate": 0.5494155154091392
       },
       "B": {
-        "count": 942,
-        "totalGrossPnlFen": 4703515,
-        "totalPeakCapitalFen": 1144793462,
-        "capitalWeightedRoi": 0.004108614484732269,
-        "meanRoi": 0.0071986342907292685,
-        "medianRoi": 0.0034244424137262345,
-        "winRate": 0.5679405520169851
+        "count": 941,
+        "totalGrossPnlFen": 4735242,
+        "totalPeakCapitalFen": 1143213462,
+        "capitalWeightedRoi": 0.004142045346208493,
+        "meanRoi": 0.007227623678654417,
+        "medianRoi": 0.003459224675497235,
+        "winRate": 0.5685441020191286
       }
     },
     "byYear": [
@@ -415,26 +415,26 @@
       {
         "year": 2026,
         "candidateCount": 62,
-        "includedCount": 55,
-        "excludedCount": 7,
+        "includedCount": 54,
+        "excludedCount": 8,
         "strategies": {
           "A": {
-            "count": 55,
-            "totalGrossPnlFen": 655217,
-            "totalPeakCapitalFen": 70587085,
-            "capitalWeightedRoi": 0.009282392097647892,
-            "meanRoi": 0.014694620180746637,
-            "medianRoi": 0.011909158050221566,
-            "winRate": 0.6
+            "count": 54,
+            "totalGrossPnlFen": 704835,
+            "totalPeakCapitalFen": 69007085,
+            "capitalWeightedRoi": 0.010213951219646505,
+            "meanRoi": 0.015548294581655919,
+            "medianRoi": 0.012125863659871488,
+            "winRate": 0.6111111111111112
           },
           "B": {
-            "count": 55,
-            "totalGrossPnlFen": 1025085,
-            "totalPeakCapitalFen": 70587085,
-            "capitalWeightedRoi": 0.014522274152559212,
-            "meanRoi": 0.023472917670693445,
-            "medianRoi": 0.0156436791863681,
-            "winRate": 0.6545454545454545
+            "count": 54,
+            "totalGrossPnlFen": 1056812,
+            "totalPeakCapitalFen": 69007085,
+            "capitalWeightedRoi": 0.015314543426953913,
+            "meanRoi": 0.0242794602154625,
+            "medianRoi": 0.01618643763876898,
+            "winRate": 0.6666666666666666
           }
         }
       }
@@ -704,34 +704,34 @@
     {
       "year": 2026,
       "candidateCount": 62,
-      "includedCount": 55,
-      "excludedCount": 7,
+      "includedCount": 54,
+      "excludedCount": 8,
       "strategies": {
         "A": {
-          "count": 55,
-          "totalGrossPnlFen": 655217,
-          "totalPeakCapitalFen": 70587085,
-          "capitalWeightedRoi": 0.009282392097647892,
-          "meanRoi": 0.014694620180746637,
-          "medianRoi": 0.011909158050221566,
-          "winRate": 0.6
+          "count": 54,
+          "totalGrossPnlFen": 704835,
+          "totalPeakCapitalFen": 69007085,
+          "capitalWeightedRoi": 0.010213951219646505,
+          "meanRoi": 0.015548294581655919,
+          "medianRoi": 0.012125863659871488,
+          "winRate": 0.6111111111111112
         },
         "B": {
-          "count": 55,
-          "totalGrossPnlFen": 1025085,
-          "totalPeakCapitalFen": 70587085,
-          "capitalWeightedRoi": 0.014522274152559212,
-          "meanRoi": 0.023472917670693445,
-          "medianRoi": 0.0156436791863681,
-          "winRate": 0.6545454545454545
+          "count": 54,
+          "totalGrossPnlFen": 1056812,
+          "totalPeakCapitalFen": 69007085,
+          "capitalWeightedRoi": 0.015314543426953913,
+          "meanRoi": 0.0242794602154625,
+          "medianRoi": 0.01618643763876898,
+          "winRate": 0.6666666666666666
         }
       }
     }
   ],
   "funnel": {
-    "sourceUnionAllYears": 1059,
+    "sourceUnionAllYears": 1060,
     "cninfoRowsAllYears": 983,
-    "eastmoneyRowsAllYears": 1059,
+    "eastmoneyRowsAllYears": 1060,
     "migratedAliasesRemoved": 5,
     "inScopeCandidates": 975,
     "staticFieldsReady": 968,
@@ -739,10 +739,10 @@
     "attemptedCandidates": 968,
     "stockSeriesAvailable": 968,
     "bondFiveBarsAvailable": 958,
-    "validBacktests": 942,
-    "marketDataAuditExclusions": 3,
+    "validBacktests": 941,
+    "marketDataAuditExclusions": 4,
     "coreExclusions": 23,
-    "totalPublishedExclusions": 33
+    "totalPublishedExclusions": 34
   },
   "sourceUsage": {
     "stock": {
@@ -750,9 +750,8 @@
       "eastmoney-push2his-kline": 98
     },
     "bond": {
-      "tencent-fqkline": 963,
-      "missing": 2,
-      "tencent+eastmoney-fill": 3
+      "tencent-fqkline": 966,
+      "missing": 2
     }
   },
   "records": [
@@ -53167,11 +53166,10 @@
             "comparedDates": 0,
             "differences": []
           },
-          "secondarySkippedReason": null
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-10-20"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002557-2020-10-09-2020-10-27",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-128135-2020-11-18-2020-12-23"
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-002557-2020-10-09-2020-10-27"
         ]
       }
     },
@@ -134360,11 +134358,9 @@
           }
         },
         "bondDaily": {
-          "adoptedSource": "tencent+eastmoney-fill",
+          "adoptedSource": "tencent-fqkline",
           "barCount": 18,
-          "filledDates": [
-            "2026-10-12"
-          ],
+          "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
             "comparedDates": 5,
@@ -134616,143 +134612,12 @@
           }
         },
         "bondDaily": {
-          "adoptedSource": "tencent+eastmoney-fill",
+          "adoptedSource": "tencent-fqkline",
           "barCount": 8,
-          "filledDates": [
-            "2026-10-12"
-          ],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 5,
-            "differences": []
-          },
-          "secondarySkippedReason": null
-        },
-        "fetchErrors": []
-      }
-    },
-    {
-      "included": true,
-      "bondCode": "123285",
-      "bondName": "润禾转02",
-      "stockCode": "300727",
-      "stockName": "润禾材料",
-      "exchange": "SZ",
-      "stockBoard": "CHINEXT",
-      "entryYear": 2026,
-      "recordDate": "2026-09-09",
-      "subscriptionDate": "2026-09-10",
-      "stockSellDate": "2026-09-10",
-      "stockSellDeferred": false,
-      "listingDate": "2026-09-29",
-      "allocationPerShareRaw": "2.0539",
-      "issuePriceFen": 10000,
-      "targetFaceFen": 100000,
-      "shares": 500,
-      "entitlementFaceFen": 102695,
-      "conditionalAllotment": false,
-      "stockBuyPriceFen": 3160,
-      "stockSellPriceFen": 2944,
-      "stockBuyCashFen": 1580000,
-      "stockSellCashFen": 1472000,
-      "stockCostSignedFen": 108000,
-      "peakCapitalFen": 1580000,
-      "strategies": {
-        "A": {
-          "strategyId": "d5_close",
-          "exitDate": "2026-10-12",
-          "exitDay": 5,
-          "exitReason": "d5_close",
-          "exitPriceFen": 15838,
-          "exitPriceMilliYuan": 158382,
-          "firstLimitDate": null,
-          "openConfirmDate": null,
-          "highWatermarkFen": null,
-          "highWatermarkMilliYuan": null,
-          "bondExitProceedsFen": 158382,
-          "bondGainFen": 58382,
-          "grossPnlFen": -49618,
-          "roi": -0.03140379746835443,
-          "roiRaw": "-0.031403797468",
-          "roiBps": -314
-        },
-        "B": {
-          "strategyId": "limit_open_drawdown_5pct",
-          "exitDate": "2026-09-30",
-          "exitDay": 2,
-          "exitReason": "close_drawdown_5pct",
-          "exitPriceFen": 17627,
-          "exitPriceMilliYuan": 176273,
-          "firstLimitDate": "2026-09-29",
-          "openConfirmDate": "2026-09-30",
-          "highWatermarkFen": 18555,
-          "highWatermarkMilliYuan": 185550,
-          "bondExitProceedsFen": 176273,
-          "bondGainFen": 76273,
-          "grossPnlFen": -31727,
-          "roi": -0.020080379746835443,
-          "roiRaw": "-0.020080379747",
-          "roiBps": -201
-        }
-      },
-      "sourceAudit": {
-        "staticFields": {
-          "sourcePresence": {
-            "cninfo": true,
-            "eastmoney": true
-          },
-          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-          "pdfVerified": false,
-          "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123285",
-            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123285.html"
-          },
-          "fieldSources": {
-            "bondIdentity": "official_cninfo_topic",
-            "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-            "subscriptionDate": "official_cninfo_topic:F004D",
-            "listingDate": "eastmoney_crosscheck",
-            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-          },
-          "announcementRecordDate": "2026-09-09",
-          "cninfoRecordDate": "2026-09-09",
-          "eastmoneyRecordDate": "2026-09-09",
-          "cninfoSubscriptionDate": "2026-09-10",
-          "eastmoneySubscriptionDate": "2026-09-10",
-          "corporateActionCheck": {
-            "source": "eastmoney-RPT_SHAREBONUS_DET",
-            "checkedDates": [
-              "2026-09-09",
-              "2026-09-10"
-            ],
-            "overlap": []
-          }
-        },
-        "stockDaily": {
-          "adoptedSource": "eastmoney-push2his-kline",
-          "barCount": 14,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
-            "comparedDates": 2,
-            "differences": []
-          },
-          "priceLimitAudit": {
-            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
-            "limitations": []
-          }
-        },
-        "bondDaily": {
-          "adoptedSource": "tencent+eastmoney-fill",
-          "barCount": 5,
-          "filledDates": [
-            "2026-10-12"
-          ],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 4,
+            "comparedDates": 5,
             "differences": []
           },
           "secondarySkippedReason": null
