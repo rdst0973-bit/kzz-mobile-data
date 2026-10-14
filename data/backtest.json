@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-14T13:20:41.580Z",
+    "generatedAt": "2026-10-14T22:03:07.496Z",
     "coverageStart": "2016-01-01",
     "coverageEnd": "2026-10-14",
     "inclusionBasis": "recordDate",
@@ -65,7 +65,7 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-14T13:20:41.580Z",
+    "generatedAt": "2026-10-14T22:03:07.496Z",
     "coverageStart": "2016-01-01",
     "coverageEnd": "2026-10-14",
     "inclusionBasis": "recordDate",
@@ -43861,7 +43861,7 @@
       "bondCode": "113589",
       "bondName": "天创转债",
       "stockCode": "603608",
-      "stockName": "天创时尚",
+      "stockName": "天创股份",
       "exchange": "SH",
       "stockBoard": "MAIN",
       "entryYear": 2020,
