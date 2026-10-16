@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-15T21:58:31.221Z",
+    "generatedAt": "2026-10-16T21:59:21.126Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-15",
+    "coverageEnd": "2026-10-16",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,7 +65,7 @@
   },
   "funnel": {
     "sourceUnionAllYears": 1062,
-    "cninfoRowsAllYears": 985,
+    "cninfoRowsAllYears": 986,
     "eastmoneyRowsAllYears": 1062,
     "migratedAliasesRemoved": 5,
     "inScopeCandidates": 977,
@@ -2318,7 +2318,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 1,
+          "barCount": 2,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
