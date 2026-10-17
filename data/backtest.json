@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-16T21:59:21.126Z",
+    "generatedAt": "2026-10-17T21:56:57.591Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-16",
+    "coverageEnd": "2026-10-17",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-16T21:59:21.126Z",
+    "generatedAt": "2026-10-17T21:56:57.591Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-16",
+    "coverageEnd": "2026-10-17",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
