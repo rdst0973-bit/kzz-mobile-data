@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-18T22:16:52.738Z",
+    "generatedAt": "2026-10-19T22:00:58.674Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-19",
+    "coverageEnd": "2026-10-20",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-18T22:16:52.738Z",
+    "generatedAt": "2026-10-19T22:00:58.674Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-19",
+    "coverageEnd": "2026-10-20",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -128,9 +128,9 @@
     }
   },
   "summary": {
-    "candidateCount": 978,
+    "candidateCount": 979,
     "includedCount": 942,
-    "excludedCount": 36,
+    "excludedCount": 37,
     "strategies": {
       "A": {
         "count": 942,
@@ -414,9 +414,9 @@
       },
       {
         "year": 2026,
-        "candidateCount": 65,
+        "candidateCount": 66,
         "includedCount": 55,
-        "excludedCount": 10,
+        "excludedCount": 11,
         "strategies": {
           "A": {
             "count": 55,
@@ -703,9 +703,9 @@
     },
     {
       "year": 2026,
-      "candidateCount": 65,
+      "candidateCount": 66,
       "includedCount": 55,
-      "excludedCount": 10,
+      "excludedCount": 11,
       "strategies": {
         "A": {
           "count": 55,
@@ -729,20 +729,20 @@
     }
   ],
   "funnel": {
-    "sourceUnionAllYears": 1063,
-    "cninfoRowsAllYears": 986,
-    "eastmoneyRowsAllYears": 1063,
+    "sourceUnionAllYears": 1064,
+    "cninfoRowsAllYears": 987,
+    "eastmoneyRowsAllYears": 1064,
     "migratedAliasesRemoved": 5,
-    "inScopeCandidates": 978,
+    "inScopeCandidates": 979,
     "staticFieldsReady": 973,
-    "staticFieldExclusions": 5,
+    "staticFieldExclusions": 6,
     "attemptedCandidates": 973,
     "stockSeriesAvailable": 973,
     "bondFiveBarsAvailable": 958,
     "validBacktests": 942,
     "marketDataAuditExclusions": 3,
     "coreExclusions": 28,
-    "totalPublishedExclusions": 36
+    "totalPublishedExclusions": 37
   },
   "sourceUsage": {
     "stock": {
@@ -750,8 +750,8 @@
       "eastmoney-push2his-kline": 99
     },
     "bond": {
-      "tencent-fqkline": 967,
-      "missing": 6
+      "tencent-fqkline": 969,
+      "missing": 4
     }
   },
   "records": [
@@ -17627,7 +17627,7 @@
       "bondCode": "113529",
       "bondName": "绝味转债",
       "stockCode": "603517",
-      "stockName": "ST绝味",
+      "stockName": "绝味食品",
       "exchange": "SH",
       "stockBoard": "MAIN",
       "entryYear": 2019,
@@ -56051,11 +56051,10 @@
             "comparedDates": 0,
             "differences": []
           },
-          "secondarySkippedReason": null
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-11-20"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-600461-2020-11-09-2020-11-27",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SH-110077-2020-12-17-2021-01-21"
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SH-600461-2020-11-09-2020-11-27"
         ]
       }
     },
@@ -125627,11 +125626,10 @@
             "comparedDates": 0,
             "differences": []
           },
-          "secondarySkippedReason": null
+          "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2026-10-20"
         },
         "fetchErrors": [
-          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300843-2025-08-17-2025-09-04",
-          "bond/eastmoney: historical cache miss during current-year update: eastmoney-bond-SZ-123258-2025-09-10-2025-10-15"
+          "stock/eastmoney: historical cache miss during current-year update: eastmoney-stock-SZ-300843-2025-08-17-2025-09-04"
         ]
       }
     },
@@ -134611,7 +134609,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 12,
+          "barCount": 13,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134738,7 +134736,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 9,
+          "barCount": 10,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
