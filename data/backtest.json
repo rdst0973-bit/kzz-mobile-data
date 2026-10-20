@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-19T22:00:58.674Z",
+    "generatedAt": "2026-10-20T21:57:35.189Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-20",
+    "coverageEnd": "2026-10-21",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-19T22:00:58.674Z",
+    "generatedAt": "2026-10-20T21:57:35.189Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-20",
+    "coverageEnd": "2026-10-21",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -128,9 +128,9 @@
     }
   },
   "summary": {
-    "candidateCount": 979,
+    "candidateCount": 980,
     "includedCount": 942,
-    "excludedCount": 37,
+    "excludedCount": 38,
     "strategies": {
       "A": {
         "count": 942,
@@ -414,9 +414,9 @@
       },
       {
         "year": 2026,
-        "candidateCount": 66,
+        "candidateCount": 67,
         "includedCount": 55,
-        "excludedCount": 11,
+        "excludedCount": 12,
         "strategies": {
           "A": {
             "count": 55,
@@ -703,9 +703,9 @@
     },
     {
       "year": 2026,
-      "candidateCount": 66,
+      "candidateCount": 67,
       "includedCount": 55,
-      "excludedCount": 11,
+      "excludedCount": 12,
       "strategies": {
         "A": {
           "count": 55,
@@ -730,27 +730,27 @@
   ],
   "funnel": {
     "sourceUnionAllYears": 1064,
-    "cninfoRowsAllYears": 987,
+    "cninfoRowsAllYears": 988,
     "eastmoneyRowsAllYears": 1064,
     "migratedAliasesRemoved": 5,
-    "inScopeCandidates": 979,
-    "staticFieldsReady": 973,
+    "inScopeCandidates": 980,
+    "staticFieldsReady": 974,
     "staticFieldExclusions": 6,
-    "attemptedCandidates": 973,
-    "stockSeriesAvailable": 973,
+    "attemptedCandidates": 974,
+    "stockSeriesAvailable": 974,
     "bondFiveBarsAvailable": 958,
     "validBacktests": 942,
     "marketDataAuditExclusions": 3,
-    "coreExclusions": 28,
-    "totalPublishedExclusions": 37
+    "coreExclusions": 29,
+    "totalPublishedExclusions": 38
   },
   "sourceUsage": {
     "stock": {
-      "tencent-fqkline": 874,
+      "tencent-fqkline": 875,
       "eastmoney-push2his-kline": 99
     },
     "bond": {
-      "tencent-fqkline": 969,
+      "tencent-fqkline": 970,
       "missing": 4
     }
   },
@@ -134609,7 +134609,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 13,
+          "barCount": 14,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -134736,7 +134736,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 10,
+          "barCount": 11,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
