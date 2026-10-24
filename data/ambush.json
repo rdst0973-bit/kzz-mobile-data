@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-10-23T22:04:19.659Z",
+    "generatedAt": "2026-10-24T22:09:11.617Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-10-24",
+    "coverageEnd": "2026-10-25",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -13,7 +13,98 @@
     "participationRule": "所有具有完整买卖节点和可验证成交窗口的候选等额参与，不做因子筛选",
     "grossOnly": true,
     "dailyApproximation": true,
-    "staleCacheFallbacks": [],
+    "staleCacheFallbacks": [
+      {
+        "key": "index-tencent-csi300-2026-20261025",
+        "fallbackKey": "index-eastmoney-csi300-2026-20261025",
+        "fetchedAt": "2026-10-24T22:07:54.536Z",
+        "error": "index-tencent-csi300-2026-20261025: HTTP 501"
+      },
+      {
+        "key": "live-stock-300893-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-300893-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.406Z",
+        "error": "stock-tencent-SZ-300893-2026-08-31-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-300893-2026-08-31-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001221-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-001221-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.417Z",
+        "error": "stock-tencent-SZ-001221-2026-08-31-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-001221-2026-08-31-2026-10-25-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-300389-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-300389-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.473Z",
+        "error": "stock-tencent-SZ-300389-2026-08-31-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-300389-2026-08-31-2026-10-25-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301585-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-301585-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.477Z",
+        "error": "stock-tencent-SZ-301585-2026-08-31-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-301585-2026-08-31-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301479-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-301479-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.493Z",
+        "error": "stock-tencent-SZ-301479-2026-08-31-2026-10-25-qfq: HTTP 501；stock-eastmoney-SZ-301479-2026-08-31-2026-10-25-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-001389-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-001389-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.514Z",
+        "error": "stock-tencent-SZ-001389-2026-08-31-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-001389-2026-08-31-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301305-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-301305-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.535Z",
+        "error": "stock-tencent-SZ-301305-2026-08-31-2026-10-25-qfq: HTTP 501；stock-eastmoney-SZ-301305-2026-08-31-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301631-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-301631-2026-08-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.036Z",
+        "error": "stock-tencent-SZ-301631-2026-06-16-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-301631-2026-06-16-2026-10-25-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-605016-2026-10-25",
+        "fallbackKey": "stock-tencent-SH-605016-2026-06-04-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.554Z",
+        "error": "stock-tencent-SH-605016-2026-06-04-2026-10-25-raw: HTTP 501；stock-eastmoney-SH-605016-2026-06-04-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300181-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-300181-2026-06-01-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.559Z",
+        "error": "stock-tencent-SZ-300181-2026-06-01-2026-10-25-qfq: HTTP 501；stock-eastmoney-SZ-300181-2026-06-01-2026-10-25-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-600368-2026-10-25",
+        "fallbackKey": "stock-tencent-SH-600368-2026-04-12-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.634Z",
+        "error": "stock-tencent-SH-600368-2026-04-12-2026-10-25-raw: HTTP 501；stock-eastmoney-SH-600368-2026-04-12-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603163-2026-10-25",
+        "fallbackKey": "stock-tencent-SH-603163-2026-04-03-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.632Z",
+        "error": "stock-tencent-SH-603163-2026-04-03-2026-10-25-qfq: HTTP 501；stock-eastmoney-SH-603163-2026-04-03-2026-10-25-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300909-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-300909-2026-03-30-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.610Z",
+        "error": "stock-tencent-SZ-300909-2026-03-30-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-300909-2026-03-30-2026-10-25-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-002550-2026-10-25",
+        "fallbackKey": "stock-tencent-SZ-002550-2026-03-08-2026-10-24-raw.json",
+        "fetchedAt": "2026-10-23T22:04:19.652Z",
+        "error": "stock-tencent-SZ-002550-2026-03-08-2026-10-25-raw: HTTP 501；stock-eastmoney-SZ-002550-2026-03-08-2026-10-25-raw: fetch failed"
+      }
+    ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
     "benchmark": "沪深300",
     "validationStartYear": 2024,
@@ -271,8 +362,8 @@
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-10-24",
-    "sourceAsOfDate": "2026-10-24",
+    "asOfDate": "2026-10-25",
+    "sourceAsOfDate": "2026-10-25",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
@@ -283,9 +374,9 @@
     },
     "counts": {
       "sourceProjects": 534,
-      "beforeRegistration": 28,
-      "beforeIssueAnnouncement": 6,
-      "buyAlerts": 0,
+      "beforeRegistration": 27,
+      "beforeIssueAnnouncement": 7,
+      "buyAlerts": 1,
       "holding": 4,
       "sellAlerts": 1
     },
@@ -395,7 +486,7 @@
               "closeFen": 1349
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1320,
@@ -510,126 +601,11 @@
               "closeFen": 26775
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 34879,
           "periodReturn": -0.23234611,
-          "entryAssessment": null
-        },
-        "recentTrendError": null,
-        "entryAssessment": null
-      },
-      {
-        "stockCode": "301631",
-        "stockName": "壹连科技",
-        "exchange": "SZ",
-        "board": "创业板",
-        "auditId": "1004373",
-        "statusCode": "60",
-        "stageLabel": "提交注册",
-        "stageDate": "2026-09-29",
-        "acceptedDate": "2026-06-09",
-        "proposedScaleYi": 11.8,
-        "registered": false,
-        "paused": false,
-        "terminal": false,
-        "sourceName": "深交所再融资审核项目动态",
-        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
-        "registrationDisclosure": null,
-        "recentTrend": {
-          "asOfDate": "2026-10-23",
-          "latestPriceFen": 5099,
-          "return5": 0.0171554,
-          "return20": -0.1589972,
-          "aboveMa5": true,
-          "points": [
-            {
-              "date": "2026-09-18",
-              "closeFen": 6232
-            },
-            {
-              "date": "2026-09-21",
-              "closeFen": 6410
-            },
-            {
-              "date": "2026-09-22",
-              "closeFen": 6310
-            },
-            {
-              "date": "2026-09-23",
-              "closeFen": 6406
-            },
-            {
-              "date": "2026-09-24",
-              "closeFen": 6207
-            },
-            {
-              "date": "2026-09-28",
-              "closeFen": 5981
-            },
-            {
-              "date": "2026-09-29",
-              "closeFen": 6135
-            },
-            {
-              "date": "2026-09-30",
-              "closeFen": 5948
-            },
-            {
-              "date": "2026-10-08",
-              "closeFen": 5782
-            },
-            {
-              "date": "2026-10-09",
-              "closeFen": 5548
-            },
-            {
-              "date": "2026-10-12",
-              "closeFen": 5420
-            },
-            {
-              "date": "2026-10-13",
-              "closeFen": 5386
-            },
-            {
-              "date": "2026-10-14",
-              "closeFen": 5225
-            },
-            {
-              "date": "2026-10-15",
-              "closeFen": 4970
-            },
-            {
-              "date": "2026-10-16",
-              "closeFen": 5013
-            },
-            {
-              "date": "2026-10-19",
-              "closeFen": 5013
-            },
-            {
-              "date": "2026-10-20",
-              "closeFen": 5230
-            },
-            {
-              "date": "2026-10-21",
-              "closeFen": 5097
-            },
-            {
-              "date": "2026-10-22",
-              "closeFen": 4966
-            },
-            {
-              "date": "2026-10-23",
-              "closeFen": 5099
-            }
-          ],
-          "sourceName": "腾讯证券日K",
-          "basis": "recent_20_sessions",
-          "startDate": "2026-09-18",
-          "startPriceFen": 6232,
-          "periodReturn": -0.18180359,
           "entryAssessment": null
         },
         "recentTrendError": null,
@@ -740,7 +716,7 @@
               "closeFen": 7910
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 12050,
@@ -855,7 +831,7 @@
               "closeFen": 2397
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 2270,
@@ -970,7 +946,7 @@
               "closeFen": 1692
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1557,
@@ -1085,7 +1061,7 @@
               "closeFen": 4862
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 6768,
@@ -1200,7 +1176,7 @@
               "closeFen": 2813
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 3222,
@@ -1315,7 +1291,7 @@
               "closeFen": 2084
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 2044,
@@ -1430,7 +1406,7 @@
               "closeFen": 2846
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 3710,
@@ -1545,7 +1521,7 @@
               "closeFen": 1366
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1390,
@@ -1660,7 +1636,7 @@
               "closeFen": 1623
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 2176,
@@ -1775,7 +1751,7 @@
               "closeFen": 1765
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1813,
@@ -1890,7 +1866,7 @@
               "closeFen": 720
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 872,
@@ -2005,7 +1981,7 @@
               "closeFen": 1110
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1375,
@@ -2120,7 +2096,7 @@
               "closeFen": 2447
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 2515,
@@ -2235,7 +2211,7 @@
               "closeFen": 6198
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 8137,
@@ -2350,7 +2326,7 @@
               "closeFen": 1064
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1103,
@@ -2465,7 +2441,7 @@
               "closeFen": 4390
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 4438,
@@ -2580,7 +2556,7 @@
               "closeFen": 2281
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 3141,
@@ -2695,7 +2671,7 @@
               "closeFen": 1129
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-09-18",
           "startPriceFen": 1178,
@@ -3512,6 +3488,50 @@
       }
     ],
     "beforeIssueAnnouncement": [
+      {
+        "stockCode": "301631",
+        "stockName": "壹连科技",
+        "exchange": "SZ",
+        "board": "创业板",
+        "auditId": "1004373",
+        "statusCode": "70",
+        "stageLabel": "注册生效",
+        "stageDate": "2026-10-24",
+        "acceptedDate": "2026-06-09",
+        "proposedScaleYi": 11.8,
+        "registered": true,
+        "paused": false,
+        "terminal": false,
+        "sourceName": "深交所再融资审核项目动态",
+        "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
+        "registrationDisclosure": null,
+        "recentTrend": null,
+        "recentTrendError": "注册生效后有效交易日不足",
+        "entryAssessment": {
+          "windowStatus": "next_session",
+          "entryDate": "2026-10-26",
+          "entryPriceFen": null,
+          "referencePriceFen": 5099,
+          "referencePriceDate": "2026-10-23",
+          "priceBasis": "previous_close_estimate",
+          "factorDate": "2026-10-23",
+          "momentum20": -0.1589971961075375,
+          "volatility20": 0.443444914189736,
+          "marketReturn10": -0.0490868,
+          "status": "skip",
+          "selected": false,
+          "budgetFen": 0,
+          "targetBudgetFen": 250000,
+          "targetShares": 49,
+          "initialShares": 100,
+          "excessShares": 51,
+          "initialCashFen": 509900,
+          "temporaryCashRatio": 2.0396,
+          "reasons": [
+            "弱市且临时占款超过2倍"
+          ]
+        }
+      },
       {
         "stockCode": "605016",
         "stockName": "百龙创园",
@@ -4890,7 +4910,52 @@
       }
     ],
     "reminders": {
-      "buy": [],
+      "buy": [
+        {
+          "stockCode": "301631",
+          "stockName": "壹连科技",
+          "exchange": "SZ",
+          "board": "创业板",
+          "auditId": "1004373",
+          "statusCode": "70",
+          "stageLabel": "注册生效",
+          "stageDate": "2026-10-24",
+          "acceptedDate": "2026-06-09",
+          "proposedScaleYi": 11.8,
+          "registered": true,
+          "paused": false,
+          "terminal": false,
+          "sourceName": "深交所再融资审核项目动态",
+          "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
+          "registrationDisclosure": null,
+          "recentTrend": null,
+          "recentTrendError": "注册生效后有效交易日不足",
+          "entryAssessment": {
+            "windowStatus": "next_session",
+            "entryDate": "2026-10-26",
+            "entryPriceFen": null,
+            "referencePriceFen": 5099,
+            "referencePriceDate": "2026-10-23",
+            "priceBasis": "previous_close_estimate",
+            "factorDate": "2026-10-23",
+            "momentum20": -0.1589971961075375,
+            "volatility20": 0.443444914189736,
+            "marketReturn10": -0.0490868,
+            "status": "skip",
+            "selected": false,
+            "budgetFen": 0,
+            "targetBudgetFen": 250000,
+            "targetShares": 49,
+            "initialShares": 100,
+            "excessShares": 51,
+            "initialCashFen": 509900,
+            "temporaryCashRatio": 2.0396,
+            "reasons": [
+              "弱市且临时占款超过2倍"
+            ]
+          }
+        }
+      ],
       "holding": [
         {
           "stockCode": "605016",

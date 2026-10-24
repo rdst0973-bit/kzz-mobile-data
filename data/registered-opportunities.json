@@ -1,14 +1,58 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-23T22:04:19.659Z",
-    "coverageEnd": "2026-10-24",
-    "sourceAsOfDate": "2026-10-24",
+    "generatedAt": "2026-10-24T22:09:11.617Z",
+    "coverageEnd": "2026-10-25",
+    "sourceAsOfDate": "2026-10-25",
     "source": "ambush.json/livePipeline.beforeIssueAnnouncement minus opportunities.json issued projects",
     "note": "注册已生效、尚待最终发行公告的可转债项目。发行参数补齐后由 opportunities.json 接管展示。"
   },
-  "count": 5,
+  "count": 6,
   "opportunities": [
+    {
+      "stockCode": "301631",
+      "stockName": "壹连科技",
+      "exchange": "SZ",
+      "board": "创业板",
+      "auditId": "1004373",
+      "statusCode": "70",
+      "stageLabel": "注册生效",
+      "stageDate": "2026-10-24",
+      "acceptedDate": "2026-06-09",
+      "proposedScaleYi": 11.8,
+      "registered": true,
+      "paused": false,
+      "terminal": false,
+      "sourceName": "深交所再融资审核项目动态",
+      "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
+      "registrationDisclosure": null,
+      "recentTrend": null,
+      "recentTrendError": "注册生效后有效交易日不足",
+      "entryAssessment": {
+        "windowStatus": "next_session",
+        "entryDate": "2026-10-26",
+        "entryPriceFen": null,
+        "referencePriceFen": 5099,
+        "referencePriceDate": "2026-10-23",
+        "priceBasis": "previous_close_estimate",
+        "factorDate": "2026-10-23",
+        "momentum20": -0.1589971961075375,
+        "volatility20": 0.443444914189736,
+        "marketReturn10": -0.0490868,
+        "status": "skip",
+        "selected": false,
+        "budgetFen": 0,
+        "targetBudgetFen": 250000,
+        "targetShares": 49,
+        "initialShares": 100,
+        "excessShares": 51,
+        "initialCashFen": 509900,
+        "temporaryCashRatio": 2.0396,
+        "reasons": [
+          "弱市且临时占款超过2倍"
+        ]
+      }
+    },
     {
       "stockCode": "605016",
       "stockName": "百龙创园",
