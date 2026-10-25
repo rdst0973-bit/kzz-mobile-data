@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-24T22:06:26.453Z",
+    "generatedAt": "2026-10-25T21:59:06.331Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-10-25",
+    "coverageEnd": "2026-10-26",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -68,22 +68,22 @@
     "cninfoRowsAllYears": 989,
     "eastmoneyRowsAllYears": 1065,
     "migratedAliasesRemoved": 5,
-    "inScopeCandidates": 980,
+    "inScopeCandidates": 981,
     "staticFieldsReady": 975,
-    "staticFieldExclusions": 5,
+    "staticFieldExclusions": 6,
     "attemptedCandidates": 975,
     "stockSeriesAvailable": 975,
     "bondFiveBarsAvailable": 961,
     "validBacktests": 945,
     "marketDataAuditExclusions": 3,
     "coreExclusions": 27,
-    "totalPublishedExclusions": 35
+    "totalPublishedExclusions": 36
   },
   "reasonCounts": {
     "historical_st_limit_ambiguous": 2,
     "incomplete_exit_window": 5,
     "missing_bond_bar": 17,
-    "missing_listing_date": 5,
+    "missing_listing_date": 6,
     "missing_price_limit_reference": 1,
     "stock_buy_limit_up": 5
   },
@@ -932,7 +932,7 @@
     {
       "included": false,
       "bondCode": "113711",
-      "bondName": "N常青转",
+      "bondName": "常青转债",
       "stockCode": "603125",
       "stockName": "常青科技",
       "exchange": "SH",
@@ -2402,6 +2402,43 @@
         "eastmoneyRecordDate": "2026-10-21",
         "cninfoSubscriptionDate": "2026-10-22",
         "eastmoneySubscriptionDate": "2026-10-22"
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "127120",
+      "bondName": "千红转债",
+      "stockCode": "002550",
+      "stockName": "千红制药",
+      "exchange": "SZ",
+      "recordDate": "2026-10-26",
+      "subscriptionDate": "2026-10-27",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127120",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127120.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-10-26",
+        "cninfoRecordDate": "2026-10-26",
+        "eastmoneyRecordDate": "2026-10-26",
+        "cninfoSubscriptionDate": "2026-10-27",
+        "eastmoneySubscriptionDate": "2026-10-27"
       }
     },
     {
