@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-10-26T22:05:14.528Z",
-    "coverageEnd": "2026-10-27",
+    "generatedAt": "2026-10-27T22:04:35.976Z",
+    "coverageEnd": "2026-10-28",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
     "decisionRule": "T-1开盘前锁定是否参与；只使用T-2收盘及更早的公开数据，锁定后不因T-1盘中行情回改。",
@@ -10,13 +10,14 @@
     "note": "机会层不进入历史收益汇总。T-1当天盘前给出并锁定抢权决定，T-1尾盘执行；登记日已过的记录仅供已登记或已获配账户跟踪。"
   },
   "counts": {
-    "total": 10,
+    "total": 9,
     "actionable": 1,
-    "tracking": 9,
+    "tracking": 8,
     "byPhase": {
-      "upcoming_record_date": 1,
-      "awaiting_listing_date": 6,
-      "listed_awaiting_d5": 3
+      "record_date_today": 1,
+      "listing_scheduled": 1,
+      "awaiting_listing_date": 5,
+      "listed_awaiting_d5": 2
     }
   },
   "opportunities": [
@@ -28,7 +29,7 @@
       "exchange": "SZ",
       "stockBoard": "CHINEXT",
       "entryYear": 2026,
-      "phase": "upcoming_record_date",
+      "phase": "record_date_today",
       "actionability": "can_evaluate",
       "recordDate": "2026-10-28",
       "subscriptionDate": "2026-10-29",
@@ -36,7 +37,7 @@
       "decisionDeadline": "2026-10-28",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-27",
-      "daysToRecordDate": 1,
+      "daysToRecordDate": 0,
       "allocationPerShareRaw": "1.9704",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -46,12 +47,12 @@
       "issueScaleYi": 13.709297,
       "initialTransferPriceRaw": "13.13",
       "rating": "AA",
-      "referencePriceDate": "2026-10-26",
-      "referenceStockPriceFen": 1317,
-      "estimatedStockCashFen": 790200,
-      "priceIsFinal": false,
-      "factorAsOfDate": "2026-10-26",
-      "backtestDisposition": "outside_current_coverage",
+      "referencePriceDate": "2026-10-27",
+      "referenceStockPriceFen": 1287,
+      "estimatedStockCashFen": 772200,
+      "priceIsFinal": true,
+      "factorAsOfDate": "2026-10-27",
+      "backtestDisposition": "missing_listing_date",
       "observedBondSessions": 0,
       "latestBondDate": null,
       "latestBondCloseMilliYuan": null,
@@ -65,7 +66,7 @@
       "sourceAudit": {
         "staticFields": {
           "sourcePresence": {
-            "cninfo": false,
+            "cninfo": true,
             "eastmoney": true
           },
           "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
@@ -76,22 +77,22 @@
             "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123291.html"
           },
           "fieldSources": {
-            "bondIdentity": "eastmoney_crosscheck",
+            "bondIdentity": "official_cninfo_topic",
             "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "announcement_text_resolved_source_conflict",
-            "subscriptionDate": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
             "listingDate": "eastmoney_crosscheck",
             "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
           },
           "announcementRecordDate": "2026-10-28",
-          "cninfoRecordDate": null,
+          "cninfoRecordDate": "2026-10-28",
           "eastmoneyRecordDate": "2026-10-28",
-          "cninfoSubscriptionDate": null,
+          "cninfoSubscriptionDate": "2026-10-29",
           "eastmoneySubscriptionDate": "2026-10-29"
         },
         "stockDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 13,
+          "barCount": 14,
           "filledDates": [
             "2026-10-08",
             "2026-10-09",
@@ -105,18 +106,125 @@
             "2026-10-21",
             "2026-10-22",
             "2026-10-23",
-            "2026-10-26"
+            "2026-10-26",
+            "2026-10-27"
           ],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
             "comparedDates": 0,
             "differences": []
           },
-          "referenceCutoff": "2026-10-26"
+          "referenceCutoff": "2026-10-27"
         },
         "bondDaily": null,
         "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-300181-2026-10-02-2026-10-26: fetch failed"
+          "stock/eastmoney: eastmoney-stock-SZ-300181-2026-10-03-2026-10-27: fetch failed"
+        ]
+      }
+    },
+    {
+      "bondCode": "123289",
+      "bondName": "中科转债",
+      "stockCode": "301175",
+      "stockName": "中科环保",
+      "exchange": "SZ",
+      "stockBoard": "CHINEXT",
+      "entryYear": 2026,
+      "phase": "listing_scheduled",
+      "actionability": "track_only",
+      "recordDate": "2026-10-15",
+      "subscriptionDate": "2026-10-16",
+      "listingDate": "2026-11-02",
+      "decisionDeadline": "2026-10-15",
+      "decisionTiming": "T-1_open",
+      "decisionFactorCutoffDate": "2026-10-14",
+      "daysToRecordDate": -13,
+      "allocationPerShareRaw": "0.6794",
+      "issuePriceFen": 10000,
+      "targetFaceFen": 100000,
+      "shares": 1500,
+      "entitlementFaceFen": 101910,
+      "conditionalAllotment": false,
+      "issueScaleYi": 10,
+      "initialTransferPriceRaw": "5.65",
+      "rating": "AA+",
+      "referencePriceDate": "2026-10-14",
+      "referenceStockPriceFen": 547,
+      "estimatedStockCashFen": 820500,
+      "priceIsFinal": true,
+      "factorAsOfDate": "2026-10-14",
+      "backtestDisposition": "incomplete_exit_window",
+      "observedBondSessions": 0,
+      "latestBondDate": null,
+      "latestBondCloseMilliYuan": null,
+      "runningHighMilliYuan": null,
+      "currentDrawdown": null,
+      "drawdownTriggerPriceMilliYuan": null,
+      "firstLimitDate": null,
+      "openConfirmDate": null,
+      "drawdownTriggerDate": null,
+      "strategyBState": "not_listed",
+      "sourceAudit": {
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123289",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123289.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2026-10-15",
+          "cninfoRecordDate": "2026-10-15",
+          "eastmoneyRecordDate": "2026-10-15",
+          "cninfoSubscriptionDate": "2026-10-16",
+          "eastmoneySubscriptionDate": "2026-10-16",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2026-10-15",
+              "2026-10-16"
+            ],
+            "overlap": []
+          }
+        },
+        "stockDaily": {
+          "adoptedSource": "eastmoney+tencent-fill",
+          "barCount": 12,
+          "filledDates": [
+            "2026-10-14"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "referenceCutoff": "2026-10-14"
+        },
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          }
+        },
+        "fetchErrors": [
+          "stock/eastmoney: eastmoney-stock-SZ-301175-2026-10-05-2026-10-23: fetch failed",
+          "bond/eastmoney: eastmoney-bond-SZ-123289-2026-11-02-2026-12-07: fetch failed"
         ]
       }
     },
@@ -136,7 +244,7 @@
       "decisionDeadline": "2026-10-26",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-23",
-      "daysToRecordDate": -1,
+      "daysToRecordDate": -2,
       "allocationPerShareRaw": "0.7925",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -237,7 +345,7 @@
       "decisionDeadline": "2026-10-21",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-20",
-      "daysToRecordDate": -6,
+      "daysToRecordDate": -7,
       "allocationPerShareRaw": "1.4584",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -336,7 +444,7 @@
       "decisionDeadline": "2026-10-20",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-19",
-      "daysToRecordDate": -7,
+      "daysToRecordDate": -8,
       "allocationPerShareRaw": "2.308",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -434,7 +542,7 @@
       "decisionDeadline": "2026-10-19",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-16",
-      "daysToRecordDate": -8,
+      "daysToRecordDate": -9,
       "allocationPerShareRaw": "2.6717",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -519,92 +627,6 @@
       }
     },
     {
-      "bondCode": "123289",
-      "bondName": "中科转债",
-      "stockCode": "301175",
-      "stockName": "中科环保",
-      "exchange": "SZ",
-      "stockBoard": "CHINEXT",
-      "entryYear": 2026,
-      "phase": "awaiting_listing_date",
-      "actionability": "track_only",
-      "recordDate": "2026-10-15",
-      "subscriptionDate": "2026-10-16",
-      "listingDate": null,
-      "decisionDeadline": "2026-10-15",
-      "decisionTiming": "T-1_open",
-      "decisionFactorCutoffDate": "2026-10-14",
-      "daysToRecordDate": -12,
-      "allocationPerShareRaw": "0.6794",
-      "issuePriceFen": 10000,
-      "targetFaceFen": 100000,
-      "shares": 1500,
-      "entitlementFaceFen": 101910,
-      "conditionalAllotment": false,
-      "issueScaleYi": 10,
-      "initialTransferPriceRaw": "5.65",
-      "rating": "AA+",
-      "referencePriceDate": "2026-10-14",
-      "referenceStockPriceFen": 547,
-      "estimatedStockCashFen": 820500,
-      "priceIsFinal": true,
-      "factorAsOfDate": "2026-10-14",
-      "backtestDisposition": "missing_listing_date",
-      "observedBondSessions": 0,
-      "latestBondDate": null,
-      "latestBondCloseMilliYuan": null,
-      "runningHighMilliYuan": null,
-      "currentDrawdown": null,
-      "drawdownTriggerPriceMilliYuan": null,
-      "firstLimitDate": null,
-      "openConfirmDate": null,
-      "drawdownTriggerDate": null,
-      "strategyBState": "not_listed",
-      "sourceAudit": {
-        "staticFields": {
-          "sourcePresence": {
-            "cninfo": true,
-            "eastmoney": true
-          },
-          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-          "pdfVerified": false,
-          "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123289",
-            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123289.html"
-          },
-          "fieldSources": {
-            "bondIdentity": "official_cninfo_topic",
-            "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-            "subscriptionDate": "official_cninfo_topic:F004D",
-            "listingDate": "eastmoney_crosscheck",
-            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-          },
-          "announcementRecordDate": "2026-10-15",
-          "cninfoRecordDate": "2026-10-15",
-          "eastmoneyRecordDate": "2026-10-15",
-          "cninfoSubscriptionDate": "2026-10-16",
-          "eastmoneySubscriptionDate": "2026-10-16"
-        },
-        "stockDaily": {
-          "adoptedSource": "eastmoney+tencent-fill",
-          "barCount": 12,
-          "filledDates": [
-            "2026-10-14"
-          ],
-          "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
-            "differences": []
-          },
-          "referenceCutoff": "2026-10-14"
-        },
-        "bondDaily": null,
-        "fetchErrors": []
-      }
-    },
-    {
       "bondCode": "127118",
       "bondName": "华纬转债",
       "stockCode": "001380",
@@ -620,7 +642,7 @@
       "decisionDeadline": "2026-10-14",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-13",
-      "daysToRecordDate": -13,
+      "daysToRecordDate": -14,
       "allocationPerShareRaw": "2.1326",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -706,7 +728,7 @@
       "decisionDeadline": "2026-09-28",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-24",
-      "daysToRecordDate": -29,
+      "daysToRecordDate": -30,
       "allocationPerShareRaw": "1.313",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -722,16 +744,16 @@
       "priceIsFinal": true,
       "factorAsOfDate": "2026-09-24",
       "backtestDisposition": "incomplete_exit_window",
-      "observedBondSessions": 0,
-      "latestBondDate": null,
-      "latestBondCloseMilliYuan": null,
+      "observedBondSessions": 1,
+      "latestBondDate": "2026-10-27",
+      "latestBondCloseMilliYuan": 139945,
       "runningHighMilliYuan": null,
       "currentDrawdown": null,
       "drawdownTriggerPriceMilliYuan": null,
       "firstLimitDate": null,
       "openConfirmDate": null,
       "drawdownTriggerDate": null,
-      "strategyBState": "awaiting_first_bar",
+      "strategyBState": "no_limit_seen",
       "sourceAudit": {
         "staticFields": {
           "sourcePresence": {
@@ -784,8 +806,8 @@
           "referenceCutoff": "2026-09-24"
         },
         "bondDaily": {
-          "adoptedSource": null,
-          "barCount": 0,
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 1,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -816,7 +838,7 @@
       "decisionDeadline": "2026-09-24",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-09-23",
-      "daysToRecordDate": -33,
+      "daysToRecordDate": -34,
       "allocationPerShareRaw": "1.976",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -832,9 +854,9 @@
       "priceIsFinal": true,
       "factorAsOfDate": "2026-09-23",
       "backtestDisposition": "incomplete_exit_window",
-      "observedBondSessions": 2,
-      "latestBondDate": "2026-10-26",
-      "latestBondCloseMilliYuan": 139751,
+      "observedBondSessions": 3,
+      "latestBondDate": "2026-10-27",
+      "latestBondCloseMilliYuan": 138515,
       "runningHighMilliYuan": null,
       "currentDrawdown": null,
       "drawdownTriggerPriceMilliYuan": null,
@@ -901,7 +923,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 2,
+          "barCount": 3,
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
@@ -911,111 +933,6 @@
         },
         "fetchErrors": [
           "stock/eastmoney: eastmoney-stock-SH-603125-2026-08-30-2026-09-23: fetch failed"
-        ]
-      }
-    },
-    {
-      "bondCode": "123287",
-      "bondName": "满坤转债",
-      "stockCode": "301132",
-      "stockName": "满坤科技",
-      "exchange": "SZ",
-      "stockBoard": "CHINEXT",
-      "entryYear": 2026,
-      "phase": "listed_awaiting_d5",
-      "actionability": "track_only",
-      "recordDate": "2026-09-24",
-      "subscriptionDate": "2026-09-28",
-      "listingDate": "2026-10-21",
-      "decisionDeadline": "2026-09-24",
-      "decisionTiming": "T-1_open",
-      "decisionFactorCutoffDate": "2026-09-23",
-      "daysToRecordDate": -33,
-      "allocationPerShareRaw": "5.1521",
-      "issuePriceFen": 10000,
-      "targetFaceFen": 100000,
-      "shares": 200,
-      "entitlementFaceFen": 103042,
-      "conditionalAllotment": false,
-      "issueScaleYi": 7.6,
-      "initialTransferPriceRaw": "66.97",
-      "rating": "AA-",
-      "referencePriceDate": "2026-09-23",
-      "referenceStockPriceFen": 7456,
-      "estimatedStockCashFen": 1491200,
-      "priceIsFinal": true,
-      "factorAsOfDate": "2026-09-23",
-      "backtestDisposition": "incomplete_exit_window",
-      "observedBondSessions": 4,
-      "latestBondDate": "2026-10-26",
-      "latestBondCloseMilliYuan": 146980,
-      "runningHighMilliYuan": null,
-      "currentDrawdown": null,
-      "drawdownTriggerPriceMilliYuan": null,
-      "firstLimitDate": null,
-      "openConfirmDate": null,
-      "drawdownTriggerDate": null,
-      "strategyBState": "no_limit_seen",
-      "sourceAudit": {
-        "staticFields": {
-          "sourcePresence": {
-            "cninfo": true,
-            "eastmoney": true
-          },
-          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-          "pdfVerified": false,
-          "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123287",
-            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123287.html"
-          },
-          "fieldSources": {
-            "bondIdentity": "official_cninfo_topic",
-            "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-            "subscriptionDate": "official_cninfo_topic:F004D",
-            "listingDate": "eastmoney_crosscheck",
-            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-          },
-          "announcementRecordDate": "2026-09-24",
-          "cninfoRecordDate": "2026-09-24",
-          "eastmoneyRecordDate": "2026-09-24",
-          "cninfoSubscriptionDate": "2026-09-28",
-          "eastmoneySubscriptionDate": "2026-09-28",
-          "corporateActionCheck": {
-            "source": "eastmoney-RPT_SHAREBONUS_DET",
-            "checkedDates": [
-              "2026-09-24",
-              "2026-09-28"
-            ],
-            "overlap": []
-          }
-        },
-        "stockDaily": {
-          "adoptedSource": "eastmoney-push2his-kline",
-          "barCount": 19,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 1,
-            "differences": []
-          },
-          "referenceCutoff": "2026-09-23"
-        },
-        "bondDaily": {
-          "adoptedSource": "tencent-fqkline",
-          "barCount": 4,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
-            "differences": []
-          }
-        },
-        "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-301132-2026-08-30-2026-09-23: fetch failed",
-          "stock/eastmoney: eastmoney-stock-SZ-301132-2026-09-14-2026-10-05: fetch failed",
-          "bond/eastmoney: eastmoney-bond-SZ-123287-2026-10-21-2026-11-25: fetch failed"
         ]
       }
     }
