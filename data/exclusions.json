@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-01T21:58:28.485Z",
+    "generatedAt": "2026-11-02T21:58:42.210Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-11-02",
+    "coverageEnd": "2026-11-03",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -73,15 +73,15 @@
     "staticFieldExclusions": 4,
     "attemptedCandidates": 978,
     "stockSeriesAvailable": 978,
-    "bondFiveBarsAvailable": 964,
-    "validBacktests": 948,
+    "bondFiveBarsAvailable": 965,
+    "validBacktests": 949,
     "marketDataAuditExclusions": 3,
-    "coreExclusions": 27,
-    "totalPublishedExclusions": 34
+    "coreExclusions": 26,
+    "totalPublishedExclusions": 33
   },
   "reasonCounts": {
     "historical_st_limit_ambiguous": 2,
-    "incomplete_exit_window": 5,
+    "incomplete_exit_window": 4,
     "missing_bond_bar": 17,
     "missing_listing_date": 4,
     "missing_price_limit_reference": 1,
@@ -931,83 +931,6 @@
     },
     {
       "included": false,
-      "bondCode": "118077",
-      "bondName": "莱特转债",
-      "stockCode": "688150",
-      "stockName": "莱特光电",
-      "exchange": "SH",
-      "recordDate": "2026-09-28",
-      "subscriptionDate": "2026-09-29",
-      "listingDate": "2026-10-27",
-      "entryYear": 2026,
-      "reason": "incomplete_exit_window",
-      "detail": null,
-      "stage": "BACKTEST_CORE",
-      "sourceAudit": {
-        "staticFields": {
-          "sourcePresence": {
-            "cninfo": true,
-            "eastmoney": true
-          },
-          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-          "pdfVerified": false,
-          "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=118077",
-            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/118077.html"
-          },
-          "fieldSources": {
-            "bondIdentity": "official_cninfo_topic",
-            "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-            "subscriptionDate": "official_cninfo_topic:F004D",
-            "listingDate": "eastmoney_crosscheck",
-            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-          },
-          "announcementRecordDate": "2026-09-28",
-          "cninfoRecordDate": "2026-09-28",
-          "eastmoneyRecordDate": "2026-09-28",
-          "cninfoSubscriptionDate": "2026-09-29",
-          "eastmoneySubscriptionDate": "2026-09-29",
-          "corporateActionCheck": {
-            "source": "eastmoney-RPT_SHAREBONUS_DET",
-            "checkedDates": [
-              "2026-09-28",
-              "2026-09-29"
-            ],
-            "overlap": []
-          }
-        },
-        "stockDaily": {
-          "adoptedSource": "eastmoney-push2his-kline",
-          "barCount": 8,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 2,
-            "differences": []
-          },
-          "priceLimitAudit": {
-            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
-            "limitations": []
-          }
-        },
-        "bondDaily": {
-          "adoptedSource": "tencent-fqkline",
-          "barCount": 4,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 3,
-            "differences": []
-          },
-          "secondarySkippedReason": null
-        },
-        "fetchErrors": []
-      }
-    },
-    {
-      "included": false,
       "bondCode": "118078",
       "bondName": "航亚转债",
       "stockCode": "688510",
@@ -1774,8 +1697,8 @@
           }
         },
         "bondDaily": {
-          "adoptedSource": null,
-          "barCount": 0,
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 1,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
