@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-02T21:58:42.210Z",
+    "generatedAt": "2026-11-03T21:57:25.514Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-11-03",
+    "coverageEnd": "2026-11-04",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -1698,7 +1698,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 1,
+          "barCount": 2,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -2204,8 +2204,8 @@
           }
         },
         "bondDaily": {
-          "adoptedSource": null,
-          "barCount": 0,
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 1,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
