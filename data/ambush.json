@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-11-06T23:13:36.015Z",
+    "generatedAt": "2026-11-07T22:09:35.745Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-11-07",
+    "coverageEnd": "2026-11-08",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -13,7 +13,80 @@
     "participationRule": "所有具有完整买卖节点和可验证成交窗口的候选等额参与，不做因子筛选",
     "grossOnly": true,
     "dailyApproximation": true,
-    "staleCacheFallbacks": [],
+    "staleCacheFallbacks": [
+      {
+        "key": "index-tencent-csi300-2026-20261108",
+        "fallbackKey": "index-eastmoney-csi300-2026-20261108",
+        "fetchedAt": "2026-11-07T22:08:28.391Z",
+        "error": "index-tencent-csi300-2026-20261108: HTTP 501"
+      },
+      {
+        "key": "live-stock-300893-2026-11-08",
+        "fallbackKey": "stock-tencent-SZ-300893-2026-09-13-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.858Z",
+        "error": "stock-tencent-SZ-300893-2026-09-14-2026-11-08-qfq: HTTP 501；stock-eastmoney-SZ-300893-2026-09-14-2026-11-08-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-001221-2026-11-08",
+        "fallbackKey": "stock-tencent-SZ-001221-2026-09-13-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.864Z",
+        "error": "stock-tencent-SZ-001221-2026-09-14-2026-11-08-raw: HTTP 501；stock-eastmoney-SZ-001221-2026-09-14-2026-11-08-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-300389-2026-11-08",
+        "fallbackKey": "stock-tencent-SZ-300389-2026-09-13-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.877Z",
+        "error": "stock-tencent-SZ-300389-2026-09-14-2026-11-08-qfq: HTTP 501；stock-eastmoney-SZ-300389-2026-09-14-2026-11-08-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-301305-2026-11-08",
+        "fallbackKey": "stock-tencent-SZ-301305-2026-09-13-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.906Z",
+        "error": "stock-tencent-SZ-301305-2026-09-14-2026-11-08-raw: HTTP 501；stock-eastmoney-SZ-301305-2026-09-14-2026-11-08-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603043-2026-11-08",
+        "fallbackKey": "stock-tencent-SH-603043-2026-06-28-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.914Z",
+        "error": "stock-tencent-SH-603043-2026-06-28-2026-11-08-raw: HTTP 501；stock-eastmoney-SH-603043-2026-06-28-2026-11-08-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-603061-2026-11-08",
+        "fallbackKey": "stock-tencent-SH-603061-2026-06-28-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.920Z",
+        "error": "stock-tencent-SH-603061-2026-06-28-2026-11-08-raw: HTTP 501；stock-eastmoney-SH-603061-2026-06-28-2026-11-08-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-301631-2026-11-08",
+        "fallbackKey": "stock-tencent-SZ-301631-2026-06-16-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.952Z",
+        "error": "stock-tencent-SZ-301631-2026-06-16-2026-11-08-qfq: HTTP 501；stock-eastmoney-SZ-301631-2026-06-16-2026-11-08-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-605016-2026-11-08",
+        "fallbackKey": "stock-tencent-SH-605016-2026-06-04-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.960Z",
+        "error": "stock-tencent-SH-605016-2026-06-04-2026-11-08-qfq: HTTP 501；stock-eastmoney-SH-605016-2026-06-04-2026-11-08-raw: fetch failed"
+      },
+      {
+        "key": "live-stock-600368-2026-11-08",
+        "fallbackKey": "stock-tencent-SH-600368-2026-04-12-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.979Z",
+        "error": "stock-tencent-SH-600368-2026-04-12-2026-11-08-raw: HTTP 501；stock-eastmoney-SH-600368-2026-04-12-2026-11-08-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-603163-2026-11-08",
+        "fallbackKey": "stock-tencent-SH-603163-2026-04-03-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:35.974Z",
+        "error": "stock-tencent-SH-603163-2026-04-03-2026-11-08-qfq: HTTP 501；stock-eastmoney-SH-603163-2026-04-03-2026-11-08-qfq: fetch failed"
+      },
+      {
+        "key": "live-stock-300909-2026-11-08",
+        "fallbackKey": "stock-tencent-SZ-300909-2026-03-30-2026-11-07-raw.json",
+        "fetchedAt": "2026-11-06T23:13:36.006Z",
+        "error": "stock-tencent-SZ-300909-2026-03-30-2026-11-08-qfq: HTTP 501；stock-eastmoney-SZ-300909-2026-03-30-2026-11-08-qfq: fetch failed"
+      }
+    ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
     "benchmark": "沪深300",
     "validationStartYear": 2024,
@@ -271,8 +344,8 @@
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-11-07",
-    "sourceAsOfDate": "2026-11-07",
+    "asOfDate": "2026-11-08",
+    "sourceAsOfDate": "2026-11-08",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
@@ -395,7 +468,7 @@
               "closeFen": 2046
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 2514,
@@ -510,7 +583,7 @@
               "closeFen": 7163
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 8880,
@@ -625,7 +698,7 @@
               "closeFen": 1520
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1392,
@@ -740,7 +813,7 @@
               "closeFen": 1262
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1172,
@@ -855,7 +928,7 @@
               "closeFen": 1496
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1758,
@@ -970,7 +1043,7 @@
               "closeFen": 1611
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1600,
@@ -1085,7 +1158,7 @@
               "closeFen": 4499
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 5533,
@@ -1200,7 +1273,7 @@
               "closeFen": 2585
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 3110,
@@ -1315,7 +1388,7 @@
               "closeFen": 1892
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1790,
@@ -1430,7 +1503,7 @@
               "closeFen": 715
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 841,
@@ -1545,7 +1618,7 @@
               "closeFen": 2831
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 2916,
@@ -1660,7 +1733,7 @@
               "closeFen": 4334
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 4484,
@@ -1775,7 +1848,7 @@
               "closeFen": 2499
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 2738,
@@ -1890,7 +1963,7 @@
               "closeFen": 1057
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1202,
@@ -2005,7 +2078,7 @@
               "closeFen": 8481
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 13995,
@@ -2120,7 +2193,7 @@
               "closeFen": 2427
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 2525,
@@ -2235,7 +2308,7 @@
               "closeFen": 5397
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 6535,
@@ -2350,7 +2423,7 @@
               "closeFen": 1030
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 1011,
@@ -2465,7 +2538,7 @@
               "closeFen": 4079
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 4042,
@@ -2580,7 +2653,7 @@
               "closeFen": 2194
             }
           ],
-          "sourceName": "腾讯证券日K",
+          "sourceName": "东方财富日K（备用）",
           "basis": "recent_20_sessions",
           "startDate": "2026-10-12",
           "startPriceFen": 2386,
