@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-07T22:07:05.042Z",
+    "generatedAt": "2026-11-08T22:02:38.001Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-11-08",
+    "coverageEnd": "2026-11-09",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -65,9 +65,9 @@
   },
   "meta": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-07T22:07:05.042Z",
+    "generatedAt": "2026-11-08T22:02:38.001Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-11-08",
+    "coverageEnd": "2026-11-09",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -135547,7 +135547,7 @@
           "filledDates": [],
           "crossCheck": {
             "status": "MATCH",
-            "comparedDates": 3,
+            "comparedDates": 5,
             "differences": []
           },
           "secondarySkippedReason": null
