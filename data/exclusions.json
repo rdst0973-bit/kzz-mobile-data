@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-08T22:02:38.001Z",
+    "generatedAt": "2026-11-10T22:04:38.093Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-11-09",
+    "coverageEnd": "2026-11-11",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -69,21 +69,21 @@
     "eastmoneyRowsAllYears": 1066,
     "migratedAliasesRemoved": 5,
     "inScopeCandidates": 982,
-    "staticFieldsReady": 978,
-    "staticFieldExclusions": 4,
-    "attemptedCandidates": 978,
-    "stockSeriesAvailable": 978,
-    "bondFiveBarsAvailable": 966,
-    "validBacktests": 950,
-    "marketDataAuditExclusions": 3,
-    "coreExclusions": 25,
-    "totalPublishedExclusions": 32
+    "staticFieldsReady": 981,
+    "staticFieldExclusions": 1,
+    "attemptedCandidates": 981,
+    "stockSeriesAvailable": 981,
+    "bondFiveBarsAvailable": 967,
+    "validBacktests": 951,
+    "marketDataAuditExclusions": 4,
+    "coreExclusions": 26,
+    "totalPublishedExclusions": 31
   },
   "reasonCounts": {
-    "historical_st_limit_ambiguous": 2,
-    "incomplete_exit_window": 3,
+    "historical_st_limit_ambiguous": 3,
+    "incomplete_exit_window": 4,
     "missing_bond_bar": 17,
-    "missing_listing_date": 4,
+    "missing_listing_date": 1,
     "missing_price_limit_reference": 1,
     "stock_buy_limit_up": 5
   },
@@ -1670,26 +1670,12 @@
           }
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 13,
-          "filledDates": [
-            "2026-10-09",
-            "2026-10-12",
-            "2026-10-13",
-            "2026-10-14",
-            "2026-10-15",
-            "2026-10-16",
-            "2026-10-19",
-            "2026-10-20",
-            "2026-10-21",
-            "2026-10-22",
-            "2026-10-23",
-            "2026-10-26",
-            "2026-10-27"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 2,
             "differences": []
           },
           "priceLimitAudit": {
@@ -1699,19 +1685,16 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 1,
+          "barCount": 3,
           "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 3,
             "differences": []
           },
           "secondarySkippedReason": null
         },
-        "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-301018-2026-10-09-2026-10-27: fetch failed",
-          "bond/eastmoney: eastmoney-bond-SZ-123290-2026-11-06-2026-12-11: fetch failed"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -1723,32 +1706,72 @@
       "exchange": "SZ",
       "recordDate": "2026-10-28",
       "subscriptionDate": "2026-10-29",
-      "listingDate": null,
+      "listingDate": "2026-11-13",
       "entryYear": 2026,
-      "reason": "missing_listing_date",
+      "reason": "incomplete_exit_window",
       "detail": null,
-      "stage": "STATIC_FIELDS",
+      "stage": "BACKTEST_CORE",
       "sourceAudit": {
-        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-        "pdfVerified": false,
-        "sourceLinks": {
-          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123291",
-          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123291.html"
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123291",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123291.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2026-10-28",
+          "cninfoRecordDate": "2026-10-28",
+          "eastmoneyRecordDate": "2026-10-28",
+          "cninfoSubscriptionDate": "2026-10-29",
+          "eastmoneySubscriptionDate": "2026-10-29",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2026-10-28",
+              "2026-10-29"
+            ],
+            "overlap": []
+          }
         },
-        "fieldSources": {
-          "bondIdentity": "official_cninfo_topic",
-          "stockIdentity": "eastmoney_crosscheck",
-          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-          "subscriptionDate": "official_cninfo_topic:F004D",
-          "listingDate": "eastmoney_crosscheck",
-          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        "stockDaily": {
+          "adoptedSource": "eastmoney-push2his-kline",
+          "barCount": 14,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "MATCH",
+            "comparedDates": 2,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
         },
-        "announcementRecordDate": "2026-10-28",
-        "cninfoRecordDate": "2026-10-28",
-        "eastmoneyRecordDate": "2026-10-28",
-        "cninfoSubscriptionDate": "2026-10-29",
-        "eastmoneySubscriptionDate": "2026-10-29"
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": []
       }
     },
     {
@@ -2037,14 +2060,14 @@
     },
     {
       "included": false,
-      "bondCode": "127118",
-      "bondName": "华纬转债",
-      "stockCode": "001380",
-      "stockName": "华纬科技",
+      "bondCode": "127119",
+      "bondName": "中鼎转03",
+      "stockCode": "000887",
+      "stockName": "中鼎股份",
       "exchange": "SZ",
-      "recordDate": "2026-10-14",
-      "subscriptionDate": "2026-10-15",
-      "listingDate": "2026-11-03",
+      "recordDate": "2026-10-21",
+      "subscriptionDate": "2026-10-22",
+      "listingDate": "2026-11-12",
       "entryYear": 2026,
       "reason": "incomplete_exit_window",
       "detail": null,
@@ -2058,9 +2081,9 @@
           "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
           "pdfVerified": false,
           "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127118",
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127119",
             "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127118.html"
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127119.html"
           },
           "fieldSources": {
             "bondIdentity": "official_cninfo_topic",
@@ -2070,39 +2093,27 @@
             "listingDate": "eastmoney_crosscheck",
             "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
           },
-          "announcementRecordDate": "2026-10-14",
-          "cninfoRecordDate": "2026-10-14",
-          "eastmoneyRecordDate": "2026-10-14",
-          "cninfoSubscriptionDate": "2026-10-15",
-          "eastmoneySubscriptionDate": "2026-10-15",
+          "announcementRecordDate": "2026-10-21",
+          "cninfoRecordDate": "2026-10-21",
+          "eastmoneyRecordDate": "2026-10-21",
+          "cninfoSubscriptionDate": "2026-10-22",
+          "eastmoneySubscriptionDate": "2026-10-22",
           "corporateActionCheck": {
             "source": "eastmoney-RPT_SHAREBONUS_DET",
             "checkedDates": [
-              "2026-10-14",
-              "2026-10-15"
+              "2026-10-21",
+              "2026-10-22"
             ],
             "overlap": []
           }
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
-          "barCount": 11,
-          "filledDates": [
-            "2026-10-08",
-            "2026-10-09",
-            "2026-10-12",
-            "2026-10-13",
-            "2026-10-14",
-            "2026-10-15",
-            "2026-10-16",
-            "2026-10-19",
-            "2026-10-20",
-            "2026-10-21",
-            "2026-10-22"
-          ],
+          "adoptedSource": "eastmoney-push2his-kline",
+          "barCount": 14,
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 2,
             "differences": []
           },
           "priceLimitAudit": {
@@ -2111,8 +2122,8 @@
           }
         },
         "bondDaily": {
-          "adoptedSource": "tencent-fqkline",
-          "barCount": 4,
+          "adoptedSource": null,
+          "barCount": 0,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -2121,47 +2132,7 @@
           },
           "secondarySkippedReason": null
         },
-        "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SZ-001380-2026-10-04-2026-10-22: fetch failed",
-          "bond/eastmoney: eastmoney-bond-SZ-127118-2026-11-03-2026-12-08: fetch failed"
-        ]
-      }
-    },
-    {
-      "included": false,
-      "bondCode": "127119",
-      "bondName": "中鼎转03",
-      "stockCode": "000887",
-      "stockName": "中鼎股份",
-      "exchange": "SZ",
-      "recordDate": "2026-10-21",
-      "subscriptionDate": "2026-10-22",
-      "listingDate": null,
-      "entryYear": 2026,
-      "reason": "missing_listing_date",
-      "detail": null,
-      "stage": "STATIC_FIELDS",
-      "sourceAudit": {
-        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-        "pdfVerified": false,
-        "sourceLinks": {
-          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127119",
-          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127119.html"
-        },
-        "fieldSources": {
-          "bondIdentity": "official_cninfo_topic",
-          "stockIdentity": "eastmoney_crosscheck",
-          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-          "subscriptionDate": "official_cninfo_topic:F004D",
-          "listingDate": "eastmoney_crosscheck",
-          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-        },
-        "announcementRecordDate": "2026-10-21",
-        "cninfoRecordDate": "2026-10-21",
-        "eastmoneyRecordDate": "2026-10-21",
-        "cninfoSubscriptionDate": "2026-10-22",
-        "eastmoneySubscriptionDate": "2026-10-22"
+        "fetchErrors": []
       }
     },
     {
@@ -2171,34 +2142,82 @@
       "stockCode": "002550",
       "stockName": "千红制药",
       "exchange": "SZ",
+      "entryYear": 2026,
       "recordDate": "2026-10-26",
       "subscriptionDate": "2026-10-27",
-      "listingDate": null,
-      "entryYear": 2026,
-      "reason": "missing_listing_date",
-      "detail": null,
-      "stage": "STATIC_FIELDS",
+      "listingDate": "2026-11-13",
+      "reason": "historical_st_limit_ambiguous",
+      "detail": "{\"type\":\"HISTORICAL_ST_LIMIT_AMBIGUOUS\",\"date\":\"2026-10-27\",\"side\":\"SELL_OPEN\",\"executionPrice\":\"5.89\",\"possibleStLimit\":\"5.89\"}",
+      "stage": "MARKET_DATA_AUDIT",
       "sourceAudit": {
-        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-        "pdfVerified": false,
-        "sourceLinks": {
-          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127120",
-          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127120.html"
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=127120",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/127120.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2026-10-26",
+          "cninfoRecordDate": "2026-10-26",
+          "eastmoneyRecordDate": "2026-10-26",
+          "cninfoSubscriptionDate": "2026-10-27",
+          "eastmoneySubscriptionDate": "2026-10-27",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2026-10-26",
+              "2026-10-27"
+            ],
+            "overlap": []
+          }
         },
-        "fieldSources": {
-          "bondIdentity": "official_cninfo_topic",
-          "stockIdentity": "eastmoney_crosscheck",
-          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-          "subscriptionDate": "official_cninfo_topic:F004D",
-          "listingDate": "eastmoney_crosscheck",
-          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        "stockDaily": {
+          "adoptedSource": "eastmoney-push2his-kline",
+          "barCount": 13,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "MATCH",
+            "comparedDates": 2,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": [
+              {
+                "type": "HISTORICAL_ST_LIMIT_AMBIGUOUS",
+                "date": "2026-10-27",
+                "side": "SELL_OPEN",
+                "executionPrice": "5.89",
+                "possibleStLimit": "5.89"
+              }
+            ]
+          }
         },
-        "announcementRecordDate": "2026-10-26",
-        "cninfoRecordDate": "2026-10-26",
-        "eastmoneyRecordDate": "2026-10-26",
-        "cninfoSubscriptionDate": "2026-10-27",
-        "eastmoneySubscriptionDate": "2026-10-27"
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": []
       }
     },
     {

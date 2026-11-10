@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generatedAt": "2026-11-08T22:03:08.639Z",
-    "asOfDate": "2026-11-08",
+    "generatedAt": "2026-11-10T22:05:16.971Z",
+    "asOfDate": "2026-11-10",
     "coverageStart": "2007-07-12",
-    "coverageEnd": "2026-11-06",
+    "coverageEnd": "2026-11-10",
     "version": "rotation-frequency-study-v2",
     "completeSnapshot": true
   },
@@ -23,14 +23,19 @@
   "sample": {
     "listedCandidates": 1032,
     "historiesLoaded": 1032,
-    "historiesFetched": 312,
+    "historiesFetched": 310,
     "historyFailures": [],
     "bondsWithValidRows": 1032,
-    "observedRows": 776262,
+    "observedRows": 776878,
     "formulaMismatchRows": 0,
     "completedPeriods": 220
   },
-  "marketSnapshot": null,
+  "marketSnapshot": {
+    "date": "2026-11-10",
+    "sampleCount": 307,
+    "average": 148.2147491856677,
+    "median": 130.05
+  },
   "summary": {
     "periodCount": 220,
     "cumulativeReturn": 6.591493303392756,
@@ -2026,9 +2031,9 @@
         "entryPrice": 132.411,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 132.1,
-        "currentReturn": -0.0028487474605584646
+        "currentDate": "2026-11-10",
+        "currentPrice": 130.832,
+        "currentReturn": -0.012424991126115004
       },
       {
         "code": "113042",
@@ -2039,9 +2044,9 @@
         "entryPrice": 112.636,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 113.53,
-        "currentReturn": 0.007437071628964176
+        "currentDate": "2026-11-10",
+        "currentPrice": 113.5,
+        "currentReturn": 0.007170726943428407
       },
       {
         "code": "113056",
@@ -2052,9 +2057,9 @@
         "entryPrice": 122.69,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 124.141,
-        "currentReturn": 0.011326554731437122
+        "currentDate": "2026-11-10",
+        "currentPrice": 124.543,
+        "currentReturn": 0.01460310538756232
       },
       {
         "code": "123243",
@@ -2065,9 +2070,9 @@
         "entryPrice": 233.679,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 244.889,
-        "currentReturn": 0.04747179036199228
+        "currentDate": "2026-11-10",
+        "currentPrice": 246.995,
+        "currentReturn": 0.056484153475494236
       },
       {
         "code": "113062",
@@ -2078,9 +2083,9 @@
         "entryPrice": 123.388,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 125.092,
-        "currentReturn": 0.01331009498492558
+        "currentDate": "2026-11-10",
+        "currentPrice": 126.45,
+        "currentReturn": 0.02431602749051759
       },
       {
         "code": "113615",
@@ -2091,9 +2096,9 @@
         "entryPrice": 521.495,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 495.178,
-        "currentReturn": -0.05096452986126426
+        "currentDate": "2026-11-10",
+        "currentPrice": 495.916,
+        "currentReturn": -0.049549367683295154
       },
       {
         "code": "113681",
@@ -2104,9 +2109,9 @@
         "entryPrice": 132.728,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 135.248,
-        "currentReturn": 0.018486197335904897
+        "currentDate": "2026-11-10",
+        "currentPrice": 134.99,
+        "currentReturn": 0.016542372370562386
       },
       {
         "code": "127092",
@@ -2117,9 +2122,9 @@
         "entryPrice": 281.3,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 266.637,
-        "currentReturn": -0.052625844294347746
+        "currentDate": "2026-11-10",
+        "currentPrice": 279.221,
+        "currentReturn": -0.007890686100248845
       },
       {
         "code": "127040",
@@ -2130,9 +2135,9 @@
         "entryPrice": 113.6,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 118.25,
-        "currentReturn": 0.040433098591549255
+        "currentDate": "2026-11-10",
+        "currentPrice": 118.072,
+        "currentReturn": 0.03886619718309875
       },
       {
         "code": "113631",
@@ -2143,9 +2148,9 @@
         "entryPrice": 128.229,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 129.573,
-        "currentReturn": 0.009981248391549513
+        "currentDate": "2026-11-10",
+        "currentPrice": 127.868,
+        "currentReturn": -0.0033152757956469987
       },
       {
         "code": "123107",
@@ -2156,7 +2161,7 @@
         "entryPrice": 110.68,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
+        "currentDate": "2026-11-10",
         "currentPrice": 114.8,
         "currentReturn": 0.03672443079147086
       },
@@ -2169,9 +2174,9 @@
         "entryPrice": 192.8,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 216.832,
-        "currentReturn": 0.12414730290456427
+        "currentDate": "2026-11-10",
+        "currentPrice": 210.3,
+        "currentReturn": 0.09026763485477168
       },
       {
         "code": "127061",
@@ -2182,9 +2187,9 @@
         "entryPrice": 102.08,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 97.5,
-        "currentReturn": -0.045366771159874586
+        "currentDate": "2026-11-10",
+        "currentPrice": 98.008,
+        "currentReturn": -0.04039028213166146
       },
       {
         "code": "113052",
@@ -2195,9 +2200,9 @@
         "entryPrice": 111.832,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 113.104,
-        "currentReturn": 0.010874204163387968
+        "currentDate": "2026-11-10",
+        "currentPrice": 112.889,
+        "currentReturn": 0.008951677516274514
       },
       {
         "code": "123247",
@@ -2208,9 +2213,9 @@
         "entryPrice": 168.698,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 177,
-        "currentReturn": 0.04871220168585272
+        "currentDate": "2026-11-10",
+        "currentPrice": 183.99,
+        "currentReturn": 0.09014719202361626
       },
       {
         "code": "113058",
@@ -2221,9 +2226,9 @@
         "entryPrice": 120.877,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 122.912,
-        "currentReturn": 0.016335295382910064
+        "currentDate": "2026-11-10",
+        "currentPrice": 123.071,
+        "currentReturn": 0.017650682098331483
       },
       {
         "code": "123255",
@@ -2234,9 +2239,9 @@
         "entryPrice": 224.258,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 249,
-        "currentReturn": 0.10982828260307315
+        "currentDate": "2026-11-10",
+        "currentPrice": 250.45,
+        "currentReturn": 0.11629404971060103
       },
       {
         "code": "111000",
@@ -2247,9 +2252,9 @@
         "entryPrice": 120.422,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 123.675,
-        "currentReturn": 0.02651333643354209
+        "currentDate": "2026-11-10",
+        "currentPrice": 124.603,
+        "currentReturn": 0.034219569513876225
       },
       {
         "code": "123091",
@@ -2260,9 +2265,9 @@
         "entryPrice": 112.846,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 112.94,
-        "currentReturn": 0.00033299363734634645
+        "currentDate": "2026-11-10",
+        "currentPrice": 113.5,
+        "currentReturn": 0.00529550892366587
       },
       {
         "code": "127084",
@@ -2273,9 +2278,9 @@
         "entryPrice": 134.146,
         "entryDate": "2026-11-02",
         "weight": 0.05,
-        "currentDate": "2026-11-06",
-        "currentPrice": 140.842,
-        "currentReturn": 0.04941576342194337
+        "currentDate": "2026-11-10",
+        "currentPrice": 139.849,
+        "currentReturn": 0.04201338094315149
       }
     ]
   },
@@ -6262,9 +6267,9 @@
             "entryPrice": 132.411,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 132.1,
-            "currentReturn": -0.0028487474605584646
+            "currentDate": "2026-11-10",
+            "currentPrice": 130.832,
+            "currentReturn": -0.012424991126115004
           },
           {
             "code": "113042",
@@ -6275,9 +6280,9 @@
             "entryPrice": 112.636,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.53,
-            "currentReturn": 0.007437071628964176
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": 0.007170726943428407
           },
           {
             "code": "113056",
@@ -6288,9 +6293,9 @@
             "entryPrice": 122.69,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 124.141,
-            "currentReturn": 0.011326554731437122
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.543,
+            "currentReturn": 0.01460310538756232
           },
           {
             "code": "123243",
@@ -6301,9 +6306,9 @@
             "entryPrice": 233.679,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 244.889,
-            "currentReturn": 0.04747179036199228
+            "currentDate": "2026-11-10",
+            "currentPrice": 246.995,
+            "currentReturn": 0.056484153475494236
           },
           {
             "code": "113062",
@@ -6314,9 +6319,9 @@
             "entryPrice": 123.388,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 125.092,
-            "currentReturn": 0.01331009498492558
+            "currentDate": "2026-11-10",
+            "currentPrice": 126.45,
+            "currentReturn": 0.02431602749051759
           },
           {
             "code": "113615",
@@ -6327,9 +6332,9 @@
             "entryPrice": 521.495,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 495.178,
-            "currentReturn": -0.05096452986126426
+            "currentDate": "2026-11-10",
+            "currentPrice": 495.916,
+            "currentReturn": -0.049549367683295154
           },
           {
             "code": "113681",
@@ -6340,9 +6345,9 @@
             "entryPrice": 132.728,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 135.248,
-            "currentReturn": 0.018486197335904897
+            "currentDate": "2026-11-10",
+            "currentPrice": 134.99,
+            "currentReturn": 0.016542372370562386
           },
           {
             "code": "127092",
@@ -6353,9 +6358,9 @@
             "entryPrice": 281.3,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 266.637,
-            "currentReturn": -0.052625844294347746
+            "currentDate": "2026-11-10",
+            "currentPrice": 279.221,
+            "currentReturn": -0.007890686100248845
           },
           {
             "code": "127040",
@@ -6366,9 +6371,9 @@
             "entryPrice": 113.6,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.25,
-            "currentReturn": 0.040433098591549255
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.072,
+            "currentReturn": 0.03886619718309875
           },
           {
             "code": "113631",
@@ -6379,9 +6384,9 @@
             "entryPrice": 128.229,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 129.573,
-            "currentReturn": 0.009981248391549513
+            "currentDate": "2026-11-10",
+            "currentPrice": 127.868,
+            "currentReturn": -0.0033152757956469987
           },
           {
             "code": "123107",
@@ -6392,7 +6397,7 @@
             "entryPrice": 110.68,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
+            "currentDate": "2026-11-10",
             "currentPrice": 114.8,
             "currentReturn": 0.03672443079147086
           },
@@ -6405,9 +6410,9 @@
             "entryPrice": 192.8,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 216.832,
-            "currentReturn": 0.12414730290456427
+            "currentDate": "2026-11-10",
+            "currentPrice": 210.3,
+            "currentReturn": 0.09026763485477168
           },
           {
             "code": "127061",
@@ -6418,9 +6423,9 @@
             "entryPrice": 102.08,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 97.5,
-            "currentReturn": -0.045366771159874586
+            "currentDate": "2026-11-10",
+            "currentPrice": 98.008,
+            "currentReturn": -0.04039028213166146
           },
           {
             "code": "113052",
@@ -6431,9 +6436,9 @@
             "entryPrice": 111.832,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.104,
-            "currentReturn": 0.010874204163387968
+            "currentDate": "2026-11-10",
+            "currentPrice": 112.889,
+            "currentReturn": 0.008951677516274514
           },
           {
             "code": "123247",
@@ -6444,9 +6449,9 @@
             "entryPrice": 168.698,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 177,
-            "currentReturn": 0.04871220168585272
+            "currentDate": "2026-11-10",
+            "currentPrice": 183.99,
+            "currentReturn": 0.09014719202361626
           },
           {
             "code": "113058",
@@ -6457,9 +6462,9 @@
             "entryPrice": 120.877,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 122.912,
-            "currentReturn": 0.016335295382910064
+            "currentDate": "2026-11-10",
+            "currentPrice": 123.071,
+            "currentReturn": 0.017650682098331483
           },
           {
             "code": "123255",
@@ -6470,9 +6475,9 @@
             "entryPrice": 224.258,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 249,
-            "currentReturn": 0.10982828260307315
+            "currentDate": "2026-11-10",
+            "currentPrice": 250.45,
+            "currentReturn": 0.11629404971060103
           },
           {
             "code": "111000",
@@ -6483,9 +6488,9 @@
             "entryPrice": 120.422,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 123.675,
-            "currentReturn": 0.02651333643354209
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.603,
+            "currentReturn": 0.034219569513876225
           },
           {
             "code": "123091",
@@ -6496,9 +6501,9 @@
             "entryPrice": 112.846,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 112.94,
-            "currentReturn": 0.00033299363734634645
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": 0.00529550892366587
           },
           {
             "code": "127084",
@@ -6509,9 +6514,9 @@
             "entryPrice": 134.146,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 140.842,
-            "currentReturn": 0.04941576342194337
+            "currentDate": "2026-11-10",
+            "currentPrice": 139.849,
+            "currentReturn": 0.04201338094315149
           }
         ]
       },
@@ -10498,9 +10503,9 @@
             "entryPrice": 112.636,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.53,
-            "currentReturn": 0.007437071628964176
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": 0.007170726943428407
           },
           {
             "code": "127061",
@@ -10511,9 +10516,9 @@
             "entryPrice": 102.08,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 97.5,
-            "currentReturn": -0.045366771159874586
+            "currentDate": "2026-11-10",
+            "currentPrice": 98.008,
+            "currentReturn": -0.04039028213166146
           },
           {
             "code": "123107",
@@ -10524,7 +10529,7 @@
             "entryPrice": 110.68,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
+            "currentDate": "2026-11-10",
             "currentPrice": 114.8,
             "currentReturn": 0.03672443079147086
           },
@@ -10537,9 +10542,9 @@
             "entryPrice": 113.6,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.25,
-            "currentReturn": 0.040433098591549255
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.072,
+            "currentReturn": 0.03886619718309875
           },
           {
             "code": "113043",
@@ -10550,9 +10555,9 @@
             "entryPrice": 106.132,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 106.717,
-            "currentReturn": 0.005012003919647234
+            "currentDate": "2026-11-09",
+            "currentPrice": 106.422,
+            "currentReturn": 0.002232446387517351
           },
           {
             "code": "113056",
@@ -10563,9 +10568,9 @@
             "entryPrice": 122.69,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 124.141,
-            "currentReturn": 0.011326554731437122
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.543,
+            "currentReturn": 0.01460310538756232
           },
           {
             "code": "113052",
@@ -10576,9 +10581,9 @@
             "entryPrice": 111.832,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.104,
-            "currentReturn": 0.010874204163387968
+            "currentDate": "2026-11-10",
+            "currentPrice": 112.889,
+            "currentReturn": 0.008951677516274514
           },
           {
             "code": "118027",
@@ -10589,9 +10594,9 @@
             "entryPrice": 83.445,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 86.551,
-            "currentReturn": 0.03672212235604294
+            "currentDate": "2026-11-10",
+            "currentPrice": 89.463,
+            "currentReturn": 0.07161936005752295
           },
           {
             "code": "110092",
@@ -10602,9 +10607,9 @@
             "entryPrice": 71.097,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 70.688,
-            "currentReturn": -0.0062527040522102895
+            "currentDate": "2026-11-10",
+            "currentPrice": 73.698,
+            "currentReturn": 0.03608382210219835
           },
           {
             "code": "113062",
@@ -10615,9 +10620,9 @@
             "entryPrice": 123.388,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 125.092,
-            "currentReturn": 0.01331009498492558
+            "currentDate": "2026-11-10",
+            "currentPrice": 126.45,
+            "currentReturn": 0.02431602749051759
           },
           {
             "code": "128142",
@@ -10628,9 +10633,9 @@
             "entryPrice": 109.997,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 110.457,
-            "currentReturn": 0.003681932234515351
+            "currentDate": "2026-11-10",
+            "currentPrice": 110.492,
+            "currentReturn": 0.004000122730620059
           },
           {
             "code": "123091",
@@ -10641,9 +10646,9 @@
             "entryPrice": 112.846,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 112.94,
-            "currentReturn": 0.00033299363734634645
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": 0.00529550892366587
           },
           {
             "code": "127110",
@@ -10654,9 +10659,9 @@
             "entryPrice": 132.411,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 132.1,
-            "currentReturn": -0.0028487474605584646
+            "currentDate": "2026-11-10",
+            "currentPrice": 130.832,
+            "currentReturn": -0.012424991126115004
           },
           {
             "code": "127045",
@@ -10667,9 +10672,9 @@
             "entryPrice": 114.511,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.271,
-            "currentReturn": 0.03233527346717796
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.151,
+            "currentReturn": 0.03128733920758714
           },
           {
             "code": "113058",
@@ -10680,9 +10685,9 @@
             "entryPrice": 120.877,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 122.912,
-            "currentReturn": 0.016335295382910064
+            "currentDate": "2026-11-10",
+            "currentPrice": 123.071,
+            "currentReturn": 0.017650682098331483
           },
           {
             "code": "113051",
@@ -10693,9 +10698,9 @@
             "entryPrice": 111.619,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 114.003,
-            "currentReturn": 0.020858370886676914
+            "currentDate": "2026-11-10",
+            "currentPrice": 114.385,
+            "currentReturn": 0.024280727295532267
           },
           {
             "code": "113631",
@@ -10706,9 +10711,9 @@
             "entryPrice": 128.229,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 129.573,
-            "currentReturn": 0.009981248391549513
+            "currentDate": "2026-11-10",
+            "currentPrice": 127.868,
+            "currentReturn": -0.0033152757956469987
           },
           {
             "code": "127047",
@@ -10719,9 +10724,9 @@
             "entryPrice": 117.123,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 119.72,
-            "currentReturn": 0.021673270834934255
+            "currentDate": "2026-11-10",
+            "currentPrice": 121.208,
+            "currentReturn": 0.03437786344270538
           },
           {
             "code": "113681",
@@ -10732,9 +10737,9 @@
             "entryPrice": 132.728,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 135.248,
-            "currentReturn": 0.018486197335904897
+            "currentDate": "2026-11-10",
+            "currentPrice": 134.99,
+            "currentReturn": 0.016542372370562386
           },
           {
             "code": "118034",
@@ -10745,9 +10750,9 @@
             "entryPrice": 112.116,
             "entryDate": "2026-11-02",
             "weight": 0.05,
-            "currentDate": "2026-11-06",
-            "currentPrice": 116.388,
-            "currentReturn": 0.03760339291448139
+            "currentDate": "2026-11-10",
+            "currentPrice": 116.005,
+            "currentReturn": 0.03418728816582822
           }
         ]
       },
@@ -14734,9 +14739,9 @@
             "entryPrice": 112.636,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.53,
-            "currentReturn": 0.007437071628964176
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": 0.007170726943428407
           },
           {
             "code": "127061",
@@ -14747,9 +14752,9 @@
             "entryPrice": 102.08,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 97.5,
-            "currentReturn": -0.045366771159874586
+            "currentDate": "2026-11-10",
+            "currentPrice": 98.008,
+            "currentReturn": -0.04039028213166146
           },
           {
             "code": "123107",
@@ -14760,7 +14765,7 @@
             "entryPrice": 110.68,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
+            "currentDate": "2026-11-10",
             "currentPrice": 114.8,
             "currentReturn": 0.03672443079147086
           },
@@ -14773,9 +14778,9 @@
             "entryPrice": 113.6,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.25,
-            "currentReturn": 0.040433098591549255
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.072,
+            "currentReturn": 0.03886619718309875
           },
           {
             "code": "113043",
@@ -14786,9 +14791,9 @@
             "entryPrice": 106.132,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 106.717,
-            "currentReturn": 0.005012003919647234
+            "currentDate": "2026-11-09",
+            "currentPrice": 106.422,
+            "currentReturn": 0.002232446387517351
           },
           {
             "code": "113056",
@@ -14799,9 +14804,9 @@
             "entryPrice": 122.69,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 124.141,
-            "currentReturn": 0.011326554731437122
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.543,
+            "currentReturn": 0.01460310538756232
           },
           {
             "code": "113052",
@@ -14812,9 +14817,9 @@
             "entryPrice": 111.832,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.104,
-            "currentReturn": 0.010874204163387968
+            "currentDate": "2026-11-10",
+            "currentPrice": 112.889,
+            "currentReturn": 0.008951677516274514
           },
           {
             "code": "118027",
@@ -14825,9 +14830,9 @@
             "entryPrice": 83.445,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 86.551,
-            "currentReturn": 0.03672212235604294
+            "currentDate": "2026-11-10",
+            "currentPrice": 89.463,
+            "currentReturn": 0.07161936005752295
           },
           {
             "code": "110092",
@@ -14838,9 +14843,9 @@
             "entryPrice": 71.097,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 70.688,
-            "currentReturn": -0.0062527040522102895
+            "currentDate": "2026-11-10",
+            "currentPrice": 73.698,
+            "currentReturn": 0.03608382210219835
           },
           {
             "code": "113062",
@@ -14851,9 +14856,9 @@
             "entryPrice": 123.388,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 125.092,
-            "currentReturn": 0.01331009498492558
+            "currentDate": "2026-11-10",
+            "currentPrice": 126.45,
+            "currentReturn": 0.02431602749051759
           }
         ]
       },
@@ -16846,17 +16851,17 @@
       "rebalanceFrequency": "weekly",
       "portfolioSize": 10,
       "summary": {
-        "periodCount": 940,
-        "cumulativeReturn": 0.9524889991954626,
-        "grossCumulativeReturn": 3.9943914892110532,
-        "annualizedReturn": 0.036165677957795905,
+        "periodCount": 941,
+        "cumulativeReturn": 0.9814618022720951,
+        "grossCumulativeReturn": 4.073497192551007,
+        "annualizedReturn": 0.036938109611906134,
         "maxDrawdown": -0.4662371134571658,
-        "positiveMonthRate": 0.49148936170212765,
-        "averageHoldings": 9.357446808510637,
-        "benchmarkCumulativeReturn": 0.20775267610643167,
-        "benchmarkAnnualizedReturn": 0.01007293781525087,
+        "positiveMonthRate": 0.4920297555791711,
+        "averageHoldings": 9.358129649309246,
+        "benchmarkCumulativeReturn": 0.23979219637321436,
+        "benchmarkAnnualizedReturn": 0.011466375755643021,
         "benchmarkMaxDrawdown": -0.5170075122992079,
-        "excessCumulativeReturn": 0.7447363230890309
+        "excessCumulativeReturn": 0.7416696058988808
       },
       "annual": [
         {
@@ -17023,12 +17028,12 @@
         },
         {
           "year": 2026,
-          "months": 42,
-          "return": -0.10413844326828936,
-          "benchmarkReturn": -0.10552971280597001,
-          "excessReturn": 0.0013912695376806505,
+          "months": 43,
+          "return": -0.0908448367599769,
+          "benchmarkReturn": -0.08180101448755495,
+          "excessReturn": -0.009043822272421953,
           "maxDrawdown": -0.16056555277144613,
-          "positiveMonths": 17
+          "positiveMonths": 18
         }
       ],
       "curve": [
@@ -20791,6 +20796,10 @@
         {
           "date": "2026-11-02",
           "nav": 1.9524889991954626
+        },
+        {
+          "date": "2026-11-09",
+          "nav": 1.9814618022720951
         }
       ],
       "benchmarkCurve": [
@@ -24553,173 +24562,177 @@
         {
           "date": "2026-11-02",
           "nav": 1.2077526761064317
+        },
+        {
+          "date": "2026-11-09",
+          "nav": 1.2397921963732144
         }
       ],
       "sensitivity": [
         {
           "size": 10,
-          "periodCount": 940,
-          "cumulativeReturn": 0.9524889991954626,
-          "grossCumulativeReturn": 3.9943914892110532,
-          "annualizedReturn": 0.036165677957795905,
+          "periodCount": 941,
+          "cumulativeReturn": 0.9814618022720951,
+          "grossCumulativeReturn": 4.073497192551007,
+          "annualizedReturn": 0.036938109611906134,
           "maxDrawdown": -0.4662371134571658,
-          "positiveMonthRate": 0.49148936170212765,
-          "averageHoldings": 9.357446808510637
+          "positiveMonthRate": 0.4920297555791711,
+          "averageHoldings": 9.358129649309246
         },
         {
           "size": 20,
-          "periodCount": 940,
-          "cumulativeReturn": 0.9471283170824334,
-          "grossCumulativeReturn": 3.980444042628582,
-          "annualizedReturn": 0.03601442957056644,
+          "periodCount": 941,
+          "cumulativeReturn": 0.9766855950185012,
+          "grossCumulativeReturn": 4.0610272949307,
+          "annualizedReturn": 0.03680537944121376,
           "maxDrawdown": -0.5077062155139732,
-          "positiveMonthRate": 0.5085106382978724,
-          "averageHoldings": 16.25851063829787
+          "positiveMonthRate": 0.5090329436769394,
+          "averageHoldings": 16.2624867162593
         },
         {
           "size": 30,
-          "periodCount": 940,
-          "cumulativeReturn": 1.3447387780416822,
-          "grossCumulativeReturn": 4.996260300437179,
-          "annualizedReturn": 0.04628663192032367,
+          "periodCount": 941,
+          "cumulativeReturn": 1.3792797656556472,
+          "grossCumulativeReturn": 5.090589109636943,
+          "annualizedReturn": 0.04705037149865832,
           "maxDrawdown": -0.5033856890176445,
-          "positiveMonthRate": 0.5127659574468085,
-          "averageHoldings": 21.525531914893616
+          "positiveMonthRate": 0.5132837407013815,
+          "averageHoldings": 21.534537725823593
         }
       ],
       "current": {
-        "signalDate": "2026-10-30",
-        "entryDate": "2026-11-02",
+        "signalDate": "2026-11-06",
+        "entryDate": "2026-11-09",
         "holdings": [
           {
-            "code": "113042",
-            "name": "上银转债",
-            "signalPremium": -0.2803007519,
-            "signalPrice": 115.328,
-            "signalScore": 115.0476992481,
-            "entryPrice": 112.636,
-            "entryDate": "2026-11-02",
+            "code": "118027",
+            "name": "宏图转债",
+            "signalPremium": 7.0174757835,
+            "signalPrice": 86.551,
+            "signalScore": 93.5684757835,
+            "entryPrice": 87.442,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.53,
-            "currentReturn": 0.007437071628964176
+            "currentDate": "2026-11-10",
+            "currentPrice": 89.463,
+            "currentReturn": 0.022612463118409865
           },
           {
             "code": "127061",
             "name": "美锦转债",
-            "signalPremium": 14.2097115385,
-            "signalPrice": 102.69,
-            "signalScore": 116.8997115385,
-            "entryPrice": 102.08,
-            "entryDate": "2026-11-02",
+            "signalPremium": 4.4212962963,
+            "signalPrice": 97.5,
+            "signalScore": 101.9212962963,
+            "entryPrice": 98,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 97.5,
-            "currentReturn": -0.045366771159874586
-          },
-          {
-            "code": "123107",
-            "name": "温氏转债",
-            "signalPremium": 12.678259732,
-            "signalPrice": 109.737,
-            "signalScore": 122.415259732,
-            "entryPrice": 110.68,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 114.8,
-            "currentReturn": 0.03672443079147086
-          },
-          {
-            "code": "127040",
-            "name": "国泰转债",
-            "signalPremium": 10.103195739,
-            "signalPrice": 112.5,
-            "signalScore": 122.603195739,
-            "entryPrice": 113.6,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.25,
-            "currentReturn": 0.040433098591549255
-          },
-          {
-            "code": "113043",
-            "name": "财通转债",
-            "signalPremium": 18.6568920056,
-            "signalPrice": 106.018,
-            "signalScore": 124.6748920056,
-            "entryPrice": 106.132,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 106.717,
-            "currentReturn": 0.005012003919647234
-          },
-          {
-            "code": "113056",
-            "name": "重银转债",
-            "signalPremium": 1.2034881266,
-            "signalPrice": 124.803,
-            "signalScore": 126.0064881266,
-            "entryPrice": 122.69,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 124.141,
-            "currentReturn": 0.011326554731437122
-          },
-          {
-            "code": "113052",
-            "name": "兴业转债",
-            "signalPremium": 14.8383206107,
-            "signalPrice": 112.1,
-            "signalScore": 126.93832061069999,
-            "entryPrice": 111.832,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.104,
-            "currentReturn": 0.010874204163387968
-          },
-          {
-            "code": "118027",
-            "name": "宏图转债",
-            "signalPremium": 38.3205529623,
-            "signalPrice": 88.761,
-            "signalScore": 127.0815529623,
-            "entryPrice": 83.445,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 86.551,
-            "currentReturn": 0.03672212235604294
+            "currentDate": "2026-11-10",
+            "currentPrice": 98.008,
+            "currentReturn": -0.00041836734693873013
           },
           {
             "code": "110092",
             "name": "三房转债",
-            "signalPremium": 56.6145547445,
-            "signalPrice": 71.047,
-            "signalScore": 127.6615547445,
-            "entryPrice": 71.097,
-            "entryDate": "2026-11-02",
+            "signalPremium": 50.3364507042,
+            "signalPrice": 70.688,
+            "signalScore": 121.0244507042,
+            "entryPrice": 71.925,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 70.688,
-            "currentReturn": -0.0062527040522102895
+            "currentDate": "2026-11-10",
+            "currentPrice": 73.698,
+            "currentReturn": 0.024150677789363806
           },
           {
-            "code": "113062",
-            "name": "常银转债",
-            "signalPremium": 3.8748807631,
-            "signalPrice": 124.452,
-            "signalScore": 128.3268807631,
-            "entryPrice": 123.388,
-            "entryDate": "2026-11-02",
+            "code": "128142",
+            "name": "新乳转债",
+            "signalPremium": 11.9929026651,
+            "signalPrice": 110.457,
+            "signalScore": 122.4499026651,
+            "entryPrice": 110.6,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 125.092,
-            "currentReturn": 0.01331009498492558
+            "currentDate": "2026-11-10",
+            "currentPrice": 110.492,
+            "currentReturn": -0.0014764918625677632
+          },
+          {
+            "code": "113043",
+            "name": "财通转债",
+            "signalPremium": 15.8641714286,
+            "signalPrice": 106.717,
+            "signalScore": 122.5811714286,
+            "entryPrice": 106.422,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-09",
+            "currentPrice": 106.422,
+            "currentReturn": -0.0005
+          },
+          {
+            "code": "123107",
+            "name": "温氏转债",
+            "signalPremium": 9.8175980975,
+            "signalPrice": 114.8,
+            "signalScore": 124.6175980975,
+            "entryPrice": 115.299,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 114.8,
+            "currentReturn": -0.004827877952107207
+          },
+          {
+            "code": "113042",
+            "name": "上银转债",
+            "signalPremium": 11.5893162393,
+            "signalPrice": 113.53,
+            "signalScore": 125.1193162393,
+            "entryPrice": 113.533,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": -0.0007906643883275884
+          },
+          {
+            "code": "113056",
+            "name": "重银转债",
+            "signalPremium": 1.6500905861,
+            "signalPrice": 124.141,
+            "signalScore": 125.79109058610001,
+            "entryPrice": 124.603,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.543,
+            "currentReturn": -0.0009815293371748242
+          },
+          {
+            "code": "123091",
+            "name": "长海转债",
+            "signalPremium": 14.1751606288,
+            "signalPrice": 112.94,
+            "signalScore": 127.1151606288,
+            "entryPrice": 113.888,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": -0.0039068558583871815
+          },
+          {
+            "code": "127040",
+            "name": "国泰转债",
+            "signalPremium": 9.6011979823,
+            "signalPrice": 118.25,
+            "signalScore": 127.8511979823,
+            "entryPrice": 118.189,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.072,
+            "currentReturn": -0.001489939842117149
           }
         ]
       },
@@ -33183,6 +33196,15 @@
           "averageSignalPremium": 13.232926343309998,
           "grossReturn": -0.013520029279638157,
           "netReturn": -0.014520029279638157
+        },
+        {
+          "signalDate": "2026-10-30",
+          "entryDate": "2026-11-02",
+          "exitDate": "2026-11-09",
+          "holdingCount": 10,
+          "averageSignalPremium": 17.02195554704,
+          "grossReturn": 0.015838907204379048,
+          "netReturn": 0.014838907204379047
         }
       ]
     },
@@ -35186,9 +35208,9 @@
             "entryPrice": 132.411,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 132.1,
-            "currentReturn": -0.0028487474605584646
+            "currentDate": "2026-11-10",
+            "currentPrice": 130.832,
+            "currentReturn": -0.012424991126115004
           },
           {
             "code": "113042",
@@ -35199,9 +35221,9 @@
             "entryPrice": 112.636,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.53,
-            "currentReturn": 0.007437071628964176
+            "currentDate": "2026-11-10",
+            "currentPrice": 113.5,
+            "currentReturn": 0.007170726943428407
           },
           {
             "code": "113056",
@@ -35212,9 +35234,9 @@
             "entryPrice": 122.69,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 124.141,
-            "currentReturn": 0.011326554731437122
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.543,
+            "currentReturn": 0.01460310538756232
           },
           {
             "code": "123243",
@@ -35225,9 +35247,9 @@
             "entryPrice": 233.679,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 244.889,
-            "currentReturn": 0.04747179036199228
+            "currentDate": "2026-11-10",
+            "currentPrice": 246.995,
+            "currentReturn": 0.056484153475494236
           },
           {
             "code": "113062",
@@ -35238,9 +35260,9 @@
             "entryPrice": 123.388,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 125.092,
-            "currentReturn": 0.01331009498492558
+            "currentDate": "2026-11-10",
+            "currentPrice": 126.45,
+            "currentReturn": 0.02431602749051759
           },
           {
             "code": "113615",
@@ -35251,9 +35273,9 @@
             "entryPrice": 521.495,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 495.178,
-            "currentReturn": -0.05096452986126426
+            "currentDate": "2026-11-10",
+            "currentPrice": 495.916,
+            "currentReturn": -0.049549367683295154
           },
           {
             "code": "113681",
@@ -35264,9 +35286,9 @@
             "entryPrice": 132.728,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 135.248,
-            "currentReturn": 0.018486197335904897
+            "currentDate": "2026-11-10",
+            "currentPrice": 134.99,
+            "currentReturn": 0.016542372370562386
           },
           {
             "code": "127092",
@@ -35277,9 +35299,9 @@
             "entryPrice": 281.3,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 266.637,
-            "currentReturn": -0.052625844294347746
+            "currentDate": "2026-11-10",
+            "currentPrice": 279.221,
+            "currentReturn": -0.007890686100248845
           },
           {
             "code": "127040",
@@ -35290,9 +35312,9 @@
             "entryPrice": 113.6,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.25,
-            "currentReturn": 0.040433098591549255
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.072,
+            "currentReturn": 0.03886619718309875
           },
           {
             "code": "113631",
@@ -35303,9 +35325,9 @@
             "entryPrice": 128.229,
             "entryDate": "2026-11-02",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 129.573,
-            "currentReturn": 0.009981248391549513
+            "currentDate": "2026-11-10",
+            "currentPrice": 127.868,
+            "currentReturn": -0.0033152757956469987
           }
         ]
       },
@@ -37298,17 +37320,17 @@
       "rebalanceFrequency": "weekly",
       "portfolioSize": 10,
       "summary": {
-        "periodCount": 940,
-        "cumulativeReturn": 4.818800036127568,
-        "grossCumulativeReturn": 13.871254762475498,
-        "annualizedReturn": 0.09801908000729753,
+        "periodCount": 941,
+        "cumulativeReturn": 4.856980726949088,
+        "grossCumulativeReturn": 13.983705376674424,
+        "annualizedReturn": 0.09829565188188605,
         "maxDrawdown": -0.4716409340325525,
-        "positiveMonthRate": 0.5106382978723404,
-        "averageHoldings": 9.357446808510637,
-        "benchmarkCumulativeReturn": 0.2077526761064319,
-        "benchmarkAnnualizedReturn": 0.01007293781525087,
+        "positiveMonthRate": 0.5111583421891605,
+        "averageHoldings": 9.358129649309246,
+        "benchmarkCumulativeReturn": 0.23979219637321458,
+        "benchmarkAnnualizedReturn": 0.011466375755643021,
         "benchmarkMaxDrawdown": -0.5170075122992079,
-        "excessCumulativeReturn": 4.611047360021136
+        "excessCumulativeReturn": 4.6171885305758735
       },
       "annual": [
         {
@@ -37475,12 +37497,12 @@
         },
         {
           "year": 2026,
-          "months": 42,
-          "return": 0.22406063687384692,
-          "benchmarkReturn": -0.10552971280597001,
-          "excessReturn": 0.32959034967981693,
+          "months": 43,
+          "return": 0.23209244419375863,
+          "benchmarkReturn": -0.08180101448755495,
+          "excessReturn": 0.3138934586813136,
           "maxDrawdown": -0.20342532834497717,
-          "positiveMonths": 23
+          "positiveMonths": 24
         }
       ],
       "curve": [
@@ -41243,6 +41265,10 @@
         {
           "date": "2026-11-02",
           "nav": 5.818800036127568
+        },
+        {
+          "date": "2026-11-09",
+          "nav": 5.856980726949088
         }
       ],
       "benchmarkCurve": [
@@ -45005,173 +45031,177 @@
         {
           "date": "2026-11-02",
           "nav": 1.2077526761064319
+        },
+        {
+          "date": "2026-11-09",
+          "nav": 1.2397921963732146
         }
       ],
       "sensitivity": [
         {
           "size": 10,
-          "periodCount": 940,
-          "cumulativeReturn": 4.818800036127568,
-          "grossCumulativeReturn": 13.871254762475498,
-          "annualizedReturn": 0.09801908000729753,
+          "periodCount": 941,
+          "cumulativeReturn": 4.856980726949088,
+          "grossCumulativeReturn": 13.983705376674424,
+          "annualizedReturn": 0.09829565188188605,
           "maxDrawdown": -0.4716409340325525,
-          "positiveMonthRate": 0.5106382978723404,
-          "averageHoldings": 9.357446808510637
+          "positiveMonthRate": 0.5111583421891605,
+          "averageHoldings": 9.358129649309246
         },
         {
           "size": 20,
-          "periodCount": 940,
-          "cumulativeReturn": 2.6243967360637352,
-          "grossCumulativeReturn": 8.26655573118578,
-          "annualizedReturn": 0.07076309173811057,
+          "periodCount": 941,
+          "cumulativeReturn": 2.7064203017853457,
+          "grossCumulativeReturn": 8.485533308744937,
+          "annualizedReturn": 0.07196035473475715,
           "maxDrawdown": -0.5143593156950921,
-          "positiveMonthRate": 0.5127659574468085,
-          "averageHoldings": 16.25851063829787
+          "positiveMonthRate": 0.5132837407013815,
+          "averageHoldings": 16.2624867162593
         },
         {
           "size": 30,
-          "periodCount": 940,
-          "cumulativeReturn": 1.7159874153495962,
-          "grossCumulativeReturn": 5.945689932255366,
-          "annualizedReturn": 0.05448399650420699,
+          "periodCount": 941,
+          "cumulativeReturn": 1.7764354423335993,
+          "grossCumulativeReturn": 6.107221482959532,
+          "annualizedReturn": 0.05565898332196184,
           "maxDrawdown": -0.5277186084540799,
-          "positiveMonthRate": 0.5148936170212766,
-          "averageHoldings": 21.525531914893616
+          "positiveMonthRate": 0.5154091392136025,
+          "averageHoldings": 21.534537725823593
         }
       ],
       "current": {
-        "signalDate": "2026-10-30",
-        "entryDate": "2026-11-02",
+        "signalDate": "2026-11-06",
+        "entryDate": "2026-11-09",
         "holdings": [
           {
             "code": "127110",
             "name": "广核转债",
-            "signalPremium": -0.5148643006,
-            "signalPrice": 133.11,
-            "signalScore": -0.5148643006,
-            "entryPrice": 132.411,
-            "entryDate": "2026-11-02",
+            "signalPremium": -0.4383157895,
+            "signalPrice": 132.1,
+            "signalScore": -0.4383157895,
+            "entryPrice": 133,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 132.1,
-            "currentReturn": -0.0028487474605584646
-          },
-          {
-            "code": "113042",
-            "name": "上银转债",
-            "signalPremium": -0.2803007519,
-            "signalPrice": 115.328,
-            "signalScore": -0.2803007519,
-            "entryPrice": 112.636,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 113.53,
-            "currentReturn": 0.007437071628964176
-          },
-          {
-            "code": "113056",
-            "name": "重银转债",
-            "signalPremium": 1.2034881266,
-            "signalPrice": 124.803,
-            "signalScore": 1.2034881266,
-            "entryPrice": 122.69,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 124.141,
-            "currentReturn": 0.011326554731437122
-          },
-          {
-            "code": "123243",
-            "name": "严牌转债",
-            "signalPremium": 1.8261398176,
-            "signalPrice": 232,
-            "signalScore": 1.8261398176,
-            "entryPrice": 233.679,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 244.889,
-            "currentReturn": 0.04747179036199228
-          },
-          {
-            "code": "113062",
-            "name": "常银转债",
-            "signalPremium": 3.8748807631,
-            "signalPrice": 124.452,
-            "signalScore": 3.8748807631,
-            "entryPrice": 123.388,
-            "entryDate": "2026-11-02",
-            "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 125.092,
-            "currentReturn": 0.01331009498492558
+            "currentDate": "2026-11-10",
+            "currentPrice": 130.832,
+            "currentReturn": -0.01680075187969926
           },
           {
             "code": "113615",
             "name": "金诚转债",
-            "signalPremium": 4.5308684437,
-            "signalPrice": 546.625,
-            "signalScore": 4.5308684437,
-            "entryPrice": 521.495,
-            "entryDate": "2026-11-02",
+            "signalPremium": 0.2253250819,
+            "signalPrice": 495.178,
+            "signalScore": 0.2253250819,
+            "entryPrice": 504.852,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 495.178,
-            "currentReturn": -0.05096452986126426
+            "currentDate": "2026-11-10",
+            "currentPrice": 495.916,
+            "currentReturn": -0.018200236901111555
+          },
+          {
+            "code": "113056",
+            "name": "重银转债",
+            "signalPremium": 1.6500905861,
+            "signalPrice": 124.141,
+            "signalScore": 1.6500905861,
+            "entryPrice": 124.603,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 124.543,
+            "currentReturn": -0.0009815293371748242
+          },
+          {
+            "code": "123243",
+            "name": "严牌转债",
+            "signalPremium": 2.3205196759,
+            "signalPrice": 244.889,
+            "signalScore": 2.3205196759,
+            "entryPrice": 243.003,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 246.995,
+            "currentReturn": 0.01592778072698703
+          },
+          {
+            "code": "113062",
+            "name": "常银转债",
+            "signalPremium": 3.2599056604,
+            "signalPrice": 125.092,
+            "signalScore": 3.2599056604,
+            "entryPrice": 125.875,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 126.45,
+            "currentReturn": 0.004068023833167789
+          },
+          {
+            "code": "127061",
+            "name": "美锦转债",
+            "signalPremium": 4.4212962963,
+            "signalPrice": 97.5,
+            "signalScore": 4.4212962963,
+            "entryPrice": 98,
+            "entryDate": "2026-11-09",
+            "weight": 0.1,
+            "currentDate": "2026-11-10",
+            "currentPrice": 98.008,
+            "currentReturn": -0.00041836734693873013
           },
           {
             "code": "113681",
             "name": "镇洋转债",
-            "signalPremium": 6.7195194424,
-            "signalPrice": 132.839,
-            "signalScore": 6.7195194424,
-            "entryPrice": 132.728,
-            "entryDate": "2026-11-02",
+            "signalPremium": 5.4068042705,
+            "signalPrice": 135.248,
+            "signalScore": 5.4068042705,
+            "entryPrice": 134.864,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 135.248,
-            "currentReturn": 0.018486197335904897
+            "currentDate": "2026-11-10",
+            "currentPrice": 134.99,
+            "currentReturn": 0.0004342745284137699
           },
           {
-            "code": "127092",
-            "name": "运机转债",
-            "signalPremium": 8.608319739,
-            "signalPrice": 279.5,
-            "signalScore": 8.608319739,
-            "entryPrice": 281.3,
-            "entryDate": "2026-11-02",
+            "code": "118027",
+            "name": "宏图转债",
+            "signalPremium": 7.0174757835,
+            "signalPrice": 86.551,
+            "signalScore": 7.0174757835,
+            "entryPrice": 87.442,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 266.637,
-            "currentReturn": -0.052625844294347746
+            "currentDate": "2026-11-10",
+            "currentPrice": 89.463,
+            "currentReturn": 0.022612463118409865
           },
           {
             "code": "127040",
             "name": "国泰转债",
-            "signalPremium": 10.103195739,
-            "signalPrice": 112.5,
-            "signalScore": 10.103195739,
-            "entryPrice": 113.6,
-            "entryDate": "2026-11-02",
+            "signalPremium": 9.6011979823,
+            "signalPrice": 118.25,
+            "signalScore": 9.6011979823,
+            "entryPrice": 118.189,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 118.25,
-            "currentReturn": 0.040433098591549255
+            "currentDate": "2026-11-10",
+            "currentPrice": 118.072,
+            "currentReturn": -0.001489939842117149
           },
           {
-            "code": "113631",
-            "name": "皖天转债",
-            "signalPremium": 10.3239839142,
-            "signalPrice": 127.402,
-            "signalScore": 10.3239839142,
-            "entryPrice": 128.229,
-            "entryDate": "2026-11-02",
+            "code": "123107",
+            "name": "温氏转债",
+            "signalPremium": 9.8175980975,
+            "signalPrice": 114.8,
+            "signalScore": 9.8175980975,
+            "entryPrice": 115.299,
+            "entryDate": "2026-11-09",
             "weight": 0.1,
-            "currentDate": "2026-11-06",
-            "currentPrice": 129.573,
-            "currentReturn": 0.009981248391549513
+            "currentDate": "2026-11-10",
+            "currentPrice": 114.8,
+            "currentReturn": -0.004827877952107207
           }
         ]
       },
@@ -53635,6 +53665,15 @@
           "averageSignalPremium": 6.163141898329999,
           "grossReturn": -0.02085363127860309,
           "netReturn": -0.02185363127860309
+        },
+        {
+          "signalDate": "2026-10-30",
+          "entryDate": "2026-11-02",
+          "exitDate": "2026-11-09",
+          "holdingCount": 10,
+          "averageSignalPremium": 4.63952309331,
+          "grossReturn": 0.007561609023245985,
+          "netReturn": 0.006561609023245985
         }
       ]
     }
