@@ -1,14 +1,58 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-10T22:08:43.288Z",
-    "coverageEnd": "2026-11-11",
-    "sourceAsOfDate": "2026-11-11",
+    "generatedAt": "2026-11-12T22:02:04.407Z",
+    "coverageEnd": "2026-11-13",
+    "sourceAsOfDate": "2026-11-13",
     "source": "ambush.json/livePipeline.beforeIssueAnnouncement minus opportunities.json issued projects",
     "note": "注册已生效、尚待最终发行公告的可转债项目。发行参数补齐后由 opportunities.json 接管展示。"
   },
   "count": 7,
   "opportunities": [
+    {
+      "stockCode": "688372",
+      "stockName": "伟测科技",
+      "exchange": "SH",
+      "board": "科创板",
+      "auditId": "1001331",
+      "statusCode": "50",
+      "stageLabel": "注册生效",
+      "stageDate": "2026-11-12",
+      "acceptedDate": "2026-08-25",
+      "proposedScaleYi": 20,
+      "registered": true,
+      "paused": false,
+      "terminal": false,
+      "sourceName": "上交所再融资审核项目动态",
+      "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001331&bussinesType=6",
+      "registrationDisclosure": null,
+      "recentTrend": null,
+      "recentTrendError": "注册生效后有效交易日不足",
+      "entryAssessment": {
+        "windowStatus": "buy_today",
+        "entryDate": "2026-11-13",
+        "entryPriceFen": null,
+        "referencePriceFen": 8159,
+        "referencePriceDate": "2026-11-12",
+        "priceBasis": "previous_close_estimate",
+        "factorDate": "2026-11-12",
+        "momentum20": 0.008653727283965962,
+        "volatility20": 0.7431685042033849,
+        "marketReturn10": 0.00051709,
+        "status": "skip",
+        "selected": false,
+        "budgetFen": 0,
+        "targetBudgetFen": 500000,
+        "targetShares": 61,
+        "initialShares": 200,
+        "excessShares": 139,
+        "initialCashFen": 1631800,
+        "temporaryCashRatio": 3.2636,
+        "reasons": [
+          "买入价高于80元"
+        ]
+      }
+    },
     {
       "stockCode": "603043",
       "stockName": "广州酒家",
@@ -34,11 +78,11 @@
         "note": "11月6日收盘后公开，交易所公告日期为11月7日；首个可交易日为11月9日。"
       },
       "recentTrend": {
-        "asOfDate": "2026-11-10",
-        "latestPriceFen": 1550,
-        "return5": 0.0130719,
-        "return20": 0.1627907,
-        "aboveMa5": true,
+        "asOfDate": "2026-11-12",
+        "latestPriceFen": 1492,
+        "return5": -0.0330525,
+        "return20": 0.10846954,
+        "aboveMa5": false,
         "points": [
           {
             "date": "2026-11-06",
@@ -51,13 +95,21 @@
           {
             "date": "2026-11-10",
             "closeFen": 1550
+          },
+          {
+            "date": "2026-11-11",
+            "closeFen": 1517
+          },
+          {
+            "date": "2026-11-12",
+            "closeFen": 1492
           }
         ],
         "sourceName": "东方财富日K（备用）",
         "basis": "registration_to_latest",
         "startDate": "2026-11-06",
         "startPriceFen": 1548,
-        "periodReturn": 0.00129199,
+        "periodReturn": -0.03617571,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-11-09",
@@ -123,10 +175,10 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001258&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-11-10",
-        "latestPriceFen": 23895,
-        "return5": 0.14935065,
-        "return20": -0.17603448,
+        "asOfDate": "2026-11-12",
+        "latestPriceFen": 24911,
+        "return5": 0.01470468,
+        "return20": -0.03209387,
         "aboveMa5": true,
         "points": [
           {
@@ -144,13 +196,21 @@
           {
             "date": "2026-11-10",
             "closeFen": 23895
+          },
+          {
+            "date": "2026-11-11",
+            "closeFen": 25163
+          },
+          {
+            "date": "2026-11-12",
+            "closeFen": 24911
           }
         ],
         "sourceName": "东方财富日K（备用）",
         "basis": "registration_to_latest",
         "startDate": "2026-11-05",
         "startPriceFen": 24550,
-        "periodReturn": -0.02668024,
+        "periodReturn": 0.01470468,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-11-06",
@@ -220,10 +280,10 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004373",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-11-10",
-        "latestPriceFen": 5151,
-        "return5": 0.08168837,
-        "return20": -0.04363164,
+        "asOfDate": "2026-11-12",
+        "latestPriceFen": 5240,
+        "return5": 0.00769231,
+        "return20": 0.05432596,
         "aboveMa5": true,
         "points": [
           {
@@ -273,13 +333,21 @@
           {
             "date": "2026-11-10",
             "closeFen": 5151
+          },
+          {
+            "date": "2026-11-11",
+            "closeFen": 5210
+          },
+          {
+            "date": "2026-11-12",
+            "closeFen": 5240
           }
         ],
         "sourceName": "东方财富日K（备用）",
         "basis": "registration_to_latest",
         "startDate": "2026-10-26",
         "startPriceFen": 5017,
-        "periodReturn": 0.02670919,
+        "periodReturn": 0.04444887,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-10-26",
@@ -332,171 +400,6 @@
       }
     },
     {
-      "stockCode": "605016",
-      "stockName": "百龙创园",
-      "exchange": "SH",
-      "board": "沪市主板",
-      "auditId": "1000942",
-      "statusCode": "50",
-      "stageLabel": "注册生效",
-      "stageDate": "2026-10-12",
-      "acceptedDate": "2026-04-30",
-      "proposedScaleYi": 7.4815,
-      "registered": true,
-      "paused": false,
-      "terminal": false,
-      "sourceName": "上交所再融资审核项目动态",
-      "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1000942&bussinesType=6",
-      "registrationDisclosure": null,
-      "recentTrend": {
-        "asOfDate": "2026-11-10",
-        "latestPriceFen": 1951,
-        "return5": 0.02253669,
-        "return20": -0.0121519,
-        "aboveMa5": true,
-        "points": [
-          {
-            "date": "2026-10-12",
-            "closeFen": 1984
-          },
-          {
-            "date": "2026-10-13",
-            "closeFen": 1975
-          },
-          {
-            "date": "2026-10-14",
-            "closeFen": 1990
-          },
-          {
-            "date": "2026-10-15",
-            "closeFen": 1918
-          },
-          {
-            "date": "2026-10-16",
-            "closeFen": 1930
-          },
-          {
-            "date": "2026-10-19",
-            "closeFen": 1880
-          },
-          {
-            "date": "2026-10-20",
-            "closeFen": 1918
-          },
-          {
-            "date": "2026-10-21",
-            "closeFen": 1913
-          },
-          {
-            "date": "2026-10-22",
-            "closeFen": 1831
-          },
-          {
-            "date": "2026-10-23",
-            "closeFen": 1857
-          },
-          {
-            "date": "2026-10-26",
-            "closeFen": 1848
-          },
-          {
-            "date": "2026-10-27",
-            "closeFen": 1758
-          },
-          {
-            "date": "2026-10-28",
-            "closeFen": 1771
-          },
-          {
-            "date": "2026-10-29",
-            "closeFen": 1756
-          },
-          {
-            "date": "2026-10-30",
-            "closeFen": 1725
-          },
-          {
-            "date": "2026-11-02",
-            "closeFen": 1873
-          },
-          {
-            "date": "2026-11-03",
-            "closeFen": 1908
-          },
-          {
-            "date": "2026-11-04",
-            "closeFen": 1892
-          },
-          {
-            "date": "2026-11-05",
-            "closeFen": 1936
-          },
-          {
-            "date": "2026-11-06",
-            "closeFen": 1968
-          },
-          {
-            "date": "2026-11-09",
-            "closeFen": 1956
-          },
-          {
-            "date": "2026-11-10",
-            "closeFen": 1951
-          }
-        ],
-        "sourceName": "东方财富日K（备用）",
-        "basis": "registration_to_latest",
-        "startDate": "2026-10-12",
-        "startPriceFen": 1984,
-        "periodReturn": -0.01663306,
-        "entryAssessment": {
-          "windowStatus": "entry_passed",
-          "entryDate": "2026-10-13",
-          "entryPriceFen": 1982,
-          "factorDate": "2026-10-12",
-          "referencePriceFen": null,
-          "referencePriceDate": null,
-          "priceBasis": "actual_open",
-          "momentum20": -0.10550045085662763,
-          "volatility20": 0.3596763483335732,
-          "marketReturn10": -0.04867784,
-          "status": "participate",
-          "selected": true,
-          "budgetFen": 250000,
-          "targetBudgetFen": 250000,
-          "targetShares": 126,
-          "initialShares": 200,
-          "excessShares": 74,
-          "initialCashFen": 396400,
-          "temporaryCashRatio": 1.5856,
-          "reasons": []
-        }
-      },
-      "recentTrendError": null,
-      "entryAssessment": {
-        "windowStatus": "entry_passed",
-        "entryDate": "2026-10-13",
-        "entryPriceFen": 1982,
-        "factorDate": "2026-10-12",
-        "referencePriceFen": null,
-        "referencePriceDate": null,
-        "priceBasis": "actual_open",
-        "momentum20": -0.10550045085662763,
-        "volatility20": 0.3596763483335732,
-        "marketReturn10": -0.04867784,
-        "status": "participate",
-        "selected": true,
-        "budgetFen": 250000,
-        "targetBudgetFen": 250000,
-        "targetShares": 126,
-        "initialShares": 200,
-        "excessShares": 74,
-        "initialCashFen": 396400,
-        "temporaryCashRatio": 1.5856,
-        "reasons": []
-      }
-    },
-    {
       "stockCode": "600368",
       "stockName": "五洲交通",
       "exchange": "SH",
@@ -514,10 +417,10 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1000985&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-11-10",
+        "asOfDate": "2026-11-12",
         "latestPriceFen": 435,
-        "return5": 0.03818616,
-        "return20": 0.02352941,
+        "return5": 0.04567308,
+        "return20": 0.03080569,
         "aboveMa5": true,
         "points": [
           {
@@ -731,6 +634,14 @@
           {
             "date": "2026-11-10",
             "closeFen": 435
+          },
+          {
+            "date": "2026-11-11",
+            "closeFen": 431
+          },
+          {
+            "date": "2026-11-12",
+            "closeFen": 435
           }
         ],
         "sourceName": "东方财富日K（备用）",
@@ -803,11 +714,11 @@
       "sourceUrl": "https://www.sse.com.cn/listing/renewal/refinancing/index_listing_detail.shtml?auditId=1001195&bussinesType=6",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-11-10",
-        "latestPriceFen": 6728,
-        "return5": 0.07544757,
-        "return20": -0.05770308,
-        "aboveMa5": false,
+        "asOfDate": "2026-11-12",
+        "latestPriceFen": 6740,
+        "return5": -0.02825836,
+        "return20": 0.02136687,
+        "aboveMa5": true,
         "points": [
           {
             "date": "2026-08-11",
@@ -1048,13 +959,21 @@
           {
             "date": "2026-11-10",
             "closeFen": 6728
+          },
+          {
+            "date": "2026-11-11",
+            "closeFen": 6851
+          },
+          {
+            "date": "2026-11-12",
+            "closeFen": 6740
           }
         ],
         "sourceName": "东方财富日K（备用）",
         "basis": "registration_to_latest",
         "startDate": "2026-08-11",
         "startPriceFen": 8398,
-        "periodReturn": -0.19694438,
+        "periodReturn": -0.19551206,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-08-12",
@@ -1124,11 +1043,11 @@
       "sourceUrl": "https://www.szse.cn/listing/projectdynamic/refinance/detail/index.html?id=1004139",
       "registrationDisclosure": null,
       "recentTrend": {
-        "asOfDate": "2026-11-10",
-        "latestPriceFen": 4985,
-        "return5": 0.11371761,
-        "return20": -0.04281874,
-        "aboveMa5": true,
+        "asOfDate": "2026-11-12",
+        "latestPriceFen": 4860,
+        "return5": -0.03437314,
+        "return20": -0.00917431,
+        "aboveMa5": false,
         "points": [
           {
             "date": "2026-08-07",
@@ -1377,13 +1296,21 @@
           {
             "date": "2026-11-10",
             "closeFen": 4985
+          },
+          {
+            "date": "2026-11-11",
+            "closeFen": 4975
+          },
+          {
+            "date": "2026-11-12",
+            "closeFen": 4860
           }
         ],
         "sourceName": "东方财富日K（备用）",
         "basis": "registration_to_latest",
         "startDate": "2026-08-07",
         "startPriceFen": 5015,
-        "periodReturn": -0.00598205,
+        "periodReturn": -0.03090728,
         "entryAssessment": {
           "windowStatus": "entry_passed",
           "entryDate": "2026-08-10",

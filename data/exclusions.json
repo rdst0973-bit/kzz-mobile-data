@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-10T22:04:38.093Z",
+    "generatedAt": "2026-11-12T21:59:36.824Z",
     "coverageStart": "2016-01-01",
-    "coverageEnd": "2026-11-11",
+    "coverageEnd": "2026-11-13",
     "inclusionBasis": "recordDate",
     "currency": "CNY",
     "currencyUnit": "fen",
@@ -64,17 +64,17 @@
     }
   },
   "funnel": {
-    "sourceUnionAllYears": 1066,
-    "cninfoRowsAllYears": 990,
-    "eastmoneyRowsAllYears": 1066,
+    "sourceUnionAllYears": 1067,
+    "cninfoRowsAllYears": 991,
+    "eastmoneyRowsAllYears": 1067,
     "migratedAliasesRemoved": 5,
-    "inScopeCandidates": 982,
-    "staticFieldsReady": 981,
+    "inScopeCandidates": 983,
+    "staticFieldsReady": 982,
     "staticFieldExclusions": 1,
-    "attemptedCandidates": 981,
-    "stockSeriesAvailable": 981,
-    "bondFiveBarsAvailable": 967,
-    "validBacktests": 951,
+    "attemptedCandidates": 982,
+    "stockSeriesAvailable": 982,
+    "bondFiveBarsAvailable": 968,
+    "validBacktests": 952,
     "marketDataAuditExclusions": 4,
     "coreExclusions": 26,
     "totalPublishedExclusions": 31
@@ -163,6 +163,43 @@
           "secondarySkippedReason": "eastmoney historical K-line does not retain delisted bond; delistDate=2024-01-31"
         },
         "fetchErrors": []
+      }
+    },
+    {
+      "included": false,
+      "bondCode": "111027",
+      "bondName": "百龙转债",
+      "stockCode": "605016",
+      "stockName": "百龙创园",
+      "exchange": "SH",
+      "recordDate": "2026-11-13",
+      "subscriptionDate": "2026-11-16",
+      "listingDate": null,
+      "entryYear": 2026,
+      "reason": "missing_listing_date",
+      "detail": null,
+      "stage": "STATIC_FIELDS",
+      "sourceAudit": {
+        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+        "pdfVerified": false,
+        "sourceLinks": {
+          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=111027",
+          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/111027.html"
+        },
+        "fieldSources": {
+          "bondIdentity": "official_cninfo_topic",
+          "stockIdentity": "eastmoney_crosscheck",
+          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+          "subscriptionDate": "official_cninfo_topic:F004D",
+          "listingDate": "eastmoney_crosscheck",
+          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        },
+        "announcementRecordDate": "2026-11-13",
+        "cninfoRecordDate": "2026-11-13",
+        "eastmoneyRecordDate": "2026-11-13",
+        "cninfoSubscriptionDate": "2026-11-16",
+        "eastmoneySubscriptionDate": "2026-11-16"
       }
     },
     {
@@ -938,32 +975,89 @@
       "exchange": "SH",
       "recordDate": "2026-10-20",
       "subscriptionDate": "2026-10-21",
-      "listingDate": null,
+      "listingDate": "2026-11-16",
       "entryYear": 2026,
-      "reason": "missing_listing_date",
+      "reason": "incomplete_exit_window",
       "detail": null,
-      "stage": "STATIC_FIELDS",
+      "stage": "BACKTEST_CORE",
       "sourceAudit": {
-        "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-        "pdfVerified": false,
-        "sourceLinks": {
-          "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=118078",
-          "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-          "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/118078.html"
+        "staticFields": {
+          "sourcePresence": {
+            "cninfo": true,
+            "eastmoney": true
+          },
+          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
+          "pdfVerified": false,
+          "sourceLinks": {
+            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=118078",
+            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
+            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/118078.html"
+          },
+          "fieldSources": {
+            "bondIdentity": "official_cninfo_topic",
+            "stockIdentity": "eastmoney_crosscheck",
+            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
+            "subscriptionDate": "official_cninfo_topic:F004D",
+            "listingDate": "eastmoney_crosscheck",
+            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+          },
+          "announcementRecordDate": "2026-10-20",
+          "cninfoRecordDate": "2026-10-20",
+          "eastmoneyRecordDate": "2026-10-20",
+          "cninfoSubscriptionDate": "2026-10-21",
+          "eastmoneySubscriptionDate": "2026-10-21",
+          "corporateActionCheck": {
+            "source": "eastmoney-RPT_SHAREBONUS_DET",
+            "checkedDates": [
+              "2026-10-20",
+              "2026-10-21"
+            ],
+            "overlap": []
+          }
         },
-        "fieldSources": {
-          "bondIdentity": "official_cninfo_topic",
-          "stockIdentity": "eastmoney_crosscheck",
-          "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-          "subscriptionDate": "official_cninfo_topic:F004D",
-          "listingDate": "eastmoney_crosscheck",
-          "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
+        "stockDaily": {
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 13,
+          "filledDates": [
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14",
+            "2026-10-15",
+            "2026-10-16",
+            "2026-10-19",
+            "2026-10-20",
+            "2026-10-21",
+            "2026-10-22",
+            "2026-10-23",
+            "2026-10-26",
+            "2026-10-27",
+            "2026-10-28"
+          ],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "priceLimitAudit": {
+            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
+            "limitations": []
+          }
         },
-        "announcementRecordDate": "2026-10-20",
-        "cninfoRecordDate": "2026-10-20",
-        "eastmoneyRecordDate": "2026-10-20",
-        "cninfoSubscriptionDate": "2026-10-21",
-        "eastmoneySubscriptionDate": "2026-10-21"
+        "bondDaily": {
+          "adoptedSource": null,
+          "barCount": 0,
+          "filledDates": [],
+          "crossCheck": {
+            "status": "SINGLE_SOURCE",
+            "comparedDates": 0,
+            "differences": []
+          },
+          "secondarySkippedReason": null
+        },
+        "fetchErrors": [
+          "stock/eastmoney: eastmoney-stock-SH-688510-2026-10-10-2026-10-28: fetch failed",
+          "bond/eastmoney: eastmoney-bond-SH-118078-2026-11-16-2026-12-21: fetch failed"
+        ]
       }
     },
     {
@@ -1622,83 +1716,6 @@
     },
     {
       "included": false,
-      "bondCode": "123290",
-      "bondName": "申菱转债",
-      "stockCode": "301018",
-      "stockName": "申菱环境",
-      "exchange": "SZ",
-      "recordDate": "2026-10-19",
-      "subscriptionDate": "2026-10-20",
-      "listingDate": "2026-11-06",
-      "entryYear": 2026,
-      "reason": "incomplete_exit_window",
-      "detail": null,
-      "stage": "BACKTEST_CORE",
-      "sourceAudit": {
-        "staticFields": {
-          "sourcePresence": {
-            "cninfo": true,
-            "eastmoney": true
-          },
-          "verificationLevel": "official_cninfo_topic_plus_eastmoney_crosscheck",
-          "pdfVerified": false,
-          "sourceLinks": {
-            "cninfoAnnouncementSearch": "https://www.cninfo.com.cn/new/fulltextSearch?notautosubmit=&keyWord=123290",
-            "cninfoBondDisclosureHub": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure%2Fipo%2Fbond",
-            "eastmoneyBondDetail": "https://data.eastmoney.com/kzz/detail/123290.html"
-          },
-          "fieldSources": {
-            "bondIdentity": "official_cninfo_topic",
-            "stockIdentity": "eastmoney_crosscheck",
-            "recordDate": "official_cninfo_topic+eastmoney_crosscheck",
-            "subscriptionDate": "official_cninfo_topic:F004D",
-            "listingDate": "eastmoney_crosscheck",
-            "allocationPerShare": "eastmoney_crosscheck:FIRST_PER_PREPLACING"
-          },
-          "announcementRecordDate": "2026-10-19",
-          "cninfoRecordDate": "2026-10-19",
-          "eastmoneyRecordDate": "2026-10-19",
-          "cninfoSubscriptionDate": "2026-10-20",
-          "eastmoneySubscriptionDate": "2026-10-20",
-          "corporateActionCheck": {
-            "source": "eastmoney-RPT_SHAREBONUS_DET",
-            "checkedDates": [
-              "2026-10-19",
-              "2026-10-20"
-            ],
-            "overlap": []
-          }
-        },
-        "stockDaily": {
-          "adoptedSource": "eastmoney-push2his-kline",
-          "barCount": 13,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 2,
-            "differences": []
-          },
-          "priceLimitAudit": {
-            "method": "previous raw close × historical board limit; rounded to CNY 0.01",
-            "limitations": []
-          }
-        },
-        "bondDaily": {
-          "adoptedSource": "tencent-fqkline",
-          "barCount": 3,
-          "filledDates": [],
-          "crossCheck": {
-            "status": "MATCH",
-            "comparedDates": 3,
-            "differences": []
-          },
-          "secondarySkippedReason": null
-        },
-        "fetchErrors": []
-      }
-    },
-    {
-      "included": false,
       "bondCode": "123291",
       "bondName": "佐力转债",
       "stockCode": "300181",
@@ -2122,8 +2139,8 @@
           }
         },
         "bondDaily": {
-          "adoptedSource": null,
-          "barCount": 0,
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 1,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
