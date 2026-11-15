@@ -1,9 +1,9 @@
 {
   "metadata": {
     "schemaVersion": "2.9.0",
-    "generatedAt": "2026-11-13T22:06:17.273Z",
+    "generatedAt": "2026-11-15T22:06:07.365Z",
     "coverageStart": "2006-01-01",
-    "coverageEnd": "2026-11-14",
+    "coverageEnd": "2026-11-16",
     "eventCoverageStart": "2007-06-27",
     "entryRule": "买入节点公告日后的首个交易日开盘买入正股",
     "exitRule": "最终发行公告节点使用公告后首个可卖交易日收盘卖出；其他比较节点仍使用公告后首个可卖交易日开盘；一字跌停无法在T-1前卖出则排除",
@@ -17,14 +17,14 @@
       {
         "key": "index-tencent-csi1000-2026-20261113",
         "fallbackKey": "index-eastmoney-csi1000-2026-20261113",
-        "fetchedAt": "2026-11-13T22:05:04.870Z",
+        "fetchedAt": "2026-11-15T22:04:53.328Z",
         "error": "index-tencent-csi1000-2026-20261113: HTTP 501"
       },
       {
-        "key": "index-tencent-csi300-2026-20261114",
-        "fallbackKey": "index-eastmoney-csi300-2026-20261114",
-        "fetchedAt": "2026-11-13T22:05:29.651Z",
-        "error": "index-tencent-csi300-2026-20261114: HTTP 501"
+        "key": "index-tencent-csi300-2026-20261116",
+        "fallbackKey": "index-eastmoney-csi300-2026-20261116",
+        "fetchedAt": "2026-11-15T22:05:19.661Z",
+        "error": "index-tencent-csi300-2026-20261116: HTTP 501"
       }
     ],
     "priceAdjustment": "收益率优先使用腾讯前复权价格；腾讯限流时使用东方财富前复权价格，并保留对应未复权成交近似价；买入用开盘、最终发行公告退出用下一交易日收盘",
@@ -284,8 +284,8 @@
     }
   ],
   "livePipeline": {
-    "asOfDate": "2026-11-14",
-    "sourceAsOfDate": "2026-11-14",
+    "asOfDate": "2026-11-16",
+    "sourceAsOfDate": "2026-11-16",
     "policy": {
       "entry": "注册生效公告后的首个交易日开盘买入；强市5000元、弱市2500元；弱市整手买入临时占款超过计划投入2倍则不参与",
       "exit": "最终发行公告后的首个可卖交易日收盘卖出",
