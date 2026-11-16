@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-15T22:03:34.442Z",
-    "coverageEnd": "2026-11-16",
+    "generatedAt": "2026-11-16T22:00:35.839Z",
+    "coverageEnd": "2026-11-17",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
     "decisionRule": "T-1开盘前锁定是否参与；只使用T-2收盘及更早的公开数据，锁定后不因T-1盘中行情回改。",
@@ -35,7 +35,7 @@
       "decisionDeadline": "2026-11-13",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-11-12",
-      "daysToRecordDate": -3,
+      "daysToRecordDate": -4,
       "allocationPerShareRaw": "1.781",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -141,7 +141,7 @@
       "decisionDeadline": "2026-10-28",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-27",
-      "daysToRecordDate": -19,
+      "daysToRecordDate": -20,
       "allocationPerShareRaw": "1.9704",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -157,9 +157,9 @@
       "priceIsFinal": true,
       "factorAsOfDate": "2026-10-27",
       "backtestDisposition": "incomplete_exit_window",
-      "observedBondSessions": 1,
-      "latestBondDate": "2026-11-13",
-      "latestBondCloseMilliYuan": 132000,
+      "observedBondSessions": 2,
+      "latestBondDate": "2026-11-16",
+      "latestBondCloseMilliYuan": 125800,
       "runningHighMilliYuan": null,
       "currentDrawdown": null,
       "drawdownTriggerPriceMilliYuan": null,
@@ -215,7 +215,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 1,
+          "barCount": 2,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -242,7 +242,7 @@
       "decisionDeadline": "2026-10-21",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-20",
-      "daysToRecordDate": -26,
+      "daysToRecordDate": -27,
       "allocationPerShareRaw": "1.4584",
       "issuePriceFen": 10000,
       "targetFaceFen": 100000,
@@ -258,9 +258,9 @@
       "priceIsFinal": true,
       "factorAsOfDate": "2026-10-20",
       "backtestDisposition": "incomplete_exit_window",
-      "observedBondSessions": 2,
-      "latestBondDate": "2026-11-13",
-      "latestBondCloseMilliYuan": 139845,
+      "observedBondSessions": 3,
+      "latestBondDate": "2026-11-16",
+      "latestBondCloseMilliYuan": 136401,
       "runningHighMilliYuan": null,
       "currentDrawdown": null,
       "drawdownTriggerPriceMilliYuan": null,
@@ -316,7 +316,7 @@
         },
         "bondDaily": {
           "adoptedSource": "tencent-fqkline",
-          "barCount": 2,
+          "barCount": 3,
           "filledDates": [],
           "crossCheck": {
             "status": "SINGLE_SOURCE",
@@ -343,7 +343,7 @@
       "decisionDeadline": "2026-10-20",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-10-19",
-      "daysToRecordDate": -27,
+      "daysToRecordDate": -28,
       "allocationPerShareRaw": "2.308",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -359,16 +359,16 @@
       "priceIsFinal": true,
       "factorAsOfDate": "2026-10-19",
       "backtestDisposition": "incomplete_exit_window",
-      "observedBondSessions": 0,
-      "latestBondDate": null,
-      "latestBondCloseMilliYuan": null,
+      "observedBondSessions": 1,
+      "latestBondDate": "2026-11-16",
+      "latestBondCloseMilliYuan": 130730,
       "runningHighMilliYuan": null,
       "currentDrawdown": null,
       "drawdownTriggerPriceMilliYuan": null,
       "firstLimitDate": null,
       "openConfirmDate": null,
       "drawdownTriggerDate": null,
-      "strategyBState": "awaiting_first_bar",
+      "strategyBState": "no_limit_seen",
       "sourceAudit": {
         "staticFields": {
           "sourcePresence": {
@@ -416,12 +416,12 @@
           "referenceCutoff": "2026-10-19"
         },
         "bondDaily": {
-          "adoptedSource": null,
-          "barCount": 0,
+          "adoptedSource": "tencent-fqkline",
+          "barCount": 1,
           "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           }
         },
