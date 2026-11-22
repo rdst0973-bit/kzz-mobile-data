@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-21T22:05:05.688Z",
-    "coverageEnd": "2026-11-22",
+    "generatedAt": "2026-11-22T21:57:36.003Z",
+    "coverageEnd": "2026-11-23",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
     "decisionRule": "T-1开盘前锁定是否参与；只使用T-2收盘及更早的公开数据，锁定后不因T-1盘中行情回改。",
@@ -34,7 +34,7 @@
       "decisionDeadline": "2026-11-20",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-11-19",
-      "daysToRecordDate": -2,
+      "daysToRecordDate": -3,
       "allocationPerShareRaw": "5.5",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -140,7 +140,7 @@
       "decisionDeadline": "2026-11-13",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-11-12",
-      "daysToRecordDate": -9,
+      "daysToRecordDate": -10,
       "allocationPerShareRaw": "1.781",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
