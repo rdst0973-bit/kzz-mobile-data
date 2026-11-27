@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedAt": "2026-11-26T21:58:27.126Z",
-    "coverageEnd": "2026-11-27",
+    "generatedAt": "2026-11-27T22:05:02.119Z",
+    "coverageEnd": "2026-11-28",
     "recordDateFutureHorizonDays": 60,
     "recentTrackingLookbackDays": 60,
     "decisionRule": "T-1开盘前锁定是否参与；只使用T-2收盘及更早的公开数据，锁定后不因T-1盘中行情回改。",
@@ -34,7 +34,7 @@
       "decisionDeadline": "2026-11-20",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-11-19",
-      "daysToRecordDate": -7,
+      "daysToRecordDate": -8,
       "allocationPerShareRaw": "5.5",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
@@ -88,40 +88,18 @@
           "eastmoneySubscriptionDate": "2026-11-23"
         },
         "stockDaily": {
-          "adoptedSource": "tencent-fqkline",
+          "adoptedSource": "eastmoney-push2his-kline",
           "barCount": 19,
-          "filledDates": [
-            "2026-10-26",
-            "2026-10-27",
-            "2026-10-28",
-            "2026-10-29",
-            "2026-10-30",
-            "2026-11-02",
-            "2026-11-03",
-            "2026-11-04",
-            "2026-11-05",
-            "2026-11-06",
-            "2026-11-09",
-            "2026-11-10",
-            "2026-11-11",
-            "2026-11-12",
-            "2026-11-13",
-            "2026-11-16",
-            "2026-11-17",
-            "2026-11-18",
-            "2026-11-19"
-          ],
+          "filledDates": [],
           "crossCheck": {
-            "status": "SINGLE_SOURCE",
-            "comparedDates": 0,
+            "status": "MATCH",
+            "comparedDates": 1,
             "differences": []
           },
           "referenceCutoff": "2026-11-19"
         },
         "bondDaily": null,
-        "fetchErrors": [
-          "stock/eastmoney: eastmoney-stock-SH-603163-2026-10-26-2026-11-19: fetch failed"
-        ]
+        "fetchErrors": []
       }
     },
     {
@@ -140,7 +118,7 @@
       "decisionDeadline": "2026-11-13",
       "decisionTiming": "T-1_open",
       "decisionFactorCutoffDate": "2026-11-12",
-      "daysToRecordDate": -14,
+      "daysToRecordDate": -15,
       "allocationPerShareRaw": "1.781",
       "issuePriceFen": 10000,
       "targetFaceFen": 60000,
